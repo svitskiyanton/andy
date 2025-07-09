@@ -1,0 +1,2633 @@
+2025-07-08 23:11:13,336 - INFO - === Pro STS Capability Test ===
+2025-07-08 23:11:13,343 - ERROR - ELEVENLABS_API_KEY environment variable is required
+2025-07-08 23:11:13,344 - INFO - Testing audio devices...
+2025-07-08 23:11:13,521 - INFO - Input devices:
+2025-07-08 23:11:13,522 - INFO -    0: Microsoft Sound Mapper - Input
+2025-07-08 23:11:13,523 - INFO -    1: Микрофон (Realtek High Definiti
+2025-07-08 23:11:13,523 - INFO -    4: Первичный драйвер записи звука
+2025-07-08 23:11:13,525 - INFO -    5: Микрофон (Realtek High Definition Audio)
+2025-07-08 23:11:13,533 - INFO -    9: Микрофон (Realtek High Definition Audio)
+2025-07-08 23:11:13,533 - INFO -    10: Mic in at front panel (black) (Mic in at front panel (black))
+2025-07-08 23:11:13,533 - INFO -    11: Микрофон (Realtek HD Audio Mic input)
+2025-07-08 23:11:13,534 - INFO -    12: Стерео микшер (Realtek HD Audio Stereo input)
+2025-07-08 23:11:13,534 - INFO - Output devices:
+2025-07-08 23:11:13,535 - INFO -    2: Microsoft Sound Mapper - Output
+2025-07-08 23:11:13,535 - INFO -    3: Громкоговоритель и наушники (Re
+2025-07-08 23:11:13,536 - INFO -    6: Первичный звуковой драйвер
+2025-07-08 23:11:13,536 - INFO -    7: Громкоговоритель и наушники (Realtek High Definition Audio)
+2025-07-08 23:11:13,536 - INFO -    8: Громкоговоритель и наушники (Realtek High Definition Audio)
+2025-07-08 23:11:13,537 - INFO -    13: Speakers (Realtek HD Audio output)
+2025-07-08 23:11:13,572 - INFO - === Test Complete ===
+2025-07-08 23:11:13,572 - INFO - If all tests passed, you can run: python pro_speech_to_speech.py
+2025-07-08 23:13:19,731 - INFO - === Pro STS Capability Test ===
+2025-07-08 23:13:19,732 - ERROR - ELEVENLABS_API_KEY environment variable is required
+2025-07-08 23:13:19,732 - INFO - Testing audio devices...
+2025-07-08 23:13:19,826 - INFO - Input devices:
+2025-07-08 23:13:19,826 - INFO -    0: Microsoft Sound Mapper - Input
+2025-07-08 23:13:19,827 - INFO -    1: Микрофон (Realtek High Definiti
+2025-07-08 23:13:19,828 - INFO -    4: Первичный драйвер записи звука
+2025-07-08 23:13:19,828 - INFO -    5: Микрофон (Realtek High Definition Audio)
+2025-07-08 23:13:19,829 - INFO -    9: Микрофон (Realtek High Definition Audio)
+2025-07-08 23:13:19,829 - INFO -    10: Mic in at front panel (black) (Mic in at front panel (black))
+2025-07-08 23:13:19,829 - INFO -    11: Микрофон (Realtek HD Audio Mic input)
+2025-07-08 23:13:19,830 - INFO -    12: Стерео микшер (Realtek HD Audio Stereo input)
+2025-07-08 23:13:19,830 - INFO - Output devices:
+2025-07-08 23:13:19,830 - INFO -    2: Microsoft Sound Mapper - Output
+2025-07-08 23:13:19,830 - INFO -    3: Громкоговоритель и наушники (Re
+2025-07-08 23:13:19,831 - INFO -    6: Первичный звуковой драйвер
+2025-07-08 23:13:19,832 - INFO -    7: Громкоговоритель и наушники (Realtek High Definition Audio)
+2025-07-08 23:13:19,832 - INFO -    8: Громкоговоритель и наушники (Realtek High Definition Audio)
+2025-07-08 23:13:19,832 - INFO -    13: Speakers (Realtek HD Audio output)
+2025-07-08 23:13:19,833 - INFO - [OK] Audio device test completed
+2025-07-08 23:13:19,833 - INFO - === Test Complete ===
+2025-07-08 23:13:19,833 - INFO - If all tests passed, you can run: python pro_speech_to_speech.py
+2025-07-08 23:15:03,104 - INFO - Starting Pro STS Voice Changer...
+2025-07-08 23:15:03,104 - INFO - Initializing Pro features...
+2025-07-08 23:15:03,104 - INFO - Testing Pro capabilities...
+2025-07-08 23:15:03,200 - INFO - Cleaning up...
+2025-07-08 23:15:03,201 - INFO - Cleanup complete
+2025-07-08 23:15:09,779 - INFO - === Pro STS Capability Test ===
+2025-07-08 23:15:09,779 - INFO - Testing Pro STS capabilities...
+2025-07-08 23:15:09,780 - INFO - 1. Testing subscription...
+2025-07-08 23:15:11,725 - INFO - [OK] Subscription: pro
+2025-07-08 23:15:11,725 - INFO -    Character count: 168107
+2025-07-08 23:15:11,726 - INFO -    Character limit: 501069
+2025-07-08 23:15:11,726 - INFO - 2. Testing available models...
+2025-07-08 23:15:11,936 - INFO - [OK] Available Turbo models: 2
+2025-07-08 23:15:11,936 - INFO -    - Eleven Turbo v2.5 (eleven_turbo_v2_5)
+2025-07-08 23:15:11,937 - INFO -    - Eleven Turbo v2 (eleven_turbo_v2)
+2025-07-08 23:15:11,937 - INFO - 3. Testing available voices...
+2025-07-08 23:15:12,196 - INFO - [OK] Available voices: 40
+2025-07-08 23:15:12,196 - INFO -    - Aria (9BWtsMINqrJLrRacOk9x)
+2025-07-08 23:15:12,197 - INFO -    - Sarah (EXAVITQu4vr4xnSDxMaL)
+2025-07-08 23:15:12,197 - INFO -    - Laura (FGY2WhTYpPnrIDTdsKH5)
+2025-07-08 23:15:12,198 - INFO -    - Charlie (IKne3meq5aSn9XLyUdCD)
+2025-07-08 23:15:12,199 - INFO -    - George (JBFqnCBsd6RMkjVDRZzb)
+2025-07-08 23:15:12,199 - INFO - 4. Testing STS endpoint...
+2025-07-08 23:15:12,612 - ERROR - [ERROR] STS endpoint test failed: 404
+2025-07-08 23:15:12,613 - INFO - 5. Testing Pro features...
+2025-07-08 23:15:12,613 - INFO -    - Max concurrent requests: 10
+2025-07-08 23:15:12,614 - INFO -    - Audio quality: 192 kbps
+2025-07-08 23:15:12,614 - INFO -    - Output format: pcm_44100
+2025-07-08 23:15:12,614 - INFO -    - Priority processing: True
+2025-07-08 23:15:12,615 - INFO -    - Latency target: 0.1s
+2025-07-08 23:15:12,616 - INFO - Testing audio devices...
+2025-07-08 23:15:12,708 - INFO - Input devices:
+2025-07-08 23:15:12,709 - INFO -    0: Microsoft Sound Mapper - Input
+2025-07-08 23:15:12,709 - INFO -    1: Микрофон (Realtek High Definiti
+2025-07-08 23:15:12,709 - INFO -    4: Первичный драйвер записи звука
+2025-07-08 23:15:12,710 - INFO -    5: Микрофон (Realtek High Definition Audio)
+2025-07-08 23:15:12,710 - INFO -    9: Микрофон (Realtek High Definition Audio)
+2025-07-08 23:15:12,710 - INFO -    10: Mic in at front panel (black) (Mic in at front panel (black))
+2025-07-08 23:15:12,711 - INFO -    11: Микрофон (Realtek HD Audio Mic input)
+2025-07-08 23:15:12,711 - INFO -    12: Стерео микшер (Realtek HD Audio Stereo input)
+2025-07-08 23:15:12,711 - INFO - Output devices:
+2025-07-08 23:15:12,712 - INFO -    2: Microsoft Sound Mapper - Output
+2025-07-08 23:15:12,712 - INFO -    3: Громкоговоритель и наушники (Re
+2025-07-08 23:15:12,712 - INFO -    6: Первичный звуковой драйвер
+2025-07-08 23:15:12,713 - INFO -    7: Громкоговоритель и наушники (Realtek High Definition Audio)
+2025-07-08 23:15:12,713 - INFO -    8: Громкоговоритель и наушники (Realtek High Definition Audio)
+2025-07-08 23:15:12,713 - INFO -    13: Speakers (Realtek HD Audio output)
+2025-07-08 23:15:12,714 - INFO - [OK] Audio device test completed
+2025-07-08 23:15:12,714 - INFO - === Test Complete ===
+2025-07-08 23:15:12,714 - INFO - If all tests passed, you can run: python pro_speech_to_speech.py
+2025-07-08 23:16:04,082 - INFO - Starting Pro STS Voice Changer...
+2025-07-08 23:16:04,082 - INFO - Initializing Pro features...
+2025-07-08 23:16:04,083 - INFO - Testing Pro capabilities...
+2025-07-08 23:16:05,626 - INFO - Subscription: pro
+2025-07-08 23:16:05,626 - INFO - Character count: 168317
+2025-07-08 23:16:05,626 - INFO - Character limit: 501069
+2025-07-08 23:16:05,868 - INFO - Available Turbo models: 2
+2025-07-08 23:16:05,869 - INFO -   - Eleven Turbo v2.5 (eleven_turbo_v2_5)
+2025-07-08 23:16:05,869 - INFO -   - Eleven Turbo v2 (eleven_turbo_v2)
+2025-07-08 23:16:05,870 - INFO - Initializing voice cloning...
+2025-07-08 23:16:06,575 - INFO - No existing voice clone found. You can create one via the ElevenLabs dashboard.
+2025-07-08 23:16:06,577 - INFO - Setting up WebSocket connection...
+2025-07-08 23:16:06,577 - INFO - Using HTTP streaming (WebSocket not yet available)
+2025-07-08 23:16:06,577 - INFO - Pro features initialized successfully
+2025-07-08 23:16:06,577 - INFO - Starting audio capture...
+2025-07-08 23:16:06,578 - INFO - Starting audio output...
+2025-07-08 23:16:06,579 - INFO - Starting audio stream processing...
+2025-07-08 23:16:06,690 - ERROR - Error processing audio stream: 
+2025-07-08 23:16:06,798 - ERROR - Error processing audio stream: 
+2025-07-08 23:16:06,907 - ERROR - Error processing audio stream: 
+2025-07-08 23:16:17,596 - ERROR - STS API error: 422 - {"detail":[{"type":"missing","loc":["body","audio"],"msg":"Field required","input":null}]}
+2025-07-08 23:16:27,451 - ERROR - STS API error: 422 - {"detail":[{"type":"missing","loc":["body","audio"],"msg":"Field required","input":null}]}
+2025-07-08 23:16:31,674 - INFO - Cleaning up...
+2025-07-08 23:16:31,711 - INFO - Cleanup complete
+2025-07-08 23:21:15,547 - INFO - Starting Pro STS Voice Changer...
+2025-07-08 23:21:15,547 - INFO - Initializing Pro features...
+2025-07-08 23:21:15,547 - INFO - Testing Pro capabilities...
+2025-07-08 23:21:17,377 - INFO - Subscription: pro
+2025-07-08 23:21:17,377 - INFO - Character count: 168317
+2025-07-08 23:21:17,377 - INFO - Character limit: 501069
+2025-07-08 23:21:21,145 - INFO - Available Turbo models: 2
+2025-07-08 23:21:21,145 - INFO -   - Eleven Turbo v2.5 (eleven_turbo_v2_5)
+2025-07-08 23:21:21,146 - INFO -   - Eleven Turbo v2 (eleven_turbo_v2)
+2025-07-08 23:21:21,147 - INFO - Initializing voice cloning...
+2025-07-08 23:21:22,027 - INFO - No existing voice clone found. You can create one via the ElevenLabs dashboard.
+2025-07-08 23:21:22,028 - INFO - Setting up WebSocket connection...
+2025-07-08 23:21:22,028 - INFO - Using HTTP streaming (WebSocket not yet available)
+2025-07-08 23:21:22,029 - INFO - Pro features initialized successfully
+2025-07-08 23:21:22,030 - INFO - Starting audio capture...
+2025-07-08 23:21:22,030 - INFO - Starting audio output...
+2025-07-08 23:21:22,030 - INFO - Starting audio stream processing...
+2025-07-08 23:21:22,154 - ERROR - Error processing audio stream: 
+2025-07-08 23:21:22,263 - ERROR - Error processing audio stream: 
+2025-07-08 23:21:22,371 - ERROR - Error processing audio stream: 
+2025-07-08 23:21:33,001 - ERROR - STS API error: 422 - {"detail":[{"type":"missing","loc":["body","audio"],"msg":"Field required","input":null}]}
+2025-07-08 23:21:43,011 - ERROR - STS API error: 422 - {"detail":[{"type":"missing","loc":["body","audio"],"msg":"Field required","input":null}]}
+2025-07-08 23:21:44,136 - INFO - Cleaning up...
+2025-07-08 23:21:44,198 - INFO - Cleanup complete
+2025-07-08 23:27:48,984 - INFO - Starting Pro STS Voice Changer...
+2025-07-08 23:27:48,985 - INFO - Initializing Pro features...
+2025-07-08 23:27:48,985 - INFO - Testing Pro capabilities...
+2025-07-08 23:27:50,481 - INFO - Subscription: pro
+2025-07-08 23:27:50,482 - INFO - Character count: 168317
+2025-07-08 23:27:50,482 - INFO - Character limit: 501069
+2025-07-08 23:27:51,695 - INFO - Available Turbo models: 2
+2025-07-08 23:27:51,695 - INFO -   - Eleven Turbo v2.5 (eleven_turbo_v2_5)
+2025-07-08 23:27:51,695 - INFO -   - Eleven Turbo v2 (eleven_turbo_v2)
+2025-07-08 23:27:51,696 - INFO - Initializing voice cloning...
+2025-07-08 23:27:52,452 - INFO - No existing voice clone found. You can create one via the ElevenLabs dashboard.
+2025-07-08 23:27:52,453 - INFO - Setting up WebSocket connection...
+2025-07-08 23:27:52,454 - INFO - Using HTTP streaming (WebSocket not yet available)
+2025-07-08 23:27:52,454 - INFO - Pro features initialized successfully
+2025-07-08 23:27:52,454 - INFO - Starting audio capture...
+2025-07-08 23:27:52,454 - INFO - Starting audio output...
+2025-07-08 23:27:52,455 - INFO - Starting audio stream processing...
+2025-07-08 23:27:52,588 - ERROR - Error processing audio stream: 
+Traceback (most recent call last):
+  File "C:\Projects\Andy\pro_speech_to_speech.py", line 296, in process_audio_stream
+    audio_chunk = await asyncio.get_event_loop().run_in_executor(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\Andy\pro_speech_to_speech.py", line 297, in <lambda>
+    None, lambda: self.audio_queue.get(timeout=0.1)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\queue.py", line 179, in get
+    raise Empty
+_queue.Empty
+2025-07-08 23:27:52,706 - ERROR - Error processing audio stream: 
+Traceback (most recent call last):
+  File "C:\Projects\Andy\pro_speech_to_speech.py", line 296, in process_audio_stream
+    audio_chunk = await asyncio.get_event_loop().run_in_executor(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\Andy\pro_speech_to_speech.py", line 297, in <lambda>
+    None, lambda: self.audio_queue.get(timeout=0.1)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\queue.py", line 179, in get
+    raise Empty
+_queue.Empty
+2025-07-08 23:27:52,830 - ERROR - Error processing audio stream: 
+Traceback (most recent call last):
+  File "C:\Projects\Andy\pro_speech_to_speech.py", line 296, in process_audio_stream
+    audio_chunk = await asyncio.get_event_loop().run_in_executor(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\Andy\pro_speech_to_speech.py", line 297, in <lambda>
+    None, lambda: self.audio_queue.get(timeout=0.1)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\queue.py", line 179, in get
+    raise Empty
+_queue.Empty
+2025-07-08 23:27:52,942 - ERROR - Error processing audio stream: 
+Traceback (most recent call last):
+  File "C:\Projects\Andy\pro_speech_to_speech.py", line 296, in process_audio_stream
+    audio_chunk = await asyncio.get_event_loop().run_in_executor(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\Andy\pro_speech_to_speech.py", line 297, in <lambda>
+    None, lambda: self.audio_queue.get(timeout=0.1)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\queue.py", line 179, in get
+    raise Empty
+_queue.Empty
+2025-07-08 23:28:03,038 - INFO - Processing phrase with 432 chunks
+2025-07-08 23:28:03,039 - INFO - Combined audio shape: (442368,), total samples: 442368
+2025-07-08 23:28:03,040 - INFO - Audio array shape: (442368,), dtype: int16
+2025-07-08 23:28:03,048 - INFO - Audio array min/max: -755/913
+2025-07-08 23:28:03,050 - INFO - WAV data size: 884780 bytes
+2025-07-08 23:28:03,051 - INFO - Sending STS request with 884780 bytes of audio data
+2025-07-08 23:28:06,080 - ERROR - STS API error: 404 - {"detail":{"status":"voice_not_found","message":"A voice with the voice_id stream was not found."}}
+2025-07-08 23:28:06,081 - WARNING - No output audio received from STS
+2025-07-08 23:28:13,063 - INFO - Processing phrase with 402 chunks
+2025-07-08 23:28:13,064 - INFO - Combined audio shape: (411648,), total samples: 411648
+2025-07-08 23:28:13,065 - INFO - Audio array shape: (411648,), dtype: int16
+2025-07-08 23:28:13,066 - INFO - Audio array min/max: -1412/2001
+2025-07-08 23:28:13,067 - INFO - WAV data size: 823340 bytes
+2025-07-08 23:28:13,068 - INFO - Sending STS request with 823340 bytes of audio data
+2025-07-08 23:28:15,055 - ERROR - STS API error: 404 - {"detail":{"status":"voice_not_found","message":"A voice with the voice_id stream was not found."}}
+2025-07-08 23:28:15,057 - WARNING - No output audio received from STS
+2025-07-08 23:28:23,105 - INFO - Processing phrase with 432 chunks
+2025-07-08 23:28:23,106 - INFO - Combined audio shape: (442368,), total samples: 442368
+2025-07-08 23:28:23,107 - INFO - Audio array shape: (442368,), dtype: int16
+2025-07-08 23:28:23,108 - INFO - Audio array min/max: -14/13
+2025-07-08 23:28:23,109 - INFO - WAV data size: 884780 bytes
+2025-07-08 23:28:23,110 - INFO - Sending STS request with 884780 bytes of audio data
+2025-07-08 23:28:26,985 - ERROR - STS API error: 404 - {"detail":{"status":"voice_not_found","message":"A voice with the voice_id stream was not found."}}
+2025-07-08 23:28:26,988 - WARNING - No output audio received from STS
+2025-07-08 23:28:33,140 - INFO - Processing phrase with 366 chunks
+2025-07-08 23:28:33,142 - INFO - Combined audio shape: (374784,), total samples: 374784
+2025-07-08 23:28:33,143 - INFO - Audio array shape: (374784,), dtype: int16
+2025-07-08 23:28:33,144 - INFO - Audio array min/max: -11/12
+2025-07-08 23:28:33,147 - INFO - WAV data size: 749612 bytes
+2025-07-08 23:28:33,149 - INFO - Sending STS request with 749612 bytes of audio data
+2025-07-08 23:28:35,803 - ERROR - STS API error: 404 - {"detail":{"status":"voice_not_found","message":"A voice with the voice_id stream was not found."}}
+2025-07-08 23:28:35,805 - WARNING - No output audio received from STS
+2025-07-08 23:28:43,167 - INFO - Processing phrase with 418 chunks
+2025-07-08 23:28:43,169 - INFO - Combined audio shape: (428032,), total samples: 428032
+2025-07-08 23:28:43,171 - INFO - Audio array shape: (428032,), dtype: int16
+2025-07-08 23:28:43,172 - INFO - Audio array min/max: -433/400
+2025-07-08 23:28:43,175 - INFO - WAV data size: 856108 bytes
+2025-07-08 23:28:43,178 - INFO - Sending STS request with 856108 bytes of audio data
+2025-07-08 23:28:46,727 - ERROR - STS API error: 404 - {"detail":{"status":"voice_not_found","message":"A voice with the voice_id stream was not found."}}
+2025-07-08 23:28:46,730 - WARNING - No output audio received from STS
+2025-07-08 23:28:51,396 - INFO - Cleaning up...
+2025-07-08 23:28:51,457 - INFO - Cleanup complete
+2025-07-08 23:28:57,324 - INFO - Starting Pro STS Voice Changer...
+2025-07-08 23:28:57,325 - INFO - Initializing Pro features...
+2025-07-08 23:28:57,326 - INFO - Testing Pro capabilities...
+2025-07-08 23:28:59,003 - INFO - Subscription: pro
+2025-07-08 23:28:59,003 - INFO - Character count: 168317
+2025-07-08 23:28:59,003 - INFO - Character limit: 501069
+2025-07-08 23:28:59,538 - INFO - Available Turbo models: 2
+2025-07-08 23:28:59,539 - INFO -   - Eleven Turbo v2.5 (eleven_turbo_v2_5)
+2025-07-08 23:28:59,539 - INFO -   - Eleven Turbo v2 (eleven_turbo_v2)
+2025-07-08 23:28:59,540 - INFO - Initializing voice cloning...
+2025-07-08 23:28:59,924 - INFO - No existing voice clone found. You can create one via the ElevenLabs dashboard.
+2025-07-08 23:28:59,925 - INFO - Setting up WebSocket connection...
+2025-07-08 23:28:59,926 - INFO - Using HTTP streaming (WebSocket not yet available)
+2025-07-08 23:28:59,926 - INFO - Pro features initialized successfully
+2025-07-08 23:28:59,926 - INFO - Starting audio capture...
+2025-07-08 23:28:59,927 - INFO - Starting audio output...
+2025-07-08 23:28:59,927 - INFO - Starting audio stream processing...
+2025-07-08 23:29:00,319 - INFO - Audio callback called: level=0.218750, threshold=0.01
+2025-07-08 23:29:00,320 - INFO - Audio detected: level=0.218750
+2025-07-08 23:29:00,339 - INFO - Audio detected: level=0.238281
+2025-07-08 23:29:00,371 - INFO - Audio detected: level=0.248047
+2025-07-08 23:29:00,389 - INFO - Audio detected: level=0.212891
+2025-07-08 23:29:00,410 - INFO - Audio detected: level=0.218750
+2025-07-08 23:29:00,439 - INFO - Audio detected: level=0.238281
+2025-07-08 23:29:00,458 - INFO - Audio detected: level=0.248047
+2025-07-08 23:29:00,478 - INFO - Audio detected: level=0.212891
+2025-07-08 23:29:00,499 - INFO - Audio detected: level=0.218750
+2025-07-08 23:29:00,530 - INFO - Audio detected: level=0.238281
+2025-07-08 23:29:00,548 - INFO - Audio detected: level=0.248047
+2025-07-08 23:29:00,570 - INFO - Audio detected: level=0.212891
+2025-07-08 23:29:00,598 - INFO - Audio detected: level=0.218750
+2025-07-08 23:29:00,618 - INFO - Audio detected: level=0.238281
+2025-07-08 23:29:00,640 - INFO - Audio detected: level=0.248047
+2025-07-08 23:29:00,669 - INFO - Audio detected: level=0.290039
+2025-07-08 23:29:00,690 - INFO - Audio detected: level=2.967773
+2025-07-08 23:29:00,709 - INFO - Audio detected: level=3.650391
+2025-07-08 23:29:00,738 - INFO - Audio detected: level=2.977539
+2025-07-08 23:29:00,759 - INFO - Audio detected: level=1.916016
+2025-07-08 23:29:00,779 - INFO - Audio detected: level=2.283203
+2025-07-08 23:29:00,810 - INFO - Audio detected: level=26.038086
+2025-07-08 23:29:00,829 - INFO - Audio detected: level=92.690430
+2025-07-08 23:29:00,850 - INFO - Audio detected: level=78.375000
+2025-07-08 23:29:00,879 - INFO - Audio detected: level=85.600586
+2025-07-08 23:29:00,899 - INFO - Audio detected: level=75.485352
+2025-07-08 23:29:00,919 - INFO - Audio detected: level=182.033203
+2025-07-08 23:29:00,949 - INFO - Audio detected: level=244.677734
+2025-07-08 23:29:00,970 - INFO - Audio detected: level=290.827148
+2025-07-08 23:29:00,988 - INFO - Audio detected: level=251.386719
+2025-07-08 23:29:01,019 - INFO - Audio detected: level=222.634766
+2025-07-08 23:29:01,039 - INFO - Audio detected: level=286.212891
+2025-07-08 23:29:01,059 - INFO - Audio detected: level=365.357422
+2025-07-08 23:29:01,091 - INFO - Audio detected: level=240.327148
+2025-07-08 23:29:01,109 - INFO - Audio detected: level=416.161133
+2025-07-08 23:29:01,131 - INFO - Audio detected: level=524.009766
+2025-07-08 23:29:01,148 - INFO - Audio detected: level=649.296875
+2025-07-08 23:29:01,179 - INFO - Audio detected: level=398.976562
+2025-07-08 23:29:01,199 - INFO - Audio detected: level=289.319336
+2025-07-08 23:29:01,219 - INFO - Audio detected: level=232.188477
+2025-07-08 23:29:01,250 - INFO - Audio detected: level=234.469727
+2025-07-08 23:29:01,269 - INFO - Audio detected: level=336.553711
+2025-07-08 23:29:01,290 - INFO - Audio detected: level=488.998047
+2025-07-08 23:29:01,318 - INFO - Audio detected: level=392.373047
+2025-07-08 23:29:01,338 - INFO - Audio detected: level=250.713867
+2025-07-08 23:29:01,359 - INFO - Audio detected: level=150.006836
+2025-07-08 23:29:01,388 - INFO - Audio detected: level=108.481445
+2025-07-08 23:29:01,410 - INFO - Audio detected: level=76.708008
+2025-07-08 23:29:01,429 - INFO - Audio detected: level=90.544922
+2025-07-08 23:29:01,459 - INFO - Audio detected: level=151.758789
+2025-07-08 23:29:01,479 - INFO - Audio detected: level=124.065430
+2025-07-08 23:29:01,499 - INFO - Audio detected: level=89.639648
+2025-07-08 23:29:01,531 - INFO - Audio detected: level=86.235352
+2025-07-08 23:29:01,549 - INFO - Audio detected: level=76.122070
+2025-07-08 23:29:01,571 - INFO - Audio detected: level=54.202148
+2025-07-08 23:29:01,599 - INFO - Audio detected: level=106.264648
+2025-07-08 23:29:01,619 - INFO - Audio detected: level=116.075195
+2025-07-08 23:29:01,639 - INFO - Audio detected: level=124.056641
+2025-07-08 23:29:01,669 - INFO - Audio detected: level=91.708984
+2025-07-08 23:29:01,689 - INFO - Audio detected: level=98.169922
+2025-07-08 23:29:01,709 - INFO - Audio detected: level=66.868164
+2025-07-08 23:29:01,739 - INFO - Audio detected: level=59.345703
+2025-07-08 23:29:01,759 - INFO - Audio detected: level=37.954102
+2025-07-08 23:29:01,779 - INFO - Audio detected: level=49.640625
+2025-07-08 23:29:01,798 - INFO - Audio detected: level=144.682617
+2025-07-08 23:29:01,828 - INFO - Audio detected: level=165.638672
+2025-07-08 23:29:01,850 - INFO - Audio detected: level=128.728516
+2025-07-08 23:29:01,868 - INFO - Audio detected: level=113.530273
+2025-07-08 23:29:01,900 - INFO - Audio detected: level=243.673828
+2025-07-08 23:29:01,919 - INFO - Audio detected: level=486.344727
+2025-07-08 23:29:01,938 - INFO - Audio detected: level=648.600586
+2025-07-08 23:29:01,970 - INFO - Audio detected: level=760.236328
+2025-07-08 23:29:01,989 - INFO - Audio detected: level=1009.625977
+2025-07-08 23:29:02,010 - INFO - Audio detected: level=1012.183594
+2025-07-08 23:29:02,039 - INFO - Audio detected: level=764.387695
+2025-07-08 23:29:02,058 - INFO - Audio detected: level=345.664062
+2025-07-08 23:29:02,079 - INFO - Audio detected: level=263.291016
+2025-07-08 23:29:02,108 - INFO - Audio detected: level=146.530273
+2025-07-08 23:29:02,130 - INFO - Audio detected: level=104.063477
+2025-07-08 23:29:02,149 - INFO - Audio detected: level=114.246094
+2025-07-08 23:29:02,179 - INFO - Audio detected: level=682.624023
+2025-07-08 23:29:02,199 - INFO - Audio detected: level=1200.068359
+2025-07-08 23:29:02,218 - INFO - Audio detected: level=1096.276367
+2025-07-08 23:29:02,250 - INFO - Audio detected: level=904.606445
+2025-07-08 23:29:02,269 - INFO - Audio detected: level=705.563477
+2025-07-08 23:29:02,290 - INFO - Audio detected: level=625.708984
+2025-07-08 23:29:02,319 - INFO - Audio detected: level=500.890625
+2025-07-08 23:29:02,338 - INFO - Audio detected: level=694.901367
+2025-07-08 23:29:02,359 - INFO - Audio detected: level=999.459961
+2025-07-08 23:29:02,389 - INFO - Audio detected: level=362.388672
+2025-07-08 23:29:02,411 - INFO - Audio detected: level=388.239258
+2025-07-08 23:29:02,429 - INFO - Audio detected: level=367.583008
+2025-07-08 23:29:02,458 - INFO - Audio detected: level=249.405273
+2025-07-08 23:29:02,479 - INFO - Audio detected: level=173.489258
+2025-07-08 23:29:02,499 - INFO - Audio detected: level=151.702148
+2025-07-08 23:29:02,519 - INFO - Audio detected: level=182.010742
+2025-07-08 23:29:02,549 - INFO - Audio detected: level=159.007812
+2025-07-08 23:29:02,570 - INFO - Audio detected: level=275.010742
+2025-07-08 23:29:02,589 - INFO - Audio detected: level=415.741211
+2025-07-08 23:29:02,619 - INFO - Audio detected: level=273.638672
+2025-07-08 23:29:02,639 - INFO - Audio callback called: level=120.459961, threshold=0.01
+2025-07-08 23:29:02,640 - INFO - Audio detected: level=120.459961
+2025-07-08 23:29:02,658 - INFO - Audio detected: level=110.049805
+2025-07-08 23:29:02,689 - INFO - Audio detected: level=74.137695
+2025-07-08 23:29:02,709 - INFO - Audio detected: level=133.366211
+2025-07-08 23:29:02,730 - INFO - Audio detected: level=401.769531
+2025-07-08 23:29:02,760 - INFO - Audio detected: level=489.935547
+2025-07-08 23:29:02,779 - INFO - Audio detected: level=494.309570
+2025-07-08 23:29:02,805 - INFO - Audio detected: level=611.665039
+2025-07-08 23:29:02,828 - INFO - Audio detected: level=853.385742
+2025-07-08 23:29:02,849 - INFO - Audio detected: level=902.498047
+2025-07-08 23:29:02,869 - INFO - Audio detected: level=568.936523
+2025-07-08 23:29:02,900 - INFO - Audio detected: level=545.136719
+2025-07-08 23:29:02,919 - INFO - Audio detected: level=379.368164
+2025-07-08 23:29:02,952 - INFO - Audio detected: level=224.854492
+2025-07-08 23:29:02,969 - INFO - Audio detected: level=188.280273
+2025-07-08 23:29:03,004 - INFO - Audio detected: level=175.769531
+2025-07-08 23:29:03,009 - INFO - Audio detected: level=136.726562
+2025-07-08 23:29:03,044 - INFO - Audio detected: level=134.516602
+2025-07-08 23:29:03,085 - INFO - Audio detected: level=125.338867
+2025-07-08 23:29:03,087 - INFO - Audio detected: level=120.958984
+2025-07-08 23:29:03,108 - INFO - Audio detected: level=69.017578
+2025-07-08 23:29:03,130 - INFO - Audio detected: level=111.005859
+2025-07-08 23:29:03,154 - INFO - Audio detected: level=182.812500
+2025-07-08 23:29:03,168 - INFO - Audio detected: level=156.787109
+2025-07-08 23:29:03,199 - INFO - Audio detected: level=106.667969
+2025-07-08 23:29:03,219 - INFO - Audio detected: level=81.941406
+2025-07-08 23:29:03,240 - INFO - Audio detected: level=152.552734
+2025-07-08 23:29:03,269 - INFO - Audio detected: level=487.951172
+2025-07-08 23:29:03,289 - INFO - Audio detected: level=352.354492
+2025-07-08 23:29:03,309 - INFO - Audio detected: level=343.475586
+2025-07-08 23:29:03,339 - INFO - Audio detected: level=270.211914
+2025-07-08 23:29:03,360 - INFO - Audio detected: level=237.126953
+2025-07-08 23:29:03,378 - INFO - Audio detected: level=204.522461
+2025-07-08 23:29:03,409 - INFO - Audio detected: level=260.799805
+2025-07-08 23:29:03,429 - INFO - Audio detected: level=333.649414
+2025-07-08 23:29:03,448 - INFO - Audio detected: level=249.291016
+2025-07-08 23:29:03,479 - INFO - Audio detected: level=128.117188
+2025-07-08 23:29:03,498 - INFO - Audio detected: level=86.047852
+2025-07-08 23:29:03,519 - INFO - Audio detected: level=59.592773
+2025-07-08 23:29:03,548 - INFO - Audio detected: level=59.835938
+2025-07-08 23:29:03,569 - INFO - Audio detected: level=60.875000
+2025-07-08 23:29:03,590 - INFO - Audio detected: level=94.776367
+2025-07-08 23:29:03,619 - INFO - Audio detected: level=262.415039
+2025-07-08 23:29:03,639 - INFO - Audio detected: level=231.254883
+2025-07-08 23:29:03,658 - INFO - Audio detected: level=257.176758
+2025-07-08 23:29:03,689 - INFO - Audio detected: level=136.952148
+2025-07-08 23:29:03,710 - INFO - Audio detected: level=162.422852
+2025-07-08 23:29:03,729 - INFO - Audio detected: level=129.540039
+2025-07-08 23:29:03,760 - INFO - Audio detected: level=88.446289
+2025-07-08 23:29:03,779 - INFO - Audio detected: level=71.977539
+2025-07-08 23:29:03,799 - INFO - Audio detected: level=69.983398
+2025-07-08 23:29:03,828 - INFO - Audio detected: level=48.798828
+2025-07-08 23:29:03,849 - INFO - Audio detected: level=47.737305
+2025-07-08 23:29:03,869 - INFO - Audio detected: level=54.734375
+2025-07-08 23:29:03,889 - INFO - Audio detected: level=38.175781
+2025-07-08 23:29:03,920 - INFO - Audio detected: level=35.631836
+2025-07-08 23:29:03,938 - INFO - Audio detected: level=41.461914
+2025-07-08 23:29:03,959 - INFO - Audio detected: level=36.552734
+2025-07-08 23:29:03,989 - INFO - Audio detected: level=40.274414
+2025-07-08 23:29:04,009 - INFO - Audio detected: level=43.125977
+2025-07-08 23:29:04,029 - INFO - Audio detected: level=57.015625
+2025-07-08 23:29:04,058 - INFO - Audio detected: level=37.575195
+2025-07-08 23:29:04,079 - INFO - Audio detected: level=37.505859
+2025-07-08 23:29:04,099 - INFO - Audio detected: level=37.654297
+2025-07-08 23:29:04,129 - INFO - Audio detected: level=40.393555
+2025-07-08 23:29:04,149 - INFO - Audio detected: level=47.095703
+2025-07-08 23:29:04,168 - INFO - Audio detected: level=36.180664
+2025-07-08 23:29:04,199 - INFO - Audio detected: level=41.917969
+2025-07-08 23:29:04,219 - INFO - Audio detected: level=45.366211
+2025-07-08 23:29:04,239 - INFO - Audio detected: level=57.406250
+2025-07-08 23:29:04,269 - INFO - Audio detected: level=35.146484
+2025-07-08 23:29:04,289 - INFO - Audio detected: level=45.338867
+2025-07-08 23:29:04,310 - INFO - Audio detected: level=53.339844
+2025-07-08 23:29:04,339 - INFO - Audio detected: level=136.292969
+2025-07-08 23:29:04,359 - INFO - Audio detected: level=286.864258
+2025-07-08 23:29:04,378 - INFO - Audio detected: level=255.594727
+2025-07-08 23:29:04,409 - INFO - Audio detected: level=447.405273
+2025-07-08 23:29:04,429 - INFO - Audio detected: level=545.784180
+2025-07-08 23:29:04,449 - INFO - Audio detected: level=626.317383
+2025-07-08 23:29:04,479 - INFO - Audio detected: level=419.240234
+2025-07-08 23:29:04,499 - INFO - Audio detected: level=251.680664
+2025-07-08 23:29:04,520 - INFO - Audio detected: level=166.918945
+2025-07-08 23:29:04,538 - INFO - Audio detected: level=210.547852
+2025-07-08 23:29:04,568 - INFO - Audio detected: level=174.510742
+2025-07-08 23:29:04,590 - INFO - Audio detected: level=441.081055
+2025-07-08 23:29:04,609 - INFO - Audio detected: level=716.650391
+2025-07-08 23:29:04,640 - INFO - Audio detected: level=1120.633789
+2025-07-08 23:29:04,659 - INFO - Audio detected: level=900.838867
+2025-07-08 23:29:04,679 - INFO - Audio detected: level=318.784180
+2025-07-08 23:29:04,709 - INFO - Audio detected: level=300.435547
+2025-07-08 23:29:04,728 - INFO - Audio detected: level=194.529297
+2025-07-08 23:29:04,749 - INFO - Audio detected: level=105.148438
+2025-07-08 23:29:04,778 - INFO - Audio detected: level=82.256836
+2025-07-08 23:29:04,800 - INFO - Audio detected: level=98.346680
+2025-07-08 23:29:04,819 - INFO - Audio detected: level=208.983398
+2025-07-08 23:29:04,848 - INFO - Audio detected: level=345.631836
+2025-07-08 23:29:04,869 - INFO - Audio detected: level=349.470703
+2025-07-08 23:29:04,889 - INFO - Audio detected: level=420.835938
+2025-07-08 23:29:04,919 - INFO - Audio detected: level=465.165039
+2025-07-08 23:29:04,939 - INFO - Audio detected: level=425.630859
+2025-07-08 23:29:04,959 - INFO - Audio callback called: level=307.778320, threshold=0.01
+2025-07-08 23:29:04,962 - INFO - Audio detected: level=307.778320
+2025-07-08 23:29:04,988 - INFO - Audio detected: level=177.458008
+2025-07-08 23:29:05,009 - INFO - Audio detected: level=184.312500
+2025-07-08 23:29:05,029 - INFO - Audio detected: level=184.046875
+2025-07-08 23:29:05,059 - INFO - Audio detected: level=371.446289
+2025-07-08 23:29:05,080 - INFO - Audio detected: level=505.839844
+2025-07-08 23:29:05,098 - INFO - Audio detected: level=454.386719
+2025-07-08 23:29:05,129 - INFO - Audio detected: level=645.746094
+2025-07-08 23:29:05,150 - INFO - Audio detected: level=444.871094
+2025-07-08 23:29:05,168 - INFO - Audio detected: level=231.332031
+2025-07-08 23:29:05,200 - INFO - Audio detected: level=153.160156
+2025-07-08 23:29:05,218 - INFO - Audio detected: level=182.964844
+2025-07-08 23:29:05,239 - INFO - Audio detected: level=137.724609
+2025-07-08 23:29:05,259 - INFO - Audio detected: level=102.814453
+2025-07-08 23:29:05,289 - INFO - Audio detected: level=142.393555
+2025-07-08 23:29:05,310 - INFO - Audio detected: level=192.703125
+2025-07-08 23:29:05,328 - INFO - Audio detected: level=193.777344
+2025-07-08 23:29:05,360 - INFO - Audio detected: level=188.835938
+2025-07-08 23:29:05,379 - INFO - Audio detected: level=385.769531
+2025-07-08 23:29:05,400 - INFO - Audio detected: level=450.500000
+2025-07-08 23:29:05,429 - INFO - Audio detected: level=307.062500
+2025-07-08 23:29:05,448 - INFO - Audio detected: level=314.418945
+2025-07-08 23:29:05,468 - INFO - Audio detected: level=353.416992
+2025-07-08 23:29:05,498 - INFO - Audio detected: level=208.973633
+2025-07-08 23:29:05,519 - INFO - Audio detected: level=170.827148
+2025-07-08 23:29:05,539 - INFO - Audio detected: level=298.642578
+2025-07-08 23:29:05,569 - INFO - Audio detected: level=200.180664
+2025-07-08 23:29:05,589 - INFO - Audio detected: level=151.974609
+2025-07-08 23:29:05,608 - INFO - Audio detected: level=172.945312
+2025-07-08 23:29:05,640 - INFO - Audio detected: level=111.291992
+2025-07-08 23:29:05,659 - INFO - Audio detected: level=78.954102
+2025-07-08 23:29:05,679 - INFO - Audio detected: level=72.916016
+2025-07-08 23:29:05,710 - INFO - Audio detected: level=66.227539
+2025-07-08 23:29:05,728 - INFO - Audio detected: level=81.795898
+2025-07-08 23:29:05,749 - INFO - Audio detected: level=58.334961
+2025-07-08 23:29:05,779 - INFO - Audio detected: level=61.080078
+2025-07-08 23:29:05,799 - INFO - Audio detected: level=49.718750
+2025-07-08 23:29:05,818 - INFO - Audio detected: level=60.734375
+2025-07-08 23:29:05,849 - INFO - Audio detected: level=387.421875
+2025-07-08 23:29:05,874 - INFO - Audio detected: level=492.248047
+2025-07-08 23:29:05,889 - INFO - Audio detected: level=288.662109
+2025-07-08 23:29:05,908 - INFO - Audio detected: level=235.461914
+2025-07-08 23:29:05,939 - INFO - Audio detected: level=149.723633
+2025-07-08 23:29:05,960 - INFO - Audio detected: level=145.084961
+2025-07-08 23:29:05,979 - INFO - Audio detected: level=239.425781
+2025-07-08 23:29:06,009 - INFO - Audio detected: level=373.420898
+2025-07-08 23:29:06,030 - INFO - Audio detected: level=351.645508
+2025-07-08 23:29:06,049 - INFO - Audio detected: level=381.577148
+2025-07-08 23:29:06,080 - INFO - Audio detected: level=327.570312
+2025-07-08 23:29:06,099 - INFO - Audio detected: level=259.098633
+2025-07-08 23:29:06,119 - INFO - Audio detected: level=144.244141
+2025-07-08 23:29:06,150 - INFO - Audio detected: level=84.841797
+2025-07-08 23:29:06,168 - INFO - Audio detected: level=118.862305
+2025-07-08 23:29:06,189 - INFO - Audio detected: level=132.912109
+2025-07-08 23:29:06,218 - INFO - Audio detected: level=103.454102
+2025-07-08 23:29:06,240 - INFO - Audio detected: level=466.764648
+2025-07-08 23:29:06,259 - INFO - Audio detected: level=525.229492
+2025-07-08 23:29:06,288 - INFO - Audio detected: level=553.783203
+2025-07-08 23:29:06,309 - INFO - Audio detected: level=358.241211
+2025-07-08 23:29:06,328 - INFO - Audio detected: level=217.012695
+2025-07-08 23:29:06,360 - INFO - Audio detected: level=150.735352
+2025-07-08 23:29:06,378 - INFO - Audio detected: level=131.891602
+2025-07-08 23:29:06,400 - INFO - Audio detected: level=103.732422
+2025-07-08 23:29:06,428 - INFO - Audio detected: level=77.040039
+2025-07-08 23:29:06,448 - INFO - Audio detected: level=48.789062
+2025-07-08 23:29:06,469 - INFO - Audio detected: level=54.893555
+2025-07-08 23:29:06,499 - INFO - Audio detected: level=72.155273
+2025-07-08 23:29:06,519 - INFO - Audio detected: level=76.705078
+2025-07-08 23:29:06,539 - INFO - Audio detected: level=58.637695
+2025-07-08 23:29:06,569 - INFO - Audio detected: level=82.496094
+2025-07-08 23:29:06,590 - INFO - Audio detected: level=148.708984
+2025-07-08 23:29:06,608 - INFO - Audio detected: level=179.501953
+2025-07-08 23:29:06,629 - INFO - Audio detected: level=271.520508
+2025-07-08 23:29:06,658 - INFO - Audio detected: level=282.557617
+2025-07-08 23:29:06,680 - INFO - Audio detected: level=243.821289
+2025-07-08 23:29:06,698 - INFO - Audio detected: level=334.512695
+2025-07-08 23:29:06,729 - INFO - Audio detected: level=366.965820
+2025-07-08 23:29:06,750 - INFO - Audio detected: level=555.600586
+2025-07-08 23:29:06,768 - INFO - Audio detected: level=437.008789
+2025-07-08 23:29:06,800 - INFO - Audio detected: level=345.500000
+2025-07-08 23:29:06,818 - INFO - Audio detected: level=286.830078
+2025-07-08 23:29:06,840 - INFO - Audio detected: level=122.149414
+2025-07-08 23:29:06,869 - INFO - Audio detected: level=100.500000
+2025-07-08 23:29:06,888 - INFO - Audio detected: level=232.903320
+2025-07-08 23:29:06,909 - INFO - Audio detected: level=440.893555
+2025-07-08 23:29:06,939 - INFO - Audio detected: level=428.672852
+2025-07-08 23:29:06,960 - INFO - Audio detected: level=280.976562
+2025-07-08 23:29:06,979 - INFO - Audio detected: level=277.152344
+2025-07-08 23:29:07,009 - INFO - Audio detected: level=198.451172
+2025-07-08 23:29:07,029 - INFO - Audio detected: level=183.863281
+2025-07-08 23:29:07,049 - INFO - Audio detected: level=163.434570
+2025-07-08 23:29:07,080 - INFO - Audio detected: level=134.833984
+2025-07-08 23:29:07,099 - INFO - Audio detected: level=181.897461
+2025-07-08 23:29:07,120 - INFO - Audio detected: level=186.459961
+2025-07-08 23:29:07,149 - INFO - Audio detected: level=142.740234
+2025-07-08 23:29:07,169 - INFO - Audio detected: level=124.496094
+2025-07-08 23:29:07,188 - INFO - Audio detected: level=110.691406
+2025-07-08 23:29:07,218 - INFO - Audio detected: level=70.024414
+2025-07-08 23:29:07,240 - INFO - Audio detected: level=46.216797
+2025-07-08 23:29:07,259 - INFO - Audio detected: level=52.748047
+2025-07-08 23:29:07,280 - INFO - Audio callback called: level=46.616211, threshold=0.01
+2025-07-08 23:29:07,281 - INFO - Audio detected: level=46.616211
+2025-07-08 23:29:07,304 - INFO - Cleaning up...
+2025-07-08 23:29:07,308 - INFO - Audio detected: level=54.979492
+2025-07-08 23:29:07,347 - INFO - Cleanup complete
+2025-07-08 23:32:43,784 - INFO - Starting Pro STS Voice Changer...
+2025-07-08 23:32:43,784 - INFO - Initializing Pro features...
+2025-07-08 23:32:43,784 - INFO - Testing Pro capabilities...
+2025-07-08 23:32:45,325 - INFO - Subscription: pro
+2025-07-08 23:32:45,325 - INFO - Character count: 168317
+2025-07-08 23:32:45,325 - INFO - Character limit: 501069
+2025-07-08 23:32:45,553 - INFO - Available Turbo models: 2
+2025-07-08 23:32:45,553 - INFO -   - Eleven Turbo v2.5 (eleven_turbo_v2_5)
+2025-07-08 23:32:45,553 - INFO -   - Eleven Turbo v2 (eleven_turbo_v2)
+2025-07-08 23:32:45,554 - INFO - Initializing voice cloning...
+2025-07-08 23:32:46,027 - INFO - No existing voice clone found. You can create one via the ElevenLabs dashboard.
+2025-07-08 23:32:46,028 - INFO - Setting up WebSocket connection...
+2025-07-08 23:32:46,029 - INFO - Using HTTP streaming (WebSocket not yet available)
+2025-07-08 23:32:46,029 - INFO - Pro features initialized successfully
+2025-07-08 23:32:46,029 - INFO - Starting audio capture...
+2025-07-08 23:32:46,030 - INFO - Starting audio output...
+2025-07-08 23:32:46,030 - INFO - Starting audio stream processing...
+2025-07-08 23:32:46,348 - INFO - Audio callback called: level=0.218750, threshold=0.01
+2025-07-08 23:32:46,838 - INFO - Audio detected: level=55.844727
+2025-07-08 23:32:46,858 - INFO - Audio detected: level=97.959961
+2025-07-08 23:32:46,879 - INFO - Audio detected: level=81.847656
+2025-07-08 23:32:46,908 - INFO - Audio detected: level=101.092773
+2025-07-08 23:32:46,928 - INFO - Audio detected: level=98.958984
+2025-07-08 23:32:46,978 - INFO - Audio detected: level=75.793945
+2025-07-08 23:32:46,998 - INFO - Audio detected: level=95.691406
+2025-07-08 23:32:47,017 - INFO - Audio detected: level=172.253906
+2025-07-08 23:32:47,048 - INFO - Audio detected: level=269.487305
+2025-07-08 23:32:47,069 - INFO - Audio detected: level=286.190430
+2025-07-08 23:32:47,088 - INFO - Audio detected: level=199.791992
+2025-07-08 23:32:47,120 - INFO - Audio detected: level=128.916992
+2025-07-08 23:32:47,137 - INFO - Audio detected: level=96.111328
+2025-07-08 23:32:47,158 - INFO - Audio detected: level=99.825195
+2025-07-08 23:32:47,178 - INFO - Audio detected: level=70.209961
+2025-07-08 23:32:47,208 - INFO - Audio detected: level=71.759766
+2025-07-08 23:32:47,228 - INFO - Audio detected: level=50.298828
+2025-07-08 23:32:47,248 - INFO - Audio detected: level=51.122070
+2025-07-08 23:32:47,418 - INFO - Audio detected: level=64.751953
+2025-07-08 23:32:47,438 - INFO - Audio detected: level=141.748047
+2025-07-08 23:32:47,459 - INFO - Audio detected: level=117.069336
+2025-07-08 23:32:47,489 - INFO - Audio detected: level=233.511719
+2025-07-08 23:32:47,508 - INFO - Audio detected: level=227.975586
+2025-07-08 23:32:47,528 - INFO - Audio detected: level=360.625977
+2025-07-08 23:32:47,558 - INFO - Audio detected: level=479.555664
+2025-07-08 23:32:47,578 - INFO - Audio detected: level=385.239258
+2025-07-08 23:32:47,599 - INFO - Audio detected: level=325.607422
+2025-07-08 23:32:47,627 - INFO - Audio detected: level=335.117188
+2025-07-08 23:32:47,648 - INFO - Audio detected: level=194.270508
+2025-07-08 23:32:47,668 - INFO - Audio detected: level=135.796875
+2025-07-08 23:32:47,698 - INFO - Audio detected: level=183.782227
+2025-07-08 23:32:47,718 - INFO - Audio detected: level=161.160156
+2025-07-08 23:32:47,738 - INFO - Audio detected: level=239.324219
+2025-07-08 23:32:47,768 - INFO - Audio detected: level=354.554688
+2025-07-08 23:32:47,788 - INFO - Audio detected: level=487.285156
+2025-07-08 23:32:47,808 - INFO - Audio detected: level=522.349609
+2025-07-08 23:32:47,828 - INFO - Audio detected: level=336.984375
+2025-07-08 23:32:47,859 - INFO - Audio detected: level=350.097656
+2025-07-08 23:32:47,878 - INFO - Audio detected: level=284.391602
+2025-07-08 23:32:47,898 - INFO - Audio detected: level=191.821289
+2025-07-08 23:32:47,928 - INFO - Audio detected: level=110.255859
+2025-07-08 23:32:47,948 - INFO - Audio detected: level=131.397461
+2025-07-08 23:32:47,968 - INFO - Audio detected: level=67.888672
+2025-07-08 23:32:47,999 - INFO - Audio detected: level=60.731445
+2025-07-08 23:32:48,017 - INFO - Audio detected: level=65.673828
+2025-07-08 23:32:48,038 - INFO - Audio detected: level=61.142578
+2025-07-08 23:32:48,068 - INFO - Audio detected: level=90.820312
+2025-07-08 23:32:48,089 - INFO - Audio detected: level=76.800781
+2025-07-08 23:32:48,108 - INFO - Audio detected: level=88.327148
+2025-07-08 23:32:48,139 - INFO - Audio detected: level=99.466797
+2025-07-08 23:32:48,157 - INFO - Audio detected: level=114.326172
+2025-07-08 23:32:48,178 - INFO - Audio detected: level=126.875000
+2025-07-08 23:32:48,208 - INFO - Audio detected: level=113.759766
+2025-07-08 23:32:48,228 - INFO - Audio detected: level=98.442383
+2025-07-08 23:32:48,248 - INFO - Audio detected: level=140.757812
+2025-07-08 23:32:48,278 - INFO - Audio detected: level=121.509766
+2025-07-08 23:32:48,298 - INFO - Audio detected: level=108.871094
+2025-07-08 23:32:48,318 - INFO - Audio detected: level=103.928711
+2025-07-08 23:32:48,348 - INFO - Audio detected: level=86.377930
+2025-07-08 23:32:48,438 - INFO - Audio detected: level=53.288086
+2025-07-08 23:32:48,509 - INFO - Audio detected: level=60.716797
+2025-07-08 23:32:48,528 - INFO - Audio detected: level=124.764648
+2025-07-08 23:32:48,548 - INFO - Audio detected: level=145.978516
+2025-07-08 23:32:48,580 - INFO - Audio detected: level=156.855469
+2025-07-08 23:32:48,599 - INFO - Audio detected: level=152.846680
+2025-07-08 23:32:48,618 - INFO - Audio detected: level=229.850586
+2025-07-08 23:32:48,648 - INFO - Audio detected: level=315.968750
+2025-07-08 23:32:48,668 - INFO - Audio callback called: level=202.288086, threshold=0.01
+2025-07-08 23:32:48,668 - INFO - Audio detected: level=202.288086
+2025-07-08 23:32:48,687 - INFO - Audio detected: level=239.481445
+2025-07-08 23:32:48,718 - INFO - Audio detected: level=219.351562
+2025-07-08 23:32:48,739 - INFO - Audio detected: level=311.116211
+2025-07-08 23:32:48,758 - INFO - Audio detected: level=231.875977
+2025-07-08 23:32:48,788 - INFO - Audio detected: level=348.198242
+2025-07-08 23:32:48,808 - INFO - Audio detected: level=174.172852
+2025-07-08 23:32:48,828 - INFO - Audio detected: level=188.888672
+2025-07-08 23:32:48,858 - INFO - Audio detected: level=129.171875
+2025-07-08 23:32:48,878 - INFO - Audio detected: level=79.754883
+2025-07-08 23:32:48,899 - INFO - Audio detected: level=98.930664
+2025-07-08 23:32:49,018 - INFO - Audio detected: level=191.967773
+2025-07-08 23:32:49,039 - INFO - Audio detected: level=224.791016
+2025-07-08 23:32:49,068 - INFO - Audio detected: level=271.163086
+2025-07-08 23:32:49,089 - INFO - Audio detected: level=244.094727
+2025-07-08 23:32:49,108 - INFO - Audio detected: level=172.824219
+2025-07-08 23:32:49,139 - INFO - Audio detected: level=597.351562
+2025-07-08 23:32:49,158 - INFO - Audio detected: level=789.788086
+2025-07-08 23:32:49,178 - INFO - Audio detected: level=669.019531
+2025-07-08 23:32:49,198 - INFO - Audio detected: level=523.130859
+2025-07-08 23:32:49,228 - INFO - Audio detected: level=305.674805
+2025-07-08 23:32:49,249 - INFO - Audio detected: level=205.687500
+2025-07-08 23:32:49,268 - INFO - Audio detected: level=115.062500
+2025-07-08 23:32:49,298 - INFO - Audio detected: level=93.762695
+2025-07-08 23:32:49,318 - INFO - Audio detected: level=98.702148
+2025-07-08 23:32:49,339 - INFO - Audio detected: level=113.075195
+2025-07-08 23:32:49,368 - INFO - Audio detected: level=103.368164
+2025-07-08 23:32:49,388 - INFO - Audio detected: level=139.545898
+2025-07-08 23:32:49,409 - INFO - Audio detected: level=65.430664
+2025-07-08 23:32:49,438 - INFO - Audio detected: level=58.697266
+2025-07-08 23:32:49,460 - INFO - Audio detected: level=68.890625
+2025-07-08 23:32:49,478 - INFO - Audio detected: level=53.124023
+2025-07-08 23:32:49,528 - INFO - Audio detected: level=75.026367
+2025-07-08 23:32:49,549 - INFO - Audio detected: level=130.670898
+2025-07-08 23:32:49,578 - INFO - Audio detected: level=184.636719
+2025-07-08 23:32:49,598 - INFO - Audio detected: level=228.372070
+2025-07-08 23:32:49,619 - INFO - Audio detected: level=164.372070
+2025-07-08 23:32:49,650 - INFO - Audio detected: level=154.278320
+2025-07-08 23:32:49,668 - INFO - Audio detected: level=120.518555
+2025-07-08 23:32:49,758 - INFO - Audio detected: level=60.208008
+2025-07-08 23:32:49,878 - INFO - Audio detected: level=65.032227
+2025-07-08 23:32:49,899 - INFO - Audio detected: level=190.801758
+2025-07-08 23:32:49,918 - INFO - Audio detected: level=153.799805
+2025-07-08 23:32:49,949 - INFO - Audio detected: level=84.175781
+2025-07-08 23:32:49,968 - INFO - Audio detected: level=73.036133
+2025-07-08 23:32:50,018 - INFO - Audio detected: level=96.850586
+2025-07-08 23:32:50,038 - INFO - Audio detected: level=190.829102
+2025-07-08 23:32:50,059 - INFO - Audio detected: level=155.798828
+2025-07-08 23:32:50,088 - INFO - Audio detected: level=78.957031
+2025-07-08 23:32:50,128 - INFO - Audio detected: level=52.833008
+2025-07-08 23:32:50,158 - INFO - Audio detected: level=54.910156
+2025-07-08 23:32:50,179 - INFO - Audio detected: level=69.871094
+2025-07-08 23:32:50,228 - INFO - Audio detected: level=54.517578
+2025-07-08 23:32:50,248 - INFO - Audio detected: level=55.689453
+2025-07-08 23:32:50,268 - INFO - Audio detected: level=61.154297
+2025-07-08 23:32:50,299 - INFO - Audio detected: level=59.183594
+2025-07-08 23:32:50,318 - INFO - Audio detected: level=65.351562
+2025-07-08 23:32:50,338 - INFO - Audio detected: level=99.795898
+2025-07-08 23:32:50,368 - INFO - Audio detected: level=52.278320
+2025-07-08 23:32:50,508 - INFO - Audio detected: level=88.313477
+2025-07-08 23:32:50,528 - INFO - Audio detected: level=73.777344
+2025-07-08 23:32:50,617 - INFO - Audio detected: level=52.739258
+2025-07-08 23:32:50,639 - INFO - Audio detected: level=51.777344
+2025-07-08 23:32:50,669 - INFO - Audio detected: level=59.923828
+2025-07-08 23:32:50,738 - INFO - Audio detected: level=94.547852
+2025-07-08 23:32:50,758 - INFO - Audio detected: level=101.854492
+2025-07-08 23:32:50,778 - INFO - Audio detected: level=68.539062
+2025-07-08 23:32:50,808 - INFO - Audio detected: level=61.786133
+2025-07-08 23:32:50,808 - INFO - Cleaning up...
+2025-07-08 23:32:50,921 - INFO - Cleanup complete
+2025-07-08 23:34:25,151 - INFO - Starting Pro STS Voice Changer...
+2025-07-08 23:34:25,151 - INFO - Initializing Pro features...
+2025-07-08 23:34:25,151 - INFO - Testing Pro capabilities...
+2025-07-08 23:34:26,652 - INFO - Subscription: pro
+2025-07-08 23:34:26,652 - INFO - Character count: 168317
+2025-07-08 23:34:26,653 - INFO - Character limit: 501069
+2025-07-08 23:34:26,879 - INFO - Available Turbo models: 2
+2025-07-08 23:34:26,879 - INFO -   - Eleven Turbo v2.5 (eleven_turbo_v2_5)
+2025-07-08 23:34:26,880 - INFO -   - Eleven Turbo v2 (eleven_turbo_v2)
+2025-07-08 23:34:26,882 - INFO - Initializing voice cloning...
+2025-07-08 23:34:27,299 - INFO - No existing voice clone found. You can create one via the ElevenLabs dashboard.
+2025-07-08 23:34:27,300 - INFO - Setting up WebSocket connection...
+2025-07-08 23:34:27,301 - INFO - Using HTTP streaming (WebSocket not yet available)
+2025-07-08 23:34:27,301 - INFO - Pro features initialized successfully
+2025-07-08 23:34:27,303 - INFO - Starting audio capture...
+2025-07-08 23:34:27,306 - INFO - Starting audio output...
+2025-07-08 23:34:27,310 - INFO - Starting audio stream processing...
+2025-07-08 23:34:27,697 - INFO - Audio callback called: level=0.218750, threshold=30
+2025-07-08 23:34:27,697 - INFO - Silence started at: 1752006867.6974115
+2025-07-08 23:34:28,187 - INFO - Audio detected: level=134.208008
+2025-07-08 23:34:28,206 - INFO - Audio detected: level=258.550781
+2025-07-08 23:34:28,226 - INFO - Audio detected: level=179.608398
+2025-07-08 23:34:28,256 - INFO - Audio detected: level=163.925781
+2025-07-08 23:34:28,278 - INFO - Audio detected: level=158.535156
+2025-07-08 23:34:28,296 - INFO - Audio detected: level=91.360352
+2025-07-08 23:34:28,326 - INFO - Audio detected: level=85.318359
+2025-07-08 23:34:28,347 - INFO - Audio detected: level=60.109375
+2025-07-08 23:34:28,366 - INFO - Audio detected: level=52.433594
+2025-07-08 23:34:28,398 - INFO - Audio detected: level=73.053711
+2025-07-08 23:34:28,416 - INFO - Audio detected: level=91.674805
+2025-07-08 23:34:28,437 - INFO - Audio detected: level=130.914062
+2025-07-08 23:34:28,468 - INFO - Audio detected: level=133.352539
+2025-07-08 23:34:28,487 - INFO - Audio detected: level=316.299805
+2025-07-08 23:34:28,507 - INFO - Audio detected: level=275.476562
+2025-07-08 23:34:28,527 - INFO - Audio detected: level=251.919922
+2025-07-08 23:34:28,557 - INFO - Audio detected: level=159.404297
+2025-07-08 23:34:28,576 - INFO - Audio detected: level=201.265625
+2025-07-08 23:34:28,597 - INFO - Audio detected: level=281.352539
+2025-07-08 23:34:28,627 - INFO - Audio detected: level=660.931641
+2025-07-08 23:34:28,646 - INFO - Audio detected: level=904.030273
+2025-07-08 23:34:28,668 - INFO - Audio detected: level=819.886719
+2025-07-08 23:34:28,697 - INFO - Audio detected: level=911.546875
+2025-07-08 23:34:28,718 - INFO - Audio detected: level=966.206055
+2025-07-08 23:34:28,736 - INFO - Audio detected: level=424.055664
+2025-07-08 23:34:28,766 - INFO - Audio detected: level=461.425781
+2025-07-08 23:34:28,787 - INFO - Audio detected: level=459.617188
+2025-07-08 23:34:28,807 - INFO - Audio detected: level=340.500977
+2025-07-08 23:34:28,838 - INFO - Audio detected: level=483.748047
+2025-07-08 23:34:28,857 - INFO - Audio detected: level=545.835938
+2025-07-08 23:34:28,878 - INFO - Audio detected: level=534.615234
+2025-07-08 23:34:28,906 - INFO - Audio detected: level=561.499023
+2025-07-08 23:34:28,926 - INFO - Audio detected: level=344.359375
+2025-07-08 23:34:28,946 - INFO - Audio detected: level=232.214844
+2025-07-08 23:34:28,977 - INFO - Audio detected: level=168.248047
+2025-07-08 23:34:28,998 - INFO - Audio detected: level=83.929688
+2025-07-08 23:34:29,017 - INFO - Audio detected: level=67.267578
+2025-07-08 23:34:29,047 - INFO - Audio detected: level=59.647461
+2025-07-08 23:34:29,067 - INFO - Audio detected: level=55.853516
+2025-07-08 23:34:29,086 - INFO - Audio detected: level=143.565430
+2025-07-08 23:34:29,118 - INFO - Audio detected: level=195.970703
+2025-07-08 23:34:29,136 - INFO - Audio detected: level=462.581055
+2025-07-08 23:34:29,158 - INFO - Audio detected: level=322.812500
+2025-07-08 23:34:29,177 - INFO - Audio detected: level=614.821289
+2025-07-08 23:34:29,206 - INFO - Audio detected: level=704.458984
+2025-07-08 23:34:29,227 - INFO - Audio detected: level=541.563477
+2025-07-08 23:34:29,247 - INFO - Audio detected: level=353.822266
+2025-07-08 23:34:29,278 - INFO - Audio detected: level=385.288086
+2025-07-08 23:34:29,296 - INFO - Audio detected: level=353.551758
+2025-07-08 23:34:29,318 - INFO - Audio detected: level=294.095703
+2025-07-08 23:34:29,346 - INFO - Audio detected: level=347.565430
+2025-07-08 23:34:29,366 - INFO - Audio detected: level=600.751953
+2025-07-08 23:34:29,387 - INFO - Audio detected: level=598.626953
+2025-07-08 23:34:29,417 - INFO - Audio detected: level=573.666016
+2025-07-08 23:34:29,438 - INFO - Audio detected: level=695.138672
+2025-07-08 23:34:29,457 - INFO - Audio detected: level=278.543945
+2025-07-08 23:34:29,486 - INFO - Audio detected: level=349.606445
+2025-07-08 23:34:29,507 - INFO - Audio detected: level=234.473633
+2025-07-08 23:34:29,526 - INFO - Audio detected: level=137.383789
+2025-07-08 23:34:29,558 - INFO - Audio detected: level=154.452148
+2025-07-08 23:34:29,576 - INFO - Audio detected: level=189.306641
+2025-07-08 23:34:29,598 - INFO - Audio detected: level=288.786133
+2025-07-08 23:34:29,627 - INFO - Audio detected: level=208.619141
+2025-07-08 23:34:29,647 - INFO - Audio detected: level=262.014648
+2025-07-08 23:34:29,667 - INFO - Audio detected: level=166.791016
+2025-07-08 23:34:29,696 - INFO - Audio detected: level=125.483398
+2025-07-08 23:34:29,718 - INFO - Audio detected: level=90.135742
+2025-07-08 23:34:29,736 - INFO - Audio detected: level=77.172852
+2025-07-08 23:34:29,766 - INFO - Audio detected: level=53.079102
+2025-07-08 23:34:29,787 - INFO - Audio detected: level=50.848633
+2025-07-08 23:34:29,807 - INFO - Audio detected: level=55.570312
+2025-07-08 23:34:29,839 - INFO - Audio detected: level=35.825195
+2025-07-08 23:34:29,857 - INFO - Audio detected: level=67.954102
+2025-07-08 23:34:29,878 - INFO - Audio detected: level=52.512695
+2025-07-08 23:34:29,897 - INFO - Audio detected: level=37.663086
+2025-07-08 23:34:29,926 - INFO - Audio detected: level=30.610352
+2025-07-08 23:34:29,947 - INFO - Audio detected: level=62.984375
+2025-07-08 23:34:29,967 - INFO - Audio detected: level=52.866211
+2025-07-08 23:34:29,998 - INFO - Audio detected: level=84.053711
+2025-07-08 23:34:30,016 - INFO - Audio callback called: level=93.403320, threshold=30
+2025-07-08 23:34:30,016 - INFO - Audio detected: level=93.403320
+2025-07-08 23:34:30,038 - INFO - Audio detected: level=145.639648
+2025-07-08 23:34:30,067 - INFO - Audio detected: level=166.522461
+2025-07-08 23:34:30,086 - INFO - Audio detected: level=125.052734
+2025-07-08 23:34:30,107 - INFO - Audio detected: level=103.686523
+2025-07-08 23:34:30,137 - INFO - Audio detected: level=125.599609
+2025-07-08 23:34:30,158 - INFO - Audio detected: level=256.450195
+2025-07-08 23:34:30,176 - INFO - Audio detected: level=524.300781
+2025-07-08 23:34:30,206 - INFO - Audio detected: level=629.001953
+2025-07-08 23:34:30,227 - INFO - Audio detected: level=564.458984
+2025-07-08 23:34:30,247 - INFO - Audio detected: level=461.082031
+2025-07-08 23:34:30,278 - INFO - Audio detected: level=417.144531
+2025-07-08 23:34:30,297 - INFO - Audio detected: level=275.667969
+2025-07-08 23:34:30,317 - INFO - Audio detected: level=319.751953
+2025-07-08 23:34:30,346 - INFO - Audio detected: level=163.972656
+2025-07-08 23:34:30,366 - INFO - Audio detected: level=204.699219
+2025-07-08 23:34:30,415 - INFO - Audio detected: level=278.897461
+2025-07-08 23:34:30,418 - INFO - Audio detected: level=222.258789
+2025-07-08 23:34:30,436 - INFO - Audio detected: level=196.621094
+2025-07-08 23:34:30,458 - INFO - Audio detected: level=113.791016
+2025-07-08 23:34:30,488 - INFO - Audio detected: level=71.664062
+2025-07-08 23:34:30,506 - INFO - Audio detected: level=56.382812
+2025-07-08 23:34:30,528 - INFO - Audio detected: level=57.078125
+2025-07-08 23:34:30,546 - INFO - Audio detected: level=43.119141
+2025-07-08 23:34:30,577 - INFO - Audio detected: level=36.854492
+2025-07-08 23:34:30,598 - INFO - Audio detected: level=45.141602
+2025-07-08 23:34:30,617 - INFO - Audio detected: level=102.528320
+2025-07-08 23:34:30,646 - INFO - Audio detected: level=169.408203
+2025-07-08 23:34:30,666 - INFO - Audio detected: level=140.935547
+2025-07-08 23:34:30,686 - INFO - Audio detected: level=266.841797
+2025-07-08 23:34:30,717 - INFO - Audio detected: level=320.098633
+2025-07-08 23:34:30,736 - INFO - Audio detected: level=213.164062
+2025-07-08 23:34:30,758 - INFO - Audio detected: level=248.403320
+2025-07-08 23:34:30,820 - INFO - Audio detected: level=281.121094
+2025-07-08 23:34:30,824 - INFO - Audio detected: level=180.636719
+2025-07-08 23:34:30,828 - INFO - Audio detected: level=265.371094
+2025-07-08 23:34:30,856 - INFO - Audio detected: level=224.148438
+2025-07-08 23:34:30,878 - INFO - Audio detected: level=262.922852
+2025-07-08 23:34:30,897 - INFO - Audio detected: level=272.006836
+2025-07-08 23:34:30,927 - INFO - Audio detected: level=285.989258
+2025-07-08 23:34:30,947 - INFO - Audio detected: level=288.637695
+2025-07-08 23:34:30,966 - INFO - Audio detected: level=239.824219
+2025-07-08 23:34:30,998 - INFO - Audio detected: level=126.044922
+2025-07-08 23:34:31,016 - INFO - Audio detected: level=100.569336
+2025-07-08 23:34:31,036 - INFO - Audio detected: level=85.065430
+2025-07-08 23:34:31,066 - INFO - Audio detected: level=99.520508
+2025-07-08 23:34:31,087 - INFO - Audio detected: level=110.303711
+2025-07-08 23:34:31,107 - INFO - Audio detected: level=84.703125
+2025-07-08 23:34:31,137 - INFO - Audio detected: level=90.929688
+2025-07-08 23:34:31,158 - INFO - Audio detected: level=82.469727
+2025-07-08 23:34:31,177 - INFO - Audio detected: level=77.516602
+2025-07-08 23:34:31,207 - INFO - Audio detected: level=70.553711
+2025-07-08 23:34:31,227 - INFO - Audio detected: level=50.932617
+2025-07-08 23:34:31,246 - INFO - Audio detected: level=41.294922
+2025-07-08 23:34:31,267 - INFO - Audio detected: level=33.708008
+2025-07-08 23:34:31,297 - INFO - Audio detected: level=36.997070
+2025-07-08 23:34:31,316 - INFO - Audio detected: level=40.458984
+2025-07-08 23:34:31,336 - INFO - Audio detected: level=38.757812
+2025-07-08 23:34:31,367 - INFO - Audio detected: level=39.696289
+2025-07-08 23:34:31,388 - INFO - Audio detected: level=39.020508
+2025-07-08 23:34:31,407 - INFO - Silence started at: 1752006871.4078104
+2025-07-08 23:34:31,436 - INFO - Audio detected: level=30.884766
+2025-07-08 23:34:31,457 - INFO - Audio detected: level=31.635742
+2025-07-08 23:34:31,476 - INFO - Silence started at: 1752006871.4764242
+2025-07-08 23:34:31,507 - INFO - Audio detected: level=35.831055
+2025-07-08 23:34:31,527 - INFO - Audio detected: level=35.008789
+2025-07-08 23:34:31,548 - INFO - Audio detected: level=34.330078
+2025-07-08 23:34:31,577 - INFO - Audio detected: level=31.298828
+2025-07-08 23:34:31,597 - INFO - Audio detected: level=31.237305
+2025-07-08 23:34:31,622 - INFO - Silence started at: 1752006871.6227663
+2025-07-08 23:34:31,648 - INFO - Audio detected: level=39.562500
+2025-07-08 23:34:31,688 - INFO - Audio detected: level=49.827148
+2025-07-08 23:34:31,702 - INFO - Audio detected: level=36.876953
+2025-07-08 23:34:31,728 - INFO - Audio detected: level=41.436523
+2025-07-08 23:34:31,769 - INFO - Audio detected: level=37.171875
+2025-07-08 23:34:31,790 - INFO - Audio detected: level=44.449219
+2025-07-08 23:34:31,793 - INFO - Silence started at: 1752006871.793337
+2025-07-08 23:34:31,808 - INFO - Audio detected: level=46.215820
+2025-07-08 23:34:31,848 - INFO - Audio detected: level=52.626953
+2025-07-08 23:34:31,857 - INFO - Audio detected: level=36.337891
+2025-07-08 23:34:31,877 - INFO - Silence started at: 1752006871.8775635
+2025-07-08 23:34:31,917 - INFO - Audio detected: level=38.792969
+2025-07-08 23:34:31,947 - INFO - Audio detected: level=37.607422
+2025-07-08 23:34:31,966 - INFO - Audio detected: level=35.419922
+2025-07-08 23:34:31,987 - INFO - Audio detected: level=44.426758
+2025-07-08 23:34:32,021 - INFO - Audio detected: level=35.596680
+2025-07-08 23:34:32,038 - INFO - Audio detected: level=39.233398
+2025-07-08 23:34:32,058 - INFO - Audio detected: level=40.018555
+2025-07-08 23:34:32,087 - INFO - Audio detected: level=31.858398
+2025-07-08 23:34:32,107 - INFO - Audio detected: level=31.314453
+2025-07-08 23:34:32,127 - INFO - Silence started at: 1752006872.1270359
+2025-07-08 23:34:32,158 - INFO - Audio detected: level=31.307617
+2025-07-08 23:34:32,177 - INFO - Audio detected: level=33.292969
+2025-07-08 23:34:32,198 - INFO - Audio detected: level=33.983398
+2025-07-08 23:34:32,227 - INFO - Audio detected: level=34.442383
+2025-07-08 23:34:32,246 - INFO - Audio detected: level=36.486328
+2025-07-08 23:34:32,267 - INFO - Audio detected: level=40.538086
+2025-07-08 23:34:32,273 - INFO - Cleaning up...
+2025-07-08 23:34:32,358 - INFO - Cleanup complete
+2025-07-08 23:35:54,052 - INFO - Starting Pro STS Voice Changer...
+2025-07-08 23:35:54,052 - INFO - Initializing Pro features...
+2025-07-08 23:35:54,052 - INFO - Testing Pro capabilities...
+2025-07-08 23:35:55,399 - INFO - Subscription: pro
+2025-07-08 23:35:55,399 - INFO - Character count: 168317
+2025-07-08 23:35:55,399 - INFO - Character limit: 501069
+2025-07-08 23:35:55,631 - INFO - Available Turbo models: 2
+2025-07-08 23:35:55,632 - INFO -   - Eleven Turbo v2.5 (eleven_turbo_v2_5)
+2025-07-08 23:35:55,632 - INFO -   - Eleven Turbo v2 (eleven_turbo_v2)
+2025-07-08 23:35:55,634 - INFO - Initializing voice cloning...
+2025-07-08 23:35:56,170 - INFO - No existing voice clone found. You can create one via the ElevenLabs dashboard.
+2025-07-08 23:35:56,172 - INFO - Setting up WebSocket connection...
+2025-07-08 23:35:56,172 - INFO - Using HTTP streaming (WebSocket not yet available)
+2025-07-08 23:35:56,172 - INFO - Pro features initialized successfully
+2025-07-08 23:35:56,173 - INFO - Starting audio capture...
+2025-07-08 23:35:56,173 - INFO - Starting audio output...
+2025-07-08 23:35:56,179 - INFO - Starting audio stream processing...
+2025-07-08 23:35:56,577 - INFO - Audio callback called: level=0.218750, threshold=30
+2025-07-08 23:35:56,580 - INFO - Silence started at: 1752006956.5770824
+2025-07-08 23:35:56,945 - INFO - Audio detected: level=45.175781
+2025-07-08 23:35:56,946 - INFO - Phrase state: chunks=1, duration=0.00s, silence=0.00s
+2025-07-08 23:35:56,965 - INFO - Silence started at: 1752006956.9652238
+2025-07-08 23:35:57,034 - INFO - Audio detected: level=57.712891
+2025-07-08 23:35:57,065 - INFO - Audio detected: level=209.404297
+2025-07-08 23:35:57,085 - INFO - Audio detected: level=327.081055
+2025-07-08 23:35:57,105 - INFO - Audio detected: level=237.745117
+2025-07-08 23:35:57,137 - INFO - Audio detected: level=141.868164
+2025-07-08 23:35:57,156 - INFO - Audio detected: level=133.968750
+2025-07-08 23:35:57,177 - INFO - Audio detected: level=170.103516
+2025-07-08 23:35:57,205 - INFO - Audio detected: level=144.725586
+2025-07-08 23:35:57,225 - INFO - Audio detected: level=366.164062
+2025-07-08 23:35:57,245 - INFO - Audio detected: level=410.238281
+2025-07-08 23:35:57,275 - INFO - Audio detected: level=456.322266
+2025-07-08 23:35:57,297 - INFO - Audio detected: level=448.544922
+2025-07-08 23:35:57,315 - INFO - Audio detected: level=446.480469
+2025-07-08 23:35:57,345 - INFO - Audio detected: level=558.639648
+2025-07-08 23:35:57,366 - INFO - Audio detected: level=919.209961
+2025-07-08 23:35:57,385 - INFO - Audio detected: level=648.669922
+2025-07-08 23:35:57,406 - INFO - Audio detected: level=388.376953
+2025-07-08 23:35:57,435 - INFO - Audio detected: level=175.651367
+2025-07-08 23:35:57,457 - INFO - Audio detected: level=138.456055
+2025-07-08 23:35:57,476 - INFO - Audio detected: level=167.164062
+2025-07-08 23:35:57,505 - INFO - Audio detected: level=433.290039
+2025-07-08 23:35:57,525 - INFO - Audio detected: level=493.189453
+2025-07-08 23:35:57,545 - INFO - Audio detected: level=279.371094
+2025-07-08 23:35:57,577 - INFO - Audio detected: level=268.698242
+2025-07-08 23:35:57,595 - INFO - Audio detected: level=408.006836
+2025-07-08 23:35:57,617 - INFO - Audio detected: level=569.255859
+2025-07-08 23:35:57,645 - INFO - Audio detected: level=296.839844
+2025-07-08 23:35:57,665 - INFO - Audio detected: level=646.483398
+2025-07-08 23:35:57,686 - INFO - Audio detected: level=699.561523
+2025-07-08 23:35:57,716 - INFO - Audio detected: level=811.164062
+2025-07-08 23:35:57,737 - INFO - Audio detected: level=639.619141
+2025-07-08 23:35:57,755 - INFO - Audio detected: level=305.107422
+2025-07-08 23:35:57,785 - INFO - Audio detected: level=554.461914
+2025-07-08 23:35:57,806 - INFO - Audio detected: level=332.821289
+2025-07-08 23:35:57,825 - INFO - Audio detected: level=267.375977
+2025-07-08 23:35:57,857 - INFO - Audio detected: level=275.061523
+2025-07-08 23:35:57,876 - INFO - Audio detected: level=116.117188
+2025-07-08 23:35:57,897 - INFO - Audio detected: level=210.261719
+2025-07-08 23:35:57,925 - INFO - Audio detected: level=181.913086
+2025-07-08 23:35:57,945 - INFO - Audio detected: level=213.373047
+2025-07-08 23:35:57,965 - INFO - Audio detected: level=220.435547
+2025-07-08 23:35:57,995 - INFO - Audio detected: level=192.269531
+2025-07-08 23:35:58,016 - INFO - Audio detected: level=181.218750
+2025-07-08 23:35:58,035 - INFO - Audio detected: level=141.661133
+2025-07-08 23:35:58,056 - INFO - Audio detected: level=91.788086
+2025-07-08 23:35:58,085 - INFO - Audio detected: level=54.551758
+2025-07-08 23:35:58,105 - INFO - Audio detected: level=55.962891
+2025-07-08 23:35:58,125 - INFO - Audio detected: level=62.569336
+2025-07-08 23:35:58,155 - INFO - Audio detected: level=54.248047
+2025-07-08 23:35:58,176 - INFO - Audio detected: level=40.925781
+2025-07-08 23:35:58,178 - INFO - Phrase state: chunks=51, duration=1.23s, silence=0.00s
+2025-07-08 23:35:58,195 - INFO - Audio detected: level=39.709961
+2025-07-08 23:35:58,225 - INFO - Audio detected: level=47.932617
+2025-07-08 23:35:58,245 - INFO - Audio detected: level=42.582031
+2025-07-08 23:35:58,265 - INFO - Audio detected: level=46.384766
+2025-07-08 23:35:58,296 - INFO - Silence started at: 1752006958.2968192
+2025-07-08 23:35:58,385 - INFO - Audio detected: level=41.243164
+2025-07-08 23:35:58,405 - INFO - Silence started at: 1752006958.4058673
+2025-07-08 23:35:58,435 - INFO - Audio detected: level=37.227539
+2025-07-08 23:35:58,457 - INFO - Audio detected: level=59.029297
+2025-07-08 23:35:58,476 - INFO - Audio detected: level=107.938477
+2025-07-08 23:35:58,506 - INFO - Audio detected: level=149.108398
+2025-07-08 23:35:58,526 - INFO - Audio detected: level=219.531250
+2025-07-08 23:35:58,545 - INFO - Audio detected: level=323.965820
+2025-07-08 23:35:58,576 - INFO - Audio detected: level=313.098633
+2025-07-08 23:35:58,595 - INFO - Audio detected: level=322.754883
+2025-07-08 23:35:58,617 - INFO - Audio detected: level=412.729492
+2025-07-08 23:35:58,646 - INFO - Audio detected: level=571.241211
+2025-07-08 23:35:58,666 - INFO - Audio detected: level=556.839844
+2025-07-08 23:35:58,685 - INFO - Audio detected: level=353.297852
+2025-07-08 23:35:58,715 - INFO - Audio detected: level=318.905273
+2025-07-08 23:35:58,737 - INFO - Audio detected: level=386.471680
+2025-07-08 23:35:58,755 - INFO - Audio detected: level=382.989258
+2025-07-08 23:35:58,777 - INFO - Audio detected: level=174.334961
+2025-07-08 23:35:58,805 - INFO - Audio detected: level=252.786133
+2025-07-08 23:35:58,826 - INFO - Audio detected: level=124.927734
+2025-07-08 23:35:58,845 - INFO - Audio detected: level=135.750977
+2025-07-08 23:35:58,875 - INFO - Audio detected: level=283.469727
+2025-07-08 23:35:58,896 - INFO - Audio callback called: level=288.531250, threshold=30
+2025-07-08 23:35:58,899 - INFO - Audio detected: level=288.531250
+2025-07-08 23:35:58,916 - INFO - Audio detected: level=492.005859
+2025-07-08 23:35:58,946 - INFO - Audio detected: level=479.633789
+2025-07-08 23:35:58,965 - INFO - Audio detected: level=198.095703
+2025-07-08 23:35:58,985 - INFO - Audio detected: level=133.535156
+2025-07-08 23:35:59,016 - INFO - Audio detected: level=70.604492
+2025-07-08 23:35:59,035 - INFO - Audio detected: level=65.615234
+2025-07-08 23:35:59,056 - INFO - Audio detected: level=166.514648
+2025-07-08 23:35:59,085 - INFO - Audio detected: level=252.257812
+2025-07-08 23:35:59,105 - INFO - Audio detected: level=238.308594
+2025-07-08 23:35:59,125 - INFO - Audio detected: level=343.529297
+2025-07-08 23:35:59,155 - INFO - Audio detected: level=485.837891
+2025-07-08 23:35:59,177 - INFO - Audio detected: level=474.042969
+2025-07-08 23:35:59,196 - INFO - Audio detected: level=170.635742
+2025-07-08 23:35:59,225 - INFO - Audio detected: level=123.252930
+2025-07-08 23:35:59,245 - INFO - Audio detected: level=97.989258
+2025-07-08 23:35:59,265 - INFO - Audio detected: level=98.929688
+2025-07-08 23:35:59,297 - INFO - Audio detected: level=71.680664
+2025-07-08 23:35:59,316 - INFO - Audio detected: level=53.857422
+2025-07-08 23:35:59,338 - INFO - Audio detected: level=111.203125
+2025-07-08 23:35:59,365 - INFO - Audio detected: level=167.170898
+2025-07-08 23:35:59,385 - INFO - Audio detected: level=263.062500
+2025-07-08 23:35:59,406 - INFO - Audio detected: level=270.036133
+2025-07-08 23:35:59,425 - INFO - Audio detected: level=213.632812
+2025-07-08 23:35:59,457 - INFO - Audio detected: level=182.522461
+2025-07-08 23:35:59,460 - INFO - Phrase state: chunks=101, duration=2.51s, silence=0.00s
+2025-07-08 23:35:59,475 - INFO - Audio detected: level=180.791016
+2025-07-08 23:35:59,497 - INFO - Audio detected: level=154.409180
+2025-07-08 23:35:59,525 - INFO - Audio detected: level=101.923828
+2025-07-08 23:35:59,545 - INFO - Audio detected: level=85.915039
+2025-07-08 23:35:59,565 - INFO - Audio detected: level=60.531250
+2025-07-08 23:35:59,594 - INFO - Audio detected: level=70.037109
+2025-07-08 23:35:59,616 - INFO - Audio detected: level=74.083984
+2025-07-08 23:35:59,636 - INFO - Audio detected: level=68.665039
+2025-07-08 23:35:59,665 - INFO - Audio detected: level=39.765625
+2025-07-08 23:35:59,685 - INFO - Audio detected: level=41.675781
+2025-07-08 23:35:59,705 - INFO - Audio detected: level=34.103516
+2025-07-08 23:35:59,737 - INFO - Audio detected: level=53.303711
+2025-07-08 23:35:59,755 - INFO - Audio detected: level=61.148438
+2025-07-08 23:35:59,777 - INFO - Audio detected: level=67.923828
+2025-07-08 23:35:59,806 - INFO - Audio detected: level=131.087891
+2025-07-08 23:35:59,825 - INFO - Audio detected: level=193.532227
+2025-07-08 23:35:59,845 - INFO - Audio detected: level=201.406250
+2025-07-08 23:35:59,876 - INFO - Audio detected: level=249.953125
+2025-07-08 23:35:59,897 - INFO - Audio detected: level=271.309570
+2025-07-08 23:35:59,916 - INFO - Audio detected: level=435.778320
+2025-07-08 23:35:59,945 - INFO - Audio detected: level=445.113281
+2025-07-08 23:35:59,966 - INFO - Audio detected: level=457.568359
+2025-07-08 23:35:59,986 - INFO - Audio detected: level=401.818359
+2025-07-08 23:36:00,016 - INFO - Audio detected: level=433.129883
+2025-07-08 23:36:00,035 - INFO - Audio detected: level=508.364258
+2025-07-08 23:36:00,055 - INFO - Audio detected: level=224.343750
+2025-07-08 23:36:00,085 - INFO - Audio detected: level=155.972656
+2025-07-08 23:36:00,105 - INFO - Audio detected: level=121.585938
+2025-07-08 23:36:00,127 - INFO - Audio detected: level=89.411133
+2025-07-08 23:36:00,146 - INFO - Audio detected: level=98.655273
+2025-07-08 23:36:00,177 - INFO - Audio detected: level=85.149414
+2025-07-08 23:36:00,195 - INFO - Audio detected: level=104.922852
+2025-07-08 23:36:00,217 - INFO - Audio detected: level=116.466797
+2025-07-08 23:36:00,245 - INFO - Audio detected: level=134.303711
+2025-07-08 23:36:00,265 - INFO - Audio detected: level=148.353516
+2025-07-08 23:36:00,286 - INFO - Audio detected: level=119.815430
+2025-07-08 23:36:00,315 - INFO - Audio detected: level=105.232422
+2025-07-08 23:36:00,337 - INFO - Audio detected: level=78.747070
+2025-07-08 23:36:00,356 - INFO - Audio detected: level=71.685547
+2025-07-08 23:36:00,385 - INFO - Audio detected: level=79.694336
+2025-07-08 23:36:00,406 - INFO - Audio detected: level=83.318359
+2025-07-08 23:36:00,426 - INFO - Audio detected: level=77.184570
+2025-07-08 23:36:00,455 - INFO - Audio detected: level=59.377930
+2025-07-08 23:36:00,476 - INFO - Audio detected: level=54.053711
+2025-07-08 23:36:00,494 - INFO - Audio detected: level=42.894531
+2025-07-08 23:36:00,526 - INFO - Audio detected: level=37.233398
+2025-07-08 23:36:00,568 - INFO - Audio detected: level=50.495117
+2025-07-08 23:36:00,585 - INFO - Audio detected: level=38.448242
+2025-07-08 23:36:00,596 - INFO - Audio detected: level=36.837891
+2025-07-08 23:36:00,617 - INFO - Audio detected: level=36.595703
+2025-07-08 23:36:00,618 - INFO - Phrase state: chunks=151, duration=3.67s, silence=0.00s
+2025-07-08 23:36:00,635 - INFO - Audio detected: level=48.613281
+2025-07-08 23:36:00,666 - INFO - Audio detected: level=35.127930
+2025-07-08 23:36:00,699 - INFO - Audio detected: level=60.072266
+2025-07-08 23:36:00,730 - INFO - Audio detected: level=131.394531
+2025-07-08 23:36:00,737 - INFO - Audio detected: level=102.556641
+2025-07-08 23:36:00,756 - INFO - Audio detected: level=146.030273
+2025-07-08 23:36:00,776 - INFO - Audio detected: level=153.226562
+2025-07-08 23:36:00,796 - INFO - Audio detected: level=133.809570
+2025-07-08 23:36:00,827 - INFO - Audio detected: level=207.089844
+2025-07-08 23:36:00,846 - INFO - Audio detected: level=249.188477
+2025-07-08 23:36:00,866 - INFO - Audio detected: level=293.868164
+2025-07-08 23:36:00,898 - INFO - Audio detected: level=303.254883
+2025-07-08 23:36:00,917 - INFO - Audio detected: level=300.006836
+2025-07-08 23:36:00,937 - INFO - Audio detected: level=275.541016
+2025-07-08 23:36:00,966 - INFO - Audio detected: level=139.542969
+2025-07-08 23:36:00,985 - INFO - Audio detected: level=84.373047
+2025-07-08 23:36:01,027 - INFO - Audio detected: level=74.500977
+2025-07-08 23:36:01,036 - INFO - Audio detected: level=56.900391
+2025-07-08 23:36:01,068 - INFO - Audio detected: level=35.642578
+2025-07-08 23:36:01,076 - INFO - Audio detected: level=37.506836
+2025-07-08 23:36:01,105 - INFO - Audio detected: level=33.883789
+2025-07-08 23:36:01,126 - INFO - Audio detected: level=31.329102
+2025-07-08 23:36:01,145 - INFO - Audio detected: level=43.800781
+2025-07-08 23:36:01,178 - INFO - Audio detected: level=63.287109
+2025-07-08 23:36:01,196 - INFO - Audio detected: level=87.212891
+2025-07-08 23:36:01,215 - INFO - Audio callback called: level=96.475586, threshold=30
+2025-07-08 23:36:01,220 - INFO - Audio detected: level=96.475586
+2025-07-08 23:36:01,246 - INFO - Audio detected: level=166.501953
+2025-07-08 23:36:01,266 - INFO - Audio detected: level=170.002930
+2025-07-08 23:36:01,286 - INFO - Audio detected: level=117.068359
+2025-07-08 23:36:01,316 - INFO - Audio detected: level=63.294922
+2025-07-08 23:36:01,336 - INFO - Audio detected: level=59.140625
+2025-07-08 23:36:01,356 - INFO - Audio detected: level=73.549805
+2025-07-08 23:36:01,386 - INFO - Audio detected: level=98.652344
+2025-07-08 23:36:01,405 - INFO - Audio detected: level=87.614258
+2025-07-08 23:36:01,425 - INFO - Audio detected: level=82.326172
+2025-07-08 23:36:01,455 - INFO - Audio detected: level=104.279297
+2025-07-08 23:36:01,476 - INFO - Audio detected: level=106.737305
+2025-07-08 23:36:01,495 - INFO - Audio detected: level=136.290039
+2025-07-08 23:36:01,515 - INFO - Audio detected: level=178.359375
+2025-07-08 23:36:01,545 - INFO - Audio detected: level=181.390625
+2025-07-08 23:36:01,566 - INFO - Audio detected: level=249.393555
+2025-07-08 23:36:01,586 - INFO - Audio detected: level=251.491211
+2025-07-08 23:36:01,615 - INFO - Audio detected: level=330.186523
+2025-07-08 23:36:01,635 - INFO - Audio detected: level=135.779297
+2025-07-08 23:36:01,655 - INFO - Audio detected: level=173.206055
+2025-07-08 23:36:01,686 - INFO - Audio detected: level=123.084961
+2025-07-08 23:36:01,705 - INFO - Audio detected: level=117.977539
+2025-07-08 23:36:01,726 - INFO - Audio detected: level=111.998047
+2025-07-08 23:36:01,755 - INFO - Audio detected: level=79.963867
+2025-07-08 23:36:01,775 - INFO - Audio detected: level=63.878906
+2025-07-08 23:36:01,775 - INFO - Phrase state: chunks=201, duration=4.83s, silence=0.00s
+2025-07-08 23:36:01,796 - INFO - Audio detected: level=84.738281
+2025-07-08 23:36:01,825 - INFO - Audio detected: level=89.883789
+2025-07-08 23:36:01,846 - INFO - Audio detected: level=78.376953
+2025-07-08 23:36:01,865 - INFO - Audio detected: level=81.291016
+2025-07-08 23:36:01,896 - INFO - Audio detected: level=76.087891
+2025-07-08 23:36:01,916 - INFO - Audio detected: level=86.610352
+2025-07-08 23:36:01,934 - INFO - Audio detected: level=79.632812
+2025-07-08 23:36:01,966 - INFO - Audio detected: level=81.103516
+2025-07-08 23:36:01,985 - INFO - Audio detected: level=52.767578
+2025-07-08 23:36:02,005 - INFO - Audio detected: level=33.770508
+2025-07-08 23:36:02,036 - INFO - Audio detected: level=57.583008
+2025-07-08 23:36:02,056 - INFO - Audio detected: level=60.887695
+2025-07-08 23:36:02,076 - INFO - Audio detected: level=58.207031
+2025-07-08 23:36:02,091 - INFO - Cleaning up...
+2025-07-08 23:36:02,212 - INFO - Cleanup complete
+2025-07-08 23:46:09,033 - INFO - Starting Pro STS Voice Changer...
+2025-07-08 23:46:09,033 - INFO - Initializing Pro features...
+2025-07-08 23:46:09,033 - INFO - Testing Pro capabilities...
+2025-07-08 23:46:10,543 - INFO - Subscription: pro
+2025-07-08 23:46:10,543 - INFO - Character count: 168317
+2025-07-08 23:46:10,543 - INFO - Character limit: 501069
+2025-07-08 23:46:10,870 - INFO - Available Turbo models: 2
+2025-07-08 23:46:10,870 - INFO -   - Eleven Turbo v2.5 (eleven_turbo_v2_5)
+2025-07-08 23:46:10,871 - INFO -   - Eleven Turbo v2 (eleven_turbo_v2)
+2025-07-08 23:46:10,871 - INFO - Initializing voice cloning...
+2025-07-08 23:46:11,349 - INFO - No existing voice clone found. You can create one via the ElevenLabs dashboard.
+2025-07-08 23:46:11,350 - INFO - Setting up WebSocket connection...
+2025-07-08 23:46:11,351 - INFO - Using HTTP streaming (WebSocket not yet available)
+2025-07-08 23:46:11,351 - INFO - Pro features initialized successfully
+2025-07-08 23:46:11,352 - INFO - Starting audio capture...
+2025-07-08 23:46:11,352 - INFO - Starting audio output...
+2025-07-08 23:46:11,352 - INFO - Starting audio stream processing...
+2025-07-08 23:46:11,740 - INFO - Audio callback called: level=0.000014, threshold=0.01
+2025-07-08 23:46:11,741 - INFO - Silence started at: 1752007571.740673
+2025-07-08 23:46:12,250 - INFO - Audio detected: level=0.015262
+2025-07-08 23:46:12,251 - INFO - Phrase state: chunks=1, duration=0.00s, silence=0.00s
+2025-07-08 23:46:12,270 - INFO - Audio detected: level=0.019707
+2025-07-08 23:46:12,300 - INFO - Audio detected: level=0.018000
+2025-07-08 23:46:12,320 - INFO - Audio detected: level=0.016386
+2025-07-08 23:46:12,340 - INFO - Silence started at: 1752007572.340478
+2025-07-08 23:46:12,410 - INFO - Audio detected: level=0.011938
+2025-07-08 23:46:12,440 - INFO - Silence started at: 1752007572.44055
+2025-07-08 23:46:12,480 - INFO - Audio detected: level=0.015427
+2025-07-08 23:46:12,511 - INFO - Audio detected: level=0.013059
+2025-07-08 23:46:12,530 - INFO - Silence started at: 1752007572.5307105
+2025-07-08 23:46:12,550 - INFO - Audio detected: level=0.010670
+2025-07-08 23:46:12,570 - INFO - Audio detected: level=0.014513
+2025-07-08 23:46:12,600 - INFO - Audio detected: level=0.015141
+2025-07-08 23:46:12,619 - INFO - Audio detected: level=0.016047
+2025-07-08 23:46:12,640 - INFO - Audio detected: level=0.010662
+2025-07-08 23:46:12,670 - INFO - Silence started at: 1752007572.6706634
+2025-07-08 23:46:12,760 - INFO - Audio detected: level=0.010711
+2025-07-08 23:46:12,780 - INFO - Silence started at: 1752007572.7803962
+2025-07-08 23:46:13,307 - INFO - Processing phrase due to timeout: 1.06s
+2025-07-08 23:46:13,307 - INFO - Processing phrase with 13 chunks
+2025-07-08 23:46:13,307 - INFO - Combined audio shape: (13312,), total samples: 13312
+2025-07-08 23:46:13,308 - INFO - Audio array shape: (13312,), dtype: int16
+2025-07-08 23:46:13,308 - INFO - Audio array min/max: -1596/1622
+2025-07-08 23:46:13,309 - INFO - WAV data size: 26668 bytes
+2025-07-08 23:46:13,309 - INFO - Sending STS request with 26668 bytes of audio data
+2025-07-08 23:46:13,391 - INFO - Audio detected: level=0.010219
+2025-07-08 23:46:13,410 - INFO - Audio detected: level=0.017989
+2025-07-08 23:46:13,430 - INFO - Audio detected: level=0.017041
+2025-07-08 23:46:13,461 - INFO - Silence started at: 1752007573.4610176
+2025-07-08 23:46:13,570 - INFO - Audio detected: level=0.015571
+2025-07-08 23:46:13,600 - INFO - Audio detected: level=0.019357
+2025-07-08 23:46:13,622 - INFO - Audio detected: level=0.028735
+2025-07-08 23:46:13,641 - INFO - Audio detected: level=0.036695
+2025-07-08 23:46:13,670 - INFO - Audio detected: level=0.032399
+2025-07-08 23:46:13,690 - INFO - Audio detected: level=0.020737
+2025-07-08 23:46:13,710 - INFO - Audio detected: level=0.019113
+2025-07-08 23:46:13,741 - INFO - Audio detected: level=0.023321
+2025-07-08 23:46:13,759 - INFO - Audio detected: level=0.019160
+2025-07-08 23:46:13,780 - INFO - Audio detected: level=0.021219
+2025-07-08 23:46:13,810 - INFO - Audio detected: level=0.026519
+2025-07-08 23:46:13,831 - INFO - Audio detected: level=0.025693
+2025-07-08 23:46:13,849 - INFO - Audio detected: level=0.028168
+2025-07-08 23:46:13,880 - INFO - Audio detected: level=0.020705
+2025-07-08 23:46:13,901 - INFO - Audio detected: level=0.024776
+2025-07-08 23:46:13,920 - INFO - Audio detected: level=0.026996
+2025-07-08 23:46:13,942 - INFO - Audio detected: level=0.026807
+2025-07-08 23:46:13,970 - INFO - Audio detected: level=0.018309
+2025-07-08 23:46:13,990 - INFO - Audio detected: level=0.021436
+2025-07-08 23:46:14,011 - INFO - Audio detected: level=0.011752
+2025-07-08 23:46:14,040 - INFO - Audio detected: level=0.010788
+2025-07-08 23:46:14,061 - INFO - Audio callback called: level=0.009142, threshold=0.01
+2025-07-08 23:46:14,063 - INFO - Silence started at: 1752007574.061633
+2025-07-08 23:46:14,321 - INFO - Audio detected: level=0.013280
+2025-07-08 23:46:14,340 - INFO - Audio detected: level=0.027164
+2025-07-08 23:46:14,361 - INFO - Audio detected: level=0.025436
+2025-07-08 23:46:14,390 - INFO - Audio detected: level=0.014386
+2025-07-08 23:46:14,411 - INFO - Audio detected: level=0.011727
+2025-07-08 23:46:14,430 - INFO - Audio detected: level=0.010536
+2025-07-08 23:46:14,442 - ERROR - STS API error: 404 - {"detail":{"status":"voice_not_found","message":"A voice with the voice_id stream was not found."}}
+2025-07-08 23:46:14,444 - WARNING - No output audio received from STS
+2025-07-08 23:46:14,461 - INFO - Silence started at: 1752007574.4615614
+2025-07-08 23:46:14,480 - INFO - Audio detected: level=0.012450
+2025-07-08 23:46:14,501 - INFO - Audio detected: level=0.017769
+2025-07-08 23:46:14,530 - INFO - Audio detected: level=0.023558
+2025-07-08 23:46:14,551 - INFO - Audio detected: level=0.017723
+2025-07-08 23:46:14,570 - INFO - Audio detected: level=0.011488
+2025-07-08 23:46:14,590 - INFO - Silence started at: 1752007574.5904136
+2025-07-08 23:46:14,799 - INFO - Audio detected: level=0.010308
+2025-07-08 23:46:14,830 - INFO - Audio detected: level=0.013518
+2025-07-08 23:46:14,850 - INFO - Audio detected: level=0.013021
+2025-07-08 23:46:14,850 - INFO - Phrase state: chunks=38, duration=1.46s, silence=0.00s
+2025-07-08 23:46:14,870 - INFO - Audio detected: level=0.011564
+2025-07-08 23:46:14,900 - INFO - Audio detected: level=0.013107
+2025-07-08 23:46:14,921 - INFO - Audio detected: level=0.013849
+2025-07-08 23:46:14,940 - INFO - Audio detected: level=0.013288
+2025-07-08 23:46:14,970 - INFO - Silence started at: 1752007574.9707656
+2025-07-08 23:46:15,450 - INFO - Audio detected: level=0.020079
+2025-07-08 23:46:15,450 - INFO - Force processing long phrase: duration=2.06s, chunks=43
+2025-07-08 23:46:15,451 - INFO - Processing phrase with 43 chunks
+2025-07-08 23:46:15,451 - INFO - Combined audio shape: (44032,), total samples: 44032
+2025-07-08 23:46:15,452 - INFO - Audio array shape: (44032,), dtype: int16
+2025-07-08 23:46:15,452 - INFO - Audio array min/max: -2621/2445
+2025-07-08 23:46:15,453 - INFO - WAV data size: 88108 bytes
+2025-07-08 23:46:15,453 - INFO - Sending STS request with 88108 bytes of audio data
+2025-07-08 23:46:15,480 - INFO - Audio detected: level=0.024225
+2025-07-08 23:46:15,502 - INFO - Audio detected: level=0.019075
+2025-07-08 23:46:15,521 - INFO - Audio detected: level=0.017129
+2025-07-08 23:46:15,550 - INFO - Audio detected: level=0.016331
+2025-07-08 23:46:15,571 - INFO - Audio detected: level=0.013633
+2025-07-08 23:46:15,591 - INFO - Audio detected: level=0.010661
+2025-07-08 23:46:15,620 - INFO - Silence started at: 1752007575.6206925
+2025-07-08 23:46:15,710 - INFO - Audio detected: level=0.013955
+2025-07-08 23:46:15,730 - INFO - Audio detected: level=0.013613
+2025-07-08 23:46:15,760 - INFO - Silence started at: 1752007575.7605243
+2025-07-08 23:46:15,850 - INFO - Audio detected: level=0.023939
+2025-07-08 23:46:15,870 - INFO - Audio detected: level=0.042047
+2025-07-08 23:46:15,900 - INFO - Audio detected: level=0.040120
+2025-07-08 23:46:15,921 - INFO - Audio detected: level=0.028439
+2025-07-08 23:46:15,940 - INFO - Audio detected: level=0.023698
+2025-07-08 23:46:15,960 - INFO - Audio detected: level=0.024694
+2025-07-08 23:46:15,991 - INFO - Audio detected: level=0.027634
+2025-07-08 23:46:16,010 - INFO - Audio detected: level=0.028730
+2025-07-08 23:46:16,031 - INFO - Audio detected: level=0.023866
+2025-07-08 23:46:16,060 - INFO - Audio detected: level=0.022021
+2025-07-08 23:46:16,080 - INFO - Audio detected: level=0.018034
+2025-07-08 23:46:16,100 - INFO - Audio detected: level=0.013430
+2025-07-08 23:46:16,130 - INFO - Audio detected: level=0.010184
+2025-07-08 23:46:16,150 - INFO - Silence started at: 1752007576.1509879
+2025-07-08 23:46:16,360 - ERROR - STS API error: 404 - {"detail":{"status":"voice_not_found","message":"A voice with the voice_id stream was not found."}}
+2025-07-08 23:46:16,361 - WARNING - No output audio received from STS
+2025-07-08 23:46:16,380 - INFO - Audio callback called: level=0.001832, threshold=0.01
+2025-07-08 23:46:16,381 - INFO - Silence started at: 1752007576.380766
+2025-07-08 23:46:16,750 - INFO - Audio detected: level=0.012995
+2025-07-08 23:46:16,780 - INFO - Silence started at: 1752007576.7804773
+2025-07-08 23:46:16,850 - INFO - Audio detected: level=0.017889
+2025-07-08 23:46:16,870 - INFO - Audio detected: level=0.043598
+2025-07-08 23:46:16,891 - INFO - Audio detected: level=0.052674
+2025-07-08 23:46:16,920 - INFO - Audio detected: level=0.040507
+2025-07-08 23:46:16,940 - INFO - Audio detected: level=0.016038
+2025-07-08 23:46:16,960 - INFO - Audio detected: level=0.014048
+2025-07-08 23:46:16,991 - INFO - Audio detected: level=0.011202
+2025-07-08 23:46:17,010 - INFO - Audio detected: level=0.013276
+2025-07-08 23:46:17,031 - INFO - Audio detected: level=0.014793
+2025-07-08 23:46:17,060 - INFO - Audio detected: level=0.012650
+2025-07-08 23:46:17,079 - INFO - Audio detected: level=0.016137
+2025-07-08 23:46:17,100 - INFO - Audio detected: level=0.011005
+2025-07-08 23:46:17,130 - INFO - Silence started at: 1752007577.1307325
+2025-07-08 23:46:17,200 - INFO - Audio detected: level=0.010285
+2025-07-08 23:46:17,220 - INFO - Audio detected: level=0.014292
+2025-07-08 23:46:17,240 - INFO - Audio detected: level=0.012135
+2025-07-08 23:46:17,271 - INFO - Audio detected: level=0.020576
+2025-07-08 23:46:17,290 - INFO - Audio detected: level=0.024158
+2025-07-08 23:46:17,311 - INFO - Audio detected: level=0.032791
+2025-07-08 23:46:17,330 - INFO - Audio detected: level=0.030010
+2025-07-08 23:46:17,360 - INFO - Audio detected: level=0.032551
+2025-07-08 23:46:17,380 - INFO - Audio detected: level=0.033420
+2025-07-08 23:46:17,400 - INFO - Audio detected: level=0.035692
+2025-07-08 23:46:17,430 - INFO - Audio detected: level=0.039343
+2025-07-08 23:46:17,431 - INFO - Phrase state: chunks=45, duration=1.95s, silence=0.00s
+2025-07-08 23:46:17,451 - INFO - Audio detected: level=0.039729
+2025-07-08 23:46:17,470 - INFO - Audio detected: level=0.029840
+2025-07-08 23:46:17,500 - INFO - Audio detected: level=0.017125
+2025-07-08 23:46:17,501 - INFO - Force processing long phrase: duration=2.02s, chunks=48
+2025-07-08 23:46:17,501 - INFO - Processing phrase with 48 chunks
+2025-07-08 23:46:17,502 - INFO - Combined audio shape: (49152,), total samples: 49152
+2025-07-08 23:46:17,503 - INFO - Audio array shape: (49152,), dtype: int16
+2025-07-08 23:46:17,503 - INFO - Audio array min/max: -3998/4294
+2025-07-08 23:46:17,504 - INFO - WAV data size: 98348 bytes
+2025-07-08 23:46:17,505 - INFO - Sending STS request with 98348 bytes of audio data
+2025-07-08 23:46:17,520 - INFO - Audio detected: level=0.013355
+2025-07-08 23:46:17,541 - INFO - Audio detected: level=0.012553
+2025-07-08 23:46:17,569 - INFO - Audio detected: level=0.017464
+2025-07-08 23:46:17,590 - INFO - Audio detected: level=0.014310
+2025-07-08 23:46:17,610 - INFO - Silence started at: 1752007577.6109974
+2025-07-08 23:46:17,750 - INFO - Audio detected: level=0.013614
+2025-07-08 23:46:17,781 - INFO - Audio detected: level=0.013309
+2025-07-08 23:46:17,800 - INFO - Audio detected: level=0.011812
+2025-07-08 23:46:17,820 - INFO - Audio detected: level=0.013069
+2025-07-08 23:46:17,850 - INFO - Audio detected: level=0.018661
+2025-07-08 23:46:17,871 - INFO - Audio detected: level=0.016846
+2025-07-08 23:46:17,890 - INFO - Audio detected: level=0.015230
+2025-07-08 23:46:17,920 - INFO - Audio detected: level=0.022264
+2025-07-08 23:46:17,940 - INFO - Audio detected: level=0.017870
+2025-07-08 23:46:17,961 - INFO - Audio detected: level=0.022805
+2025-07-08 23:46:17,991 - INFO - Audio detected: level=0.019219
+2025-07-08 23:46:18,010 - INFO - Audio detected: level=0.016611
+2025-07-08 23:46:18,031 - INFO - Audio detected: level=0.010253
+2025-07-08 23:46:18,051 - INFO - Audio detected: level=0.010573
+2025-07-08 23:46:18,080 - INFO - Silence started at: 1752007578.0800776
+2025-07-08 23:46:18,260 - INFO - Audio detected: level=0.011445
+2025-07-08 23:46:18,290 - INFO - Audio detected: level=0.010637
+2025-07-08 23:46:18,310 - INFO - Silence started at: 1752007578.310691
+2025-07-08 23:46:18,430 - INFO - Audio detected: level=0.011815
+2025-07-08 23:46:18,452 - INFO - Audio detected: level=0.011810
+2025-07-08 23:46:18,470 - INFO - Silence started at: 1752007578.470194
+2025-07-08 23:46:18,701 - INFO - Audio callback called: level=0.002089, threshold=0.01
+2025-07-08 23:46:18,820 - INFO - Audio detected: level=0.010120
+2025-07-08 23:46:18,842 - INFO - Silence started at: 1752007578.842217
+2025-07-08 23:46:18,916 - ERROR - STS API error: 404 - {"detail":{"status":"voice_not_found","message":"A voice with the voice_id stream was not found."}}
+2025-07-08 23:46:18,917 - WARNING - No output audio received from STS
+2025-07-08 23:46:18,941 - INFO - Silence started at: 1752007578.941665
+2025-07-08 23:46:19,080 - INFO - Audio detected: level=0.011960
+2025-07-08 23:46:19,100 - INFO - Audio detected: level=0.017051
+2025-07-08 23:46:19,120 - INFO - Audio detected: level=0.020303
+2025-07-08 23:46:19,150 - INFO - Audio detected: level=0.020159
+2025-07-08 23:46:19,170 - INFO - Audio detected: level=0.021900
+2025-07-08 23:46:19,190 - INFO - Audio detected: level=0.019966
+2025-07-08 23:46:19,221 - INFO - Audio detected: level=0.014567
+2025-07-08 23:46:19,240 - INFO - Silence started at: 1752007579.2403324
+2025-07-08 23:46:19,550 - INFO - Force processing phrase due to timeout: 2.03s, chunks=30
+2025-07-08 23:46:19,551 - INFO - Processing phrase with 30 chunks
+2025-07-08 23:46:19,551 - INFO - Combined audio shape: (30720,), total samples: 30720
+2025-07-08 23:46:19,552 - INFO - Audio array shape: (30720,), dtype: int16
+2025-07-08 23:46:19,552 - INFO - Audio array min/max: -1754/1777
+2025-07-08 23:46:19,553 - INFO - WAV data size: 61484 bytes
+2025-07-08 23:46:19,553 - INFO - Sending STS request with 61484 bytes of audio data
+2025-07-08 23:46:19,728 - INFO - Cleaning up...
+2025-07-08 23:46:19,808 - INFO - Cleanup complete
+2025-07-08 23:48:49,005 - INFO - Starting Pro STS Voice Changer...
+2025-07-08 23:48:49,006 - INFO - Initializing Pro features...
+2025-07-08 23:48:49,006 - INFO - Testing Pro capabilities...
+2025-07-08 23:48:50,460 - INFO - Subscription: pro
+2025-07-08 23:48:50,460 - INFO - Character count: 168317
+2025-07-08 23:48:50,461 - INFO - Character limit: 501069
+2025-07-08 23:48:50,819 - INFO - Available Turbo models: 2
+2025-07-08 23:48:50,819 - INFO -   - Eleven Turbo v2.5 (eleven_turbo_v2_5)
+2025-07-08 23:48:50,820 - INFO -   - Eleven Turbo v2 (eleven_turbo_v2)
+2025-07-08 23:48:50,821 - INFO - Initializing voice cloning...
+2025-07-08 23:48:51,991 - INFO - No existing voice clone found. You can create one via the ElevenLabs dashboard.
+2025-07-08 23:48:51,992 - INFO - Setting up WebSocket connection...
+2025-07-08 23:48:51,993 - INFO - Using HTTP streaming (WebSocket not yet available)
+2025-07-08 23:48:51,993 - INFO - Pro features initialized successfully
+2025-07-08 23:48:51,993 - INFO - Starting audio capture...
+2025-07-08 23:48:51,994 - INFO - Starting audio output...
+2025-07-08 23:48:51,995 - INFO - Starting audio stream processing...
+2025-07-08 23:48:52,314 - INFO - Audio callback called: level=0.000014, threshold=0.01
+2025-07-08 23:48:52,314 - INFO - Silence started at: 1752007732.3140595
+2025-07-08 23:48:52,964 - INFO - Audio detected: level=0.011101
+2025-07-08 23:48:52,964 - INFO - Phrase state: chunks=1, duration=0.00s, silence=0.00s
+2025-07-08 23:48:52,983 - INFO - Audio detected: level=0.011325
+2025-07-08 23:48:53,013 - INFO - Silence started at: 1752007733.0139172
+2025-07-08 23:48:53,173 - INFO - Audio detected: level=0.014489
+2025-07-08 23:48:53,194 - INFO - Audio detected: level=0.019838
+2025-07-08 23:48:53,214 - INFO - Audio detected: level=0.014540
+2025-07-08 23:48:53,243 - INFO - Silence started at: 1752007733.2437453
+2025-07-08 23:48:53,781 - INFO - Processing phrase due to timeout: 0.82s
+2025-07-08 23:48:53,781 - INFO - Processing phrase with 5 chunks
+2025-07-08 23:48:53,782 - INFO - Combined audio shape: (5120,), total samples: 5120
+2025-07-08 23:48:53,782 - INFO - Audio array shape: (5120,), dtype: int16
+2025-07-08 23:48:53,783 - INFO - Audio array min/max: -1452/1274
+2025-07-08 23:48:53,783 - INFO - WAV data size: 10284 bytes
+2025-07-08 23:48:53,784 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_turbo_v2
+2025-07-08 23:48:53,784 - INFO - STS form field: model_id=eleven_turbo_v2
+2025-07-08 23:48:53,785 - INFO - STS form field: output_format=pcm_44100
+2025-07-08 23:48:53,785 - INFO - STS form field: audio_quality=192
+2025-07-08 23:48:53,785 - INFO - Sending STS request with 10284 bytes of audio data
+2025-07-08 23:48:54,277 - ERROR - STS API error: 400 - {"detail":{"status":"model_can_not_do_voice_conversion","message":"The selected model can not be used for voice conversion"}}
+2025-07-08 23:48:54,278 - WARNING - No output audio received from STS
+2025-07-08 23:48:54,283 - INFO - Silence started at: 1752007734.2831087
+2025-07-08 23:48:54,633 - INFO - Audio callback called: level=0.000227, threshold=0.01
+2025-07-08 23:48:54,933 - INFO - Audio detected: level=0.014287
+2025-07-08 23:48:54,963 - INFO - Audio detected: level=0.024610
+2025-07-08 23:48:54,984 - INFO - Audio detected: level=0.030132
+2025-07-08 23:48:55,004 - INFO - Audio detected: level=0.032069
+2025-07-08 23:48:55,035 - INFO - Audio detected: level=0.023374
+2025-07-08 23:48:55,053 - INFO - Audio detected: level=0.019511
+2025-07-08 23:48:55,074 - INFO - Audio detected: level=0.013899
+2025-07-08 23:48:55,104 - INFO - Silence started at: 1752007735.1042259
+2025-07-08 23:48:55,283 - INFO - Audio detected: level=0.012805
+2025-07-08 23:48:55,302 - INFO - Audio detected: level=0.018976
+2025-07-08 23:48:55,333 - INFO - Audio detected: level=0.020404
+2025-07-08 23:48:55,353 - INFO - Audio detected: level=0.023510
+2025-07-08 23:48:55,372 - INFO - Audio detected: level=0.016746
+2025-07-08 23:48:55,403 - INFO - Audio detected: level=0.013170
+2025-07-08 23:48:55,424 - INFO - Silence started at: 1752007735.4244146
+2025-07-08 23:48:55,513 - INFO - Audio detected: level=0.011940
+2025-07-08 23:48:55,544 - INFO - Audio detected: level=0.016882
+2025-07-08 23:48:55,563 - INFO - Audio detected: level=0.017830
+2025-07-08 23:48:55,583 - INFO - Audio detected: level=0.016737
+2025-07-08 23:48:55,614 - INFO - Audio detected: level=0.013476
+2025-07-08 23:48:55,634 - INFO - Silence started at: 1752007735.6340048
+2025-07-08 23:48:55,913 - INFO - Audio detected: level=0.018461
+2025-07-08 23:48:55,933 - INFO - Audio detected: level=0.016249
+2025-07-08 23:48:55,953 - INFO - Audio detected: level=0.017723
+2025-07-08 23:48:55,983 - INFO - Audio detected: level=0.024396
+2025-07-08 23:48:56,004 - INFO - Audio detected: level=0.034007
+2025-07-08 23:48:56,022 - INFO - Audio detected: level=0.025816
+2025-07-08 23:48:56,053 - INFO - Audio detected: level=0.015146
+2025-07-08 23:48:56,073 - INFO - Silence started at: 1752007736.073452
+2025-07-08 23:48:56,193 - INFO - Audio detected: level=0.018371
+2025-07-08 23:48:56,213 - INFO - Audio detected: level=0.020532
+2025-07-08 23:48:56,233 - INFO - Audio detected: level=0.019635
+2025-07-08 23:48:56,263 - INFO - Audio detected: level=0.020881
+2025-07-08 23:48:56,283 - INFO - Audio detected: level=0.013958
+2025-07-08 23:48:56,303 - INFO - Audio detected: level=0.012890
+2025-07-08 23:48:56,333 - INFO - Audio detected: level=0.010739
+2025-07-08 23:48:56,353 - INFO - Audio detected: level=0.011962
+2025-07-08 23:48:56,374 - INFO - Audio detected: level=0.013556
+2025-07-08 23:48:56,403 - INFO - Audio detected: level=0.018174
+2025-07-08 23:48:56,423 - INFO - Audio detected: level=0.020495
+2025-07-08 23:48:56,444 - INFO - Audio detected: level=0.014425
+2025-07-08 23:48:56,473 - INFO - Audio detected: level=0.013723
+2025-07-08 23:48:56,494 - INFO - Audio detected: level=0.011614
+2025-07-08 23:48:56,513 - INFO - Silence started at: 1752007736.5132732
+2025-07-08 23:48:56,934 - INFO - Force processing phrase due to timeout: 2.00s, chunks=39
+2025-07-08 23:48:56,935 - INFO - Processing phrase with 39 chunks
+2025-07-08 23:48:56,935 - INFO - Combined audio shape: (39936,), total samples: 39936
+2025-07-08 23:48:56,936 - INFO - Audio array shape: (39936,), dtype: int16
+2025-07-08 23:48:56,936 - INFO - Audio array min/max: -2499/2088
+2025-07-08 23:48:56,937 - INFO - WAV data size: 79916 bytes
+2025-07-08 23:48:56,937 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_turbo_v2
+2025-07-08 23:48:56,938 - INFO - STS form field: model_id=eleven_turbo_v2
+2025-07-08 23:48:56,938 - INFO - STS form field: output_format=pcm_44100
+2025-07-08 23:48:56,939 - INFO - STS form field: audio_quality=192
+2025-07-08 23:48:56,939 - INFO - Sending STS request with 79916 bytes of audio data
+2025-07-08 23:48:56,953 - INFO - Audio callback called: level=0.000406, threshold=0.01
+2025-07-08 23:48:56,977 - INFO - Cleaning up...
+2025-07-08 23:48:57,069 - INFO - Cleanup complete
+2025-07-08 23:50:37,058 - INFO - === Pro STS Capability Test ===
+2025-07-08 23:50:37,058 - INFO - Testing Pro STS capabilities...
+2025-07-08 23:50:37,059 - INFO - 1. Testing subscription...
+2025-07-08 23:50:38,427 - INFO - [OK] Subscription: pro
+2025-07-08 23:50:38,427 - INFO -    Character count: 168317
+2025-07-08 23:50:38,427 - INFO -    Character limit: 501069
+2025-07-08 23:50:38,428 - INFO - 2. Testing available models...
+2025-07-08 23:50:38,638 - INFO - [OK] Available Turbo models: 2
+2025-07-08 23:50:38,639 - INFO -    - Eleven Turbo v2.5 (eleven_turbo_v2_5)
+2025-07-08 23:50:38,639 - INFO -    - Eleven Turbo v2 (eleven_turbo_v2)
+2025-07-08 23:50:38,639 - INFO - 3. Testing available voices...
+2025-07-08 23:50:38,948 - INFO - [OK] Available voices: 40
+2025-07-08 23:50:38,948 - INFO -    - Aria (9BWtsMINqrJLrRacOk9x)
+2025-07-08 23:50:38,948 - INFO -    - Sarah (EXAVITQu4vr4xnSDxMaL)
+2025-07-08 23:50:38,948 - INFO -    - Laura (FGY2WhTYpPnrIDTdsKH5)
+2025-07-08 23:50:38,949 - INFO -    - Charlie (IKne3meq5aSn9XLyUdCD)
+2025-07-08 23:50:38,949 - INFO -    - George (JBFqnCBsd6RMkjVDRZzb)
+2025-07-08 23:50:38,949 - INFO - 4. Testing STS endpoint...
+2025-07-08 23:50:39,216 - ERROR - [ERROR] STS endpoint test failed: 404
+2025-07-08 23:50:39,217 - INFO - 5. Testing Pro features...
+2025-07-08 23:50:39,217 - INFO -    - Max concurrent requests: 10
+2025-07-08 23:50:39,217 - INFO -    - Audio quality: 192 kbps
+2025-07-08 23:50:39,218 - INFO -    - Output format: pcm_44100
+2025-07-08 23:50:39,218 - INFO -    - Priority processing: True
+2025-07-08 23:50:39,218 - INFO -    - Latency target: 0.1s
+2025-07-08 23:50:39,220 - INFO - Testing audio devices...
+2025-07-08 23:50:39,305 - INFO - Input devices:
+2025-07-08 23:50:39,305 - INFO -    0: Microsoft Sound Mapper - Input
+2025-07-08 23:50:39,305 - INFO -    1: Микрофон (Realtek High Definiti
+2025-07-08 23:50:39,305 - INFO -    4: Первичный драйвер записи звука
+2025-07-08 23:50:39,306 - INFO -    5: Микрофон (Realtek High Definition Audio)
+2025-07-08 23:50:39,306 - INFO -    9: Микрофон (Realtek High Definition Audio)
+2025-07-08 23:50:39,306 - INFO -    10: Mic in at front panel (black) (Mic in at front panel (black))
+2025-07-08 23:50:39,307 - INFO -    11: Микрофон (Realtek HD Audio Mic input)
+2025-07-08 23:50:39,307 - INFO -    12: Стерео микшер (Realtek HD Audio Stereo input)
+2025-07-08 23:50:39,307 - INFO - Output devices:
+2025-07-08 23:50:39,307 - INFO -    2: Microsoft Sound Mapper - Output
+2025-07-08 23:50:39,308 - INFO -    3: Громкоговоритель и наушники (Re
+2025-07-08 23:50:39,308 - INFO -    6: Первичный звуковой драйвер
+2025-07-08 23:50:39,308 - INFO -    7: Громкоговоритель и наушники (Realtek High Definition Audio)
+2025-07-08 23:50:39,309 - INFO -    8: Громкоговоритель и наушники (Realtek High Definition Audio)
+2025-07-08 23:50:39,309 - INFO -    13: Speakers (Realtek HD Audio output)
+2025-07-08 23:50:39,310 - INFO - [OK] Audio device test completed
+2025-07-08 23:50:39,311 - INFO - === Test Complete ===
+2025-07-08 23:50:39,311 - INFO - If all tests passed, you can run: python pro_speech_to_speech.py
+2025-07-08 23:50:47,998 - INFO - Starting Pro STS Voice Changer...
+2025-07-08 23:50:47,999 - INFO - Initializing Pro features...
+2025-07-08 23:50:47,999 - INFO - Testing Pro capabilities...
+2025-07-08 23:50:49,537 - INFO - Subscription: pro
+2025-07-08 23:50:49,537 - INFO - Character count: 168317
+2025-07-08 23:50:49,538 - INFO - Character limit: 501069
+2025-07-08 23:50:49,901 - INFO - Available Turbo models: 2
+2025-07-08 23:50:49,902 - INFO -   - Eleven Turbo v2.5 (eleven_turbo_v2_5)
+2025-07-08 23:50:49,902 - INFO -   - Eleven Turbo v2 (eleven_turbo_v2)
+2025-07-08 23:50:49,903 - INFO - Initializing voice cloning...
+2025-07-08 23:50:50,247 - INFO - No existing voice clone found. You can create one via the ElevenLabs dashboard.
+2025-07-08 23:50:50,248 - INFO - Setting up WebSocket connection...
+2025-07-08 23:50:50,249 - INFO - Using HTTP streaming (WebSocket not yet available)
+2025-07-08 23:50:50,249 - INFO - Pro features initialized successfully
+2025-07-08 23:50:50,249 - INFO - Starting audio capture...
+2025-07-08 23:50:50,250 - INFO - Starting audio output...
+2025-07-08 23:50:50,250 - INFO - Starting audio stream processing...
+2025-07-08 23:50:50,570 - INFO - Audio callback called: level=0.000014, threshold=0.01
+2025-07-08 23:50:50,571 - INFO - Silence started at: 1752007850.5702646
+2025-07-08 23:50:51,060 - INFO - Audio detected: level=0.016924
+2025-07-08 23:50:51,061 - INFO - Phrase state: chunks=1, duration=0.00s, silence=0.00s
+2025-07-08 23:50:51,082 - INFO - Audio detected: level=0.023274
+2025-07-08 23:50:51,100 - INFO - Audio detected: level=0.011778
+2025-07-08 23:50:51,131 - INFO - Silence started at: 1752007851.1302695
+2025-07-08 23:50:51,271 - INFO - Audio detected: level=0.013167
+2025-07-08 23:50:51,291 - INFO - Audio detected: level=0.012961
+2025-07-08 23:50:51,310 - INFO - Audio detected: level=0.011519
+2025-07-08 23:50:51,341 - INFO - Audio detected: level=0.011573
+2025-07-08 23:50:51,361 - INFO - Silence started at: 1752007851.3616617
+2025-07-08 23:50:51,680 - INFO - Audio detected: level=0.013366
+2025-07-08 23:50:51,710 - INFO - Audio detected: level=0.017067
+2025-07-08 23:50:51,730 - INFO - Audio detected: level=0.018103
+2025-07-08 23:50:51,750 - INFO - Audio detected: level=0.023435
+2025-07-08 23:50:51,781 - INFO - Audio detected: level=0.019117
+2025-07-08 23:50:51,801 - INFO - Audio detected: level=0.014577
+2025-07-08 23:50:51,820 - INFO - Audio detected: level=0.015640
+2025-07-08 23:50:51,851 - INFO - Audio detected: level=0.015501
+2025-07-08 23:50:51,870 - INFO - Audio detected: level=0.018848
+2025-07-08 23:50:51,891 - INFO - Audio detected: level=0.020267
+2025-07-08 23:50:51,921 - INFO - Audio detected: level=0.017155
+2025-07-08 23:50:51,941 - INFO - Audio detected: level=0.015898
+2025-07-08 23:50:51,960 - INFO - Audio detected: level=0.013409
+2025-07-08 23:50:51,990 - INFO - Audio detected: level=0.013108
+2025-07-08 23:50:52,011 - INFO - Audio detected: level=0.012492
+2025-07-08 23:50:52,031 - INFO - Audio detected: level=0.016256
+2025-07-08 23:50:52,051 - INFO - Audio detected: level=0.017797
+2025-07-08 23:50:52,079 - INFO - Audio detected: level=0.012363
+2025-07-08 23:50:52,100 - INFO - Silence started at: 1752007852.1006126
+2025-07-08 23:50:52,241 - INFO - Audio detected: level=0.018130
+2025-07-08 23:50:52,261 - INFO - Audio detected: level=0.024668
+2025-07-08 23:50:52,291 - INFO - Audio detected: level=0.028760
+2025-07-08 23:50:52,311 - INFO - Audio detected: level=0.013213
+2025-07-08 23:50:52,331 - INFO - Audio detected: level=0.013730
+2025-07-08 23:50:52,361 - INFO - Audio detected: level=0.021822
+2025-07-08 23:50:52,380 - INFO - Audio detected: level=0.012637
+2025-07-08 23:50:52,401 - INFO - Silence started at: 1752007852.4016767
+2025-07-08 23:50:52,470 - INFO - Audio detected: level=0.015683
+2025-07-08 23:50:52,500 - INFO - Audio detected: level=0.015167
+2025-07-08 23:50:52,522 - INFO - Audio detected: level=0.022455
+2025-07-08 23:50:52,541 - INFO - Audio detected: level=0.022492
+2025-07-08 23:50:52,570 - INFO - Audio detected: level=0.023190
+2025-07-08 23:50:52,590 - INFO - Audio detected: level=0.027169
+2025-07-08 23:50:52,610 - INFO - Audio detected: level=0.032837
+2025-07-08 23:50:52,642 - INFO - Audio detected: level=0.029669
+2025-07-08 23:50:52,661 - INFO - Audio detected: level=0.031622
+2025-07-08 23:50:52,681 - INFO - Audio detected: level=0.035733
+2025-07-08 23:50:52,710 - INFO - Audio detected: level=0.039102
+2025-07-08 23:50:52,731 - INFO - Audio detected: level=0.032019
+2025-07-08 23:50:52,750 - INFO - Audio detected: level=0.021214
+2025-07-08 23:50:52,770 - INFO - Audio detected: level=0.017178
+2025-07-08 23:50:52,801 - INFO - Audio detected: level=0.015564
+2025-07-08 23:50:52,821 - INFO - Audio detected: level=0.011619
+2025-07-08 23:50:52,841 - INFO - Silence started at: 1752007852.841185
+2025-07-08 23:50:52,891 - INFO - Audio callback called: level=0.003949, threshold=0.01
+2025-07-08 23:50:52,960 - INFO - Audio detected: level=0.011729
+2025-07-08 23:50:52,980 - INFO - Audio detected: level=0.011662
+2025-07-08 23:50:53,011 - INFO - Silence started at: 1752007853.0117326
+2025-07-08 23:50:53,051 - INFO - Audio detected: level=0.013583
+2025-07-08 23:50:53,052 - INFO - Phrase state: chunks=51, duration=1.99s, silence=0.00s
+2025-07-08 23:50:53,080 - INFO - Audio detected: level=0.017019
+2025-07-08 23:50:53,080 - INFO - Force processing long phrase: duration=2.02s, chunks=52
+2025-07-08 23:50:53,081 - INFO - Processing phrase with 52 chunks
+2025-07-08 23:50:53,083 - INFO - Combined audio shape: (53248,), total samples: 53248
+2025-07-08 23:50:53,084 - INFO - Audio array shape: (53248,), dtype: int16
+2025-07-08 23:50:53,086 - INFO - Audio array min/max: -3126/2299
+2025-07-08 23:50:53,086 - INFO - WAV data size: 106540 bytes
+2025-07-08 23:50:53,087 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:50:53,088 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:50:53,088 - INFO - STS form field: output_format=pcm_44100
+2025-07-08 23:50:53,091 - INFO - STS form field: audio_quality=192
+2025-07-08 23:50:53,092 - INFO - Sending STS request with 106540 bytes of audio data
+2025-07-08 23:50:53,100 - INFO - Audio detected: level=0.022786
+2025-07-08 23:50:53,121 - INFO - Audio detected: level=0.019183
+2025-07-08 23:50:53,150 - INFO - Audio detected: level=0.019828
+2025-07-08 23:50:53,171 - INFO - Audio detected: level=0.015943
+2025-07-08 23:50:53,190 - INFO - Audio detected: level=0.013437
+2025-07-08 23:50:53,221 - INFO - Audio detected: level=0.011262
+2025-07-08 23:50:53,240 - INFO - Audio detected: level=0.010855
+2025-07-08 23:50:53,260 - INFO - Audio detected: level=0.013957
+2025-07-08 23:50:53,291 - INFO - Audio detected: level=0.010741
+2025-07-08 23:50:53,311 - INFO - Audio detected: level=0.011219
+2025-07-08 23:50:53,331 - INFO - Audio detected: level=0.014631
+2025-07-08 23:50:53,361 - INFO - Audio detected: level=0.023155
+2025-07-08 23:50:53,381 - INFO - Audio detected: level=0.024249
+2025-07-08 23:50:53,400 - INFO - Audio detected: level=0.014216
+2025-07-08 23:50:53,421 - INFO - Audio detected: level=0.011221
+2025-07-08 23:50:53,451 - INFO - Silence started at: 1752007853.4516058
+2025-07-08 23:50:53,560 - INFO - Audio detected: level=0.026595
+2025-07-08 23:50:53,590 - INFO - Audio detected: level=0.028440
+2025-07-08 23:50:53,611 - INFO - Audio detected: level=0.025026
+2025-07-08 23:50:53,630 - INFO - Audio detected: level=0.013053
+2025-07-08 23:50:53,661 - INFO - Audio detected: level=0.031909
+2025-07-08 23:50:53,681 - INFO - Audio detected: level=0.036107
+2025-07-08 23:50:53,700 - INFO - Audio detected: level=0.027662
+2025-07-08 23:50:53,730 - INFO - Audio detected: level=0.020531
+2025-07-08 23:50:53,751 - INFO - Audio detected: level=0.022880
+2025-07-08 23:50:53,771 - INFO - Audio detected: level=0.012347
+2025-07-08 23:50:53,800 - INFO - Silence started at: 1752007853.8003452
+2025-07-08 23:50:54,171 - INFO - Audio detected: level=0.010046
+2025-07-08 23:50:54,191 - INFO - Audio detected: level=0.014423
+2025-07-08 23:50:54,212 - INFO - Audio detected: level=0.011341
+2025-07-08 23:50:54,240 - INFO - Audio detected: level=0.013000
+2025-07-08 23:50:54,260 - INFO - Silence started at: 1752007854.2602131
+2025-07-08 23:50:54,701 - INFO - Audio detected: level=0.021187
+2025-07-08 23:50:54,731 - INFO - Audio detected: level=0.034273
+2025-07-08 23:50:54,750 - INFO - Audio detected: level=0.034401
+2025-07-08 23:50:54,771 - INFO - Audio detected: level=0.022837
+2025-07-08 23:50:54,791 - INFO - Audio detected: level=0.012657
+2025-07-08 23:50:54,821 - INFO - Silence started at: 1752007854.8212633
+2025-07-08 23:50:54,930 - INFO - Audio detected: level=0.014377
+2025-07-08 23:50:54,962 - INFO - Audio detected: level=0.015421
+2025-07-08 23:50:54,980 - INFO - Audio detected: level=0.017686
+2025-07-08 23:50:55,000 - INFO - Audio detected: level=0.024064
+2025-07-08 23:50:55,031 - INFO - Audio detected: level=0.028023
+2025-07-08 23:50:55,050 - INFO - Audio detected: level=0.026074
+2025-07-08 23:50:55,071 - INFO - Audio detected: level=0.014388
+2025-07-08 23:50:55,100 - INFO - Silence started at: 1752007855.1004407
+2025-07-08 23:50:55,121 - INFO - Audio detected: level=0.010256
+2025-07-08 23:50:55,141 - INFO - Audio detected: level=0.018648
+2025-07-08 23:50:55,170 - INFO - Audio detected: level=0.022828
+2025-07-08 23:50:55,191 - INFO - Audio detected: level=0.020400
+2025-07-08 23:50:55,211 - INFO - Audio callback called: level=0.016271, threshold=0.01
+2025-07-08 23:50:55,211 - INFO - Audio detected: level=0.016271
+2025-07-08 23:50:55,240 - INFO - Audio detected: level=0.020552
+2025-07-08 23:50:55,261 - INFO - Audio detected: level=0.018715
+2025-07-08 23:50:55,280 - INFO - Audio detected: level=0.014670
+2025-07-08 23:50:55,311 - INFO - Silence started at: 1752007855.3104339
+2025-07-08 23:50:55,420 - INFO - Audio detected: level=0.014485
+2025-07-08 23:50:55,451 - INFO - Silence started at: 1752007855.4512148
+2025-07-08 23:50:55,540 - INFO - Audio detected: level=0.010061
+2025-07-08 23:50:55,561 - INFO - Audio detected: level=0.010815
+2025-07-08 23:50:55,581 - INFO - Audio detected: level=0.011554
+2025-07-08 23:50:55,611 - INFO - Silence started at: 1752007855.6111646
+2025-07-08 23:50:57,094 - INFO - STS response: 20107 bytes
+2025-07-08 23:50:57,096 - INFO - STS processed phrase: 52 chunks, latency: 4.012s
+2025-07-08 23:50:57,105 - INFO - Force processing long phrase: duration=2.02s, chunks=42
+2025-07-08 23:50:57,106 - INFO - Processing phrase with 42 chunks
+2025-07-08 23:50:57,106 - INFO - Combined audio shape: (43008,), total samples: 43008
+2025-07-08 23:50:57,107 - INFO - Audio array shape: (43008,), dtype: int16
+2025-07-08 23:50:57,107 - INFO - Audio array min/max: -2947/2672
+2025-07-08 23:50:57,108 - INFO - WAV data size: 86060 bytes
+2025-07-08 23:50:57,108 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:50:57,109 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:50:57,109 - INFO - STS form field: output_format=pcm_44100
+2025-07-08 23:50:57,110 - INFO - STS form field: audio_quality=192
+2025-07-08 23:50:57,110 - INFO - Sending STS request with 86060 bytes of audio data
+2025-07-08 23:50:57,120 - INFO - Silence started at: 1752007857.1205244
+2025-07-08 23:50:57,160 - INFO - Audio detected: level=0.014319
+2025-07-08 23:50:57,190 - INFO - Audio detected: level=0.052479
+2025-07-08 23:50:57,210 - INFO - Audio detected: level=0.036722
+2025-07-08 23:50:57,231 - INFO - Audio detected: level=0.028752
+2025-07-08 23:50:57,260 - INFO - Audio detected: level=0.031315
+2025-07-08 23:50:57,281 - INFO - Audio detected: level=0.036619
+2025-07-08 23:50:57,301 - INFO - Audio detected: level=0.033139
+2025-07-08 23:50:57,330 - INFO - Audio detected: level=0.031859
+2025-07-08 23:50:57,350 - INFO - Audio detected: level=0.040487
+2025-07-08 23:50:57,370 - INFO - Audio detected: level=0.041094
+2025-07-08 23:50:57,402 - INFO - Audio detected: level=0.010651
+2025-07-08 23:50:57,421 - INFO - Silence started at: 1752007857.4211283
+2025-07-08 23:50:57,530 - INFO - Audio callback called: level=0.000385, threshold=0.01
+2025-07-08 23:50:58,090 - INFO - Audio detected: level=0.017716
+2025-07-08 23:50:58,120 - INFO - Audio detected: level=0.017451
+2025-07-08 23:50:58,140 - INFO - Audio detected: level=0.012996
+2025-07-08 23:50:58,160 - INFO - Silence started at: 1752007858.160759
+2025-07-08 23:50:58,190 - INFO - Audio detected: level=0.016824
+2025-07-08 23:50:58,210 - INFO - Audio detected: level=0.020024
+2025-07-08 23:50:58,230 - INFO - Audio detected: level=0.015334
+2025-07-08 23:50:58,251 - INFO - Audio detected: level=0.011377
+2025-07-08 23:50:58,280 - INFO - Silence started at: 1752007858.2806692
+2025-07-08 23:50:58,461 - INFO - Audio detected: level=0.010405
+2025-07-08 23:50:58,491 - INFO - Audio detected: level=0.018951
+2025-07-08 23:50:58,510 - INFO - Audio detected: level=0.022434
+2025-07-08 23:50:58,530 - INFO - Audio detected: level=0.013463
+2025-07-08 23:50:58,561 - INFO - Silence started at: 1752007858.5611484
+2025-07-08 23:50:58,580 - INFO - STS response: 16345 bytes
+2025-07-08 23:50:58,581 - INFO - STS processed phrase: 42 chunks, latency: 1.474s
+2025-07-08 23:50:58,584 - INFO - Phrase state: chunks=7, duration=0.14s, silence=0.00s
+2025-07-08 23:50:58,593 - INFO - Force processing long phrase: duration=3.35s, chunks=31
+2025-07-08 23:50:58,594 - INFO - Processing phrase with 31 chunks
+2025-07-08 23:50:58,594 - INFO - Combined audio shape: (31744,), total samples: 31744
+2025-07-08 23:50:58,595 - INFO - Audio array shape: (31744,), dtype: int16
+2025-07-08 23:50:58,595 - INFO - Audio array min/max: -5110/5408
+2025-07-08 23:50:58,596 - INFO - WAV data size: 63532 bytes
+2025-07-08 23:50:58,596 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:50:58,596 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:50:58,597 - INFO - STS form field: output_format=pcm_44100
+2025-07-08 23:50:58,597 - INFO - STS form field: audio_quality=192
+2025-07-08 23:50:58,597 - INFO - Sending STS request with 63532 bytes of audio data
+2025-07-08 23:50:58,601 - INFO - Audio detected: level=0.014524
+2025-07-08 23:50:58,630 - INFO - Audio detected: level=0.011898
+2025-07-08 23:50:58,650 - INFO - Audio detected: level=0.010640
+2025-07-08 23:50:58,670 - INFO - Audio detected: level=0.046614
+2025-07-08 23:50:58,700 - INFO - Audio detected: level=0.037940
+2025-07-08 23:50:58,721 - INFO - Audio detected: level=0.039466
+2025-07-08 23:50:58,740 - INFO - Audio detected: level=0.036999
+2025-07-08 23:50:58,770 - INFO - Audio detected: level=0.035418
+2025-07-08 23:50:58,790 - INFO - Audio detected: level=0.043332
+2025-07-08 23:50:58,811 - INFO - Audio detected: level=0.046732
+2025-07-08 23:50:58,840 - INFO - Audio detected: level=0.043653
+2025-07-08 23:50:58,862 - INFO - Audio detected: level=0.044570
+2025-07-08 23:50:58,880 - INFO - Audio detected: level=0.049727
+2025-07-08 23:50:58,901 - INFO - Audio detected: level=0.028734
+2025-07-08 23:50:58,930 - INFO - Audio detected: level=0.014961
+2025-07-08 23:50:58,951 - INFO - Audio detected: level=0.014133
+2025-07-08 23:50:58,971 - INFO - Audio detected: level=0.016333
+2025-07-08 23:50:59,001 - INFO - Audio detected: level=0.016481
+2025-07-08 23:50:59,020 - INFO - Audio detected: level=0.017385
+2025-07-08 23:50:59,040 - INFO - Audio detected: level=0.019132
+2025-07-08 23:50:59,071 - INFO - Audio detected: level=0.015055
+2025-07-08 23:50:59,091 - INFO - Audio detected: level=0.014717
+2025-07-08 23:50:59,112 - INFO - Audio detected: level=0.010381
+2025-07-08 23:50:59,140 - INFO - Audio detected: level=0.014943
+2025-07-08 23:50:59,160 - INFO - Audio detected: level=0.010610
+2025-07-08 23:50:59,181 - INFO - Audio detected: level=0.010311
+2025-07-08 23:50:59,211 - INFO - Audio detected: level=0.014590
+2025-07-08 23:50:59,230 - INFO - Audio detected: level=0.011554
+2025-07-08 23:50:59,250 - INFO - Silence started at: 1752007859.250719
+2025-07-08 23:50:59,601 - INFO - Audio detected: level=0.011933
+2025-07-08 23:50:59,621 - INFO - Audio detected: level=0.012819
+2025-07-08 23:50:59,650 - INFO - Audio detected: level=0.019130
+2025-07-08 23:50:59,670 - INFO - Audio detected: level=0.023785
+2025-07-08 23:50:59,690 - INFO - Audio detected: level=0.025499
+2025-07-08 23:50:59,721 - INFO - Audio detected: level=0.022327
+2025-07-08 23:50:59,740 - INFO - Audio detected: level=0.018350
+2025-07-08 23:50:59,760 - INFO - Audio detected: level=0.014123
+2025-07-08 23:50:59,791 - INFO - Silence started at: 1752007859.7914803
+2025-07-08 23:50:59,860 - INFO - Audio callback called: level=0.003655, threshold=0.01
+2025-07-08 23:51:00,020 - INFO - Audio detected: level=0.018301
+2025-07-08 23:51:00,041 - INFO - Audio detected: level=0.023323
+2025-07-08 23:51:00,070 - INFO - Audio detected: level=0.020921
+2025-07-08 23:51:00,090 - INFO - Audio detected: level=0.017961
+2025-07-08 23:51:00,110 - INFO - Audio detected: level=0.019597
+2025-07-08 23:51:00,140 - INFO - Audio detected: level=0.017823
+2025-07-08 23:51:00,161 - INFO - Silence started at: 1752007860.1613147
+2025-07-08 23:51:00,210 - INFO - Audio detected: level=0.010509
+2025-07-08 23:51:00,231 - INFO - Audio detected: level=0.010613
+2025-07-08 23:51:00,244 - INFO - STS response: 12583 bytes
+2025-07-08 23:51:00,247 - INFO - STS processed phrase: 31 chunks, latency: 1.652s
+2025-07-08 23:51:00,250 - INFO - Silence started at: 1752007860.250762
+2025-07-08 23:51:00,257 - INFO - Phrase state: chunks=26, duration=0.63s, silence=-1.11s
+2025-07-08 23:51:00,320 - INFO - Audio detected: level=0.037473
+2025-07-08 23:51:00,341 - INFO - Audio detected: level=0.039144
+2025-07-08 23:51:00,370 - INFO - Audio detected: level=0.038484
+2025-07-08 23:51:00,391 - INFO - Audio detected: level=0.036907
+2025-07-08 23:51:00,411 - INFO - Audio detected: level=0.040264
+2025-07-08 23:51:00,441 - INFO - Audio detected: level=0.045285
+2025-07-08 23:51:00,461 - INFO - Audio detected: level=0.030422
+2025-07-08 23:51:00,480 - INFO - Silence started at: 1752007860.4804664
+2025-07-08 23:51:00,496 - INFO - Cleaning up...
+2025-07-08 23:51:00,567 - INFO - Cleanup complete
+2025-07-08 23:54:39,681 - INFO - Starting Pro STS Voice Changer...
+2025-07-08 23:54:39,682 - INFO - Initializing Pro features...
+2025-07-08 23:54:39,682 - INFO - Testing Pro capabilities...
+2025-07-08 23:54:41,338 - INFO - Subscription: pro
+2025-07-08 23:54:41,338 - INFO - Character count: 168367
+2025-07-08 23:54:41,338 - INFO - Character limit: 501069
+2025-07-08 23:54:41,754 - INFO - Available Turbo models: 2
+2025-07-08 23:54:41,754 - INFO -   - Eleven Turbo v2.5 (eleven_turbo_v2_5)
+2025-07-08 23:54:41,754 - INFO -   - Eleven Turbo v2 (eleven_turbo_v2)
+2025-07-08 23:54:41,755 - INFO - Initializing voice cloning...
+2025-07-08 23:54:42,649 - INFO - No existing voice clone found. You can create one via the ElevenLabs dashboard.
+2025-07-08 23:54:42,650 - INFO - Setting up WebSocket connection...
+2025-07-08 23:54:42,652 - INFO - Using HTTP streaming (WebSocket not yet available)
+2025-07-08 23:54:42,652 - INFO - Pro features initialized successfully
+2025-07-08 23:54:42,652 - INFO - Starting audio capture...
+2025-07-08 23:54:42,653 - INFO - Starting audio output...
+2025-07-08 23:54:42,653 - INFO - Starting audio stream processing...
+2025-07-08 23:54:42,978 - INFO - Audio callback called: level=0.000014, threshold=0.01
+2025-07-08 23:54:42,978 - INFO - Silence started at: 1752008082.9781654
+2025-07-08 23:54:43,607 - INFO - Audio detected: level=0.010913
+2025-07-08 23:54:43,607 - INFO - Phrase state: chunks=1, duration=0.00s, silence=0.00s
+2025-07-08 23:54:43,627 - INFO - Audio detected: level=0.014647
+2025-07-08 23:54:43,647 - INFO - Audio detected: level=0.010404
+2025-07-08 23:54:43,678 - INFO - Silence started at: 1752008083.6782563
+2025-07-08 23:54:43,977 - INFO - Audio detected: level=0.012508
+2025-07-08 23:54:43,999 - INFO - Audio detected: level=0.014970
+2025-07-08 23:54:44,018 - INFO - Audio detected: level=0.014111
+2025-07-08 23:54:44,049 - INFO - Audio detected: level=0.013953
+2025-07-08 23:54:44,068 - INFO - Audio detected: level=0.016678
+2025-07-08 23:54:44,087 - INFO - Audio detected: level=0.019905
+2025-07-08 23:54:44,117 - INFO - Audio detected: level=0.016518
+2025-07-08 23:54:44,138 - INFO - Audio detected: level=0.011167
+2025-07-08 23:54:44,158 - INFO - Audio detected: level=0.010444
+2025-07-08 23:54:44,189 - INFO - Audio detected: level=0.010375
+2025-07-08 23:54:44,207 - INFO - Audio detected: level=0.010254
+2025-07-08 23:54:44,227 - INFO - Audio detected: level=0.012524
+2025-07-08 23:54:44,258 - INFO - Audio detected: level=0.012525
+2025-07-08 23:54:44,277 - INFO - Silence started at: 1752008084.2774625
+2025-07-08 23:54:44,418 - INFO - Audio detected: level=0.015231
+2025-07-08 23:54:44,439 - INFO - Audio detected: level=0.012381
+2025-07-08 23:54:44,457 - INFO - Audio detected: level=0.010196
+2025-07-08 23:54:44,487 - INFO - Silence started at: 1752008084.4878728
+2025-07-08 23:54:44,558 - INFO - Audio detected: level=0.010422
+2025-07-08 23:54:44,577 - INFO - Silence started at: 1752008084.5774233
+2025-07-08 23:54:45,100 - INFO - Processing phrase due to timeout: 1.49s
+2025-07-08 23:54:45,100 - INFO - Processing phrase with 20 chunks
+2025-07-08 23:54:45,101 - INFO - Combined audio shape: (20480,), total samples: 20480
+2025-07-08 23:54:45,101 - INFO - Audio array shape: (20480,), dtype: int16
+2025-07-08 23:54:45,101 - INFO - Audio array min/max: -1303/1469
+2025-07-08 23:54:45,102 - INFO - WAV data size: 41004 bytes
+2025-07-08 23:54:45,102 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:54:45,103 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:54:45,103 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:54:45,103 - INFO - STS form field: audio_quality=192
+2025-07-08 23:54:45,104 - INFO - Sending STS request with 41004 bytes of audio data
+2025-07-08 23:54:45,177 - INFO - Audio detected: level=0.011615
+2025-07-08 23:54:45,209 - INFO - Audio detected: level=0.014310
+2025-07-08 23:54:45,227 - INFO - Audio detected: level=0.016083
+2025-07-08 23:54:45,247 - INFO - Audio detected: level=0.016422
+2025-07-08 23:54:45,277 - INFO - Audio detected: level=0.011105
+2025-07-08 23:54:45,297 - INFO - Audio callback called: level=0.008230, threshold=0.01
+2025-07-08 23:54:45,297 - INFO - Silence started at: 1752008085.2973537
+2025-07-08 23:54:45,349 - INFO - Audio detected: level=0.014807
+2025-07-08 23:54:45,367 - INFO - Audio detected: level=0.020257
+2025-07-08 23:54:45,388 - INFO - Audio detected: level=0.015070
+2025-07-08 23:54:45,418 - INFO - Audio detected: level=0.014406
+2025-07-08 23:54:45,437 - INFO - Silence started at: 1752008085.4376187
+2025-07-08 23:54:45,458 - INFO - Audio detected: level=0.013517
+2025-07-08 23:54:45,487 - INFO - Audio detected: level=0.022736
+2025-07-08 23:54:45,507 - INFO - Audio detected: level=0.034517
+2025-07-08 23:54:45,527 - INFO - Audio detected: level=0.035554
+2025-07-08 23:54:45,558 - INFO - Audio detected: level=0.032254
+2025-07-08 23:54:45,578 - INFO - Audio detected: level=0.021492
+2025-07-08 23:54:45,597 - INFO - Audio detected: level=0.011563
+2025-07-08 23:54:45,628 - INFO - Audio detected: level=0.011028
+2025-07-08 23:54:45,648 - INFO - Silence started at: 1752008085.64844
+2025-07-08 23:54:45,698 - INFO - Audio detected: level=0.015235
+2025-07-08 23:54:45,717 - INFO - Audio detected: level=0.013656
+2025-07-08 23:54:45,738 - INFO - Audio detected: level=0.024955
+2025-07-08 23:54:45,767 - INFO - Audio detected: level=0.022080
+2025-07-08 23:54:45,788 - INFO - Audio detected: level=0.015939
+2025-07-08 23:54:45,807 - INFO - Audio detected: level=0.015515
+2025-07-08 23:54:45,827 - INFO - Silence started at: 1752008085.827611
+2025-07-08 23:54:45,857 - INFO - Audio detected: level=0.010112
+2025-07-08 23:54:45,877 - INFO - Silence started at: 1752008085.8778925
+2025-07-08 23:54:45,967 - INFO - Audio detected: level=0.011913
+2025-07-08 23:54:45,997 - INFO - Audio detected: level=0.018263
+2025-07-08 23:54:46,017 - INFO - Audio detected: level=0.019867
+2025-07-08 23:54:46,037 - INFO - Audio detected: level=0.013281
+2025-07-08 23:54:46,067 - INFO - Audio detected: level=0.012229
+2025-07-08 23:54:46,088 - INFO - Audio detected: level=0.010284
+2025-07-08 23:54:46,108 - INFO - Silence started at: 1752008086.1083581
+2025-07-08 23:54:46,208 - INFO - Audio detected: level=0.012500
+2025-07-08 23:54:46,228 - INFO - Audio detected: level=0.019868
+2025-07-08 23:54:46,248 - INFO - Audio detected: level=0.019146
+2025-07-08 23:54:46,278 - INFO - Audio detected: level=0.017080
+2025-07-08 23:54:46,297 - INFO - Audio detected: level=0.017071
+2025-07-08 23:54:46,317 - INFO - Audio detected: level=0.011299
+2025-07-08 23:54:46,348 - INFO - Audio detected: level=0.023087
+2025-07-08 23:54:46,367 - INFO - Audio detected: level=0.021468
+2025-07-08 23:54:46,387 - INFO - Audio detected: level=0.018009
+2025-07-08 23:54:46,417 - INFO - Audio detected: level=0.013079
+2025-07-08 23:54:46,438 - INFO - Audio detected: level=0.010539
+2025-07-08 23:54:46,457 - INFO - Audio detected: level=0.013120
+2025-07-08 23:54:46,476 - INFO - STS response: 7986 bytes
+2025-07-08 23:54:46,477 - INFO - STS processed phrase: 20 chunks, latency: 1.376s
+2025-07-08 23:54:46,487 - INFO - Audio detected: level=0.017590
+2025-07-08 23:54:46,494 - INFO - Phrase state: chunks=31, duration=1.03s, silence=0.00s
+2025-07-08 23:54:46,508 - INFO - Audio detected: level=0.024135
+2025-07-08 23:54:46,528 - INFO - Audio detected: level=0.024738
+2025-07-08 23:54:46,547 - INFO - Audio detected: level=0.034002
+2025-07-08 23:54:46,577 - INFO - Audio detected: level=0.029192
+2025-07-08 23:54:46,598 - INFO - Audio detected: level=0.017505
+2025-07-08 23:54:46,617 - INFO - Silence started at: 1752008086.6179504
+2025-07-08 23:54:46,648 - INFO - Audio detected: level=0.012950
+2025-07-08 23:54:46,667 - INFO - Audio detected: level=0.013138
+2025-07-08 23:54:46,687 - INFO - Silence started at: 1752008086.6871564
+2025-07-08 23:54:46,738 - INFO - Audio detected: level=0.016696
+2025-07-08 23:54:46,757 - INFO - Audio detected: level=0.023690
+2025-07-08 23:54:46,787 - INFO - Audio detected: level=0.019892
+2025-07-08 23:54:46,808 - INFO - Audio detected: level=0.020316
+2025-07-08 23:54:46,828 - INFO - Audio detected: level=0.013919
+2025-07-08 23:54:46,857 - INFO - Silence started at: 1752008086.857982
+2025-07-08 23:54:47,107 - INFO - Audio detected: level=0.034959
+2025-07-08 23:54:47,137 - INFO - Audio detected: level=0.028196
+2025-07-08 23:54:47,157 - INFO - Audio detected: level=0.013149
+2025-07-08 23:54:47,177 - INFO - Silence started at: 1752008087.1779838
+2025-07-08 23:54:47,265 - INFO - Force processing phrase due to timeout: 2.09s, chunks=58
+2025-07-08 23:54:47,265 - INFO - Processing phrase with 58 chunks
+2025-07-08 23:54:47,266 - INFO - Combined audio shape: (59392,), total samples: 59392
+2025-07-08 23:54:47,266 - INFO - Audio array shape: (59392,), dtype: int16
+2025-07-08 23:54:47,267 - INFO - Audio array min/max: -3143/4067
+2025-07-08 23:54:47,267 - INFO - WAV data size: 118828 bytes
+2025-07-08 23:54:47,268 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:54:47,269 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:54:47,269 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:54:47,269 - INFO - STS form field: audio_quality=192
+2025-07-08 23:54:47,270 - INFO - Sending STS request with 118828 bytes of audio data
+2025-07-08 23:54:47,617 - INFO - Audio callback called: level=0.000337, threshold=0.01
+2025-07-08 23:54:48,157 - INFO - Audio detected: level=0.016217
+2025-07-08 23:54:48,177 - INFO - Audio detected: level=0.018650
+2025-07-08 23:54:48,198 - INFO - Audio detected: level=0.021892
+2025-07-08 23:54:48,227 - INFO - Audio detected: level=0.020915
+2025-07-08 23:54:48,247 - INFO - Audio detected: level=0.013257
+2025-07-08 23:54:48,267 - INFO - Audio detected: level=0.011324
+2025-07-08 23:54:48,298 - INFO - Audio detected: level=0.012052
+2025-07-08 23:54:48,317 - INFO - Silence started at: 1752008088.3179224
+2025-07-08 23:54:48,367 - INFO - Audio detected: level=0.025996
+2025-07-08 23:54:48,388 - INFO - Audio detected: level=0.048645
+2025-07-08 23:54:48,406 - INFO - Audio detected: level=0.047816
+2025-07-08 23:54:48,437 - INFO - Audio detected: level=0.044518
+2025-07-08 23:54:48,458 - INFO - Audio detected: level=0.032086
+2025-07-08 23:54:48,477 - INFO - Audio detected: level=0.023527
+2025-07-08 23:54:48,507 - INFO - Audio detected: level=0.019718
+2025-07-08 23:54:48,527 - INFO - Audio detected: level=0.014122
+2025-07-08 23:54:48,547 - INFO - Audio detected: level=0.013164
+2025-07-08 23:54:48,568 - INFO - Silence started at: 1752008088.5681202
+2025-07-08 23:54:49,389 - INFO - STS response: 22196 bytes
+2025-07-08 23:54:49,390 - INFO - STS processed phrase: 58 chunks, latency: 2.124s
+2025-07-08 23:54:49,408 - INFO - Silence started at: 1752008089.4080644
+2025-07-08 23:54:49,847 - INFO - Audio detected: level=0.010456
+2025-07-08 23:54:49,877 - INFO - Audio detected: level=0.010277
+2025-07-08 23:54:49,898 - INFO - Audio detected: level=0.011892
+2025-07-08 23:54:49,917 - INFO - Silence started at: 1752008089.9179692
+2025-07-08 23:54:49,937 - INFO - Audio callback called: level=0.006716, threshold=0.01
+2025-07-08 23:54:50,447 - INFO - Processing phrase due to timeout: 2.29s
+2025-07-08 23:54:50,448 - INFO - Processing phrase with 19 chunks
+2025-07-08 23:54:50,448 - INFO - Combined audio shape: (19456,), total samples: 19456
+2025-07-08 23:54:50,449 - INFO - Audio array shape: (19456,), dtype: int16
+2025-07-08 23:54:50,449 - INFO - Audio array min/max: -3760/3765
+2025-07-08 23:54:50,449 - INFO - WAV data size: 38956 bytes
+2025-07-08 23:54:50,450 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:54:50,451 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:54:50,451 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:54:50,452 - INFO - STS form field: audio_quality=192
+2025-07-08 23:54:50,452 - INFO - Sending STS request with 38956 bytes of audio data
+2025-07-08 23:54:51,428 - INFO - Audio detected: level=0.016153
+2025-07-08 23:54:51,447 - INFO - Audio detected: level=0.021089
+2025-07-08 23:54:51,478 - INFO - Audio detected: level=0.029890
+2025-07-08 23:54:51,498 - INFO - Audio detected: level=0.026435
+2025-07-08 23:54:51,517 - INFO - Audio detected: level=0.016546
+2025-07-08 23:54:51,547 - INFO - Silence started at: 1752008091.547611
+2025-07-08 23:54:51,567 - INFO - Audio detected: level=0.011258
+2025-07-08 23:54:51,587 - INFO - Silence started at: 1752008091.5874698
+2025-07-08 23:54:51,687 - INFO - Audio detected: level=0.029354
+2025-07-08 23:54:51,700 - INFO - STS response: 7986 bytes
+2025-07-08 23:54:51,703 - INFO - STS processed phrase: 19 chunks, latency: 1.253s
+2025-07-08 23:54:51,708 - INFO - Phrase state: chunks=4, duration=0.07s, silence=0.00s
+2025-07-08 23:54:51,708 - INFO - Audio detected: level=0.049888
+2025-07-08 23:54:51,727 - INFO - Audio detected: level=0.059278
+2025-07-08 23:54:51,758 - INFO - Audio detected: level=0.063652
+2025-07-08 23:54:51,777 - INFO - Audio detected: level=0.052384
+2025-07-08 23:54:51,799 - INFO - Audio detected: level=0.046110
+2025-07-08 23:54:51,827 - INFO - Audio detected: level=0.031920
+2025-07-08 23:54:51,848 - INFO - Audio detected: level=0.022657
+2025-07-08 23:54:51,867 - INFO - Audio detected: level=0.019911
+2025-07-08 23:54:51,898 - INFO - Audio detected: level=0.013113
+2025-07-08 23:54:51,918 - INFO - Silence started at: 1752008091.9183097
+2025-07-08 23:54:52,097 - INFO - Audio detected: level=0.021777
+2025-07-08 23:54:52,128 - INFO - Audio detected: level=0.017203
+2025-07-08 23:54:52,147 - INFO - Audio detected: level=0.013646
+2025-07-08 23:54:52,168 - INFO - Audio detected: level=0.011224
+2025-07-08 23:54:52,199 - INFO - Silence started at: 1752008092.1995335
+2025-07-08 23:54:52,267 - INFO - Audio callback called: level=0.001507, threshold=0.01
+2025-07-08 23:54:52,711 - INFO - Processing phrase due to timeout: 1.28s
+2025-07-08 23:54:52,711 - INFO - Processing phrase with 20 chunks
+2025-07-08 23:54:52,712 - INFO - Combined audio shape: (20480,), total samples: 20480
+2025-07-08 23:54:52,712 - INFO - Audio array shape: (20480,), dtype: int16
+2025-07-08 23:54:52,712 - INFO - Audio array min/max: -5003/3295
+2025-07-08 23:54:52,713 - INFO - WAV data size: 41004 bytes
+2025-07-08 23:54:52,713 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:54:52,713 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:54:52,714 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:54:52,714 - INFO - STS form field: audio_quality=192
+2025-07-08 23:54:52,714 - INFO - Sending STS request with 41004 bytes of audio data
+2025-07-08 23:54:54,077 - INFO - Audio detected: level=0.010576
+2025-07-08 23:54:54,084 - INFO - STS response: 7986 bytes
+2025-07-08 23:54:54,086 - INFO - STS processed phrase: 20 chunks, latency: 1.373s
+2025-07-08 23:54:54,099 - INFO - Audio detected: level=0.036777
+2025-07-08 23:54:54,118 - INFO - Audio detected: level=0.037992
+2025-07-08 23:54:54,147 - INFO - Audio detected: level=0.040020
+2025-07-08 23:54:54,168 - INFO - Audio detected: level=0.026296
+2025-07-08 23:54:54,187 - INFO - Audio detected: level=0.014942
+2025-07-08 23:54:54,219 - INFO - Audio detected: level=0.013939
+2025-07-08 23:54:54,238 - INFO - Audio detected: level=0.011719
+2025-07-08 23:54:54,259 - INFO - Silence started at: 1752008094.2592964
+2025-07-08 23:54:54,307 - INFO - Audio detected: level=0.014070
+2025-07-08 23:54:54,327 - INFO - Audio detected: level=0.013801
+2025-07-08 23:54:54,358 - INFO - Audio detected: level=0.013023
+2025-07-08 23:54:54,377 - INFO - Audio detected: level=0.010536
+2025-07-08 23:54:54,398 - INFO - Audio detected: level=0.010975
+2025-07-08 23:54:54,427 - INFO - Audio detected: level=0.010354
+2025-07-08 23:54:54,447 - INFO - Silence started at: 1752008094.4478202
+2025-07-08 23:54:54,467 - INFO - Audio detected: level=0.013078
+2025-07-08 23:54:54,498 - INFO - Audio detected: level=0.011718
+2025-07-08 23:54:54,519 - INFO - Silence started at: 1752008094.519497
+2025-07-08 23:54:54,537 - INFO - Audio detected: level=0.012593
+2025-07-08 23:54:54,568 - INFO - Audio detected: level=0.012640
+2025-07-08 23:54:54,589 - INFO - Audio callback called: level=0.011931, threshold=0.01
+2025-07-08 23:54:54,590 - INFO - Audio detected: level=0.011931
+2025-07-08 23:54:54,608 - INFO - Audio detected: level=0.010218
+2025-07-08 23:54:54,637 - INFO - Silence started at: 1752008094.637109
+2025-07-08 23:54:55,170 - INFO - Processing phrase due to timeout: 1.09s
+2025-07-08 23:54:55,170 - INFO - Processing phrase with 20 chunks
+2025-07-08 23:54:55,171 - INFO - Combined audio shape: (20480,), total samples: 20480
+2025-07-08 23:54:55,172 - INFO - Audio array shape: (20480,), dtype: int16
+2025-07-08 23:54:55,172 - INFO - Audio array min/max: -2836/2476
+2025-07-08 23:54:55,173 - INFO - WAV data size: 41004 bytes
+2025-07-08 23:54:55,173 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:54:55,174 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:54:55,174 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:54:55,174 - INFO - STS form field: audio_quality=192
+2025-07-08 23:54:55,175 - INFO - Sending STS request with 41004 bytes of audio data
+2025-07-08 23:54:55,678 - INFO - Audio detected: level=0.013566
+2025-07-08 23:54:55,697 - INFO - Audio detected: level=0.021546
+2025-07-08 23:54:55,727 - INFO - Audio detected: level=0.022000
+2025-07-08 23:54:55,747 - INFO - Audio detected: level=0.015993
+2025-07-08 23:54:55,767 - INFO - Audio detected: level=0.024075
+2025-07-08 23:54:55,798 - INFO - Audio detected: level=0.019318
+2025-07-08 23:54:55,818 - INFO - Audio detected: level=0.017401
+2025-07-08 23:54:55,838 - INFO - Audio detected: level=0.013383
+2025-07-08 23:54:55,867 - INFO - Silence started at: 1752008095.867029
+2025-07-08 23:54:55,887 - INFO - Audio detected: level=0.014643
+2025-07-08 23:54:55,908 - INFO - Audio detected: level=0.019775
+2025-07-08 23:54:55,937 - INFO - Audio detected: level=0.017023
+2025-07-08 23:54:55,958 - INFO - Audio detected: level=0.014717
+2025-07-08 23:54:55,977 - INFO - Silence started at: 1752008095.9775176
+2025-07-08 23:54:56,047 - INFO - Audio detected: level=0.011651
+2025-07-08 23:54:56,069 - INFO - Audio detected: level=0.012019
+2025-07-08 23:54:56,097 - INFO - Audio detected: level=0.012592
+2025-07-08 23:54:56,117 - INFO - Silence started at: 1752008096.1173544
+2025-07-08 23:54:56,307 - INFO - STS response: 7986 bytes
+2025-07-08 23:54:56,309 - INFO - STS processed phrase: 20 chunks, latency: 1.137s
+2025-07-08 23:54:56,313 - INFO - Phrase state: chunks=14, duration=0.39s, silence=0.00s
+2025-07-08 23:54:56,328 - INFO - Silence started at: 1752008096.3281865
+2025-07-08 23:54:56,875 - INFO - Processing phrase due to timeout: 1.20s
+2025-07-08 23:54:56,875 - INFO - Processing phrase with 15 chunks
+2025-07-08 23:54:56,875 - INFO - Combined audio shape: (15360,), total samples: 15360
+2025-07-08 23:54:56,876 - INFO - Audio array shape: (15360,), dtype: int16
+2025-07-08 23:54:56,876 - INFO - Audio array min/max: -1767/1959
+2025-07-08 23:54:56,876 - INFO - WAV data size: 30764 bytes
+2025-07-08 23:54:56,877 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:54:56,877 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:54:56,878 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:54:56,878 - INFO - STS form field: audio_quality=192
+2025-07-08 23:54:56,878 - INFO - Sending STS request with 30764 bytes of audio data
+2025-07-08 23:54:56,907 - INFO - Audio callback called: level=0.001431, threshold=0.01
+2025-07-08 23:54:57,748 - INFO - Audio detected: level=0.015736
+2025-07-08 23:54:57,768 - INFO - Audio detected: level=0.019511
+2025-07-08 23:54:57,786 - INFO - Audio detected: level=0.022526
+2025-07-08 23:54:57,817 - INFO - Audio detected: level=0.042501
+2025-07-08 23:54:57,838 - INFO - Audio detected: level=0.032516
+2025-07-08 23:54:57,857 - INFO - Audio detected: level=0.024862
+2025-07-08 23:54:57,889 - INFO - Audio detected: level=0.035777
+2025-07-08 23:54:57,907 - INFO - Audio detected: level=0.034158
+2025-07-08 23:54:57,929 - INFO - Audio detected: level=0.021149
+2025-07-08 23:54:57,958 - INFO - Audio detected: level=0.019649
+2025-07-08 23:54:57,977 - INFO - Audio detected: level=0.013874
+2025-07-08 23:54:57,998 - INFO - Silence started at: 1752008097.998179
+2025-07-08 23:54:58,048 - INFO - Audio detected: level=0.015448
+2025-07-08 23:54:58,067 - INFO - Audio detected: level=0.017220
+2025-07-08 23:54:58,098 - INFO - Audio detected: level=0.020383
+2025-07-08 23:54:58,118 - INFO - Audio detected: level=0.018422
+2025-07-08 23:54:58,137 - INFO - Silence started at: 1752008098.1371682
+2025-07-08 23:54:58,186 - INFO - STS response: 6732 bytes
+2025-07-08 23:54:58,188 - INFO - STS processed phrase: 15 chunks, latency: 1.311s
+2025-07-08 23:54:58,208 - INFO - Silence started at: 1752008098.208837
+2025-07-08 23:54:58,327 - INFO - Audio detected: level=0.013522
+2025-07-08 23:54:58,347 - INFO - Audio detected: level=0.012142
+2025-07-08 23:54:58,369 - INFO - Audio detected: level=0.012286
+2025-07-08 23:54:58,398 - INFO - Silence started at: 1752008098.398346
+2025-07-08 23:54:58,418 - INFO - Audio detected: level=0.010766
+2025-07-08 23:54:58,437 - INFO - Audio detected: level=0.018712
+2025-07-08 23:54:58,468 - INFO - Audio detected: level=0.017087
+2025-07-08 23:54:58,489 - INFO - Audio detected: level=0.018636
+2025-07-08 23:54:58,507 - INFO - Audio detected: level=0.014688
+2025-07-08 23:54:58,538 - INFO - Silence started at: 1752008098.538098
+2025-07-08 23:54:59,060 - INFO - Processing phrase due to timeout: 1.31s
+2025-07-08 23:54:59,060 - INFO - Processing phrase with 23 chunks
+2025-07-08 23:54:59,061 - INFO - Combined audio shape: (23552,), total samples: 23552
+2025-07-08 23:54:59,061 - INFO - Audio array shape: (23552,), dtype: int16
+2025-07-08 23:54:59,062 - INFO - Audio array min/max: -2920/2838
+2025-07-08 23:54:59,062 - INFO - WAV data size: 47148 bytes
+2025-07-08 23:54:59,063 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:54:59,063 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:54:59,064 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:54:59,064 - INFO - STS form field: audio_quality=192
+2025-07-08 23:54:59,064 - INFO - Sending STS request with 47148 bytes of audio data
+2025-07-08 23:54:59,228 - INFO - Audio callback called: level=0.000488, threshold=0.01
+2025-07-08 23:55:00,067 - INFO - Audio detected: level=0.014780
+2025-07-08 23:55:00,088 - INFO - Audio detected: level=0.013045
+2025-07-08 23:55:00,119 - INFO - Audio detected: level=0.011259
+2025-07-08 23:55:00,138 - INFO - Audio detected: level=0.011317
+2025-07-08 23:55:00,159 - INFO - Audio detected: level=0.010055
+2025-07-08 23:55:00,177 - INFO - Silence started at: 1752008100.1779537
+2025-07-08 23:55:00,486 - INFO - STS response: 9658 bytes
+2025-07-08 23:55:00,487 - INFO - STS processed phrase: 23 chunks, latency: 1.426s
+2025-07-08 23:55:00,508 - INFO - Silence started at: 1752008100.507445
+2025-07-08 23:55:00,858 - INFO - Audio detected: level=0.010256
+2025-07-08 23:55:00,878 - INFO - Silence started at: 1752008100.8787854
+2025-07-08 23:55:01,409 - INFO - Processing phrase due to timeout: 1.34s
+2025-07-08 23:55:01,409 - INFO - Processing phrase with 6 chunks
+2025-07-08 23:55:01,410 - INFO - Combined audio shape: (6144,), total samples: 6144
+2025-07-08 23:55:01,410 - INFO - Audio array shape: (6144,), dtype: int16
+2025-07-08 23:55:01,411 - INFO - Audio array min/max: -1097/996
+2025-07-08 23:55:01,411 - INFO - WAV data size: 12332 bytes
+2025-07-08 23:55:01,411 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:55:01,412 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:55:01,412 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:55:01,412 - INFO - STS form field: audio_quality=192
+2025-07-08 23:55:01,414 - INFO - Sending STS request with 12332 bytes of audio data
+2025-07-08 23:55:01,547 - INFO - Audio callback called: level=0.008379, threshold=0.01
+2025-07-08 23:55:01,577 - INFO - Audio detected: level=0.014206
+2025-07-08 23:55:01,599 - INFO - Audio detected: level=0.016741
+2025-07-08 23:55:01,617 - INFO - Audio detected: level=0.021937
+2025-07-08 23:55:01,649 - INFO - Audio detected: level=0.037468
+2025-07-08 23:55:01,667 - INFO - Audio detected: level=0.049014
+2025-07-08 23:55:01,688 - INFO - Audio detected: level=0.045554
+2025-07-08 23:55:01,718 - INFO - Audio detected: level=0.040583
+2025-07-08 23:55:01,737 - INFO - Audio detected: level=0.030420
+2025-07-08 23:55:01,758 - INFO - Audio detected: level=0.032570
+2025-07-08 23:55:01,788 - INFO - Audio detected: level=0.039360
+2025-07-08 23:55:01,809 - INFO - Audio detected: level=0.031174
+2025-07-08 23:55:01,827 - INFO - Audio detected: level=0.025908
+2025-07-08 23:55:01,858 - INFO - Audio detected: level=0.016832
+2025-07-08 23:55:01,878 - INFO - Silence started at: 1752008101.878064
+2025-07-08 23:55:01,897 - INFO - Audio detected: level=0.012121
+2025-07-08 23:55:01,927 - INFO - Silence started at: 1752008101.9278913
+2025-07-08 23:55:02,404 - INFO - STS response: 2970 bytes
+2025-07-08 23:55:02,405 - INFO - STS processed phrase: 6 chunks, latency: 0.995s
+2025-07-08 23:55:02,407 - INFO - Silence started at: 1752008102.407771
+2025-07-08 23:55:02,597 - INFO - Audio detected: level=0.014496
+2025-07-08 23:55:02,618 - INFO - Audio detected: level=0.027842
+2025-07-08 23:55:02,647 - INFO - Audio detected: level=0.013260
+2025-07-08 23:55:02,667 - INFO - Audio detected: level=0.046158
+2025-07-08 23:55:02,689 - INFO - Audio detected: level=0.056062
+2025-07-08 23:55:02,718 - INFO - Audio detected: level=0.044917
+2025-07-08 23:55:02,718 - INFO - Phrase state: chunks=20, duration=1.14s, silence=0.00s
+2025-07-08 23:55:02,737 - INFO - Audio detected: level=0.012295
+2025-07-08 23:55:02,759 - INFO - Silence started at: 1752008102.7585201
+2025-07-08 23:55:03,282 - INFO - Processing phrase due to timeout: 1.70s
+2025-07-08 23:55:03,282 - INFO - Processing phrase with 21 chunks
+2025-07-08 23:55:03,283 - INFO - Combined audio shape: (21504,), total samples: 21504
+2025-07-08 23:55:03,284 - INFO - Audio array shape: (21504,), dtype: int16
+2025-07-08 23:55:03,284 - INFO - Audio array min/max: -5577/5626
+2025-07-08 23:55:03,285 - INFO - WAV data size: 43052 bytes
+2025-07-08 23:55:03,285 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:55:03,286 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:55:03,286 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:55:03,286 - INFO - STS form field: audio_quality=192
+2025-07-08 23:55:03,287 - INFO - Sending STS request with 43052 bytes of audio data
+2025-07-08 23:55:03,877 - INFO - Audio callback called: level=0.000326, threshold=0.01
+2025-07-08 23:55:03,948 - INFO - Audio detected: level=0.012090
+2025-07-08 23:55:03,968 - INFO - Audio detected: level=0.020744
+2025-07-08 23:55:03,987 - INFO - Audio detected: level=0.025252
+2025-07-08 23:55:04,017 - INFO - Audio detected: level=0.031479
+2025-07-08 23:55:04,039 - INFO - Audio detected: level=0.034413
+2025-07-08 23:55:04,057 - INFO - Audio detected: level=0.022858
+2025-07-08 23:55:04,087 - INFO - Audio detected: level=0.019075
+2025-07-08 23:55:04,108 - INFO - Audio detected: level=0.017686
+2025-07-08 23:55:04,129 - INFO - Audio detected: level=0.029513
+2025-07-08 23:55:04,157 - INFO - Audio detected: level=0.035597
+2025-07-08 23:55:04,177 - INFO - Audio detected: level=0.035950
+2025-07-08 23:55:04,198 - INFO - Audio detected: level=0.027175
+2025-07-08 23:55:04,228 - INFO - Audio detected: level=0.036195
+2025-07-08 23:55:04,247 - INFO - Audio detected: level=0.047353
+2025-07-08 23:55:04,268 - INFO - Audio detected: level=0.032813
+2025-07-08 23:55:04,288 - INFO - Audio detected: level=0.023802
+2025-07-08 23:55:04,318 - INFO - Audio detected: level=0.011576
+2025-07-08 23:55:04,337 - INFO - Silence started at: 1752008104.3376324
+2025-07-08 23:55:05,009 - INFO - STS response: 8822 bytes
+2025-07-08 23:55:05,011 - INFO - STS processed phrase: 21 chunks, latency: 1.727s
+2025-07-08 23:55:05,037 - INFO - Silence started at: 1752008105.0379488
+2025-07-08 23:55:05,575 - INFO - Processing phrase due to timeout: 1.63s
+2025-07-08 23:55:05,576 - INFO - Processing phrase with 17 chunks
+2025-07-08 23:55:05,576 - INFO - Combined audio shape: (17408,), total samples: 17408
+2025-07-08 23:55:05,577 - INFO - Audio array shape: (17408,), dtype: int16
+2025-07-08 23:55:05,577 - INFO - Audio array min/max: -3233/2921
+2025-07-08 23:55:05,577 - INFO - WAV data size: 34860 bytes
+2025-07-08 23:55:05,578 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:55:05,578 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:55:05,579 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:55:05,580 - INFO - STS form field: audio_quality=192
+2025-07-08 23:55:05,580 - INFO - Sending STS request with 34860 bytes of audio data
+2025-07-08 23:55:06,198 - INFO - Audio callback called: level=0.000640, threshold=0.01
+2025-07-08 23:55:06,448 - INFO - Audio detected: level=0.011354
+2025-07-08 23:55:06,477 - INFO - Audio detected: level=0.022316
+2025-07-08 23:55:06,497 - INFO - Audio detected: level=0.017454
+2025-07-08 23:55:06,517 - INFO - Audio detected: level=0.022391
+2025-07-08 23:55:06,548 - INFO - Audio detected: level=0.023790
+2025-07-08 23:55:06,567 - INFO - Audio detected: level=0.033858
+2025-07-08 23:55:06,587 - INFO - Audio detected: level=0.037089
+2025-07-08 23:55:06,616 - INFO - Audio detected: level=0.036794
+2025-07-08 23:55:06,638 - INFO - Audio detected: level=0.022688
+2025-07-08 23:55:06,658 - INFO - Audio detected: level=0.030806
+2025-07-08 23:55:06,687 - INFO - Audio detected: level=0.029969
+2025-07-08 23:55:06,707 - INFO - Audio detected: level=0.027672
+2025-07-08 23:55:06,727 - INFO - Audio detected: level=0.017601
+2025-07-08 23:55:06,758 - INFO - Audio detected: level=0.013449
+2025-07-08 23:55:06,777 - INFO - Silence started at: 1752008106.7777512
+2025-07-08 23:55:06,858 - INFO - STS response: 7150 bytes
+2025-07-08 23:55:06,860 - INFO - STS processed phrase: 17 chunks, latency: 1.283s
+2025-07-08 23:55:06,867 - INFO - Silence started at: 1752008106.867695
+2025-07-08 23:55:06,917 - INFO - Audio detected: level=0.013299
+2025-07-08 23:55:06,937 - INFO - Audio detected: level=0.020634
+2025-07-08 23:55:06,967 - INFO - Audio detected: level=0.027661
+2025-07-08 23:55:06,987 - INFO - Audio detected: level=0.036698
+2025-07-08 23:55:07,007 - INFO - Audio detected: level=0.040815
+2025-07-08 23:55:07,028 - INFO - Audio detected: level=0.055960
+2025-07-08 23:55:07,057 - INFO - Audio detected: level=0.043335
+2025-07-08 23:55:07,078 - INFO - Audio detected: level=0.024881
+2025-07-08 23:55:07,097 - INFO - Audio detected: level=0.014839
+2025-07-08 23:55:07,127 - INFO - Silence started at: 1752008107.1278446
+2025-07-08 23:55:07,408 - INFO - Audio detected: level=0.013698
+2025-07-08 23:55:07,427 - INFO - Audio detected: level=0.013930
+2025-07-08 23:55:07,448 - INFO - Silence started at: 1752008107.4482083
+2025-07-08 23:55:07,978 - INFO - Processing phrase due to timeout: 1.53s
+2025-07-08 23:55:07,979 - INFO - Processing phrase with 25 chunks
+2025-07-08 23:55:07,979 - INFO - Combined audio shape: (25600,), total samples: 25600
+2025-07-08 23:55:07,980 - INFO - Audio array shape: (25600,), dtype: int16
+2025-07-08 23:55:07,981 - INFO - Audio array min/max: -4415/4170
+2025-07-08 23:55:07,981 - INFO - WAV data size: 51244 bytes
+2025-07-08 23:55:07,981 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:55:07,981 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:55:07,983 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:55:07,983 - INFO - STS form field: audio_quality=192
+2025-07-08 23:55:07,983 - INFO - Sending STS request with 51244 bytes of audio data
+2025-07-08 23:55:08,517 - INFO - Audio callback called: level=0.001799, threshold=0.01
+2025-07-08 23:55:09,097 - INFO - Audio detected: level=0.014001
+2025-07-08 23:55:09,117 - INFO - Audio detected: level=0.013813
+2025-07-08 23:55:09,149 - INFO - Audio detected: level=0.018166
+2025-07-08 23:55:09,167 - INFO - Audio detected: level=0.024370
+2025-07-08 23:55:09,188 - INFO - Audio detected: level=0.033881
+2025-07-08 23:55:09,217 - INFO - Audio detected: level=0.045403
+2025-07-08 23:55:09,238 - INFO - Audio detected: level=0.042198
+2025-07-08 23:55:09,257 - INFO - Audio detected: level=0.035970
+2025-07-08 23:55:09,287 - INFO - Audio detected: level=0.036241
+2025-07-08 23:55:09,307 - INFO - Audio detected: level=0.042512
+2025-07-08 23:55:09,327 - INFO - Audio detected: level=0.040564
+2025-07-08 23:55:09,358 - INFO - Audio detected: level=0.032114
+2025-07-08 23:55:09,377 - INFO - Audio detected: level=0.041783
+2025-07-08 23:55:09,399 - INFO - Audio detected: level=0.039407
+2025-07-08 23:55:09,427 - INFO - Audio detected: level=0.035824
+2025-07-08 23:55:09,447 - INFO - Audio detected: level=0.043312
+2025-07-08 23:55:09,468 - INFO - Audio detected: level=0.050251
+2025-07-08 23:55:09,474 - INFO - STS response: 10494 bytes
+2025-07-08 23:55:09,475 - INFO - STS processed phrase: 25 chunks, latency: 1.494s
+2025-07-08 23:55:09,482 - INFO - Phrase state: chunks=7, duration=0.14s, silence=0.00s
+2025-07-08 23:55:09,497 - INFO - Audio detected: level=0.041250
+2025-07-08 23:55:09,519 - INFO - Audio detected: level=0.045745
+2025-07-08 23:55:09,537 - INFO - Audio detected: level=0.029827
+2025-07-08 23:55:09,567 - INFO - Audio detected: level=0.021849
+2025-07-08 23:55:09,587 - INFO - Audio detected: level=0.022815
+2025-07-08 23:55:09,606 - INFO - Audio detected: level=0.012549
+2025-07-08 23:55:09,638 - INFO - Silence started at: 1752008109.638663
+2025-07-08 23:55:09,727 - INFO - Audio detected: level=0.012430
+2025-07-08 23:55:09,747 - INFO - Audio detected: level=0.010031
+2025-07-08 23:55:09,767 - INFO - Audio detected: level=0.015357
+2025-07-08 23:55:09,797 - INFO - Audio detected: level=0.013226
+2025-07-08 23:55:09,818 - INFO - Audio detected: level=0.011525
+2025-07-08 23:55:09,838 - INFO - Silence started at: 1752008109.8382797
+2025-07-08 23:55:09,868 - INFO - Audio detected: level=0.011890
+2025-07-08 23:55:09,911 - INFO - Audio detected: level=0.010544
+2025-07-08 23:55:09,914 - INFO - Audio detected: level=0.010695
+2025-07-08 23:55:09,953 - INFO - Audio detected: level=0.010991
+2025-07-08 23:55:09,957 - INFO - Audio detected: level=0.010721
+2025-07-08 23:55:09,978 - INFO - Audio detected: level=0.010525
+2025-07-08 23:55:10,008 - INFO - Silence started at: 1752008110.0088587
+2025-07-08 23:55:10,076 - INFO - Audio detected: level=0.010191
+2025-07-08 23:55:10,097 - INFO - Audio detected: level=0.011390
+2025-07-08 23:55:10,124 - INFO - Audio detected: level=0.010775
+2025-07-08 23:55:10,148 - INFO - Audio detected: level=0.019809
+2025-07-08 23:55:10,168 - INFO - Audio detected: level=0.020751
+2025-07-08 23:55:10,199 - INFO - Audio detected: level=0.023216
+2025-07-08 23:55:10,218 - INFO - Silence started at: 1752008110.2185688
+2025-07-08 23:55:10,739 - INFO - Processing phrase due to timeout: 1.64s
+2025-07-08 23:55:10,739 - INFO - Processing phrase with 40 chunks
+2025-07-08 23:55:10,740 - INFO - Combined audio shape: (40960,), total samples: 40960
+2025-07-08 23:55:10,740 - INFO - Audio array shape: (40960,), dtype: int16
+2025-07-08 23:55:10,741 - INFO - Audio array min/max: -4360/5248
+2025-07-08 23:55:10,742 - INFO - WAV data size: 81964 bytes
+2025-07-08 23:55:10,743 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:55:10,743 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:55:10,743 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:55:10,743 - INFO - STS form field: audio_quality=192
+2025-07-08 23:55:10,744 - INFO - Sending STS request with 81964 bytes of audio data
+2025-07-08 23:55:10,837 - INFO - Audio callback called: level=0.000067, threshold=0.01
+2025-07-08 23:55:11,257 - INFO - Audio detected: level=0.013689
+2025-07-08 23:55:11,279 - INFO - Audio detected: level=0.029331
+2025-07-08 23:55:11,307 - INFO - Audio detected: level=0.047218
+2025-07-08 23:55:11,328 - INFO - Audio detected: level=0.042156
+2025-07-08 23:55:11,346 - INFO - Audio detected: level=0.054440
+2025-07-08 23:55:11,377 - INFO - Audio detected: level=0.064814
+2025-07-08 23:55:11,398 - INFO - Audio detected: level=0.079433
+2025-07-08 23:55:11,418 - INFO - Audio detected: level=0.075740
+2025-07-08 23:55:11,448 - INFO - Audio detected: level=0.067329
+2025-07-08 23:55:11,468 - INFO - Audio detected: level=0.088236
+2025-07-08 23:55:11,487 - INFO - Audio detected: level=0.092343
+2025-07-08 23:55:11,518 - INFO - Audio detected: level=0.094293
+2025-07-08 23:55:11,537 - INFO - Audio detected: level=0.099814
+2025-07-08 23:55:11,558 - INFO - Audio detected: level=0.077835
+2025-07-08 23:55:11,588 - INFO - Audio detected: level=0.061247
+2025-07-08 23:55:11,608 - INFO - Audio detected: level=0.030668
+2025-07-08 23:55:11,628 - INFO - Audio detected: level=0.022506
+2025-07-08 23:55:11,657 - INFO - Audio detected: level=0.017420
+2025-07-08 23:55:11,679 - INFO - Audio detected: level=0.012992
+2025-07-08 23:55:11,697 - INFO - Silence started at: 1752008111.6976151
+2025-07-08 23:55:12,689 - INFO - STS response: 15509 bytes
+2025-07-08 23:55:12,691 - INFO - STS processed phrase: 40 chunks, latency: 1.950s
+2025-07-08 23:55:12,697 - INFO - Silence started at: 1752008112.6978261
+2025-07-08 23:55:12,698 - INFO - Phrase state: chunks=17, duration=0.37s, silence=-1.07s
+2025-07-08 23:55:13,157 - INFO - Audio callback called: level=0.005358, threshold=0.01
+2025-07-08 23:55:13,238 - INFO - Processing phrase due to timeout: 1.98s
+2025-07-08 23:55:13,239 - INFO - Processing phrase with 19 chunks
+2025-07-08 23:55:13,239 - INFO - Combined audio shape: (19456,), total samples: 19456
+2025-07-08 23:55:13,239 - INFO - Audio array shape: (19456,), dtype: int16
+2025-07-08 23:55:13,240 - INFO - Audio array min/max: -8445/11549
+2025-07-08 23:55:13,240 - INFO - WAV data size: 38956 bytes
+2025-07-08 23:55:13,241 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:55:13,241 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:55:13,242 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:55:13,242 - INFO - STS form field: audio_quality=192
+2025-07-08 23:55:13,243 - INFO - Sending STS request with 38956 bytes of audio data
+2025-07-08 23:55:14,550 - INFO - STS response: 7986 bytes
+2025-07-08 23:55:14,551 - INFO - STS processed phrase: 19 chunks, latency: 1.311s
+2025-07-08 23:55:14,558 - INFO - Audio detected: level=0.010670
+2025-07-08 23:55:14,579 - INFO - Audio detected: level=0.033437
+2025-07-08 23:55:14,597 - INFO - Audio detected: level=0.025233
+2025-07-08 23:55:14,627 - INFO - Audio detected: level=0.023227
+2025-07-08 23:55:14,647 - INFO - Audio detected: level=0.012791
+2025-07-08 23:55:14,667 - INFO - Silence started at: 1752008114.6679177
+2025-07-08 23:55:14,698 - INFO - Audio detected: level=0.021338
+2025-07-08 23:55:14,717 - INFO - Audio detected: level=0.024422
+2025-07-08 23:55:14,737 - INFO - Audio detected: level=0.025219
+2025-07-08 23:55:14,768 - INFO - Audio detected: level=0.019587
+2025-07-08 23:55:14,788 - INFO - Audio detected: level=0.020846
+2025-07-08 23:55:14,807 - INFO - Audio detected: level=0.016961
+2025-07-08 23:55:14,837 - INFO - Audio detected: level=0.014015
+2025-07-08 23:55:14,857 - INFO - Audio detected: level=0.024752
+2025-07-08 23:55:14,877 - INFO - Audio detected: level=0.029787
+2025-07-08 23:55:14,908 - INFO - Audio detected: level=0.031828
+2025-07-08 23:55:14,927 - INFO - Audio detected: level=0.027955
+2025-07-08 23:55:14,949 - INFO - Audio detected: level=0.034821
+2025-07-08 23:55:14,978 - INFO - Audio detected: level=0.062625
+2025-07-08 23:55:14,997 - INFO - Audio detected: level=0.069525
+2025-07-08 23:55:15,018 - INFO - Audio detected: level=0.047611
+2025-07-08 23:55:15,047 - INFO - Audio detected: level=0.045762
+2025-07-08 23:55:15,068 - INFO - Audio detected: level=0.036512
+2025-07-08 23:55:15,088 - INFO - Audio detected: level=0.026456
+2025-07-08 23:55:15,117 - INFO - Audio detected: level=0.015716
+2025-07-08 23:55:15,137 - INFO - Audio detected: level=0.010304
+2025-07-08 23:55:15,157 - INFO - Silence started at: 1752008115.1579332
+2025-07-08 23:55:15,487 - INFO - Audio callback called: level=0.000056, threshold=0.01
+2025-07-08 23:55:15,695 - INFO - Processing phrase due to timeout: 1.14s
+2025-07-08 23:55:15,695 - INFO - Processing phrase with 25 chunks
+2025-07-08 23:55:15,695 - INFO - Combined audio shape: (25600,), total samples: 25600
+2025-07-08 23:55:15,695 - INFO - Audio array shape: (25600,), dtype: int16
+2025-07-08 23:55:15,696 - INFO - Audio array min/max: -6283/5795
+2025-07-08 23:55:15,696 - INFO - WAV data size: 51244 bytes
+2025-07-08 23:55:15,697 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:55:15,698 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:55:15,699 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:55:15,699 - INFO - STS form field: audio_quality=192
+2025-07-08 23:55:15,699 - INFO - Sending STS request with 51244 bytes of audio data
+2025-07-08 23:55:17,138 - INFO - STS response: 10494 bytes
+2025-07-08 23:55:17,139 - INFO - STS processed phrase: 25 chunks, latency: 1.443s
+2025-07-08 23:55:17,158 - INFO - Silence started at: 1752008117.1570852
+2025-07-08 23:55:17,387 - INFO - Audio detected: level=0.013248
+2025-07-08 23:55:17,408 - INFO - Audio detected: level=0.011335
+2025-07-08 23:55:17,437 - INFO - Silence started at: 1752008117.4377933
+2025-07-08 23:55:17,737 - INFO - Audio detected: level=0.011696
+2025-07-08 23:55:17,760 - INFO - Audio detected: level=0.028717
+2025-07-08 23:55:17,788 - INFO - Audio detected: level=0.043701
+2025-07-08 23:55:17,808 - INFO - Audio callback called: level=0.042273, threshold=0.01
+2025-07-08 23:55:17,808 - INFO - Audio detected: level=0.042273
+2025-07-08 23:55:17,828 - INFO - Audio detected: level=0.027019
+2025-07-08 23:55:17,857 - INFO - Audio detected: level=0.020515
+2025-07-08 23:55:17,877 - INFO - Audio detected: level=0.012150
+2025-07-08 23:55:17,899 - INFO - Silence started at: 1752008117.8993602
+2025-07-08 23:55:18,439 - INFO - Processing phrase due to timeout: 1.05s
+2025-07-08 23:55:18,440 - INFO - Processing phrase with 9 chunks
+2025-07-08 23:55:18,440 - INFO - Combined audio shape: (9216,), total samples: 9216
+2025-07-08 23:55:18,440 - INFO - Audio array shape: (9216,), dtype: int16
+2025-07-08 23:55:18,440 - INFO - Audio array min/max: -4493/4362
+2025-07-08 23:55:18,441 - INFO - WAV data size: 18476 bytes
+2025-07-08 23:55:18,441 - INFO - STS request data: voice_id=21m00Tcm4TlvDq8ikWAM (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:55:18,442 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:55:18,442 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:55:18,442 - INFO - STS form field: audio_quality=192
+2025-07-08 23:55:18,444 - INFO - Sending STS request with 18476 bytes of audio data
+2025-07-08 23:55:18,559 - INFO - Cleaning up...
+2025-07-08 23:55:18,636 - INFO - Cleanup complete
+2025-07-08 23:57:10,487 - INFO - Starting Pro STS Voice Changer...
+2025-07-08 23:57:10,487 - INFO - Initializing Pro features...
+2025-07-08 23:57:10,488 - INFO - Testing Pro capabilities...
+2025-07-08 23:57:12,093 - INFO - Subscription: pro
+2025-07-08 23:57:12,093 - INFO - Character count: 168504
+2025-07-08 23:57:12,093 - INFO - Character limit: 501069
+2025-07-08 23:57:33,399 - INFO - Cleaning up...
+2025-07-08 23:57:33,400 - INFO - Cleanup complete
+2025-07-08 23:57:39,551 - INFO - Starting Pro STS Voice Changer...
+2025-07-08 23:57:39,552 - INFO - Initializing Pro features...
+2025-07-08 23:57:39,552 - INFO - Testing Pro capabilities...
+2025-07-08 23:57:41,231 - INFO - Subscription: pro
+2025-07-08 23:57:41,232 - INFO - Character count: 168504
+2025-07-08 23:57:41,232 - INFO - Character limit: 501069
+2025-07-08 23:57:41,580 - INFO - Available Turbo models: 2
+2025-07-08 23:57:41,581 - INFO -   - Eleven Turbo v2.5 (eleven_turbo_v2_5)
+2025-07-08 23:57:41,581 - INFO -   - Eleven Turbo v2 (eleven_turbo_v2)
+2025-07-08 23:57:41,581 - INFO - Initializing voice cloning...
+2025-07-08 23:57:42,254 - INFO - No existing voice clone found. You can create one via the ElevenLabs dashboard.
+2025-07-08 23:57:42,255 - INFO - Setting up WebSocket connection...
+2025-07-08 23:57:42,256 - INFO - Using HTTP streaming (WebSocket not yet available)
+2025-07-08 23:57:42,256 - INFO - Pro features initialized successfully
+2025-07-08 23:57:42,257 - INFO - Starting audio capture...
+2025-07-08 23:57:42,257 - INFO - Starting audio output...
+2025-07-08 23:57:42,257 - INFO - Starting audio stream processing...
+2025-07-08 23:57:42,589 - INFO - Audio callback called: level=0.000014, threshold=0.01
+2025-07-08 23:57:42,590 - INFO - Silence started at: 1752008262.5897434
+2025-07-08 23:57:43,080 - INFO - Audio detected: level=0.016398
+2025-07-08 23:57:43,080 - INFO - Phrase state: chunks=1, duration=0.00s, silence=0.00s
+2025-07-08 23:57:43,099 - INFO - Audio detected: level=0.021851
+2025-07-08 23:57:43,119 - INFO - Silence started at: 1752008263.11989
+2025-07-08 23:57:43,240 - INFO - Audio detected: level=0.013707
+2025-07-08 23:57:43,259 - INFO - Audio detected: level=0.028613
+2025-07-08 23:57:43,289 - INFO - Audio detected: level=0.029539
+2025-07-08 23:57:43,310 - INFO - Audio detected: level=0.022192
+2025-07-08 23:57:43,330 - INFO - Audio detected: level=0.023293
+2025-07-08 23:57:43,361 - INFO - Audio detected: level=0.032267
+2025-07-08 23:57:43,380 - INFO - Audio detected: level=0.029908
+2025-07-08 23:57:43,401 - INFO - Audio detected: level=0.019368
+2025-07-08 23:57:43,419 - INFO - Audio detected: level=0.031954
+2025-07-08 23:57:43,449 - INFO - Audio detected: level=0.012409
+2025-07-08 23:57:43,470 - INFO - Audio detected: level=0.012064
+2025-07-08 23:57:43,490 - INFO - Audio detected: level=0.023319
+2025-07-08 23:57:43,519 - INFO - Audio detected: level=0.026205
+2025-07-08 23:57:43,539 - INFO - Audio detected: level=0.021477
+2025-07-08 23:57:43,560 - INFO - Audio detected: level=0.015654
+2025-07-08 23:57:43,590 - INFO - Audio detected: level=0.012840
+2025-07-08 23:57:43,609 - INFO - Audio detected: level=0.011711
+2025-07-08 23:57:43,630 - INFO - Silence started at: 1752008263.6302366
+2025-07-08 23:57:44,165 - INFO - Processing phrase due to timeout: 1.09s
+2025-07-08 23:57:44,165 - INFO - Processing phrase with 19 chunks
+2025-07-08 23:57:44,166 - INFO - Combined audio shape: (19456,), total samples: 19456
+2025-07-08 23:57:44,167 - INFO - Audio array shape: (19456,), dtype: int16
+2025-07-08 23:57:44,167 - INFO - Audio array min/max: -1979/2231
+2025-07-08 23:57:44,168 - INFO - WAV data size: 38956 bytes
+2025-07-08 23:57:44,168 - INFO - STS request data: voice_id=GN4wbsbejSnGSa1AzjH5 (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:57:44,169 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:57:44,169 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:57:44,170 - INFO - STS form field: audio_quality=192
+2025-07-08 23:57:44,170 - INFO - Sending STS request with 38956 bytes of audio data
+2025-07-08 23:57:44,309 - INFO - Audio detected: level=0.010017
+2025-07-08 23:57:44,329 - INFO - Audio detected: level=0.023203
+2025-07-08 23:57:44,350 - INFO - Audio detected: level=0.030411
+2025-07-08 23:57:44,378 - INFO - Audio detected: level=0.046072
+2025-07-08 23:57:44,399 - INFO - Audio detected: level=0.033189
+2025-07-08 23:57:44,420 - INFO - Audio detected: level=0.025008
+2025-07-08 23:57:44,450 - INFO - Audio detected: level=0.029956
+2025-07-08 23:57:44,469 - INFO - Audio detected: level=0.018245
+2025-07-08 23:57:44,490 - INFO - Audio detected: level=0.018518
+2025-07-08 23:57:44,519 - INFO - Audio detected: level=0.014335
+2025-07-08 23:57:44,539 - INFO - Audio detected: level=0.010571
+2025-07-08 23:57:44,560 - INFO - Silence started at: 1752008264.560378
+2025-07-08 23:57:44,609 - INFO - Audio detected: level=0.010252
+2025-07-08 23:57:44,629 - INFO - Silence started at: 1752008264.6296127
+2025-07-08 23:57:44,909 - INFO - Audio callback called: level=0.000907, threshold=0.01
+2025-07-08 23:57:46,422 - INFO - STS response: 7986 bytes
+2025-07-08 23:57:46,424 - INFO - STS processed phrase: 19 chunks, latency: 2.256s
+2025-07-08 23:57:46,439 - INFO - Silence started at: 1752008266.4399388
+2025-07-08 23:57:46,650 - INFO - Audio detected: level=0.068050
+2025-07-08 23:57:46,679 - INFO - Audio detected: level=0.033891
+2025-07-08 23:57:46,699 - INFO - Silence started at: 1752008266.6996207
+2025-07-08 23:57:46,949 - INFO - Audio detected: level=0.014921
+2025-07-08 23:57:46,981 - INFO - Audio detected: level=0.030610
+2025-07-08 23:57:47,001 - INFO - Audio detected: level=0.023537
+2025-07-08 23:57:47,019 - INFO - Audio detected: level=0.011664
+2025-07-08 23:57:47,049 - INFO - Silence started at: 1752008267.0492766
+2025-07-08 23:57:47,229 - INFO - Audio callback called: level=0.000867, threshold=0.01
+2025-07-08 23:57:47,572 - INFO - Processing phrase due to timeout: 3.26s
+2025-07-08 23:57:47,572 - INFO - Processing phrase with 18 chunks
+2025-07-08 23:57:47,573 - INFO - Combined audio shape: (18432,), total samples: 18432
+2025-07-08 23:57:47,573 - INFO - Audio array shape: (18432,), dtype: int16
+2025-07-08 23:57:47,574 - INFO - Audio array min/max: -9054/6082
+2025-07-08 23:57:47,574 - INFO - WAV data size: 36908 bytes
+2025-07-08 23:57:47,575 - INFO - STS request data: voice_id=GN4wbsbejSnGSa1AzjH5 (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:57:47,575 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:57:47,576 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:57:47,576 - INFO - STS form field: audio_quality=192
+2025-07-08 23:57:47,576 - INFO - Sending STS request with 36908 bytes of audio data
+2025-07-08 23:57:48,049 - INFO - Audio detected: level=0.011878
+2025-07-08 23:57:48,070 - INFO - Audio detected: level=0.019011
+2025-07-08 23:57:48,089 - INFO - Audio detected: level=0.022859
+2025-07-08 23:57:48,120 - INFO - Audio detected: level=0.018834
+2025-07-08 23:57:48,140 - INFO - Audio detected: level=0.015234
+2025-07-08 23:57:48,159 - INFO - Audio detected: level=0.014650
+2025-07-08 23:57:48,178 - INFO - Audio detected: level=0.012672
+2025-07-08 23:57:48,209 - INFO - Audio detected: level=0.022047
+2025-07-08 23:57:48,230 - INFO - Audio detected: level=0.027920
+2025-07-08 23:57:48,249 - INFO - Audio detected: level=0.041932
+2025-07-08 23:57:48,279 - INFO - Audio detected: level=0.043391
+2025-07-08 23:57:48,300 - INFO - Audio detected: level=0.023776
+2025-07-08 23:57:48,319 - INFO - Audio detected: level=0.021865
+2025-07-08 23:57:48,350 - INFO - Audio detected: level=0.016995
+2025-07-08 23:57:48,369 - INFO - Audio detected: level=0.014327
+2025-07-08 23:57:48,390 - INFO - Audio detected: level=0.014684
+2025-07-08 23:57:48,420 - INFO - Audio detected: level=0.015278
+2025-07-08 23:57:48,439 - INFO - Audio detected: level=0.010442
+2025-07-08 23:57:48,459 - INFO - Audio detected: level=0.013149
+2025-07-08 23:57:48,490 - INFO - Audio detected: level=0.018867
+2025-07-08 23:57:48,510 - INFO - Silence started at: 1752008268.5108895
+2025-07-08 23:57:48,529 - INFO - Audio detected: level=0.011098
+2025-07-08 23:57:48,559 - INFO - Audio detected: level=0.013766
+2025-07-08 23:57:48,579 - INFO - Audio detected: level=0.015046
+2025-07-08 23:57:48,599 - INFO - Audio detected: level=0.010712
+2025-07-08 23:57:48,630 - INFO - Audio detected: level=0.012453
+2025-07-08 23:57:48,650 - INFO - Silence started at: 1752008268.6491427
+2025-07-08 23:57:49,362 - INFO - STS response: 7150 bytes
+2025-07-08 23:57:49,363 - INFO - STS processed phrase: 18 chunks, latency: 1.790s
+2025-07-08 23:57:49,368 - INFO - Silence started at: 1752008269.3688242
+2025-07-08 23:57:49,370 - INFO - Phrase state: chunks=14, duration=0.30s, silence=-1.02s
+2025-07-08 23:57:49,549 - INFO - Audio callback called: level=0.000256, threshold=0.01
+2025-07-08 23:57:49,859 - INFO - Audio detected: level=0.012182
+2025-07-08 23:57:49,881 - INFO - Silence started at: 1752008269.8817415
+2025-07-08 23:57:50,090 - INFO - Force processing phrase due to timeout: 2.04s, chunks=26
+2025-07-08 23:57:50,091 - INFO - Processing phrase with 26 chunks
+2025-07-08 23:57:50,091 - INFO - Combined audio shape: (26624,), total samples: 26624
+2025-07-08 23:57:50,091 - INFO - Audio array shape: (26624,), dtype: int16
+2025-07-08 23:57:50,092 - INFO - Audio array min/max: -3210/3779
+2025-07-08 23:57:50,092 - INFO - WAV data size: 53292 bytes
+2025-07-08 23:57:50,093 - INFO - STS request data: voice_id=GN4wbsbejSnGSa1AzjH5 (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:57:50,093 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:57:50,093 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:57:50,094 - INFO - STS form field: audio_quality=192
+2025-07-08 23:57:50,094 - INFO - Sending STS request with 53292 bytes of audio data
+2025-07-08 23:57:50,919 - INFO - Audio detected: level=0.012921
+2025-07-08 23:57:50,949 - INFO - Audio detected: level=0.017592
+2025-07-08 23:57:50,969 - INFO - Audio detected: level=0.026179
+2025-07-08 23:57:50,989 - INFO - Audio detected: level=0.024264
+2025-07-08 23:57:51,019 - INFO - Audio detected: level=0.019168
+2025-07-08 23:57:51,040 - INFO - Audio detected: level=0.016803
+2025-07-08 23:57:51,059 - INFO - Audio detected: level=0.014719
+2025-07-08 23:57:51,089 - INFO - Audio detected: level=0.018758
+2025-07-08 23:57:51,111 - INFO - Audio detected: level=0.023117
+2025-07-08 23:57:51,129 - INFO - Audio detected: level=0.023526
+2025-07-08 23:57:51,160 - INFO - Audio detected: level=0.023157
+2025-07-08 23:57:51,180 - INFO - Audio detected: level=0.025271
+2025-07-08 23:57:51,199 - INFO - Audio detected: level=0.018195
+2025-07-08 23:57:51,230 - INFO - Audio detected: level=0.019358
+2025-07-08 23:57:51,249 - INFO - Silence started at: 1752008271.24954
+2025-07-08 23:57:51,339 - INFO - Audio detected: level=0.011383
+2025-07-08 23:57:51,369 - INFO - Silence started at: 1752008271.369319
+2025-07-08 23:57:51,389 - INFO - Audio detected: level=0.010784
+2025-07-08 23:57:51,409 - INFO - Audio detected: level=0.010260
+2025-07-08 23:57:51,439 - INFO - Silence started at: 1752008271.439407
+2025-07-08 23:57:51,763 - INFO - STS response: 10494 bytes
+2025-07-08 23:57:51,765 - INFO - STS processed phrase: 26 chunks, latency: 1.673s
+2025-07-08 23:57:51,779 - INFO - Silence started at: 1752008271.7799551
+2025-07-08 23:57:51,879 - INFO - Audio callback called: level=0.000681, threshold=0.01
+2025-07-08 23:57:51,990 - INFO - Audio detected: level=0.019217
+2025-07-08 23:57:52,019 - INFO - Audio detected: level=0.035257
+2025-07-08 23:57:52,039 - INFO - Audio detected: level=0.013122
+2025-07-08 23:57:52,060 - INFO - Silence started at: 1752008272.060908
+2025-07-08 23:57:52,320 - INFO - Audio detected: level=0.010569
+2025-07-08 23:57:52,339 - INFO - Audio detected: level=0.040451
+2025-07-08 23:57:52,359 - INFO - Audio detected: level=0.017917
+2025-07-08 23:57:52,390 - INFO - Silence started at: 1752008272.3903964
+2025-07-08 23:57:52,913 - INFO - Processing phrase due to timeout: 1.99s
+2025-07-08 23:57:52,913 - INFO - Processing phrase with 23 chunks
+2025-07-08 23:57:52,914 - INFO - Combined audio shape: (23552,), total samples: 23552
+2025-07-08 23:57:52,914 - INFO - Audio array shape: (23552,), dtype: int16
+2025-07-08 23:57:52,915 - INFO - Audio array min/max: -4642/4504
+2025-07-08 23:57:52,915 - INFO - WAV data size: 47148 bytes
+2025-07-08 23:57:52,916 - INFO - STS request data: voice_id=GN4wbsbejSnGSa1AzjH5 (in URL), model_id=eleven_multilingual_sts_v2
+2025-07-08 23:57:52,916 - INFO - STS form field: model_id=eleven_multilingual_sts_v2
+2025-07-08 23:57:52,917 - INFO - STS form field: output_format=mp3_44100_192
+2025-07-08 23:57:52,917 - INFO - STS form field: audio_quality=192
+2025-07-08 23:57:52,918 - INFO - Sending STS request with 47148 bytes of audio data
+2025-07-08 23:57:53,872 - INFO - Cleaning up...
+2025-07-08 23:57:54,014 - INFO - Cleanup complete
