@@ -89,29 +89,29 @@ if %errorlevel% neq 0 (
 )
 
 REM Install pydub
-echo.
+    echo.
 echo 🎵 Installing pydub...
 pip install pydub
 
 REM Install KojaB libraries
-echo.
+    echo.
 echo 📚 Installing KojaB libraries...
 pip install "RealtimeSTT>=0.3.104"
 pip install "RealtimeTTS>=0.3.104"
 
 REM Create .env file template
-echo.
+    echo.
 echo 🔑 Creating .env file template...
 (
 echo # Voice Changer Configuration
 echo # Replace with your actual API keys
-echo.
+    echo.
 echo # ElevenLabs API Key (get from https://elevenlabs.io/settings)
 echo ELEVENLABS_API_KEY=your_elevenlabs_key_here
-echo.
+    echo.
 echo # OpenAI API Key (get from https://platform.openai.com/api-keys)
 echo OPENAI_API_KEY=your_openai_key_here
-echo.
+    echo.
 echo # Google Cloud credentials (optional, for alternative STT)
 echo # GOOGLE_APPLICATION_CREDENTIALS=path_to_your_google_credentials.json
 ) > .env

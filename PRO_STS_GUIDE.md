@@ -1,221 +1,352 @@
-# Pro Speech-to-Speech Voice Changer Guide
+# Pro STS Test Script Guide
 
 ## Overview
+This guide covers three Pro STS test scripts that use ElevenLabs Pro features for Speech-to-Speech voice conversion.
 
-This Pro-optimized Speech-to-Speech (STS) voice changer leverages your ElevenLabs Pro subscription to provide real-time voice transformation with minimal latency and maximum quality.
+## Test Scripts
 
-## Pro Features Leveraged
+### 1. **Real-time Test** (`test_pro_sts.py`)
+Captures a single short phrase from your microphone, sends it to ElevenLabs STS API with Pro features, and outputs the converted audio to your speakers.
 
-### 🚀 Performance Features
-- **10 Concurrent Requests**: Pro allows up to 10 simultaneous STS requests
-- **192 kbps Audio Quality**: Pro supports high-quality audio output
-- **44.1kHz PCM Output**: Professional-grade audio format
-- **Turbo Models**: Faster processing with `eleven_turbo_v2`
-- **Priority Processing**: Pro requests get priority in the queue
-- **100ms Latency Target**: Optimized for real-time performance
+### 2. **Batch Test** (`test_pro_sts_batch.py`)
+Takes an MP3 file as input, sends it to ElevenLabs STS API in batch mode, and saves the converted audio to an output file.
 
-### 🎯 Voice Features
-- **Voice Cloning**: Create and use your own voice clone
-- **Multiple Voice Support**: Switch between different voices
-- **Real-time Streaming**: Continuous audio processing
-- **Silence Detection**: Smart phrase detection and processing
+### 3. **Streaming Test** (`test_pro_sts_streaming.py`) ⭐ **NEW**
+Streams an MP3 file in real-time chunks to ElevenLabs STS API and plays the converted audio through speakers as it's processed.
 
-## Setup
+## Pro Features Used
 
-### 1. Environment Variables
+### 🎵 Audio Quality (Pro)
+- **192kbps MP3 output format** (vs 128kbps for free tier)
+- **44.1kHz sample rate** for enhanced quality
+- **Optimized streaming latency** for real-time performance
+
+### 🎭 Voice Settings (Pro)
+- **Stability: 0.7** - Higher consistency across phrases
+- **Similarity Boost: 0.8** - Enhanced voice cloning accuracy
+- **Style: 0.3** - Natural speech patterns
+- **Speaker Boost: True** - Pro-only feature for enhanced clarity
+
+### ⚡ Performance (Pro)
+- **Larger audio chunks** (4096 vs 1024) for better processing
+- **Optimized streaming latency** (level 4) for reduced delays
+- **Enhanced buffer management** for smoother playback
+
+## Setup Instructions
+
+### 1. Install Dependencies
 ```bash
-export ELEVENLABS_API_KEY="your_pro_api_key_here"
+pip install pyaudio numpy pydub soundfile python-dotenv requests websockets
 ```
 
-### 2. Install Dependencies
+### 2. Configure Environment
+Copy `env_template.txt` to `.env` and fill in your credentials:
+
 ```bash
-pip install -r requirements.txt
+cp env_template.txt .env
 ```
 
-### 3. Test Pro Capabilities
+Edit `.env` file:
+```env
+ELEVENLABS_API_KEY=your_actual_api_key_here
+ELEVENLABS_VOICE_ID=your_preferred_voice_id_here
+```
+
+## Usage
+
+### Real-time Test (Microphone Input)
 ```bash
 python test_pro_sts.py
 ```
 
-This will verify:
-- ✅ Pro subscription status
-- ✅ Available Turbo models
-- ✅ Voice cloning capabilities
-- ✅ STS endpoint availability
-- ✅ Audio device compatibility
+**How it works:**
+1. 🎤 **Capture**: Records audio from microphone until silence detected
+2. 📡 **Send**: Sends single chunk to ElevenLabs STS API with Pro settings
+3. 🎵 **Receive**: Gets high-quality 192kbps MP3 response
+4. 🔊 **Play**: Streams converted audio to speakers immediately
 
-## Usage
-
-### Basic Usage
+### Batch Test (MP3 File Input)
 ```bash
-python pro_speech_to_speech.py
+# Basic usage
+python test_pro_sts_batch.py input_file.mp3
+
+# With custom output file
+python test_pro_sts_batch.py input_file.mp3 --output my_output.mp3
 ```
 
-### Configuration Options
+**How it works:**
+1. 📁 **Load**: Loads MP3 file and splits into chunks (max 5 minutes each)
+2. 📡 **Send**: Sends each chunk to ElevenLabs STS API with Pro settings
+3. 🎵 **Receive**: Gets high-quality 192kbps MP3 responses
+4. 💾 **Save**: Combines all chunks and saves to output file
 
-Edit `pro_speech_to_speech.py` to customize:
+### Streaming Test (Real-time MP3 Processing) ⭐ **NEW**
+```bash
+# Basic usage
+python test_pro_sts_streaming.py input_file.mp3
 
-```python
-# Voice settings
-self.VOICE_ID = "pNInz6obpgDQGcFmaJgB"  # Change voice
-self.MODEL_ID = "eleven_turbo_v2"  # Use Turbo model
-
-# Performance settings
-self.LATENCY_TARGET = 0.1  # 100ms target
-self.MAX_CONCURRENT_REQUESTS = 10  # Pro limit
-self.AUDIO_QUALITY = 192  # Pro quality
-
-# Audio settings
-self.SAMPLE_RATE = 44100  # Pro supports 44.1kHz
-self.SILENCE_THRESHOLD = 0.01  # Adjust sensitivity
-self.MIN_PHRASE_DURATION = 0.5  # Minimum phrase length
-self.MAX_PHRASE_DURATION = 10.0  # Maximum phrase length
+# With custom output file
+python test_pro_sts_streaming.py input_file.mp3 --output my_output.mp3
 ```
 
-## Voice Cloning (Pro Feature)
+**How it works:**
+1. 📁 **Load**: Loads MP3 file and prepares for streaming
+2. 🔄 **Stream**: Processes file in 3-second chunks with 0.5s overlap
+3. 📡 **Send**: Sends each chunk to ElevenLabs STS API with Pro settings
+4. 🎵 **Receive**: Gets high-quality 192kbps MP3 responses
+5. 🔊 **Play**: Streams converted audio to speakers in real-time
+6. 💾 **Save**: Saves all chunks to output file
 
-### Create Your Voice Clone
+### Create Test Audio File
+```bash
+python create_test_audio.py
+```
+This creates a test MP3 file you can use for testing.
 
-1. **Via ElevenLabs Dashboard**:
-   - Go to https://elevenlabs.io/voice-cloning
-   - Upload audio samples of your voice
-   - Name your clone (e.g., "My Voice Clone")
+## Expected Output
 
-2. **Update Configuration**:
-   ```python
-   self.ENABLE_VOICE_CLONING = True
-   self.CLONE_VOICE_NAME = "My Voice Clone"
-   ```
+### Real-time Test Output
+```
+🎵 Pro STS Test Configuration:
+   Voice ID: GN4wbsbejSnGSa1AzjH5
+   Model: eleven_multilingual_sts_v2
+   Output Format: mp3_44100_192
+   Sample Rate: 44100Hz
+   Voice Settings: {'stability': 0.7, 'similarity_boost': 0.8, 'style': 0.3, 'use_speaker_boost': True}
 
-3. **The script will automatically**:
-   - Detect your existing voice clone
-   - Use it for STS processing
-   - Fall back to default voice if not found
+🎤 Pro STS Test: Capturing single phrase...
+🎤 Speak now (will stop after silence or max duration)...
+✅ Audio input stream started
 
-## Performance Optimization
+🎤 Pro STS: Processing 123456 bytes (3.2s) - silence detected
+🎵 Pro STS: Sending audio to ElevenLabs STS API with Pro features...
+🎵 Pro STS API response: status=200
+✅ Pro STS: Received 45678 bytes of audio
+💾 Saved Pro STS chunk: pro_sts_chunk_20241210_143022.mp3 (45678 bytes)
+🎵 Starting Pro STS playback
+```
 
-### Latency Optimization
-- **Target**: 100ms end-to-end latency
-- **Optimization**: Uses Turbo models and priority processing
-- **Monitoring**: Latency is logged for performance tracking
+### Batch Test Output
+```
+🎵 Pro STS Batch Test Configuration:
+   Input File: test_audio_20241210_143022.mp3
+   Output File: test_pro_sts_batch_output_20241210_143022.mp3
+   Voice ID: GN4wbsbejSnGSa1AzjH5
+   Model: eleven_multilingual_sts_v2
+   Output Format: mp3_44100_192
+   Sample Rate: 44100Hz
+   Voice Settings: {'stability': 0.7, 'similarity_boost': 0.8, 'style': 0.3, 'use_speaker_boost': True}
 
-### Throughput Optimization
-- **Concurrent Requests**: Up to 10 simultaneous STS requests
-- **Queue Management**: Smart buffering prevents overflow
-- **Memory Management**: Efficient audio buffer management
+📁 Loading audio file: test_audio_20241210_143022.mp3
+✅ Loaded audio: 6000ms (6.0s)
+📦 Single chunk processing
+✅ Audio prepared: 1 chunks ready for processing
 
-### Audio Quality
-- **Input**: 44.1kHz, 16-bit PCM
-- **Output**: 44.1kHz, 192 kbps MP3
-- **Processing**: Real-time streaming with silence detection
+🎵 Pro STS Batch: Starting processing of 1 chunks...
+🔄 Processing chunk 1/1
+🎵 Pro STS: Processing chunk 1/1 (6000ms)
+🎵 Pro STS: Sending chunk 1 to ElevenLabs STS API
+🎵 Pro STS API response: status=200
+✅ Pro STS: Received 45678 bytes for chunk 1
+💾 Saved chunk 1: pro_sts_batch_chunk_1_20241210_143022.mp3 (45678 bytes)
+✅ Chunk 1/1 processed successfully
+
+🎵 Pro STS Batch: Processing complete!
+   Total chunks: 1
+   Successful: 1
+   Failed: 0
+
+💾 Combining 1 processed chunks...
+✅ Combined audio saved to: test_pro_sts_batch_output_20241210_143022.mp3
+📊 Total audio size: 45678 bytes
+✅ Pro STS batch test completed successfully!
+```
+
+### Streaming Test Output
+```
+🎵 Pro STS Streaming Test Configuration:
+   Input File: test_audio_20241210_143022.mp3
+   Output File: test_pro_sts_streaming_output_20241210_143022.mp3
+   Voice ID: GN4wbsbejSnGSa1AzjH5
+   Model: eleven_multilingual_sts_v2
+   Output Format: mp3_44100_192
+   Sample Rate: 44100Hz
+   Stream Chunk Duration: 3.0s
+   Voice Settings: {'stability': 0.7, 'similarity_boost': 0.8, 'style': 0.3, 'use_speaker_boost': True}
+
+📁 Loading audio file: test_audio_20241210_143022.mp3
+✅ Loaded audio: 6000ms (6.0s)
+🔄 Converted to mono
+🔄 Resampled to 44100Hz
+✅ Audio prepared for streaming
+
+🎵 Pro STS Streaming: Audio streaming initialized
+✅ Pro STS streaming test started!
+🎵 Streaming MP3 file to ElevenLabs STS API...
+🎵 Converted audio will play through speakers!
+
+🎤 Pro STS Streaming: Starting audio stream from MP3 file...
+🎵 Pro STS Streaming: Processing chunk 1 (3.0s)
+🎵 Pro STS: Sending chunk 1 to ElevenLabs STS API with Pro features...
+🎵 Pro STS: Sending chunk 1 to ElevenLabs STS API
+🎵 Pro STS API response: status=200
+✅ Pro STS: Received 45678 bytes for chunk 1
+💾 Saved Pro STS streaming chunk 1: pro_sts_streaming_chunk_1_20241210_143022.mp3 (45678 bytes)
+🎵 Starting Pro STS streaming playback
+
+🎵 Pro STS Streaming: Processing chunk 2 (3.0s)
+🎵 Pro STS: Sending chunk 2 to ElevenLabs STS API with Pro features...
+🎵 Pro STS API response: status=200
+✅ Pro STS: Received 45678 bytes for chunk 2
+💾 Saved Pro STS streaming chunk 2: pro_sts_streaming_chunk_2_20241210_143022.mp3 (45678 bytes)
+
+🎵 Pro STS Streaming: Reached end of audio file
+🎵 Pro STS Streaming: Processed 2 chunks
+🎵 Waiting for playback to complete...
+✅ Pro STS streaming test completed
+```
+
+## Files Generated
+
+### Real-time Test
+- `test_pro_sts_output_YYYYMMDD_HHMMSS.mp3` - Combined audio output
+- `pro_sts_chunk_YYYYMMDD_HHMMSS.mp3` - Individual audio chunk
+- `test_pro_sts_log.txt` - Detailed operation log
+
+### Batch Test
+- `test_pro_sts_batch_output_YYYYMMDD_HHMMSS.mp3` - Combined audio output
+- `pro_sts_batch_chunk_X_YYYYMMDD_HHMMSS.mp3` - Individual audio chunks
+- `test_pro_sts_batch_log.txt` - Detailed operation log
+
+### Streaming Test
+- `test_pro_sts_streaming_output_YYYYMMDD_HHMMSS.mp3` - Combined audio output
+- `pro_sts_streaming_chunk_X_YYYYMMDD_HHMMSS.mp3` - Individual audio chunks
+- `test_pro_sts_streaming_log.txt` - Detailed operation log
 
 ## Troubleshooting
 
-### Common Issues
+### No Audio Input (Real-time Test)
+- Check microphone permissions
+- Ensure microphone is not muted
+- Try speaking louder or closer to microphone
 
-1. **"ELEVENLABS_API_KEY environment variable is required"**
-   ```bash
-   export ELEVENLABS_API_KEY="your_key_here"
-   ```
+### File Not Found (Batch/Streaming Tests)
+- Verify the input MP3 file exists
+- Check file path is correct
+- Ensure file is a valid MP3 format
 
-2. **Audio device not found**
-   - Run `python test_pro_sts.py` to check devices
-   - Ensure microphone is connected and working
-
-3. **High latency**
+### API Errors
+- Verify your ElevenLabs API key is correct
+- Ensure you have Pro subscription for 192kbps features
    - Check internet connection
-   - Reduce `LATENCY_TARGET` if needed
-   - Monitor `pro_sts_voice_changer.log`
 
-4. **Pro features not working**
-   - Verify Pro subscription status
-   - Check API key permissions
-   - Run capability test: `python test_pro_sts.py`
+### Playback Issues
+- Check speaker/headphone connections
+- Ensure audio drivers are working
+- Try different audio output device
 
-### Log Files
-- **Main log**: `pro_sts_voice_changer.log`
-- **Performance metrics**: Latency and throughput tracking
-- **Error details**: Detailed error logging
+## Pro vs Free Tier Differences
+
+| Feature | Free Tier | Pro Tier |
+|---------|-----------|----------|
+| Audio Quality | 128kbps MP3 | **192kbps MP3** |
+| Sample Rate | 22.05kHz | **44.1kHz** |
+| Voice Settings | Basic | **Advanced (stability, similarity, style, speaker_boost)** |
+| Streaming Latency | Basic | **Optimized (level 4)** |
+| Processing Speed | Standard | **Enhanced** |
+| Batch Processing | Limited | **Full support** |
+| Real-time Streaming | Limited | **Full support** |
+
+## Voice Selection Tips
+
+- **Ekaterina (Russian)**: Good for Russian speech
+- **George (British)**: Clear British accent
+- **Rachel (American)**: Natural American accent
+- **Domi (American)**: Professional voice
+- **Bella (American)**: Warm, friendly tone
 
 ## Advanced Configuration
 
-### Custom Voice Settings
-```python
-# Use a specific voice
-self.VOICE_ID = "your_voice_id_here"
+You can modify these settings in the scripts:
 
-# Use different model
-self.MODEL_ID = "eleven_multilingual_v2"  # For multiple languages
+```python
+# Pro voice settings
+self.voice_settings = {
+    "stability": 0.7,        # 0.0-1.0 (higher = more consistent)
+    "similarity_boost": 0.8,  # 0.0-1.0 (higher = more similar to original)
+    "style": 0.3,            # 0.0-1.0 (higher = more expressive)
+    "use_speaker_boost": True # Pro feature for enhanced clarity
+}
+
+# Pro audio settings
+self.output_format = "mp3_44100_192"  # Pro 192kbps MP3
+self.optimize_streaming_latency = 4   # Pro streaming optimization
+
+# Streaming settings (for streaming test)
+self.STREAM_CHUNK_DURATION = 3.0  # 3 seconds per chunk
+self.STREAM_OVERLAP = 0.5         # 0.5 seconds overlap
 ```
 
-### Audio Processing
-```python
-# Adjust silence detection
-self.SILENCE_THRESHOLD = 0.005  # More sensitive
-self.SILENCE_THRESHOLD = 0.02   # Less sensitive
+## Batch Processing Features
 
-# Adjust phrase timing
-self.MIN_PHRASE_DURATION = 0.3  # Shorter phrases
-self.MAX_PHRASE_DURATION = 15.0  # Longer phrases
-```
+### Automatic Chunking
+- Files longer than 5 minutes are automatically split
+- Each chunk is processed separately
+- Results are combined into final output
 
-### Performance Tuning
-```python
-# Adjust buffer sizes
-self.BUFFER_SIZE = 4096  # Smaller for lower latency
-self.BUFFER_SIZE = 16384  # Larger for stability
+### Error Handling
+- Individual chunk failures don't stop the entire process
+- Failed chunks are logged with detailed error messages
+- Successful chunks are saved even if some fail
 
-# Adjust chunk sizes
-self.CHUNK_SIZE = 512   # Smaller chunks
-self.CHUNK_SIZE = 2048  # Larger chunks
-```
+### Progress Tracking
+- Real-time progress updates for each chunk
+- Detailed logging of all operations
+- Summary statistics at completion
 
-## Pro Subscription Benefits
+## Streaming Processing Features
 
-### What You Get
-- ✅ **10 concurrent requests** (vs 2 for free)
-- ✅ **192 kbps audio quality** (vs 128 kbps)
-- ✅ **44.1kHz PCM output** (vs 22.05kHz)
-- ✅ **Turbo models** (faster processing)
-- ✅ **Priority processing** (faster queue)
-- ✅ **Voice cloning** (create custom voices)
-- ✅ **Higher character limits** (more usage)
+### Real-time Chunking
+- Processes MP3 file in 3-second chunks
+- 0.5-second overlap between chunks for smooth transitions
+- Real-time playback as chunks are processed
 
-### Usage Monitoring
-The script logs your usage and can help you monitor:
-- Character count used
-- Request frequency
-- Latency performance
-- Error rates
+### Continuous Playback
+- Starts playback after 3 chunks are buffered
+- Smooth audio streaming without gaps
+- Real-time conversion and playback
 
-## Real-time Performance
+### Adaptive Processing
+- Handles files of any length
+- Automatic audio format conversion
+- Optimized for real-time performance
 
-### Expected Performance
-- **Latency**: 100-200ms end-to-end
-- **Quality**: 192 kbps, 44.1kHz
-- **Concurrency**: Up to 10 simultaneous requests
-- **Reliability**: Automatic error recovery
+## Performance Tips
 
-### Monitoring
-Watch the console output for:
-- Real-time latency measurements
-- Audio processing statistics
-- Error messages and warnings
-- Performance metrics
+### For Real-time Testing
+- Use shorter phrases for faster response
+- Ensure good microphone quality
+- Minimize background noise
+
+### For Batch Testing
+- Use high-quality input files
+- Process during off-peak hours for faster API response
+- Monitor API usage limits
+
+### For Streaming Testing
+- Use files with clear speech
+- Ensure stable internet connection
+- Monitor system resources during streaming
 
 ## Support
 
 ### Getting Help
-1. **Check logs**: `pro_sts_voice_changer.log`
-2. **Run tests**: `python test_pro_sts.py`
-3. **Verify Pro status**: Check subscription in ElevenLabs dashboard
-4. **Check audio**: Ensure microphone and speakers work
+1. **Check logs**: Look at the generated log files
+2. **Verify Pro status**: Ensure your ElevenLabs subscription is active
+3. **Test with small files**: Start with short audio files
+4. **Check audio devices**: Ensure microphone/speakers work
 
 ### Pro Support
 - **ElevenLabs Pro Support**: Available for Pro subscribers
 - **API Documentation**: https://elevenlabs.io/docs
 - **Community**: ElevenLabs Discord server
-
----
-
-**Enjoy your Pro Speech-to-Speech voice changer!** 🎤✨ 

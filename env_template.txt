@@ -1,0 +1,45 @@
+# ElevenLabs Pro STS Test Configuration
+# Copy this file to .env and fill in your actual values
+
+# ElevenLabs API Key (Required)
+ELEVENLABS_API_KEY=your_api_key_here
+
+# ElevenLabs Voice ID (Optional - defaults to Ekaterina)
+ELEVENLABS_VOICE_ID=your_voice_id_here
+
+# Example voice IDs you can use:
+# Ekaterina (Russian): GN4wbsbejSnGSa1AzjH5
+# George (British): GBv7mTt0atIp3Br8iCZE
+# Rachel (American): 21m00Tcm4TlvDq8ikWAM
+# Domi (American): AZnzlk1XvdvUeBnXmlld
+# Bella (American): EXAVITQu4vr4xnSDxMaL
+# Antoni (American): ErXwobaYiN019PkySvjV
+# Thomas (British): GBv7mTt0atIp3Br8iCZE
+# Josh (American): TxGEqnHWrfWFTfGW9XjX
+# Arnold (American): VR6AewLTigWG4xSOukaG
+# Adam (American): pNInz6obpgDQGcFmaJgB
+# Sam (American): yoZ06aMxZJJ28mfd3POQ
+# Clyde (American): 2EiwWnXFnvU5JabPnv8n
+# Dorothy (American): ThT5KcBeYPX3keUQqHPh
+# Dave (American): piTKgcLEGmPE4e6mEKliN
+# Fin (American): 21m00Tcm4TlvDq8ikWAM
+# Grace (American): pNInz6obpgDQGcFmaJgB
+# Henry (American): VR6AewLTigWG4xSOukaG
+# James (American): GBv7mTt0atIp3Br8iCZE
+# Jeremy (American): pNInz6obpgDQGcFmaJgB
+# Michael (American): VR6AewLTigWG4xSOukaG
+# Oliver (American): 21m00Tcm4TlvDq8ikWAM
+# Paul (American): GBv7mTt0atIp3Br8iCZE
+# Ralph (American): pNInz6obpgDQGcFmaJgB
+# Sarah (American): VR6AewLTigWG4xSOukaG
+# Simon (American): 21m00Tcm4TlvDq8ikWAM
+# Steve (American): GBv7mTt0atIp3Br8iCZE
+# Tom (American): pNInz6obpgDQGcFmaJgB
+# William (American): VR6AewLTigWG4xSOukaG
+
+# Pro Features Enabled:
+# - 192kbps MP3 output format
+# - Advanced voice settings (stability, similarity_boost, style, speaker_boost)
+# - Optimized streaming latency
+# - 44.1kHz sample rate
+# - Enhanced audio processing 

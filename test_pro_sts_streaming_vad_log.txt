@@ -1,0 +1,8 @@
+[2025-07-10 08:47:47] PRO_STS_VAD_SUCCESS: Phrase 1, 64410 bytes
+[2025-07-10 08:47:50] PRO_STS_VAD_ERROR: Phrase 20 - 500 - {"detail":{"status":"something_went_wrong","message":"We are sorry, something went wrong. You are not charged for this request."}}
+[2025-07-10 08:47:52] PRO_STS_VAD_ERROR: Phrase 23 - 500 - {"detail":{"status":"something_went_wrong","message":"We are sorry, something went wrong. You are not charged for this request."}}
+[2025-07-10 08:47:56] PRO_STS_VAD_ERROR: Phrase 34 - 500 - {"detail":{"status":"something_went_wrong","message":"We are sorry, something went wrong. You are not charged for this request."}}
+[2025-07-10 08:48:00] FINAL: Saved 1 chunks, 64410 bytes
+[2025-07-10 08:48:00] FINAL: Saved 1 chunks, 64410 bytes
+[2025-07-10 08:48:00] FINAL: Saved 1 chunks, 64410 bytes
+[2025-07-10 08:48:00] FINAL: Saved 1 chunks, 64410 bytes

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Test Script: Single Phrase STS with ElevenLabs Pro Features
-Captures one short phrase from microphone → ElevenLabs STS API → Speakers
+Test Script: Streaming STS with ElevenLabs Pro Features
+Streams MP3 file input → ElevenLabs STS API → Speakers
 Uses Pro subscription capabilities: 192kbps MP3, advanced voice settings, optimized streaming
 """
 
@@ -21,34 +21,50 @@ import soundfile as sf
 from dotenv import load_dotenv
 import requests
 import websockets
+import argparse
+import sys
+import signal
+import atexit
 
 # Load environment variables
 load_dotenv()
 
-class ProSTSTest:
-    def __init__(self):
+# Global variable to hold the streaming test instance
+global_streaming_test = None
+
+def signal_handler(signum, frame):
+    """Handle Ctrl+C gracefully"""
+    print("\n⏹️  Received interrupt signal, saving output and exiting...")
+    if global_streaming_test:
+        global_streaming_test.save_final_output()
+    sys.exit(0)
+
+def cleanup_handler():
+    """Cleanup handler for atexit"""
+    if global_streaming_test:
+        print("💾 Saving output on exit...")
+        global_streaming_test.save_final_output()
+
+# Set up signal handlers
+signal.signal(signal.SIGINT, signal_handler)
+signal.signal(signal.SIGTERM, signal_handler)
+atexit.register(cleanup_handler)
+
+class ProSTSStreamingTest:
+    def __init__(self, input_file=None):
         # Audio settings (Pro quality)
         self.FORMAT = pyaudio.paFloat32
         self.CHANNELS = 1
         self.SAMPLE_RATE = 44100  # Pro supports 44.1kHz
         self.CHUNK_SIZE = 2048  # Larger chunk for Pro
         
-        # Audio objects
-        self.audio = pyaudio.PyAudio()
-        self.continuous_buffer = queue.Queue(maxsize=50)
-        self.playback_thread = None
-        
-        # Playback control
-        self.playback_started = False
-        self.mp3_chunks = []
-        self.all_audio_chunks = []
-        
-        # Output file with timestamp
+        # Input/Output files
+        self.input_file = input_file
         timestamp = time.strftime("%Y%m%d_%H%M%S")
-        self.OUTPUT_FILE = f"test_pro_sts_output_{timestamp}.mp3"
+        self.OUTPUT_FILE = f"test_pro_sts_streaming_output_{timestamp}.mp3"
         
         # File logging
-        self.QUEUE_LOG_FILE = "test_pro_sts_log.txt"
+        self.QUEUE_LOG_FILE = "test_pro_sts_streaming_log.txt"
         
         # Control
         self.running = True
@@ -59,16 +75,21 @@ class ProSTSTest:
         self.STS_FORMAT = pyaudio.paInt16
         self.STS_CHUNK_SIZE = 4096  # Larger for Pro
         
-        # STS buffers
-        self.audio_buffer = []
-        self.silence_start = None
-        self.max_silence_duration = 1.0
+        # Audio objects
+        self.audio = pyaudio.PyAudio()
+        self.continuous_buffer = queue.Queue(maxsize=100)
+        self.playback_thread = None
         
-        # STS settings (Pro optimized)
-        self.BUFFER_DURATION = 2.0  # Shorter for single phrase
-        self.BUFFER_SIZE_STS = int(self.STS_SAMPLE_RATE * self.BUFFER_DURATION)
-        self.SILENCE_DURATION = 0.8  # Shorter for single phrase
-        self.SILENCE_THRESHOLD = 0.01
+        # Playback control
+        self.playback_started = False
+        self.mp3_chunks = []
+        self.all_audio_chunks = []
+        
+        # Streaming settings
+        self.STREAM_CHUNK_DURATION = 3.0  # 3 seconds per chunk
+        self.STREAM_CHUNK_SIZE = int(self.STS_SAMPLE_RATE * self.STREAM_CHUNK_DURATION)
+        self.STREAM_OVERLAP = 0.5  # 0.5 seconds overlap between chunks
+        self.MAX_CHUNK_DURATION = 10.0  # Maximum 10 seconds per chunk for API limits
         
         # ElevenLabs Pro settings
         self.api_key = self._get_api_key()
@@ -90,11 +111,18 @@ class ProSTSTest:
         # Timestamp for file naming
         self.timestamp = time.strftime("%Y%m%d_%H%M%S")
         
-        print(f"🎵 Pro STS Test Configuration:")
+        # Audio processing
+        self.audio_segments = []
+        self.current_position = 0
+        
+        print(f"🎵 Pro STS Streaming Test Configuration:")
+        print(f"   Input File: {self.input_file}")
+        print(f"   Output File: {self.OUTPUT_FILE}")
         print(f"   Voice ID: {self.voice_id}")
         print(f"   Model: {self.model_id}")
         print(f"   Output Format: {self.output_format}")
         print(f"   Sample Rate: {self.STS_SAMPLE_RATE}Hz")
+        print(f"   Stream Chunk Duration: {self.STREAM_CHUNK_DURATION}s")
         print(f"   Voice Settings: {self.voice_settings}")
         
     def _get_api_key(self):
@@ -106,7 +134,7 @@ class ProSTSTest:
         try:
             if os.path.exists(".env"):
                 with open(".env", "r") as f:
-            for line in f:
+                    for line in f:
                         if line.startswith("ELEVENLABS_API_KEY="):
                             api_key = line.split("=", 1)[1].strip()
                             if api_key and api_key != "your_api_key_here":
@@ -159,94 +187,110 @@ class ProSTSTest:
         except Exception as e:
             print(f"❌ Error logging to file: {e}")
     
-    def capture_single_phrase(self):
-        """Capture a single phrase from microphone"""
-        print("🎤 Pro STS Test: Capturing single phrase...")
-        print("🎤 Speak now (will stop after silence or max duration)...")
-        
+    def load_and_prepare_audio(self):
+        """Load MP3 file and prepare it for streaming"""
         try:
-            stream = self.audio.open(
-                format=self.STS_FORMAT,
-                channels=self.STS_CHANNELS,
-                rate=self.STS_SAMPLE_RATE,
-                input=True,
-                frames_per_buffer=self.STS_CHUNK_SIZE
-            )
+            print(f"📁 Loading audio file: {self.input_file}")
             
-            print("✅ Audio input stream started")
+            # Load the MP3 file
+            audio = AudioSegment.from_mp3(self.input_file)
+            print(f"✅ Loaded audio: {len(audio)}ms ({len(audio)/1000:.1f}s)")
             
-            # Buffer for accumulating audio until natural silence
-            audio_buffer = b""
-            silence_start = None
-            silence_threshold = self.SILENCE_THRESHOLD
-            min_phrase_duration = 0.8  # Minimum 0.8 seconds before processing
-            max_phrase_duration = 10.0  # Maximum 10 seconds per phrase
-            silence_duration = self.SILENCE_DURATION  # 0.8 seconds of silence to end phrase
+            # Convert to mono if stereo
+            if audio.channels > 1:
+                audio = audio.set_channels(1)
+                print("🔄 Converted to mono")
             
-            phrase_start_time = time.time()
+            # Resample to 44.1kHz if needed
+            if audio.frame_rate != self.STS_SAMPLE_RATE:
+                audio = audio.set_frame_rate(self.STS_SAMPLE_RATE)
+                print(f"🔄 Resampled to {self.STS_SAMPLE_RATE}Hz")
             
-            while self.running:
-                try:
-                    # Read audio chunk
-                    data = stream.read(self.STS_CHUNK_SIZE, exception_on_overflow=False)
-                    audio_buffer += data
-                    
-                    # Check audio level for silence detection
-                    audio_data = np.frombuffer(data, dtype=np.int16)
-                    audio_level = np.sqrt(np.mean(audio_data.astype(np.float32) ** 2)) / 32768.0
-                    
-                    current_time = time.time()
-                    phrase_duration = current_time - phrase_start_time
-                    
-                    # Check for silence
-                    if audio_level < silence_threshold:
-                        if silence_start is None:
-                            silence_start = current_time
-                    else:
-                        silence_start = None
-                    
-                    # Determine when to process the phrase
-                    should_process = False
-                    
-                    # Process if we have enough audio and silence detected
-                    if (len(audio_buffer) > 0 and 
-                        phrase_duration >= min_phrase_duration and
-                        silence_start is not None and
-                        (current_time - silence_start) >= silence_duration):
-                        should_process = True
-                    
-                    # Also process if we've reached max duration (force processing)
-                    elif phrase_duration >= max_phrase_duration and len(audio_buffer) > 0:
-                        should_process = True
-                    
-                    if should_process:
-                        print(f"🎤 Pro STS: Processing {len(audio_buffer)} bytes ({phrase_duration:.1f}s) - silence detected")
-                        
-                        # Send audio to ElevenLabs STS API
-                        self.process_audio_with_sts_pro(audio_buffer)
-                        
-                        # Stop after processing one phrase
-                        self.running = False
-                        break
-                    
-                    time.sleep(0.01)  # Small delay
-                    
-                except Exception as e:
-                    print(f"❌ Error in audio processing: {e}")
-                    break
+            self.audio_segments = [audio]
+            print(f"✅ Audio prepared for streaming")
             
-            # Cleanup
-            stream.stop_stream()
-            stream.close()
-            print("✅ Audio capture completed")
+            return True
             
         except Exception as e:
-            print(f"❌ Audio capture error: {e}")
+            print(f"❌ Error loading audio file: {e}")
+            return False
     
-    def process_audio_with_sts_pro(self, audio_data):
+    def get_next_audio_chunk(self):
+        """Get next audio chunk for streaming"""
+        if not self.audio_segments or self.current_position >= len(self.audio_segments[0]):
+            return None
+        
+        # Calculate chunk boundaries with proper chunking
+        start_pos = self.current_position
+        chunk_duration_ms = min(self.STREAM_CHUNK_DURATION * 1000, self.MAX_CHUNK_DURATION * 1000)  # Convert to milliseconds
+        end_pos = min(start_pos + chunk_duration_ms, len(self.audio_segments[0]))
+        
+        # Extract chunk
+        chunk = self.audio_segments[0][start_pos:end_pos]
+        
+        # Update position (with overlap)
+        overlap_ms = self.STREAM_OVERLAP * 1000  # Convert to milliseconds
+        self.current_position = max(0, end_pos - overlap_ms)
+        
+        return chunk
+    
+    def stream_audio_chunks(self):
+        """Stream audio chunks from MP3 file"""
+        print("🎤 Pro STS Streaming: Starting audio stream from MP3 file...")
+        
+        chunk_count = 0
+        
+        while self.running:
+            try:
+                # Get next audio chunk
+                audio_chunk = self.get_next_audio_chunk()
+                
+                if audio_chunk is None:
+                    print("✅ Pro STS Streaming: Reached end of audio file")
+                    break
+                
+                chunk_count += 1
+                chunk_duration = len(audio_chunk) / 1000.0  # Convert to seconds
+                
+                print(f"🎵 Pro STS Streaming: Processing chunk {chunk_count} ({chunk_duration:.1f}s)")
+                
+                # Skip chunks that are too short (less than 0.5 seconds)
+                if chunk_duration < 0.5:
+                    print(f"⚠️ Skipping chunk {chunk_count} - too short ({chunk_duration:.1f}s)")
+                    continue
+                
+                # Convert audio chunk to bytes
+                with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as temp_file:
+                    audio_chunk.export(temp_file.name, format="wav")
+                    temp_file_path = temp_file.name
+                
+                # Read the audio file
+                with open(temp_file_path, "rb") as audio_file:
+                    audio_data = audio_file.read()
+                
+                # Clean up temp file
+                os.unlink(temp_file_path)
+                
+                # Process with STS API
+                success = self.process_audio_with_sts_pro(audio_data, chunk_count)
+                
+                if not success:
+                    print(f"❌ Failed to process chunk {chunk_count}, continuing...")
+                
+                # Small delay between chunks for smooth streaming
+                time.sleep(0.1)
+                
+            except Exception as e:
+                print(f"❌ Error processing chunk {chunk_count}: {e}")
+                self.log_to_file(f"STREAMING_ERROR: Chunk {chunk_count} - {e}")
+                continue
+        
+        print(f"🎵 Pro STS Streaming: Processed {chunk_count} chunks")
+    
+    def process_audio_with_sts_pro(self, audio_data, chunk_index):
         """Process audio using ElevenLabs Speech-to-Speech API with Pro features"""
         try:
-            print("🎵 Pro STS: Sending audio to ElevenLabs STS API with Pro features...")
+            print(f"🎵 Pro STS: Sending chunk {chunk_index} to ElevenLabs STS API with Pro features...")
             
             # Convert bytes to numpy array
             audio_array = np.frombuffer(audio_data, dtype=np.int16)
@@ -272,7 +316,7 @@ class ProSTSTest:
                     "voice_settings": (None, json.dumps(self.voice_settings))  # Pro voice settings
                 }
                 
-                print(f"🎵 Pro STS: Sending request to ElevenLabs STS API")
+                print(f"🎵 Pro STS: Sending chunk {chunk_index} to ElevenLabs STS API")
                 print(f"   Model: {self.model_id}")
                 print(f"   Voice: {self.voice_id}")
                 print(f"   Output Format: {self.output_format}")
@@ -281,7 +325,8 @@ class ProSTSTest:
                 response = requests.post(
                     f"https://api.elevenlabs.io/v1/speech-to-speech/{self.voice_id}/stream",
                     headers=headers,
-                    files=files
+                    files=files,
+                    timeout=30  # 30 second timeout
                 )
             
             # Clean up temp file
@@ -294,7 +339,7 @@ class ProSTSTest:
                 audio_output = response.content
                 
                 if audio_output:
-                    print(f"✅ Pro STS: Received {len(audio_output)} bytes of audio")
+                    print(f"✅ Pro STS: Received {len(audio_output)} bytes for chunk {chunk_index}")
                     
                     # Add to continuous buffer for playback
                     try:
@@ -308,28 +353,32 @@ class ProSTSTest:
                     self.all_audio_chunks.append(audio_output)
                     
                     # Save individual chunk immediately
-                    chunk_filename = f"pro_sts_chunk_{self.timestamp}.mp3"
+                    chunk_filename = f"pro_sts_streaming_chunk_{chunk_index}_{self.timestamp}.mp3"
                     with open(chunk_filename, 'wb') as f:
                         f.write(audio_output)
-                    print(f"💾 Saved Pro STS chunk: {chunk_filename} ({len(audio_output)} bytes)")
+                    print(f"💾 Saved Pro STS streaming chunk {chunk_index}: {chunk_filename} ({len(audio_output)} bytes)")
                     
-                    # Start playback immediately
-                    if not self.playback_started:
+                    # Start playback when we have enough data
+                    if not self.playback_started and len(self.mp3_chunks) >= 3:
                         self.playback_started = True
-                        print(f"🎵 Starting Pro STS playback")
+                        print(f"🎵 Starting Pro STS streaming playback")
                     
                     # Log to file
-                    self.log_to_file(f"PRO_STS_SUCCESS: {len(audio_output)} bytes")
+                    self.log_to_file(f"PRO_STS_STREAMING_SUCCESS: Chunk {chunk_index}, {len(audio_output)} bytes")
+                    return True
                 else:
-                    print("⚠️ Pro STS: No audio data received")
-                    self.log_to_file("PRO_STS_ERROR: No audio data received")
+                    print(f"⚠️ Pro STS: No audio data received for chunk {chunk_index}")
+                    self.log_to_file(f"PRO_STS_STREAMING_ERROR: Chunk {chunk_index} - No audio data received")
+                    return False
             else:
-                print(f"❌ Pro STS API error: {response.status_code} - {response.text}")
-                self.log_to_file(f"PRO_STS_ERROR: {response.status_code} - {response.text}")
+                print(f"❌ Pro STS API error for chunk {chunk_index}: {response.status_code} - {response.text}")
+                self.log_to_file(f"PRO_STS_STREAMING_ERROR: Chunk {chunk_index} - {response.status_code} - {response.text}")
+                return False
                 
         except Exception as e:
-            print(f"❌ Pro STS processing error: {e}")
-            self.log_to_file(f"PRO_STS_ERROR: {e}")
+            print(f"❌ Pro STS processing error for chunk {chunk_index}: {e}")
+            self.log_to_file(f"PRO_STS_STREAMING_ERROR: Chunk {chunk_index} - {e}")
+            return False
     
     async def _smooth_audio_streaming(self):
         """Smooth audio streaming with continuous playback"""
@@ -349,9 +398,9 @@ class ProSTSTest:
                 self.playback_thread.daemon = True
                 self.playback_thread.start()
             
-            print("🎵 Pro STS: Audio streaming initialized")
+            print("🎵 Pro STS Streaming: Audio streaming initialized")
             
-    except Exception as e:
+        except Exception as e:
             print(f"❌ Smooth streaming error: {e}")
     
     def _continuous_playback_worker(self, stream):
@@ -372,7 +421,7 @@ class ProSTSTest:
                     print(f"⚠️ Playback error: {e}")
                     continue
             
-            print("🎵 Pro STS playback worker completed")
+            print("🎵 Pro STS streaming playback worker completed")
             
         except Exception as e:
             print(f"❌ Continuous playback worker error: {e}")
@@ -402,50 +451,65 @@ class ProSTSTest:
             pass
     
     async def start(self):
-        """Start the Pro STS test"""
-        print("🎤🎵 Pro STS Test: Single Phrase Voice Changer")
-        print("=" * 60)
-        print("🎤 STS: Captures single phrase → sends to ElevenLabs STS API")
+        """Start the Pro STS streaming test"""
+        print("🎤🎵 Pro STS Streaming Test: MP3 File → ElevenLabs STS API → Speakers")
+        print("=" * 70)
+        print("🎤 STS: Streams MP3 file → sends chunks to ElevenLabs STS API")
         print("🎵 TTS: Returns converted audio → smooth live playback")
         print(f"📁 Queue log: {self.QUEUE_LOG_FILE}")
         print(f"🎵 Output file: {self.OUTPUT_FILE}")
         print(f"🎵 Model: {self.model_id}")
         print(f"🎵 Voice: {self.voice_id}")
         print(f"🎵 Pro Features: {self.output_format}, {self.voice_settings}")
-        print("=" * 60)
+        print("=" * 70)
+        
+        # Check if input file exists
+        if not self.input_file or not os.path.exists(self.input_file):
+            print(f"❌ Input file not found: {self.input_file}")
+            print("   Please provide a valid MP3 file path")
+            return
         
         # Clear log file
         if os.path.exists(self.QUEUE_LOG_FILE):
             os.remove(self.QUEUE_LOG_FILE)
         
+        # Load and prepare audio
+        if not self.load_and_prepare_audio():
+            print("❌ Failed to load audio file")
+            return
+        
         # Start audio streaming
         await self._smooth_audio_streaming()
         
-        # Start capture thread
-        capture_thread = threading.Thread(target=self.capture_single_phrase)
-        capture_thread.daemon = True
-        capture_thread.start()
+        # Start streaming thread
+        streaming_thread = threading.Thread(target=self.stream_audio_chunks)
+        streaming_thread.daemon = True
+        streaming_thread.start()
         
-        print("✅ Pro STS test started!")
-        print("🎤 Speak a single phrase into your microphone...")
-        print("🎵 Your voice will be converted and played back!")
+        print("✅ Pro STS streaming test started!")
+        print("🎵 Streaming MP3 file to ElevenLabs STS API...")
+        print("🎵 Converted audio will play through speakers!")
         print("⏹️  Press Ctrl+C to stop early")
         
         try:
-            # Keep main thread alive until capture completes
+            # Keep main thread alive until streaming completes
             while self.running:
                 await asyncio.sleep(0.1)
         except KeyboardInterrupt:
-            print("\n⏹️  Stopping Pro STS test...")
+            print("\n⏹️  Stopping Pro STS streaming test...")
             self.running = False
-        
-        # Wait for playback to complete
-        if self.playback_thread and self.playback_thread.is_alive():
-            print("🎵 Waiting for playback to complete...")
-            self.playback_thread.join(timeout=5)
-        
-        self.save_final_output()
-        print("✅ Pro STS test completed")
+        except Exception as e:
+            print(f"\n❌ Error in main loop: {e}")
+            self.running = False
+        finally:
+            # Always save output, even if interrupted
+            if self.all_audio_chunks:
+                print("💾 Saving final output...")
+                self.save_final_output()
+                print("✅ Pro STS streaming test completed")
+            else:
+                print("⚠️ No audio chunks processed, nothing to save")
+                print("✅ Pro STS streaming test completed")
     
     def save_final_output(self):
         """Save all TTS audio to a single MP3 file"""
@@ -462,6 +526,7 @@ class ProSTSTest:
                 
                 print(f"✅ All audio saved to: {self.OUTPUT_FILE}")
                 print(f"📊 Total audio size: {len(combined_audio)} bytes")
+                print(f"🎵 Duration: {len(combined_audio) / (192 * 1024 / 8) * 1000:.1f} seconds")
                 
                 # Log final stats
                 self.log_to_file(f"FINAL: Saved {len(self.all_audio_chunks)} chunks, {len(combined_audio)} bytes")
@@ -469,12 +534,21 @@ class ProSTSTest:
                 print("⚠️ No audio chunks to save")
                 self.log_to_file("FINAL: No audio chunks to save")
                 
-    except Exception as e:
+        except Exception as e:
             print(f"❌ Error saving final output: {e}")
             self.log_to_file(f"ERROR: Failed to save final output - {e}")
 
 async def main():
     """Main function"""
+    global global_streaming_test
+    
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(description='Pro STS Streaming Test - Stream MP3 file with ElevenLabs STS API')
+    parser.add_argument('input_file', help='Input MP3 file path')
+    parser.add_argument('--output', '-o', help='Output file path (optional)')
+    
+    args = parser.parse_args()
+    
     # Check prerequisites
     if not os.getenv("ELEVENLABS_API_KEY"):
         print("❌ ELEVENLABS_API_KEY not found")
@@ -483,9 +557,30 @@ async def main():
     
     print("✅ Prerequisites check passed")
     
-    # Create and start Pro STS test
-    pro_sts_test = ProSTSTest()
-    await pro_sts_test.start()
+    # Create and start Pro STS streaming test
+    pro_sts_streaming = ProSTSStreamingTest(args.input_file)
+    global_streaming_test = pro_sts_streaming  # Assign to global variable
+    
+    # Override output file name if specified
+    if args.output:
+        pro_sts_streaming.OUTPUT_FILE = args.output
+        print(f"🎵 Output file set to: {pro_sts_streaming.OUTPUT_FILE}")
+    
+    try:
+        await pro_sts_streaming.start()
+    except KeyboardInterrupt:
+        print("\n⏹️  Interrupted by user, saving output...")
+        pro_sts_streaming.save_final_output()
+        print("✅ Output saved successfully")
+    except Exception as e:
+        print(f"\n❌ Error during processing: {e}")
+        print("💾 Attempting to save any processed chunks...")
+        pro_sts_streaming.save_final_output()
+    finally:
+        # Ensure output is saved even if no exception was caught
+        if pro_sts_streaming.all_audio_chunks:
+            print("💾 Final cleanup - saving output...")
+            pro_sts_streaming.save_final_output()
 
 if __name__ == "__main__":
     asyncio.run(main()) 

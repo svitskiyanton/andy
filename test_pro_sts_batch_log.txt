@@ -1,0 +1,2 @@
+[2025-07-10 08:13:36] PRO_STS_BATCH_SUCCESS: Chunk 1, 815065 bytes
+[2025-07-10 08:13:36] FINAL: Combined 1 chunks, 815065 bytes

@@ -1,0 +1,4 @@
+[2025-07-10 08:53:30] PRO_STS_HYBRID_SUCCESS: Chunk 1, 64410 bytes
+[2025-07-10 08:53:33] PRO_STS_HYBRID_ERROR: Chunk 2 - 500 - {"detail":{"status":"something_went_wrong","message":"We are sorry, something went wrong. You are not charged for this request."}}
+[2025-07-10 08:53:37] PRO_STS_HYBRID_ERROR: Chunk 3 - 500 - {"detail":{"status":"something_went_wrong","message":"We are sorry, something went wrong. You are not charged for this request."}}
+[2025-07-10 08:53:40] PRO_STS_HYBRID_ERROR: Chunk 4 - 500 - {"detail":{"status":"something_went_wrong","message":"We are sorry, something went wrong. You are not charged for this request."}}

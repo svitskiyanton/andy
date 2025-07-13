@@ -21,8 +21,6 @@ from elevenlabs import generate, stream, set_api_key
 from elevenlabs.api import History
 import threading
 import queue
-import io
-from pydub import AudioSegment
 
 # Load environment variables from .env file if it exists
 def load_env():
@@ -63,17 +61,17 @@ class ProSTSConfig:
         # ElevenLabs Pro settings
         self.ELEVENLABS_API_KEY = os.getenv('ELEVENLABS_API_KEY')
         self.VOICE_ID = os.getenv('VOICE_ID', "pNInz6obpgDQGcFmaJgB")  # Adam voice
-        self.MODEL_ID = "eleven_multilingual_sts_v2"  # Pro STS model
+        self.MODEL_ID = "eleven_turbo_v2"  # Pro Turbo model
         
         # Pro-optimized streaming settings
         self.STREAM_CHUNK_SIZE = 1024
         self.MAX_CONCURRENT_REQUESTS = 10  # Pro limit
         self.AUDIO_QUALITY = 192  # Pro supports 192 kbps
-        self.OUTPUT_FORMAT = "mp3_44100_192"  # Pro MP3 output
+        self.OUTPUT_FORMAT = "pcm_44100"  # Pro PCM output
         
         # STS-specific settings
         self.STS_ENDPOINT = "https://api.elevenlabs.io/v1/speech-to-speech"
-        self.STS_STREAM_ENDPOINT = "https://api.elevenlabs.io/v1/speech-to-speech/{voice_id}/stream"
+        self.STS_STREAM_ENDPOINT = "https://api.elevenlabs.io/v1/speech-to-speech/stream"
         
         # Voice cloning settings (Pro feature)
         self.ENABLE_VOICE_CLONING = True
@@ -88,10 +86,6 @@ class ProSTSConfig:
         # Real-time settings
         self.LATENCY_TARGET = 0.1  # 100ms target latency
         self.PRIORITY_PROCESSING = True  # Pro feature
-        
-        # Phrase detection settings
-        self.SILENCE_DURATION_THRESHOLD = 0.5  # Seconds of silence to end phrase
-        self.MIN_AUDIO_LEVEL = 0.01  # Minimum audio level to consider speech (normalized like smooth script)
 
 class ProSTSVoiceChanger:
     """Pro-optimized Speech-to-Speech voice changer"""
@@ -116,12 +110,6 @@ class ProSTSVoiceChanger:
         # Performance tracking
         self.latency_history = deque(maxlen=100)
         self.throughput_history = deque(maxlen=100)
-        
-        # Phrase detection
-        self.current_phrase = []
-        self.phrase_start_time = None
-        self.last_audio_time = None
-        self.silence_start_time = None
         
         # Initialize ElevenLabs
         if config.ELEVENLABS_API_KEY:
@@ -183,7 +171,7 @@ class ProSTSVoiceChanger:
                             logger.info(f"  - {model['name']} ({model['model_id']})")
         
         except Exception as e:
-            logger.error(f"Error testing Pro capabilities: {e}", exc_info=True)
+            logger.error(f"Error testing Pro capabilities: {e}")
     
     async def initialize_voice_cloning(self):
         """Initialize voice cloning (Pro feature)"""
@@ -211,30 +199,31 @@ class ProSTSVoiceChanger:
                         )
                         
                         if existing_clone:
-                            logger.info(f"Found existing voice clone: {existing_clone['name']}")
+                            logger.info(f"Using existing voice clone: {existing_clone['voice_id']}")
                             self.config.VOICE_ID = existing_clone['voice_id']
                         else:
                             logger.info("No existing voice clone found. You can create one via the ElevenLabs dashboard.")
         
         except Exception as e:
-            logger.error(f"Error initializing voice cloning: {e}", exc_info=True)
+            logger.error(f"Error initializing voice cloning: {e}")
     
     async def setup_websocket_connection(self):
         """Setup WebSocket connection for real-time streaming"""
         logger.info("Setting up WebSocket connection...")
         
         try:
-            # For now, use HTTP streaming (WebSocket support coming soon)
+            # For now, we'll use HTTP streaming
+            # WebSocket implementation would require ElevenLabs WebSocket API
             logger.info("Using HTTP streaming (WebSocket not yet available)")
         
         except Exception as e:
-            logger.error(f"Error setting up WebSocket: {e}", exc_info=True)
+            logger.error(f"Error setting up WebSocket: {e}")
     
     def start_audio_capture(self):
         """Start real-time audio capture"""
         logger.info("Starting audio capture...")
         
-        def audio_capture_thread():
+        def audio_callback():
             try:
                 stream = self.pyaudio.open(
                     format=self.config.FORMAT,
@@ -254,9 +243,9 @@ class ProSTSVoiceChanger:
                 stream.close()
                 
             except Exception as e:
-                logger.error(f"Audio capture error: {e}", exc_info=True)
+                logger.error(f"Audio capture error: {e}")
         
-        self.audio_thread = threading.Thread(target=audio_capture_thread)
+        self.audio_thread = threading.Thread(target=audio_callback)
         self.audio_thread.start()
     
     def audio_callback(self, in_data, frame_count, time_info, status):
@@ -268,145 +257,84 @@ class ProSTSVoiceChanger:
             # Add to input buffer
             self.input_buffer.extend(audio_data)
             
-            # Check for silence using RMS (Root Mean Square) - normalized like smooth script
-            audio_level = np.sqrt(np.mean(audio_data.astype(np.float32)**2)) / 32768.0
-            current_time = time.time()
+            # Check for silence
+            audio_level = np.abs(audio_data).mean()
             
-            # Debug: Log audio levels occasionally
-            if hasattr(self, '_debug_counter'):
-                self._debug_counter += 1
-            else:
-                self._debug_counter = 0
-            
-            if self._debug_counter % 100 == 0:  # Log every 100th callback
-                logger.info(f"Audio callback called: level={audio_level:.6f}, threshold={self.config.MIN_AUDIO_LEVEL}")
-            
-            if audio_level > self.config.MIN_AUDIO_LEVEL:
+            if audio_level > self.config.SILENCE_THRESHOLD:
                 # Non-silent audio detected
                 self.audio_queue.put({
                     'data': audio_data,
-                    'timestamp': current_time,
+                    'timestamp': time.time(),
                     'level': audio_level
                 })
-                self.last_audio_time = current_time
-                self.silence_start_time = None
-                logger.info(f"Audio detected: level={audio_level:.6f}")
-            else:
-                # Silence detected - match smooth script logic
-                if self.silence_start_time is None:
-                    self.silence_start_time = current_time
-                    logger.info(f"Silence started at: {current_time}")
             
             return (in_data, pyaudio.paContinue)
         
         except Exception as e:
-            logger.error(f"Audio callback error: {e}", exc_info=True)
+            logger.error(f"Audio callback error: {e}")
             return (in_data, pyaudio.paContinue)
     
     async def process_audio_stream(self):
         """Process audio stream with Pro-optimized STS"""
         logger.info("Starting audio stream processing...")
         
+        current_phrase = []
+        phrase_start_time = None
+        
         while self.is_running:
             try:
-                # Get audio chunk with timeout
+                # Get audio chunk
                 audio_chunk = await asyncio.get_event_loop().run_in_executor(
-                    None, lambda: self.audio_queue.get(timeout=0.1)
+                    None, self.audio_queue.get, True, 0.1
                 )
                 
                 if audio_chunk is None:
                     continue
                 
-                # Add to current phrase
-                self.current_phrase.append(audio_chunk['data'])
+                current_phrase.append(audio_chunk['data'])
                 
                 # Start timing the phrase
-                if self.phrase_start_time is None:
-                    self.phrase_start_time = audio_chunk['timestamp']
+                if phrase_start_time is None:
+                    phrase_start_time = audio_chunk['timestamp']
                 
-                # Check phrase duration
-                phrase_duration = audio_chunk['timestamp'] - self.phrase_start_time
+                # Check if phrase should be processed
+                phrase_duration = audio_chunk['timestamp'] - phrase_start_time
                 
-                # Process phrase if it's long enough and we have silence
-                if (phrase_duration >= self.config.MIN_PHRASE_DURATION and 
-                    self.silence_start_time and 
-                    audio_chunk['timestamp'] - self.silence_start_time >= self.config.SILENCE_DURATION_THRESHOLD):
-                    
-                    logger.info(f"Processing phrase: duration={phrase_duration:.2f}s, silence={(audio_chunk['timestamp'] - self.silence_start_time):.2f}s")
-                    await self.process_phrase(self.current_phrase)
-                    self.current_phrase = []
-                    self.phrase_start_time = None
-                    self.silence_start_time = None
+                if phrase_duration >= self.config.MAX_PHRASE_DURATION:
+                    # Process the phrase
+                    await self.process_phrase(current_phrase)
+                    current_phrase = []
+                    phrase_start_time = None
                 
-                # Also process if max duration reached
-                elif phrase_duration >= self.config.MAX_PHRASE_DURATION:
-                    logger.info(f"Processing phrase due to max duration: {phrase_duration:.2f}s")
-                    await self.process_phrase(self.current_phrase)
-                    self.current_phrase = []
-                    self.phrase_start_time = None
-                    self.silence_start_time = None
-                
-                # Force process if phrase is getting too long (2+ seconds)
-                elif phrase_duration >= 2.0 and len(self.current_phrase) > 30:
-                    logger.info(f"Force processing long phrase: duration={phrase_duration:.2f}s, chunks={len(self.current_phrase)}")
-                    await self.process_phrase(self.current_phrase)
-                    self.current_phrase = []
-                    self.phrase_start_time = None
-                    self.silence_start_time = None
-                
-                # Debug: Log phrase state occasionally
-                if hasattr(self, '_phrase_debug_counter'):
-                    self._phrase_debug_counter += 1
-                else:
-                    self._phrase_debug_counter = 0
-                
-                if self._phrase_debug_counter % 50 == 0:  # Log every 50th iteration
-                    silence_duration = (audio_chunk['timestamp'] - self.silence_start_time) if self.silence_start_time else 0
-                    logger.info(f"Phrase state: chunks={len(self.current_phrase)}, duration={phrase_duration:.2f}s, silence={silence_duration:.2f}s")
-            
-            except queue.Empty:
-                # Check for timeout-based processing
-                if (self.current_phrase and self.phrase_start_time and 
-                    self.silence_start_time and 
-                    time.time() - self.silence_start_time >= self.config.SILENCE_DURATION_THRESHOLD):
-                    
-                    phrase_duration = time.time() - self.phrase_start_time
+                # Check for silence (end of phrase)
+                elif audio_chunk['level'] < self.config.SILENCE_THRESHOLD:
                     if phrase_duration >= self.config.MIN_PHRASE_DURATION:
-                        logger.info(f"Processing phrase due to timeout: {phrase_duration:.2f}s")
-                        await self.process_phrase(self.current_phrase)
-                        self.current_phrase = []
-                        self.phrase_start_time = None
-                        self.silence_start_time = None
-                
-                # Also force process if phrase is getting too long without silence
-                elif (self.current_phrase and self.phrase_start_time and 
-                      time.time() - self.phrase_start_time >= 2.0 and 
-                      len(self.current_phrase) > 20):
+                        # Process the phrase
+                        await self.process_phrase(current_phrase)
                     
-                    phrase_duration = time.time() - self.phrase_start_time
-                    logger.info(f"Force processing phrase due to timeout: {phrase_duration:.2f}s, chunks={len(self.current_phrase)}")
-                    await self.process_phrase(self.current_phrase)
-                    self.current_phrase = []
-                    self.phrase_start_time = None
-                    self.silence_start_time = None
-                continue
+                    current_phrase = []
+                    phrase_start_time = None
+                
+            except asyncio.TimeoutError:
+                # Process any remaining phrase
+                if current_phrase and phrase_start_time:
+                    phrase_duration = time.time() - phrase_start_time
+                    if phrase_duration >= self.config.MIN_PHRASE_DURATION:
+                        await self.process_phrase(current_phrase)
+                    current_phrase = []
+                    phrase_start_time = None
             
             except Exception as e:
-                logger.error(f"Error processing audio stream: {e}", exc_info=True)
+                logger.error(f"Error processing audio stream: {e}")
     
     async def process_phrase(self, audio_chunks):
         """Process a complete phrase with Pro STS"""
         if not audio_chunks:
             return
         
-        logger.info(f"Processing phrase with {len(audio_chunks)} chunks")
-        
         try:
             # Combine audio chunks
             combined_audio = np.concatenate(audio_chunks)
-            
-            # Debug: Check combined audio
-            logger.info(f"Combined audio shape: {combined_audio.shape}, total samples: {len(combined_audio)}")
             
             # Convert to proper format for ElevenLabs
             audio_bytes = combined_audio.tobytes()
@@ -433,65 +361,43 @@ class ProSTSVoiceChanger:
                         
                         logger.info(f"STS processed phrase: {len(audio_chunks)} chunks, "
                                   f"latency: {latency:.3f}s")
-                    else:
-                        logger.warning("No output audio received from STS")
                 
                 finally:
                     self.concurrent_requests -= 1
         
         except Exception as e:
-            logger.error(f"Error processing phrase: {e}", exc_info=True)
+            logger.error(f"Error processing phrase: {e}")
     
     async def stream_sts_pro(self, audio_data: bytes) -> Optional[bytes]:
         """Stream audio through Pro STS with optimized settings"""
         try:
-            # Convert numpy array to WAV format
-            audio_array = np.frombuffer(audio_data, dtype=np.int16)
-            
-            # Debug: Check audio data
-            logger.info(f"Audio array shape: {audio_array.shape}, dtype: {audio_array.dtype}")
-            logger.info(f"Audio array min/max: {audio_array.min()}/{audio_array.max()}")
-            
-            # Create WAV file in memory
-            wav_buffer = io.BytesIO()
-            
-            with wave.open(wav_buffer, 'wb') as wav_file:
-                wav_file.setnchannels(self.config.CHANNELS)
-                wav_file.setsampwidth(2)  # 16-bit = 2 bytes
-                wav_file.setframerate(self.config.SAMPLE_RATE)
-                wav_file.writeframes(audio_array.tobytes())
-            
-            wav_data = wav_buffer.getvalue()
-            logger.info(f"WAV data size: {len(wav_data)} bytes")
-            
             headers = {
                 "xi-api-key": self.config.ELEVENLABS_API_KEY,
+                "Content-Type": "audio/wav",
                 "Accept": "audio/mpeg"
             }
             
             # Prepare request data
             data = {
+                "voice_id": self.config.VOICE_ID,
                 "model_id": self.config.MODEL_ID,
                 "output_format": self.config.OUTPUT_FORMAT,
-                "audio_quality": self.config.AUDIO_QUALITY
+                "audio_quality": self.config.AUDIO_QUALITY,
+                "optimize_streaming_latency": self.config.LATENCY_TARGET,
+                "enable_timestamp_alignment": True,
+                "enable_priority_processing": self.config.PRIORITY_PROCESSING
             }
-            
-            # Debug: Log what we're sending
-            logger.info(f"STS request data: voice_id={self.config.VOICE_ID} (in URL), model_id={self.config.MODEL_ID}")
             
             # Create multipart form data
             form_data = aiohttp.FormData()
-            form_data.add_field('audio', wav_data, filename='input.wav', content_type='audio/wav')
+            form_data.add_field('audio', audio_data, filename='input.wav', content_type='audio/wav')
             
             for key, value in data.items():
                 form_data.add_field(key, str(value))
-                logger.info(f"STS form field: {key}={value}")
-            
-            logger.info(f"Sending STS request with {len(wav_data)} bytes of audio data")
             
             async with aiohttp.ClientSession() as session:
                 async with session.post(
-                    self.config.STS_STREAM_ENDPOINT.format(voice_id=self.config.VOICE_ID),
+                    self.config.STS_STREAM_ENDPOINT,
                     headers=headers,
                     data=form_data
                 ) as response:
@@ -502,7 +408,6 @@ class ProSTSVoiceChanger:
                         async for chunk in response.content.iter_chunked(1024):
                             output_audio += chunk
                         
-                        logger.info(f"STS response: {len(output_audio)} bytes")
                         return output_audio
                     else:
                         error_text = await response.text()
@@ -510,7 +415,7 @@ class ProSTSVoiceChanger:
                         return None
         
         except Exception as e:
-            logger.error(f"Error in Pro STS streaming: {e}", exc_info=True)
+            logger.error(f"Error in Pro STS streaming: {e}")
             return None
     
     def start_audio_output(self):
@@ -520,7 +425,7 @@ class ProSTSVoiceChanger:
         def output_callback():
             try:
                 stream = self.pyaudio.open(
-                    format=pyaudio.paFloat32,  # Play as float32 for smooth playback
+                    format=self.config.FORMAT,
                     channels=self.config.CHANNELS,
                     rate=self.config.SAMPLE_RATE,
                     output=True,
@@ -533,28 +438,19 @@ class ProSTSVoiceChanger:
                         output_audio = self.output_queue.get(timeout=0.1)
                         
                         if output_audio:
-                            # Decode MP3 to float32 PCM using pydub
-                            try:
-                                audio_segment = AudioSegment.from_file(io.BytesIO(output_audio), format="mp3")
-                                if len(audio_segment) == 0:
-                                    continue
-                                pcm_data = audio_segment.get_array_of_samples()
-                                pcm_float = np.array(pcm_data, dtype=np.float32) / 32768.0
-                                stream.write(pcm_float.astype(np.float32).tobytes())
-                            except Exception as e:
-                                logger.error(f"Audio decode/playback error: {e}", exc_info=True)
-                                continue
+                            # Play the audio
+                            stream.write(output_audio)
                         
                     except queue.Empty:
                         continue
                     except Exception as e:
-                        logger.error(f"Audio output error: {e}", exc_info=True)
+                        logger.error(f"Audio output error: {e}")
                 
                 stream.stop_stream()
                 stream.close()
                 
             except Exception as e:
-                logger.error(f"Audio output thread error: {e}", exc_info=True)
+                logger.error(f"Audio output thread error: {e}")
         
         self.output_thread = threading.Thread(target=output_callback)
         self.output_thread.start()
@@ -578,7 +474,7 @@ class ProSTSVoiceChanger:
         except KeyboardInterrupt:
             logger.info("Shutting down...")
         except Exception as e:
-            logger.error(f"Error in main loop: {e}", exc_info=True)
+            logger.error(f"Error in main loop: {e}")
         finally:
             self.cleanup()
     
@@ -607,7 +503,7 @@ async def main():
     try:
         await voice_changer.run()
     except Exception as e:
-        logger.error(f"Main error: {e}", exc_info=True)
+        logger.error(f"Main error: {e}")
 
 if __name__ == "__main__":
     asyncio.run(main()) 
