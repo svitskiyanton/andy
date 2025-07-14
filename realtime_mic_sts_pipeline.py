@@ -88,11 +88,11 @@ class RealtimeMicSTSPipeline:
         self.VAD_SAMPLE_RATE = 16000  # VAD works better at 16kHz
         self.VAD_FRAME_DURATION = 0.03  # 30ms frames
         
-        # Pause detection settings
-        self.SILENCE_THRESHOLD = 0.008  # Audio level threshold for silence
-        self.SILENCE_DURATION = 0.5  # Seconds of silence to end phrase
-        self.MIN_PHRASE_DURATION = 1.0  # Minimum phrase duration
-        self.MAX_PHRASE_DURATION = 8.0  # Maximum phrase duration
+        # Pause detection settings - More sensitive to pauses
+        self.SILENCE_THRESHOLD = 0.005  # Lower threshold for silence detection (was 0.008)
+        self.SILENCE_DURATION = 0.3  # Shorter silence duration to end phrase (was 0.5)
+        self.MIN_PHRASE_DURATION = 0.8  # Shorter minimum phrase duration (was 1.0)
+        self.MAX_PHRASE_DURATION = 6.0  # Shorter maximum phrase duration (was 8.0)
         
         # Output file
         if output_file:
@@ -316,6 +316,11 @@ class RealtimeMicSTSPipeline:
     def process_phrase_sync(self, audio_buffer, phrase_num, duration):
         """Process a phrase through STS API synchronously (for threading)"""
         try:
+            # Filter out chunks less than 1 second (noise)
+            if duration < 1.0:
+                print(f"🎤 Phrase {phrase_num} detected: {duration:.2f}s - TOO SHORT, skipping (noise)")
+                return
+            
             print(f"🎤 Phrase {phrase_num} detected: {duration:.2f}s - sending to STS...")
             
             # Convert audio buffer to AudioSegment
