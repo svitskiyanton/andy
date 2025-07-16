@@ -1,0 +1,715 @@
+
+
+PS C:\Projects\Andy> python realtime_mic_sts_pipeline_opt.py
+[01:37:14.791] ✅ Prerequisites check passed
+[01:37:14.901] ✓ Using webrtcvad for VAD
+[01:37:14.902] 🎤🎵 Real-time Microphone STS Pipeline Configuration:
+[01:37:14.903]    Output File: realtime_mic_sts_output_20250716_013714.mp3
+[01:37:14.904]    Chunks Folder: sts_result_chunks
+[01:37:14.904]    Voice ID: 21m00Tcm4TlvDq8ikWAM
+[01:37:14.905]    Model: eleven_multilingual_sts_v2
+[01:37:14.906]    Max Concurrent Requests: 5
+[01:37:14.907]    Voice Settings: {'stability': 0.5, 'similarity_boost': 0.37, 'style': 0.05, 'use_speaker_boost': True}
+[01:37:14.914]    Output Format: mp3_44100_192
+[01:37:14.915]    VAD Mode: 2
+[01:37:14.915]    Silence Threshold: 0.005
+[01:37:14.916]    Min Phrase Duration: 0.8s
+[01:37:14.917]    Max Phrase Duration: 8.0s
+[01:37:14.919]    Silence Duration: 0.3s
+[01:37:14.921] 🎤🎵 Real-time Microphone STS Pipeline
+[01:37:14.925] ================================================================================
+[01:37:14.926] 🎤 Microphone: Real-time voice input with VAD chunking
+[01:37:14.927] 🚀 Parallel STS: Sends chunks concurrently (max 5)
+[01:37:14.928] 💾 Output: Combined MP3 file (playback commented out)
+[01:37:14.929] 📁 Output file: realtime_mic_sts_output_20250716_013714.mp3
+[01:37:14.930] 🎵 Model: eleven_multilingual_sts_v2
+[01:37:14.931] 🎵 Voice: 21m00Tcm4TlvDq8ikWAM
+[01:37:14.932] ⚡ Max Concurrent Requests: 5
+[01:37:14.933] ================================================================================
+[01:37:14.936] ✅ Real-time Microphone STS Pipeline started!
+[01:37:14.939] 🎤 Speak into microphone - phrases will be processed through STS
+[01:37:14.940] 💾 Output will be saved to MP3 file
+[01:37:14.940] ⏹️  Press Ctrl+C to stop
+[01:37:14.965] 🎤 Started listening for speech...
+[01:37:14.967]    Speak naturally - phrases will be detected on silence
+[01:37:14.969]    Press Ctrl+C to stop
+[01:37:15.805] 🎤 Phrase 1 detected: 0.84s (silence detected for 0.8s)
+[01:37:15.825] 🎤 Phrase 1 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:37:16.644] 🎤 Phrase 2 detected: 0.84s (silence detected for 0.8s)
+[01:37:16.653] 🎤 Phrase 2 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:37:17.474] 🎤 Phrase 3 detected: 0.84s (silence detected for 0.8s)
+[01:37:17.536] 🎤 Phrase 3 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:37:18.314] 🎤 Phrase 4 detected: 0.84s (silence detected for 0.8s)
+[01:37:18.316] 🎤 Phrase 4 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:37:19.155] 🎤 Phrase 5 detected: 0.84s (silence detected for 0.8s)
+[01:37:19.164] 🎤 Phrase 5 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:37:19.984] 🎤 Phrase 6 detected: 0.84s (silence detected for 0.8s)
+[01:37:19.986] 🎤 Phrase 6 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:37:20.824] 🎤 Phrase 7 detected: 0.84s (silence detected for 0.8s)
+[01:37:20.827] 🎤 Phrase 7 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:37:21.894] 🎤 Phrase 8 detected: 1.07s (silence detected for 0.3s)
+[01:37:21.898] 🎤 Phrase 8 detected: 1.07s - sending to STS...
+[01:37:21.902] 🎵 STS: Processing chunk 8 (active: 1)
+[01:37:22.726] 🎤 Phrase 9 detected: 0.84s (silence detected for 0.5s)
+[01:37:22.734] 🎤 Phrase 9 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:37:25.001] ✅ STS: Chunk 8 completed (17599 bytes)
+[01:37:25.142] 💾 Saved STS chunk 8 to: sts_chunk_008_20250716_013725.wav (WAV format, 17599 bytes, 1.07s)
+[01:37:25.143] ✅ Phrase 8 processed and stored
+[01:37:25.234] 🎤 Phrase 10 detected: 2.51s (silence detected for 0.3s)
+[01:37:25.236] 🎤 Phrase 10 detected: 2.51s - sending to STS...
+[01:37:25.238] 🎵 STS: Processing chunk 10 (active: 1)
+[01:37:27.744] 🎤 Phrase 11 detected: 2.51s (silence detected for 0.3s)
+[01:37:27.747] 🎤 Phrase 11 detected: 2.51s - sending to STS...
+[01:37:27.748] 🎵 STS: Processing chunk 11 (active: 2)
+[01:37:28.942] ✅ STS: Chunk 10 completed (40587 bytes)
+[01:37:29.101] 💾 Saved STS chunk 10 to: sts_chunk_010_20250716_013728.wav (WAV format, 40587 bytes, 2.51s)
+[01:37:29.103] ✅ Phrase 10 processed and stored
+[01:37:30.154] 🎤 Phrase 12 detected: 2.41s (silence detected for 0.3s)
+[01:37:30.157] 🎤 Phrase 12 detected: 2.41s - sending to STS...
+[01:37:30.158] 🎵 STS: Processing chunk 12 (active: 2)
+[01:37:31.809] ✅ STS: Chunk 11 completed (40587 bytes)
+[01:37:31.960] 💾 Saved STS chunk 11 to: sts_chunk_011_20250716_013731.wav (WAV format, 40587 bytes, 2.51s)
+[01:37:31.961] ✅ Phrase 11 processed and stored
+[01:37:33.452] ✅ STS: Chunk 12 completed (39333 bytes)
+[01:37:33.596] 💾 Saved STS chunk 12 to: sts_chunk_012_20250716_013733.wav (WAV format, 39333 bytes, 2.41s)
+[01:37:33.597] ✅ Phrase 12 processed and stored
+[01:37:34.844] 🎤 Phrase 13 detected: 4.69s (silence detected for 0.3s)
+[01:37:34.847] 🎤 Phrase 13 detected: 4.69s - sending to STS...
+[01:37:34.849] 🎵 STS: Processing chunk 13 (active: 1)
+[01:37:38.704] 🎤 Phrase 14 detected: 3.85s (silence detected for 0.3s)
+[01:37:38.707] 🎤 Phrase 14 detected: 3.85s - sending to STS...
+[01:37:38.709] 🎵 STS: Processing chunk 14 (active: 2)
+[01:37:39.724] 🎤 Phrase 15 detected: 1.02s (silence detected for 0.3s)
+[01:37:39.727] 🎤 Phrase 15 detected: 1.02s - sending to STS...
+[01:37:39.730] 🎵 STS: Processing chunk 15 (active: 3)
+[01:37:40.997] ✅ STS: Chunk 13 completed (75695 bytes)
+[01:37:41.154] 💾 Saved STS chunk 13 to: sts_chunk_013_20250716_013741.wav (WAV format, 75695 bytes, 4.69s)
+[01:37:41.155] ✅ Phrase 13 processed and stored
+[01:37:42.256] ✅ STS: Chunk 15 completed (17181 bytes)
+[01:37:42.399] 💾 Saved STS chunk 15 to: sts_chunk_015_20250716_013742.wav (WAV format, 17181 bytes, 1.02s)
+[01:37:42.401] ✅ Phrase 15 processed and stored
+[01:37:42.455] ✅ STS: Chunk 14 completed (62320 bytes)
+[01:37:42.600] 💾 Saved STS chunk 14 to: sts_chunk_014_20250716_013742.wav (WAV format, 62320 bytes, 3.85s)
+[01:37:42.602] ✅ Phrase 14 processed and stored
+[01:37:43.204] 🎤 Phrase 16 detected: 3.48s (silence detected for 0.3s)
+[01:37:43.206] 🎤 Phrase 16 detected: 3.48s - sending to STS...
+[01:37:43.207] 🎵 STS: Processing chunk 16 (active: 1)
+[01:37:46.859] ✅ STS: Chunk 16 completed (56469 bytes)
+[01:37:47.020] 💾 Saved STS chunk 16 to: sts_chunk_016_20250716_013746.wav (WAV format, 56469 bytes, 3.48s)
+[01:37:47.022] ✅ Phrase 16 processed and stored
+[01:37:48.124] 🎤 Phrase 17 detected: 4.92s (silence detected for 0.3s)
+[01:37:48.126] 🎤 Phrase 17 detected: 4.92s - sending to STS...
+[01:37:48.128] 🎵 STS: Processing chunk 17 (active: 1)
+[01:37:51.144] 🎤 Phrase 18 detected: 3.02s (silence detected for 0.3s)
+[01:37:51.149] 🎤 Phrase 18 detected: 3.02s - sending to STS...
+[01:37:51.150] 🎵 STS: Processing chunk 18 (active: 2)
+[01:37:52.096] ✅ STS: Chunk 17 completed (79457 bytes)
+[01:37:52.243] 💾 Saved STS chunk 17 to: sts_chunk_017_20250716_013752.wav (WAV format, 79457 bytes, 4.92s)
+[01:37:52.244] ✅ Phrase 17 processed and stored
+[01:37:54.464] ✅ STS: Chunk 18 completed (48946 bytes)
+[01:37:54.625] 💾 Saved STS chunk 18 to: sts_chunk_018_20250716_013754.wav (WAV format, 48946 bytes, 3.02s)
+[01:37:54.626] ✅ Phrase 18 processed and stored
+[01:37:56.905] 🎤 Phrase 19 detected: 5.76s (silence detected for 0.3s)
+[01:37:56.907] 🎤 Phrase 19 detected: 5.76s - sending to STS...
+[01:37:56.909] 🎵 STS: Processing chunk 19 (active: 1)
+[01:37:58.715] 🎤 Phrase 20 detected: 1.81s (silence detected for 0.3s)
+[01:37:58.717] 🎤 Phrase 20 detected: 1.81s - sending to STS...
+[01:37:58.718] 🎵 STS: Processing chunk 20 (active: 2)
+[01:38:00.574] 🎤 Phrase 21 detected: 1.86s (silence detected for 0.3s)
+[01:38:00.579] 🎤 Phrase 21 detected: 1.86s - sending to STS...
+[01:38:00.580] 🎵 STS: Processing chunk 21 (active: 3)
+[01:38:00.729] ✅ STS: Chunk 19 completed (92831 bytes)
+[01:38:01.015] 💾 Saved STS chunk 19 to: sts_chunk_019_20250716_013800.wav (WAV format, 92831 bytes, 5.76s)
+[01:38:01.016] ✅ Phrase 19 processed and stored
+[01:38:02.152] ✅ STS: Chunk 20 completed (29720 bytes)
+[01:38:02.308] 💾 Saved STS chunk 20 to: sts_chunk_020_20250716_013802.wav (WAV format, 29720 bytes, 1.81s)
+[01:38:02.309] ✅ Phrase 20 processed and stored
+[01:38:03.634] 🎤 Phrase 22 detected: 3.07s (silence detected for 0.3s)
+[01:38:03.643] 🎤 Phrase 22 detected: 3.07s - sending to STS...
+[01:38:03.644] 🎵 STS: Processing chunk 22 (active: 2)
+[01:38:03.887] ✅ STS: Chunk 21 completed (30556 bytes)
+[01:38:04.074] 💾 Saved STS chunk 21 to: sts_chunk_021_20250716_013803.wav (WAV format, 30556 bytes, 1.86s)
+[01:38:04.075] ✅ Phrase 21 processed and stored
+[01:38:07.076] 🎤 Phrase 23 detected: 3.44s (silence detected for 0.3s)
+[01:38:07.079] 🎤 Phrase 23 detected: 3.44s - sending to STS...
+[01:38:07.088] 🎵 STS: Processing chunk 23 (active: 2)
+[01:38:07.183] ✅ STS: Chunk 22 completed (49782 bytes)
+[01:38:07.613] 💾 Saved STS chunk 22 to: sts_chunk_022_20250716_013807.wav (WAV format, 49782 bytes, 3.07s)
+[01:38:07.614] ✅ Phrase 22 processed and stored
+[01:38:11.164] ✅ STS: Chunk 23 completed (55633 bytes)
+[01:38:11.788] 💾 Saved STS chunk 23 to: sts_chunk_023_20250716_013811.wav (WAV format, 55633 bytes, 3.44s)
+[01:38:11.789] ✅ Phrase 23 processed and stored
+[01:38:15.115] 🎤 Phrase 24 detected: 8.03s (max duration reached (8.0s))
+[01:38:15.123] 🎤 Phrase 24 detected: 8.03s - sending to STS...
+[01:38:15.125] 🎵 STS: Processing chunk 24 (active: 1)
+[01:38:15.944] 🎤 Phrase 25 detected: 0.84s (silence detected for 0.8s)
+[01:38:15.946] 🎤 Phrase 25 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:38:19.845] 🎤 Phrase 26 detected: 3.90s (silence detected for 0.3s)
+[01:38:19.848] 🎤 Phrase 26 detected: 3.90s - sending to STS...
+[01:38:19.852] 🎵 STS: Processing chunk 26 (active: 2)
+[01:38:20.792] ✅ STS: Chunk 24 completed (129194 bytes)
+[01:38:20.961] 💾 Saved STS chunk 24 to: sts_chunk_024_20250716_013820.wav (WAV format, 129194 bytes, 8.03s)
+[01:38:20.962] ✅ Phrase 24 processed and stored
+[01:38:22.814] 🎤 Phrase 27 detected: 2.97s (silence detected for 0.3s)
+[01:38:22.817] 🎤 Phrase 27 detected: 2.97s - sending to STS...
+[01:38:22.818] 🎵 STS: Processing chunk 27 (active: 2)
+[01:38:23.443] ✅ STS: Chunk 26 completed (63156 bytes)
+[01:38:23.699] 💾 Saved STS chunk 26 to: sts_chunk_026_20250716_013823.wav (WAV format, 63156 bytes, 3.90s)
+[01:38:23.700] ✅ Phrase 26 processed and stored
+[01:38:26.415] ✅ STS: Chunk 27 completed (48110 bytes)
+[01:38:26.669] 💾 Saved STS chunk 27 to: sts_chunk_027_20250716_013826.wav (WAV format, 48110 bytes, 2.97s)
+[01:38:26.671] ✅ Phrase 27 processed and stored
+[01:38:26.767] 🎤 Phrase 28 detected: 3.95s (silence detected for 0.3s)
+[01:38:26.770] 🎤 Phrase 28 detected: 3.95s - sending to STS...
+[01:38:26.772] 🎵 STS: Processing chunk 28 (active: 1)
+[01:38:29.594] 🎤 Phrase 29 detected: 2.83s (silence detected for 0.3s)
+[01:38:29.605] 🎤 Phrase 29 detected: 2.83s - sending to STS...
+[01:38:29.609] 🎵 STS: Processing chunk 29 (active: 2)
+[01:38:30.330] ✅ STS: Chunk 28 completed (63992 bytes)
+[01:38:30.634] 💾 Saved STS chunk 28 to: sts_chunk_028_20250716_013830.wav (WAV format, 63992 bytes, 3.95s)
+[01:38:30.635] ✅ Phrase 28 processed and stored
+[01:38:32.754] 🎤 Phrase 30 detected: 3.16s (silence detected for 0.3s)
+[01:38:32.756] 🎤 Phrase 30 detected: 3.16s - sending to STS...
+[01:38:32.758] 🎵 STS: Processing chunk 30 (active: 2)
+[01:38:34.020] ✅ STS: Chunk 29 completed (46020 bytes)
+[01:38:34.271] 💾 Saved STS chunk 29 to: sts_chunk_029_20250716_013834.wav (WAV format, 46020 bytes, 2.83s)
+[01:38:34.272] ✅ Phrase 29 processed and stored
+[01:38:35.454] 🎤 Phrase 31 detected: 2.69s (silence detected for 0.3s)
+[01:38:35.458] 🎤 Phrase 31 detected: 2.69s - sending to STS...
+[01:38:35.460] 🎵 STS: Processing chunk 31 (active: 2)
+[01:38:36.503] ✅ STS: Chunk 30 completed (51036 bytes)
+[01:38:36.650] 💾 Saved STS chunk 30 to: sts_chunk_030_20250716_013836.wav (WAV format, 51036 bytes, 3.16s)
+[01:38:36.651] ✅ Phrase 30 processed and stored
+[01:38:38.478] ✅ STS: Chunk 31 completed (43930 bytes)
+[01:38:38.622] 💾 Saved STS chunk 31 to: sts_chunk_031_20250716_013838.wav (WAV format, 43930 bytes, 2.69s)
+[01:38:38.624] ✅ Phrase 31 processed and stored
+[01:38:39.025] 🎤 Phrase 32 detected: 3.58s (silence detected for 0.3s)
+[01:38:39.029] 🎤 Phrase 32 detected: 3.58s - sending to STS...
+[01:38:39.031] 🎵 STS: Processing chunk 32 (active: 1)
+[01:38:40.604] 🎤 Phrase 33 detected: 1.58s (silence detected for 0.3s)
+[01:38:40.606] 🎤 Phrase 33 detected: 1.58s - sending to STS...
+[01:38:40.608] 🎵 STS: Processing chunk 33 (active: 2)
+[01:38:42.394] ✅ STS: Chunk 32 completed (57723 bytes)
+[01:38:42.666] 💾 Saved STS chunk 32 to: sts_chunk_032_20250716_013842.wav (WAV format, 57723 bytes, 3.58s)
+[01:38:42.667] ✅ Phrase 32 processed and stored
+[01:38:43.722] ✅ STS: Chunk 33 completed (25958 bytes)
+[01:38:43.935] 💾 Saved STS chunk 33 to: sts_chunk_033_20250716_013843.wav (WAV format, 25958 bytes, 1.58s)
+[01:38:43.936] ✅ Phrase 33 processed and stored
+[01:38:48.225] 🎤 Phrase 34 detected: 7.62s (silence detected for 0.3s)
+[01:38:48.227] 🎤 Phrase 34 detected: 7.62s - sending to STS...
+[01:38:48.229] 🎵 STS: Processing chunk 34 (active: 1)
+[01:38:52.838] ✅ STS: Chunk 34 completed (122507 bytes)
+[01:38:53.008] 💾 Saved STS chunk 34 to: sts_chunk_034_20250716_013852.wav (WAV format, 122507 bytes, 7.62s)
+[01:38:53.009] ✅ Phrase 34 processed and stored
+[01:38:53.657] 🎤 Phrase 35 detected: 5.43s (silence detected for 0.3s)
+[01:38:53.660] 🎤 Phrase 35 detected: 5.43s - sending to STS...
+[01:38:53.663] 🎵 STS: Processing chunk 35 (active: 1)
+[01:38:54.866] 🎤 Phrase 36 detected: 1.21s (silence detected for 0.3s)
+[01:38:54.869] 🎤 Phrase 36 detected: 1.21s - sending to STS...
+[01:38:54.871] 🎵 STS: Processing chunk 36 (active: 2)
+[01:38:56.765] 🎤 Phrase 37 detected: 1.90s (silence detected for 0.3s)
+[01:38:56.774] 🎤 Phrase 37 detected: 1.90s - sending to STS...
+[01:38:56.775] 🎵 STS: Processing chunk 37 (active: 3)
+[01:38:57.210] ✅ STS: Chunk 35 completed (87398 bytes)
+[01:38:57.387] 💾 Saved STS chunk 35 to: sts_chunk_035_20250716_013857.wav (WAV format, 87398 bytes, 5.43s)
+[01:38:57.388] ✅ Phrase 35 processed and stored
+[01:38:57.899] ✅ STS: Chunk 36 completed (20107 bytes)
+[01:38:58.168] 💾 Saved STS chunk 36 to: sts_chunk_036_20250716_013857.wav (WAV format, 20107 bytes, 1.21s)
+[01:38:58.170] ✅ Phrase 36 processed and stored
+[01:38:59.753] ✅ STS: Chunk 37 completed (30974 bytes)
+[01:38:59.898] 💾 Saved STS chunk 37 to: sts_chunk_037_20250716_013859.wav (WAV format, 30974 bytes, 1.90s)
+[01:38:59.899] ✅ Phrase 37 processed and stored
+[01:39:01.034] 🎤 Phrase 38 detected: 4.27s (silence detected for 0.3s)
+[01:39:01.042] 🎤 Phrase 38 detected: 4.27s - sending to STS...
+[01:39:01.044] 🎵 STS: Processing chunk 38 (active: 1)
+[01:39:05.363] ✅ STS: Chunk 38 completed (69008 bytes)
+[01:39:05.703] 💾 Saved STS chunk 38 to: sts_chunk_038_20250716_013905.wav (WAV format, 69008 bytes, 4.27s)
+[01:39:05.704] ✅ Phrase 38 processed and stored
+[01:39:09.075] 🎤 Phrase 39 detected: 8.03s (max duration reached (8.0s))
+[01:39:09.076] 🎤 Phrase 39 detected: 8.03s - sending to STS...
+[01:39:09.077] 🎵 STS: Processing chunk 39 (active: 1)
+[01:39:12.744] 🎤 Phrase 40 detected: 3.67s (silence detected for 0.3s)
+[01:39:12.746] 🎤 Phrase 40 detected: 3.67s - sending to STS...
+[01:39:12.749] 🎵 STS: Processing chunk 40 (active: 2)
+[01:39:13.575] 🎤 Phrase 41 detected: 0.84s (silence detected for 0.8s)
+[01:39:13.583] 🎤 Phrase 41 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:39:13.798] ✅ STS: Chunk 39 completed (129194 bytes)
+[01:39:14.060] 💾 Saved STS chunk 39 to: sts_chunk_039_20250716_013913.wav (WAV format, 129194 bytes, 8.03s)
+[01:39:14.061] ✅ Phrase 39 processed and stored
+[01:39:15.856] ✅ STS: Chunk 40 completed (59395 bytes)
+[01:39:16.057] 💾 Saved STS chunk 40 to: sts_chunk_040_20250716_013915.wav (WAV format, 59395 bytes, 3.67s)
+[01:39:16.060] ✅ Phrase 40 processed and stored
+[01:39:20.825] 🎤 Phrase 42 detected: 7.24s (silence detected for 0.3s)
+[01:39:20.835] 🎤 Phrase 42 detected: 7.24s - sending to STS...
+[01:39:20.836] 🎵 STS: Processing chunk 42 (active: 1)
+[01:39:23.424] 🎤 Phrase 43 detected: 2.60s (silence detected for 0.3s)
+[01:39:23.430] 🎤 Phrase 43 detected: 2.60s - sending to STS...
+[01:39:23.432] 🎵 STS: Processing chunk 43 (active: 2)
+[01:39:25.278] ✅ STS: Chunk 42 completed (116655 bytes)
+[01:39:25.442] 💾 Saved STS chunk 42 to: sts_chunk_042_20250716_013925.wav (WAV format, 116655 bytes, 7.24s)
+[01:39:25.443] ✅ Phrase 42 processed and stored
+[01:39:26.484] 🎤 Phrase 44 detected: 3.07s (silence detected for 0.3s)
+[01:39:26.490] 🎤 Phrase 44 detected: 3.07s - sending to STS...
+[01:39:26.492] 🎵 STS: Processing chunk 44 (active: 2)
+[01:39:26.503] ✅ STS: Chunk 43 completed (42258 bytes)
+[01:39:26.705] 💾 Saved STS chunk 43 to: sts_chunk_043_20250716_013926.wav (WAV format, 42258 bytes, 2.60s)
+[01:39:26.706] ✅ Phrase 43 processed and stored
+[01:39:29.325] 🎤 Phrase 45 detected: 2.83s (silence detected for 0.3s)
+[01:39:29.334] 🎤 Phrase 45 detected: 2.83s - sending to STS...
+[01:39:29.336] 🎵 STS: Processing chunk 45 (active: 2)
+[01:39:29.529] ✅ STS: Chunk 44 completed (49782 bytes)
+[01:39:29.776] 💾 Saved STS chunk 44 to: sts_chunk_044_20250716_013929.wav (WAV format, 49782 bytes, 3.07s)
+[01:39:29.777] ✅ Phrase 44 processed and stored
+[01:39:32.990] ✅ STS: Chunk 45 completed (46020 bytes)
+[01:39:33.160] 💾 Saved STS chunk 45 to: sts_chunk_045_20250716_013932.wav (WAV format, 46020 bytes, 2.83s)
+[01:39:33.161] ✅ Phrase 45 processed and stored
+[01:39:34.475] 🎤 Phrase 46 detected: 5.15s (silence detected for 0.3s)
+[01:39:34.503] 🎤 Phrase 46 detected: 5.15s - sending to STS...
+[01:39:34.516] 🎵 STS: Processing chunk 46 (active: 1)
+[01:39:38.055] 🎤 Phrase 47 detected: 3.58s (silence detected for 0.3s)
+[01:39:38.057] 🎤 Phrase 47 detected: 3.58s - sending to STS...
+[01:39:38.060] 🎵 STS: Processing chunk 47 (active: 2)
+[01:39:38.709] ✅ STS: Chunk 46 completed (83218 bytes)
+[01:39:38.951] 💾 Saved STS chunk 46 to: sts_chunk_046_20250716_013938.wav (WAV format, 83218 bytes, 5.15s)
+[01:39:38.952] ✅ Phrase 46 processed and stored
+[01:39:41.864] ✅ STS: Chunk 47 completed (57723 bytes)
+[01:39:42.063] 💾 Saved STS chunk 47 to: sts_chunk_047_20250716_013941.wav (WAV format, 57723 bytes, 3.58s)
+[01:39:42.065] ✅ Phrase 47 processed and stored
+[01:39:42.925] 🎤 Phrase 48 detected: 4.88s (silence detected for 0.3s)
+[01:39:42.927] 🎤 Phrase 48 detected: 4.88s - sending to STS...
+[01:39:42.929] 🎵 STS: Processing chunk 48 (active: 1)
+[01:39:46.035] 🎤 Phrase 49 detected: 3.11s (silence detected for 0.3s)
+[01:39:46.116] 🎤 Phrase 49 detected: 3.11s - sending to STS...
+[01:39:46.143] 🎵 STS: Processing chunk 49 (active: 2)
+[01:39:46.526] ✅ STS: Chunk 48 completed (78621 bytes)
+[01:39:46.691] 💾 Saved STS chunk 48 to: sts_chunk_048_20250716_013946.wav (WAV format, 78621 bytes, 4.88s)
+[01:39:46.691] ✅ Phrase 48 processed and stored
+[01:39:46.970] 🎤 Phrase 50 detected: 0.93s (silence detected for 0.3s)
+[01:39:46.985] 🎤 Phrase 50 detected: 0.93s - TOO SHORT, skipping (noise)
+[01:39:49.055] 🎤 Phrase 51 detected: 2.09s (silence detected for 0.3s)
+[01:39:49.059] 🎤 Phrase 51 detected: 2.09s - sending to STS...
+[01:39:49.060] 🎵 STS: Processing chunk 51 (active: 2)
+[01:39:50.251] ✅ STS: Chunk 49 completed (50618 bytes)
+[01:39:50.406] 💾 Saved STS chunk 49 to: sts_chunk_049_20250716_013950.wav (WAV format, 50618 bytes, 3.11s)
+[01:39:50.408] ✅ Phrase 49 processed and stored
+[01:39:52.152] ✅ STS: Chunk 51 completed (33899 bytes)
+[01:39:52.464] 💾 Saved STS chunk 51 to: sts_chunk_051_20250716_013952.wav (WAV format, 33899 bytes, 2.09s)
+[01:39:52.466] ✅ Phrase 51 processed and stored
+[01:39:53.055] 🎤 Phrase 52 detected: 3.99s (silence detected for 0.3s)
+[01:39:53.057] 🎤 Phrase 52 detected: 3.99s - sending to STS...
+[01:39:53.059] 🎵 STS: Processing chunk 52 (active: 1)
+[01:39:55.794] 🎤 Phrase 53 detected: 2.74s (silence detected for 0.3s)
+[01:39:55.796] 🎤 Phrase 53 detected: 2.74s - sending to STS...
+[01:39:55.798] 🎵 STS: Processing chunk 53 (active: 2)
+[01:39:56.848] ✅ STS: Chunk 52 completed (64410 bytes)
+[01:39:57.022] 💾 Saved STS chunk 52 to: sts_chunk_052_20250716_013956.wav (WAV format, 64410 bytes, 3.99s)
+[01:39:57.023] ✅ Phrase 52 processed and stored
+[01:39:59.290] ✅ STS: Chunk 53 completed (44348 bytes)
+[01:39:59.435] 💾 Saved STS chunk 53 to: sts_chunk_053_20250716_013959.wav (WAV format, 44348 bytes, 2.74s)
+[01:39:59.436] ✅ Phrase 53 processed and stored
+[01:40:02.154] 🎤 Phrase 54 detected: 6.36s (silence detected for 0.3s)
+[01:40:02.157] 🎤 Phrase 54 detected: 6.36s - sending to STS...
+[01:40:02.158] 🎵 STS: Processing chunk 54 (active: 1)
+[01:40:06.107] ✅ STS: Chunk 54 completed (102445 bytes)
+[01:40:06.282] 💾 Saved STS chunk 54 to: sts_chunk_054_20250716_014006.wav (WAV format, 102445 bytes, 6.36s)
+[01:40:06.283] ✅ Phrase 54 processed and stored
+[01:40:07.576] 🎤 Phrase 55 detected: 5.34s (silence detected for 0.4s)
+[01:40:07.681] 🎤 Phrase 55 detected: 5.34s - sending to STS...
+[01:40:07.691] 🎵 STS: Processing chunk 55 (active: 1)
+[01:40:08.714] 🎤 Phrase 56 detected: 1.16s (silence detected for 0.3s)
+[01:40:08.720] 🎤 Phrase 56 detected: 1.16s - sending to STS...
+[01:40:08.722] 🎵 STS: Processing chunk 56 (active: 2)
+[01:40:11.382] ✅ STS: Chunk 56 completed (19271 bytes)
+[01:40:11.510] 💾 Saved STS chunk 56 to: sts_chunk_056_20250716_014011.wav (WAV format, 19271 bytes, 1.16s)
+[01:40:11.511] ✅ Phrase 56 processed and stored
+[01:40:12.138] ✅ STS: Chunk 55 completed (86144 bytes)
+[01:40:12.340] 💾 Saved STS chunk 55 to: sts_chunk_055_20250716_014012.wav (WAV format, 86144 bytes, 5.34s)
+[01:40:12.341] ✅ Phrase 55 processed and stored
+[01:40:14.657] 🎤 Phrase 57 detected: 5.94s (silence detected for 0.3s)
+[01:40:14.664] 🎤 Phrase 57 detected: 5.94s - sending to STS...
+[01:40:14.672] 🎵 STS: Processing chunk 57 (active: 1)
+[01:40:18.324] 🎤 Phrase 58 detected: 3.67s (silence detected for 0.3s)
+[01:40:18.327] 🎤 Phrase 58 detected: 3.67s - sending to STS...
+[01:40:18.329] 🎵 STS: Processing chunk 58 (active: 2)
+[01:40:19.093] ✅ STS: Chunk 57 completed (95757 bytes)
+[01:40:19.165] 🎤 Phrase 59 detected: 0.84s (silence detected for 0.8s)
+[01:40:19.171] 🎤 Phrase 59 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:40:19.307] 💾 Saved STS chunk 57 to: sts_chunk_057_20250716_014019.wav (WAV format, 95757 bytes, 5.94s)
+[01:40:19.308] ✅ Phrase 57 processed and stored
+[01:40:21.689] ✅ STS: Chunk 58 completed (59395 bytes)
+[01:40:21.976] 💾 Saved STS chunk 58 to: sts_chunk_058_20250716_014021.wav (WAV format, 59395 bytes, 3.67s)
+[01:40:21.978] ✅ Phrase 58 processed and stored
+[01:40:22.966] 🎤 Phrase 60 detected: 3.81s (silence detected for 0.3s)
+[01:40:22.969] 🎤 Phrase 60 detected: 3.81s - sending to STS...
+[01:40:22.971] 🎵 STS: Processing chunk 60 (active: 1)
+[01:40:26.169] ✅ STS: Chunk 60 completed (61485 bytes)
+[01:40:26.324] 💾 Saved STS chunk 60 to: sts_chunk_060_20250716_014026.wav (WAV format, 61485 bytes, 3.81s)
+[01:40:26.325] ✅ Phrase 60 processed and stored
+[01:40:28.636] 🎤 Phrase 61 detected: 5.67s (silence detected for 0.3s)
+[01:40:28.639] 🎤 Phrase 61 detected: 5.67s - sending to STS...
+[01:40:28.641] 🎵 STS: Processing chunk 61 (active: 1)
+[01:40:32.634] ✅ STS: Chunk 61 completed (91160 bytes)
+[01:40:32.790] 💾 Saved STS chunk 61 to: sts_chunk_061_20250716_014032.wav (WAV format, 91160 bytes, 5.67s)
+[01:40:32.791] ✅ Phrase 61 processed and stored
+[01:40:33.924] 🎤 Phrase 62 detected: 5.29s (silence detected for 0.3s)
+[01:40:33.929] 🎤 Phrase 62 detected: 5.29s - sending to STS...
+[01:40:33.931] 🎵 STS: Processing chunk 62 (active: 1)
+[01:40:38.480] ✅ STS: Chunk 62 completed (85308 bytes)
+[01:40:38.635] 💾 Saved STS chunk 62 to: sts_chunk_062_20250716_014038.wav (WAV format, 85308 bytes, 5.29s)
+[01:40:38.637] ✅ Phrase 62 processed and stored
+[01:40:40.385] 🎤 Phrase 63 detected: 6.46s (silence detected for 0.3s)
+[01:40:40.387] 🎤 Phrase 63 detected: 6.46s - sending to STS...
+[01:40:40.389] 🎵 STS: Processing chunk 63 (active: 1)
+[01:40:42.705] 🎤 Phrase 64 detected: 2.32s (silence detected for 0.3s)
+[01:40:42.707] 🎤 Phrase 64 detected: 2.32s - sending to STS...
+[01:40:42.709] 🎵 STS: Processing chunk 64 (active: 2)
+[01:40:45.354] 🎤 Phrase 65 detected: 2.65s (silence detected for 0.3s)
+[01:40:45.363] 🎤 Phrase 65 detected: 2.65s - sending to STS...
+[01:40:45.364] 🎵 STS: Processing chunk 65 (active: 3)
+[01:40:45.453] ✅ STS: Chunk 64 completed (37661 bytes)
+[01:40:45.479] ✅ STS: Chunk 63 completed (104116 bytes)
+[01:40:45.662] 💾 Saved STS chunk 64 to: sts_chunk_064_20250716_014045.wav (WAV format, 37661 bytes, 2.32s)
+[01:40:45.663] ✅ Phrase 64 processed and stored
+[01:40:45.687] 💾 Saved STS chunk 63 to: sts_chunk_063_20250716_014045.wav (WAV format, 104116 bytes, 6.46s)
+[01:40:45.695] ✅ Phrase 63 processed and stored
+[01:40:47.765] 🎤 Phrase 66 detected: 2.41s (silence detected for 0.3s)
+[01:40:47.766] 🎤 Phrase 66 detected: 2.41s - sending to STS...
+[01:40:47.768] 🎵 STS: Processing chunk 66 (active: 2)
+[01:40:48.496] ✅ STS: Chunk 65 completed (43094 bytes)
+[01:40:48.841] 💾 Saved STS chunk 65 to: sts_chunk_065_20250716_014048.wav (WAV format, 43094 bytes, 2.65s)
+[01:40:48.842] ✅ Phrase 65 processed and stored
+[01:40:50.824] 🎤 Phrase 67 detected: 3.07s (silence detected for 0.3s)
+[01:40:50.829] 🎤 Phrase 67 detected: 3.07s - sending to STS...
+[01:40:50.830] 🎵 STS: Processing chunk 67 (active: 2)
+[01:40:50.960] ✅ STS: Chunk 66 completed (39333 bytes)
+[01:40:51.193] 💾 Saved STS chunk 66 to: sts_chunk_066_20250716_014050.wav (WAV format, 39333 bytes, 2.41s)
+[01:40:51.194] ✅ Phrase 66 processed and stored
+[01:40:54.865] 🎤 Phrase 68 detected: 4.04s (silence detected for 0.3s)
+[01:40:54.867] 🎤 Phrase 68 detected: 4.04s - sending to STS...
+[01:40:54.869] 🎵 STS: Processing chunk 68 (active: 2)
+[01:40:55.606] ✅ STS: Chunk 67 completed (49782 bytes)
+[01:40:55.770] 💾 Saved STS chunk 67 to: sts_chunk_067_20250716_014055.wav (WAV format, 49782 bytes, 3.07s)
+[01:40:55.771] ✅ Phrase 67 processed and stored
+[01:40:57.604] 🎤 Phrase 69 detected: 2.74s (silence detected for 0.3s)
+[01:40:57.607] 🎤 Phrase 69 detected: 2.74s - sending to STS...
+[01:40:57.608] 🎵 STS: Processing chunk 69 (active: 2)
+[01:40:58.830] ✅ STS: Chunk 68 completed (65246 bytes)
+[01:40:59.036] 💾 Saved STS chunk 68 to: sts_chunk_068_20250716_014058.wav (WAV format, 65246 bytes, 4.04s)
+[01:40:59.040] ✅ Phrase 68 processed and stored
+[01:41:00.525] 🎤 Phrase 70 detected: 2.93s (silence detected for 0.3s)
+[01:41:00.528] 🎤 Phrase 70 detected: 2.93s - sending to STS...
+[01:41:00.529] 🎵 STS: Processing chunk 70 (active: 2)
+[01:41:00.731] ✅ STS: Chunk 69 completed (44348 bytes)
+[01:41:00.886] 💾 Saved STS chunk 69 to: sts_chunk_069_20250716_014100.wav (WAV format, 44348 bytes, 2.74s)
+[01:41:00.887] ✅ Phrase 69 processed and stored
+[01:41:04.494] ✅ STS: Chunk 70 completed (47274 bytes)
+[01:41:04.765] 💾 Saved STS chunk 70 to: sts_chunk_070_20250716_014104.wav (WAV format, 47274 bytes, 2.93s)
+[01:41:04.766] ✅ Phrase 70 processed and stored
+[01:41:06.245] 🎤 Phrase 71 detected: 5.71s (silence detected for 0.3s)
+[01:41:06.248] 🎤 Phrase 71 detected: 5.71s - sending to STS...
+[01:41:06.250] 🎵 STS: Processing chunk 71 (active: 1)
+[01:41:10.339] ✅ STS: Chunk 71 completed (91996 bytes)
+[01:41:10.357] 🎤 Phrase 72 detected: 4.04s (silence detected for 0.3s)
+[01:41:10.372] 🎤 Phrase 72 detected: 4.04s - sending to STS...
+[01:41:10.379] 🎵 STS: Processing chunk 72 (active: 1)
+[01:41:10.599] 💾 Saved STS chunk 71 to: sts_chunk_071_20250716_014110.wav (WAV format, 91996 bytes, 5.71s)
+[01:41:10.601] ✅ Phrase 71 processed and stored
+[01:41:14.664] ✅ STS: Chunk 72 completed (65246 bytes)
+[01:41:14.896] 💾 Saved STS chunk 72 to: sts_chunk_072_20250716_014114.wav (WAV format, 65246 bytes, 4.04s)
+[01:41:14.898] ✅ Phrase 72 processed and stored
+[01:41:15.834] 🎤 Phrase 73 detected: 5.48s (silence detected for 0.3s)
+[01:41:15.837] 🎤 Phrase 73 detected: 5.48s - sending to STS...
+[01:41:15.838] 🎵 STS: Processing chunk 73 (active: 1)
+[01:41:19.858] ✅ STS: Chunk 73 completed (88234 bytes)
+[01:41:20.028] 💾 Saved STS chunk 73 to: sts_chunk_073_20250716_014119.wav (WAV format, 88234 bytes, 5.48s)
+[01:41:20.029] ✅ Phrase 73 processed and stored
+[01:41:20.614] 🎤 Phrase 74 detected: 4.78s (silence detected for 0.3s)
+[01:41:20.616] 🎤 Phrase 74 detected: 4.78s - sending to STS...
+[01:41:20.617] 🎵 STS: Processing chunk 74 (active: 1)
+[01:41:24.426] ✅ STS: Chunk 74 completed (77367 bytes)
+[01:41:24.740] 💾 Saved STS chunk 74 to: sts_chunk_074_20250716_014124.wav (WAV format, 77367 bytes, 4.78s)
+[01:41:24.741] ✅ Phrase 74 processed and stored
+[01:41:26.284] 🎤 Phrase 75 detected: 5.67s (silence detected for 0.3s)
+[01:41:26.293] 🎤 Phrase 75 detected: 5.67s - sending to STS...
+[01:41:26.295] 🎵 STS: Processing chunk 75 (active: 1)
+[01:41:30.167] ✅ STS: Chunk 75 completed (91160 bytes)
+[01:41:30.342] 💾 Saved STS chunk 75 to: sts_chunk_075_20250716_014130.wav (WAV format, 91160 bytes, 5.67s)
+[01:41:30.344] ✅ Phrase 75 processed and stored
+[01:41:30.454] 🎤 Phrase 76 detected: 4.18s (silence detected for 0.3s)
+[01:41:30.456] 🎤 Phrase 76 detected: 4.18s - sending to STS...
+[01:41:30.459] 🎵 STS: Processing chunk 76 (active: 1)
+[01:41:33.714] 🎤 Phrase 77 detected: 3.25s (silence detected for 0.3s)
+[01:41:33.718] 🎤 Phrase 77 detected: 3.25s - sending to STS...
+[01:41:33.721] 🎵 STS: Processing chunk 77 (active: 2)
+[01:41:34.409] ✅ STS: Chunk 76 completed (67336 bytes)
+[01:41:34.717] 💾 Saved STS chunk 76 to: sts_chunk_076_20250716_014134.wav (WAV format, 67336 bytes, 4.18s)
+[01:41:34.718] ✅ Phrase 76 processed and stored
+[01:41:37.254] ✅ STS: Chunk 77 completed (52707 bytes)
+[01:41:37.285] 🎤 Phrase 78 detected: 3.58s (silence detected for 0.3s)
+[01:41:37.287] 🎤 Phrase 78 detected: 3.58s - sending to STS...
+[01:41:37.289] 🎵 STS: Processing chunk 78 (active: 1)
+[01:41:37.421] 💾 Saved STS chunk 77 to: sts_chunk_077_20250716_014137.wav (WAV format, 52707 bytes, 3.25s)
+[01:41:37.422] ✅ Phrase 77 processed and stored
+[01:41:38.675] 🎤 Phrase 79 detected: 1.39s (silence detected for 0.3s)
+[01:41:38.693] 🎤 Phrase 79 detected: 1.39s - sending to STS...
+[01:41:38.706] 🎵 STS: Processing chunk 79 (active: 2)
+[01:41:40.911] ✅ STS: Chunk 78 completed (57723 bytes)
+[01:41:41.106] 💾 Saved STS chunk 78 to: sts_chunk_078_20250716_014140.wav (WAV format, 57723 bytes, 3.58s)
+[01:41:41.108] ✅ Phrase 78 processed and stored
+[01:41:42.393] ✅ STS: Chunk 79 completed (23032 bytes)
+[01:41:42.534] 💾 Saved STS chunk 79 to: sts_chunk_079_20250716_014142.wav (WAV format, 23032 bytes, 1.39s)
+[01:41:42.535] ✅ Phrase 79 processed and stored
+[01:41:44.995] 🎤 Phrase 80 detected: 6.32s (silence detected for 0.3s)
+[01:41:44.997] 🎤 Phrase 80 detected: 6.32s - sending to STS...
+[01:41:45.000] 🎵 STS: Processing chunk 80 (active: 1)
+[01:41:47.964] 🎤 Phrase 81 detected: 2.97s (silence detected for 0.3s)
+[01:41:47.972] 🎤 Phrase 81 detected: 2.97s - sending to STS...
+[01:41:47.976] 🎵 STS: Processing chunk 81 (active: 2)
+[01:41:48.804] 🎤 Phrase 82 detected: 0.84s (silence detected for 0.8s)
+[01:41:48.813] 🎤 Phrase 82 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:41:49.786] ✅ STS: Chunk 80 completed (101609 bytes)
+[01:41:49.946] 💾 Saved STS chunk 80 to: sts_chunk_080_20250716_014149.wav (WAV format, 101609 bytes, 6.32s)
+[01:41:49.948] ✅ Phrase 80 processed and stored
+[01:41:51.944] ✅ STS: Chunk 81 completed (48110 bytes)
+[01:41:52.279] 💾 Saved STS chunk 81 to: sts_chunk_081_20250716_014151.wav (WAV format, 48110 bytes, 2.97s)
+[01:41:52.281] ✅ Phrase 81 processed and stored
+[01:41:55.395] 🎤 Phrase 83 detected: 6.59s (silence detected for 0.3s)
+[01:41:55.411] 🎤 Phrase 83 detected: 6.59s - sending to STS...
+[01:41:55.414] 🎵 STS: Processing chunk 83 (active: 1)
+[01:41:56.246] 🎤 Phrase 84 detected: 0.84s (silence detected for 0.8s)
+[01:41:56.297] 🎤 Phrase 84 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:42:00.314] ✅ STS: Chunk 83 completed (106206 bytes)
+[01:42:00.477] 💾 Saved STS chunk 83 to: sts_chunk_083_20250716_014200.wav (WAV format, 106206 bytes, 6.59s)
+[01:42:00.478] ✅ Phrase 83 processed and stored
+[01:42:02.687] 🎤 Phrase 85 detected: 6.46s (silence detected for 0.3s)
+[01:42:02.696] 🎤 Phrase 85 detected: 6.46s - sending to STS...
+[01:42:02.699] 🎵 STS: Processing chunk 85 (active: 1)
+[01:42:06.975] ✅ STS: Chunk 85 completed (104116 bytes)
+[01:42:07.141] 💾 Saved STS chunk 85 to: sts_chunk_085_20250716_014206.wav (WAV format, 104116 bytes, 6.46s)
+[01:42:07.143] ✅ Phrase 85 processed and stored
+[01:42:10.725] 🎤 Phrase 86 detected: 8.03s (max duration reached (8.0s))
+[01:42:10.727] 🎤 Phrase 86 detected: 8.03s - sending to STS...
+[01:42:10.729] 🎵 STS: Processing chunk 86 (active: 1)
+[01:42:15.068] ✅ STS: Chunk 86 completed (129194 bytes)
+[01:42:15.221] 💾 Saved STS chunk 86 to: sts_chunk_086_20250716_014215.wav (WAV format, 129194 bytes, 8.03s)
+[01:42:15.222] ✅ Phrase 86 processed and stored
+[01:42:18.755] 🎤 Phrase 87 detected: 8.03s (max duration reached (8.0s))
+[01:42:18.757] 🎤 Phrase 87 detected: 8.03s - sending to STS...
+[01:42:18.759] 🎵 STS: Processing chunk 87 (active: 1)
+[01:42:23.344] ✅ STS: Chunk 87 completed (129194 bytes)
+[01:42:23.499] 💾 Saved STS chunk 87 to: sts_chunk_087_20250716_014223.wav (WAV format, 129194 bytes, 8.03s)
+[01:42:23.501] ✅ Phrase 87 processed and stored
+[01:42:26.795] 🎤 Phrase 88 detected: 8.03s (max duration reached (8.0s))
+[01:42:26.797] 🎤 Phrase 88 detected: 8.03s - sending to STS...
+[01:42:26.800] 🎵 STS: Processing chunk 88 (active: 1)
+[01:42:27.674] 🎤 Phrase 89 detected: 0.88s (silence detected for 0.3s)
+[01:42:27.683] 🎤 Phrase 89 detected: 0.88s - TOO SHORT, skipping (noise)
+[01:42:30.224] 🎤 Phrase 90 detected: 2.55s (silence detected for 0.3s)
+[01:42:30.226] 🎤 Phrase 90 detected: 2.55s - sending to STS...
+[01:42:30.228] 🎵 STS: Processing chunk 90 (active: 2)
+[01:42:31.770] ✅ STS: Chunk 88 completed (129194 bytes)
+[01:42:31.854] 🎤 Phrase 91 detected: 1.63s (silence detected for 0.3s)
+[01:42:31.857] 🎤 Phrase 91 detected: 1.63s - sending to STS...
+[01:42:31.860] 🎵 STS: Processing chunk 91 (active: 2)
+[01:42:31.945] 💾 Saved STS chunk 88 to: sts_chunk_088_20250716_014231.wav (WAV format, 129194 bytes, 8.03s)
+[01:42:31.946] ✅ Phrase 88 processed and stored
+[01:42:33.294] ✅ STS: Chunk 90 completed (41422 bytes)
+[01:42:33.437] 💾 Saved STS chunk 90 to: sts_chunk_090_20250716_014233.wav (WAV format, 41422 bytes, 2.55s)
+[01:42:33.440] ✅ Phrase 90 processed and stored
+[01:42:34.505] 🎤 Phrase 92 detected: 2.65s (silence detected for 0.3s)
+[01:42:34.507] 🎤 Phrase 92 detected: 2.65s - sending to STS...
+[01:42:34.513] 🎵 STS: Processing chunk 92 (active: 2)
+[01:42:35.336] 🎤 Phrase 93 detected: 0.84s (silence detected for 0.8s)
+[01:42:35.343] ✅ STS: Chunk 91 completed (26794 bytes)
+[01:42:35.387] 🎤 Phrase 93 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:42:35.645] 💾 Saved STS chunk 91 to: sts_chunk_091_20250716_014235.wav (WAV format, 26794 bytes, 1.63s)
+[01:42:35.646] ✅ Phrase 91 processed and stored
+[01:42:37.005] 🎤 Phrase 94 detected: 1.67s (silence detected for 0.3s)
+[01:42:37.014] 🎤 Phrase 94 detected: 1.67s - sending to STS...
+[01:42:37.015] 🎵 STS: Processing chunk 94 (active: 2)
+[01:42:37.521] ✅ STS: Chunk 92 completed (43094 bytes)
+[01:42:37.750] 💾 Saved STS chunk 92 to: sts_chunk_092_20250716_014237.wav (WAV format, 43094 bytes, 2.65s)
+[01:42:37.751] ✅ Phrase 92 processed and stored
+[01:42:39.055] 🎤 Phrase 95 detected: 2.04s (silence detected for 0.3s)
+[01:42:39.064] 🎤 Phrase 95 detected: 2.04s - sending to STS...
+[01:42:39.066] 🎵 STS: Processing chunk 95 (active: 2)
+[01:42:40.096] ✅ STS: Chunk 94 completed (27212 bytes)
+[01:42:40.250] 💾 Saved STS chunk 94 to: sts_chunk_094_20250716_014240.wav (WAV format, 27212 bytes, 1.67s)
+[01:42:40.251] ✅ Phrase 94 processed and stored
+[01:42:41.464] 🎤 Phrase 96 detected: 2.41s (silence detected for 0.3s)
+[01:42:41.515] 🎤 Phrase 96 detected: 2.41s - sending to STS...
+[01:42:41.527] 🎵 STS: Processing chunk 96 (active: 2)
+[01:42:42.420] ✅ STS: Chunk 95 completed (33481 bytes)
+[01:42:42.705] 💾 Saved STS chunk 95 to: sts_chunk_095_20250716_014242.wav (WAV format, 33481 bytes, 2.04s)
+[01:42:42.706] ✅ Phrase 95 processed and stored
+[01:42:43.136] 🎤 Phrase 97 detected: 1.67s (silence detected for 0.3s)
+[01:42:43.140] 🎤 Phrase 97 detected: 1.67s - sending to STS...
+[01:42:43.142] 🎵 STS: Processing chunk 97 (active: 2)
+[01:42:44.865] ✅ STS: Chunk 96 completed (39333 bytes)
+[01:42:45.194] 💾 Saved STS chunk 96 to: sts_chunk_096_20250716_014244.wav (WAV format, 39333 bytes, 2.41s)
+[01:42:45.195] ✅ Phrase 96 processed and stored
+[01:42:46.326] ✅ STS: Chunk 97 completed (27212 bytes)
+[01:42:46.478] 💾 Saved STS chunk 97 to: sts_chunk_097_20250716_014246.wav (WAV format, 27212 bytes, 1.67s)
+[01:42:46.480] ✅ Phrase 97 processed and stored
+[01:42:47.455] 🎤 Phrase 98 detected: 4.32s (silence detected for 0.3s)
+[01:42:47.463] 🎤 Phrase 98 detected: 4.32s - sending to STS...
+[01:42:47.465] 🎵 STS: Processing chunk 98 (active: 1)
+[01:42:51.526] ✅ STS: Chunk 98 completed (69844 bytes)
+[01:42:51.762] 💾 Saved STS chunk 98 to: sts_chunk_098_20250716_014251.wav (WAV format, 69844 bytes, 4.32s)
+[01:42:51.763] ✅ Phrase 98 processed and stored
+[01:42:55.164] 🎤 Phrase 99 detected: 7.71s (silence detected for 0.3s)
+[01:42:55.173] 🎤 Phrase 99 detected: 7.71s - sending to STS...
+[01:42:55.176] 🎵 STS: Processing chunk 99 (active: 1)
+[01:42:57.075] 🎤 Phrase 100 detected: 1.90s (silence detected for 0.3s)
+[01:42:57.083] 🎤 Phrase 100 detected: 1.90s - sending to STS...
+[01:42:57.084] 🎵 STS: Processing chunk 100 (active: 2)
+[01:42:59.818] ✅ STS: Chunk 100 completed (30974 bytes)
+[01:42:59.844] ✅ STS: Chunk 99 completed (124178 bytes)
+[01:43:00.004] 💾 Saved STS chunk 100 to: sts_chunk_100_20250716_014259.wav (WAV format, 30974 bytes, 1.90s)
+[01:43:00.005] ✅ Phrase 100 processed and stored
+[01:43:00.040] 💾 Saved STS chunk 99 to: sts_chunk_099_20250716_014259.wav (WAV format, 124178 bytes, 7.71s)
+[01:43:00.041] ✅ Phrase 99 processed and stored
+[01:43:00.225] 🎤 Phrase 101 detected: 3.16s (silence detected for 0.3s)
+[01:43:00.226] 🎤 Phrase 101 detected: 3.16s - sending to STS...
+[01:43:00.228] 🎵 STS: Processing chunk 101 (active: 1)
+[01:43:02.276] 🎤 Phrase 102 detected: 2.04s (silence detected for 0.3s)
+[01:43:02.280] 🎤 Phrase 102 detected: 2.04s - sending to STS...
+[01:43:02.281] 🎵 STS: Processing chunk 102 (active: 2)
+[01:43:03.494] ✅ STS: Chunk 101 completed (51036 bytes)
+[01:43:03.656] 💾 Saved STS chunk 101 to: sts_chunk_101_20250716_014303.wav (WAV format, 51036 bytes, 3.16s)
+[01:43:03.658] ✅ Phrase 101 processed and stored
+[01:43:05.015] ✅ STS: Chunk 102 completed (33481 bytes)
+[01:43:05.170] 💾 Saved STS chunk 102 to: sts_chunk_102_20250716_014305.wav (WAV format, 33481 bytes, 2.04s)
+[01:43:05.171] ✅ Phrase 102 processed and stored
+[01:43:05.566] 🎤 Phrase 103 detected: 3.30s (silence detected for 0.3s)
+[01:43:05.623] 🎤 Phrase 103 detected: 3.30s - sending to STS...
+[01:43:05.647] 🎵 STS: Processing chunk 103 (active: 1)
+[01:43:06.404] 🎤 Phrase 104 detected: 0.84s (silence detected for 0.8s)
+[01:43:06.408] 🎤 Phrase 104 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:09.004] 🎤 Phrase 105 detected: 2.60s (silence detected for 0.3s)
+[01:43:09.007] 🎤 Phrase 105 detected: 2.60s - sending to STS...
+[01:43:09.009] 🎵 STS: Processing chunk 105 (active: 2)
+[01:43:09.205] ✅ STS: Chunk 103 completed (53543 bytes)
+[01:43:09.376] 💾 Saved STS chunk 103 to: sts_chunk_103_20250716_014309.wav (WAV format, 53543 bytes, 3.30s)
+[01:43:09.377] ✅ Phrase 103 processed and stored
+[01:43:12.542] ✅ STS: Chunk 105 completed (42258 bytes)
+[01:43:12.932] 💾 Saved STS chunk 105 to: sts_chunk_105_20250716_014312.wav (WAV format, 42258 bytes, 2.60s)
+[01:43:12.943] ✅ Phrase 105 processed and stored
+[01:43:14.995] 🎤 Phrase 106 detected: 5.99s (silence detected for 0.3s)
+[01:43:15.009] 🎤 Phrase 106 detected: 5.99s - sending to STS...
+[01:43:15.019] 🎵 STS: Processing chunk 106 (active: 1)
+[01:43:15.795] 🎤 Phrase 107 detected: 0.79s (silence detected for 0.8s)
+[01:43:15.875] 🎤 Phrase 107 detected: 0.79s - TOO SHORT, skipping (noise)
+[01:43:18.894] 🎤 Phrase 108 detected: 3.11s (silence detected for 0.3s)
+[01:43:18.897] 🎤 Phrase 108 detected: 3.11s - sending to STS...
+[01:43:18.899] 🎵 STS: Processing chunk 108 (active: 2)
+[01:43:19.533] ✅ STS: Chunk 106 completed (96593 bytes)
+[01:43:19.831] 💾 Saved STS chunk 106 to: sts_chunk_106_20250716_014319.wav (WAV format, 96593 bytes, 5.99s)
+[01:43:19.832] ✅ Phrase 106 processed and stored
+[01:43:22.177] ✅ STS: Chunk 108 completed (50618 bytes)
+[01:43:22.286] 🎤 Phrase 109 detected: 3.39s (silence detected for 0.3s)
+[01:43:22.290] 🎤 Phrase 109 detected: 3.39s - sending to STS...
+[01:43:22.293] 🎵 STS: Processing chunk 109 (active: 1)
+[01:43:22.482] 💾 Saved STS chunk 108 to: sts_chunk_108_20250716_014322.wav (WAV format, 50618 bytes, 3.11s)
+[01:43:22.485] ✅ Phrase 108 processed and stored
+[01:43:23.914] 🎤 Phrase 110 detected: 1.63s (silence detected for 0.3s)
+[01:43:23.917] 🎤 Phrase 110 detected: 1.63s - sending to STS...
+[01:43:23.919] 🎵 STS: Processing chunk 110 (active: 2)
+[01:43:25.124] 🎤 Phrase 111 detected: 1.21s (silence detected for 0.3s)
+[01:43:25.133] 🎤 Phrase 111 detected: 1.21s - sending to STS...
+[01:43:25.134] 🎵 STS: Processing chunk 111 (active: 3)
+[01:43:26.322] ✅ STS: Chunk 109 completed (54797 bytes)
+[01:43:26.479] 💾 Saved STS chunk 109 to: sts_chunk_109_20250716_014326.wav (WAV format, 54797 bytes, 3.39s)
+[01:43:26.480] ✅ Phrase 109 processed and stored
+[01:43:26.555] 🎤 Phrase 112 detected: 1.44s (silence detected for 0.3s)
+[01:43:26.557] 🎤 Phrase 112 detected: 1.44s - sending to STS...
+[01:43:26.559] 🎵 STS: Processing chunk 112 (active: 3)
+[01:43:26.613] ✅ STS: Chunk 110 completed (26794 bytes)
+[01:43:26.880] 💾 Saved STS chunk 110 to: sts_chunk_110_20250716_014326.wav (WAV format, 26794 bytes, 1.63s)
+[01:43:26.888] ✅ Phrase 110 processed and stored
+[01:43:27.989] ✅ STS: Chunk 111 completed (20107 bytes)
+[01:43:28.147] 💾 Saved STS chunk 111 to: sts_chunk_111_20250716_014327.wav (WAV format, 20107 bytes, 1.21s)
+[01:43:28.148] ✅ Phrase 111 processed and stored
+[01:43:28.234] 🎤 Phrase 113 detected: 1.67s (silence detected for 0.3s)
+[01:43:28.236] 🎤 Phrase 113 detected: 1.67s - sending to STS...
+[01:43:28.238] 🎵 STS: Processing chunk 113 (active: 2)
+[01:43:29.064] 🎤 Phrase 114 detected: 0.84s (silence detected for 0.8s)
+[01:43:29.066] 🎤 Phrase 114 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:29.319] ✅ STS: Chunk 112 completed (23868 bytes)
+[01:43:29.454] 💾 Saved STS chunk 112 to: sts_chunk_112_20250716_014329.wav (WAV format, 23868 bytes, 1.44s)
+[01:43:29.455] ✅ Phrase 112 processed and stored
+[01:43:29.904] 🎤 Phrase 115 detected: 0.84s (silence detected for 0.8s)
+[01:43:29.908] 🎤 Phrase 115 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:30.734] 🎤 Phrase 116 detected: 0.84s (silence detected for 0.8s)
+[01:43:30.737] 🎤 Phrase 116 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:31.575] 🎤 Phrase 117 detected: 0.84s (silence detected for 0.8s)
+[01:43:31.577] 🎤 Phrase 117 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:31.856] ✅ STS: Chunk 113 completed (27212 bytes)
+[01:43:32.070] 💾 Saved STS chunk 113 to: sts_chunk_113_20250716_014331.wav (WAV format, 27212 bytes, 1.67s)
+[01:43:32.078] ✅ Phrase 113 processed and stored
+[01:43:32.414] 🎤 Phrase 118 detected: 0.84s (silence detected for 0.8s)
+[01:43:32.417] 🎤 Phrase 118 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:33.244] 🎤 Phrase 119 detected: 0.84s (silence detected for 0.8s)
+[01:43:33.264] 🎤 Phrase 119 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:34.084] 🎤 Phrase 120 detected: 0.84s (silence detected for 0.8s)
+[01:43:34.096] 🎤 Phrase 120 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:34.897] 🎤 Phrase 121 detected: 0.79s (silence detected for 0.8s)
+[01:43:34.937] 🎤 Phrase 121 detected: 0.79s - TOO SHORT, skipping (noise)
+[01:43:35.704] 🎤 Phrase 122 detected: 0.84s (silence detected for 0.8s)
+[01:43:35.743] 🎤 Phrase 122 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:36.545] 🎤 Phrase 123 detected: 0.84s (silence detected for 0.8s)
+[01:43:36.547] 🎤 Phrase 123 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:37.384] 🎤 Phrase 124 detected: 0.84s (silence detected for 0.8s)
+[01:43:37.393] 🎤 Phrase 124 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:38.214] 🎤 Phrase 125 detected: 0.84s (silence detected for 0.8s)
+[01:43:38.217] 🎤 Phrase 125 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:39.054] 🎤 Phrase 126 detected: 0.84s (silence detected for 0.8s)
+[01:43:39.057] 🎤 Phrase 126 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:39.885] 🎤 Phrase 127 detected: 0.84s (silence detected for 0.8s)
+[01:43:39.888] 🎤 Phrase 127 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:41.144] 🎤 Phrase 128 detected: 1.25s (silence detected for 0.3s)
+[01:43:41.147] 🎤 Phrase 128 detected: 1.25s - sending to STS...
+[01:43:41.149] 🎵 STS: Processing chunk 128 (active: 1)
+[01:43:41.994] 🎤 Phrase 129 detected: 0.65s (silence detected for 0.8s)
+[01:43:41.997] 🎤 Phrase 129 detected: 0.65s - TOO SHORT, skipping (noise)
+[01:43:42.825] 🎤 Phrase 130 detected: 0.84s (silence detected for 0.8s)
+[01:43:42.827] 🎤 Phrase 130 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:43.665] 🎤 Phrase 131 detected: 0.84s (silence detected for 0.8s)
+[01:43:43.674] 🎤 Phrase 131 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:44.061] ✅ STS: Chunk 128 completed (20525 bytes)
+[01:43:44.201] 💾 Saved STS chunk 128 to: sts_chunk_128_20250716_014344.wav (WAV format, 20525 bytes, 1.25s)
+[01:43:44.202] ✅ Phrase 128 processed and stored
+[01:43:44.496] 🎤 Phrase 132 detected: 0.84s (silence detected for 0.8s)
+[01:43:44.500] 🎤 Phrase 132 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:45.335] 🎤 Phrase 133 detected: 0.84s (silence detected for 0.8s)
+[01:43:45.337] 🎤 Phrase 133 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:46.175] 🎤 Phrase 134 detected: 0.84s (silence detected for 0.8s)
+[01:43:46.193] 🎤 Phrase 134 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:47.004] 🎤 Phrase 135 detected: 0.84s (silence detected for 0.8s)
+[01:43:47.006] 🎤 Phrase 135 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:47.844] 🎤 Phrase 136 detected: 0.84s (silence detected for 0.8s)
+[01:43:47.884] 🎤 Phrase 136 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:48.675] 🎤 Phrase 137 detected: 0.84s (silence detected for 0.8s)
+[01:43:48.678] 🎤 Phrase 137 detected: 0.84s - TOO SHORT, skipping (noise)
+[01:43:48.847]
+⏹️  Received interrupt signal, stopping pipeline...
+[01:43:48.927] 🛑 Stopped listening
+[01:43:48.928] ⏳ Waiting for all chunks to finish processing...
+[01:43:48.932] ✅ Real-time Microphone STS Pipeline completed
+[01:43:48.935] 💾 Saving final output...
+[01:43:48.936] 💾 Saving final output...
+[01:43:48.948] ✅ All audio saved to: realtime_mic_sts_output_20250716_013714.mp3
+[01:43:48.959] 📊 Total audio size: 5810569 bytes
+[01:43:48.966] 💾 Saving final output...
+[01:43:48.982] ✅ All audio saved to: realtime_mic_sts_output_20250716_013714.mp3
+[01:43:49.008] 📊 Total audio size: 5810569 bytes
+[01:43:49.027]
+⏹️  Received interrupt signal, stopping pipeline...
+[01:43:49.037] 🧹 Cleanup completed
+PS C:\Projects\Andy> python realtime_mic_sts_pipeline_opt.py
+
+
+
+
+
+

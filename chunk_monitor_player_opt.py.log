@@ -1,0 +1,887 @@
+chunk_monitor_player_opt.py log
+
+PS C:\Projects\Andy> python chunk_monitor_player_opt.py  --no-boost
+C:\Users\svits\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pygame\pkgdata.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream, resource_exists
+pygame 2.6.1 (SDL 2.28.4, Python 3.12.10)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+[01:37:11.899] ✅ pygame library loaded successfully (optimized for low latency)
+[01:37:11.922] ✅ pydub library loaded successfully
+[01:37:11.922] ✅ All required libraries loaded successfully
+[01:37:11.923] 🎵 Chunk Monitor Player
+[01:37:11.924] ==================================================
+[01:37:11.925] This script monitors the 'sts_result_chunks' folder and plays audio chunks in order.
+[01:37:11.926] Press Ctrl+C to stop.
+[01:37:11.927]
+[01:37:11.934] 🚀 Speed mode: Volume boost disabled for maximum speed
+[01:37:11.934] 🎵 Creating Chunk Monitor Player with 0 dB volume boost
+[01:37:11.944] 🎵 Chunk Monitor Player initialized for folder: sts_result_chunks
+[01:37:11.945] 🔊 Volume boost: 0 dB
+[01:37:11.949] ⏱️  Check interval: 0.2s (optimized for low latency)
+[01:37:11.950] 🔍 Starting chunk monitoring and playback (optimized for low latency)...
+[01:37:11.951] 🎵 Audio player thread started (optimized)
+[01:37:11.951] ✅ Audio player thread started
+[01:37:25.460] 📥 Added to queue: sts_chunk_008_20250716_013725.wav
+[01:37:25.462] 📊 Found 1 new files
+[01:37:25.465] 📋 Queue length: 1, Currently playing: False
+[01:37:25.466] 🎵 Starting to play: sts_chunk_008_20250716_013725.wav
+[01:37:25.469] ▶️  Direct WAV playback: sts_chunk_008_20250716_013725.wav
+[01:37:26.585] ✅ Finished playing: sts_chunk_008_20250716_013725.wav (took 1.1s)
+[01:37:26.593] 🎵 Finished playing: sts_chunk_008_20250716_013725.wav
+[01:37:29.327] 📥 Added to queue: sts_chunk_010_20250716_013728.wav
+[01:37:29.330] 📊 Found 1 new files
+[01:37:29.333] 🎵 Starting to play: sts_chunk_010_20250716_013728.wav
+[01:37:29.335] ▶️  Direct WAV playback: sts_chunk_010_20250716_013728.wav
+[01:37:31.899] ✅ Finished playing: sts_chunk_010_20250716_013728.wav (took 2.6s)
+[01:37:31.901] 🎵 Finished playing: sts_chunk_010_20250716_013728.wav
+[01:37:32.354] 📥 Added to queue: sts_chunk_011_20250716_013731.wav
+[01:37:32.356] 📊 Found 1 new files
+[01:37:32.357] 📋 Queue length: 1, Currently playing: False
+[01:37:32.362] 🎵 Starting to play: sts_chunk_011_20250716_013731.wav
+[01:37:32.364] ▶️  Direct WAV playback: sts_chunk_011_20250716_013731.wav
+[01:37:33.974] 📥 Added to queue: sts_chunk_012_20250716_013733.wav
+[01:37:33.976] 📊 Found 1 new files
+[01:37:33.977] 📋 Queue length: 1, Currently playing: True
+[01:37:34.912] ✅ Finished playing: sts_chunk_011_20250716_013731.wav (took 2.5s)
+[01:37:34.916] 🎵 Finished playing: sts_chunk_011_20250716_013731.wav
+[01:37:34.924] 🎵 Starting to play: sts_chunk_012_20250716_013733.wav
+[01:37:34.931] ▶️  Direct WAV playback: sts_chunk_012_20250716_013733.wav
+[01:37:37.435] ✅ Finished playing: sts_chunk_012_20250716_013733.wav (took 2.5s)
+[01:37:37.436] 🎵 Finished playing: sts_chunk_012_20250716_013733.wav
+[01:37:41.458] 📥 Added to queue: sts_chunk_013_20250716_013741.wav
+[01:37:41.460] 📊 Found 1 new files
+[01:37:41.461] 📋 Queue length: 1, Currently playing: False
+[01:37:41.465] 🎵 Starting to play: sts_chunk_013_20250716_013741.wav
+[01:37:41.466] ▶️  Direct WAV playback: sts_chunk_013_20250716_013741.wav
+[01:37:42.672] 📥 Added to queue: sts_chunk_015_20250716_013742.wav
+[01:37:42.674] 📊 Found 1 new files
+[01:37:42.676] 📋 Queue length: 1, Currently playing: True
+[01:37:42.879] 📥 Added to queue: sts_chunk_014_20250716_013742.wav
+[01:37:42.881] 📊 Found 1 new files
+[01:37:43.724] 📋 Queue length: 2, Currently playing: True
+[01:37:44.737] 📋 Queue length: 2, Currently playing: True
+[01:37:45.744] 📋 Queue length: 2, Currently playing: True
+[01:37:46.227] ✅ Finished playing: sts_chunk_013_20250716_013741.wav (took 4.8s)
+[01:37:46.229] 🎵 Finished playing: sts_chunk_013_20250716_013741.wav
+[01:37:46.231] 🎵 Starting to play: sts_chunk_015_20250716_013742.wav
+[01:37:46.233] ▶️  Direct WAV playback: sts_chunk_015_20250716_013742.wav
+[01:37:46.759] 📋 Queue length: 1, Currently playing: True
+[01:37:47.321] ✅ Finished playing: sts_chunk_015_20250716_013742.wav (took 1.1s)
+[01:37:47.330] 🎵 Finished playing: sts_chunk_015_20250716_013742.wav
+[01:37:47.336] 🎵 Starting to play: sts_chunk_014_20250716_013742.wav
+[01:37:47.338] ▶️  Direct WAV playback: sts_chunk_014_20250716_013742.wav
+[01:37:47.368] 📥 Added to queue: sts_chunk_016_20250716_013746.wav
+[01:37:47.369] 📊 Found 1 new files
+[01:37:47.775] 📋 Queue length: 1, Currently playing: True
+[01:37:48.794] 📋 Queue length: 1, Currently playing: True
+[01:37:49.820] 📋 Queue length: 1, Currently playing: True
+[01:37:50.834] 📋 Queue length: 1, Currently playing: True
+[01:37:51.254] ✅ Finished playing: sts_chunk_014_20250716_013742.wav (took 3.9s)
+[01:37:51.262] 🎵 Finished playing: sts_chunk_014_20250716_013742.wav
+[01:37:51.263] 🎵 Starting to play: sts_chunk_016_20250716_013746.wav
+[01:37:51.264] ▶️  Direct WAV playback: sts_chunk_016_20250716_013746.wav
+[01:37:52.473] 📥 Added to queue: sts_chunk_017_20250716_013752.wav
+[01:37:52.476] 📊 Found 1 new files
+[01:37:52.477] 📋 Queue length: 1, Currently playing: True
+[01:37:53.489] 📋 Queue length: 1, Currently playing: True
+[01:37:54.504] 📋 Queue length: 1, Currently playing: True
+[01:37:54.801] ✅ Finished playing: sts_chunk_016_20250716_013746.wav (took 3.5s)
+[01:37:54.803] 🎵 Finished playing: sts_chunk_016_20250716_013746.wav
+[01:37:54.805] 🎵 Starting to play: sts_chunk_017_20250716_013752.wav
+[01:37:54.809] ▶️  Direct WAV playback: sts_chunk_017_20250716_013752.wav
+[01:37:54.912] 📥 Added to queue: sts_chunk_018_20250716_013754.wav
+[01:37:54.913] 📊 Found 1 new files
+[01:37:55.518] 📋 Queue length: 1, Currently playing: True
+[01:37:56.586] 📋 Queue length: 1, Currently playing: True
+[01:37:57.600] 📋 Queue length: 1, Currently playing: True
+[01:37:58.611] 📋 Queue length: 1, Currently playing: True
+[01:37:59.628] 📋 Queue length: 1, Currently playing: True
+[01:37:59.796] ✅ Finished playing: sts_chunk_017_20250716_013752.wav (took 5.0s)
+[01:37:59.797] 🎵 Finished playing: sts_chunk_017_20250716_013752.wav
+[01:37:59.800] 🎵 Starting to play: sts_chunk_018_20250716_013754.wav
+[01:37:59.802] ▶️  Direct WAV playback: sts_chunk_018_20250716_013754.wav
+[01:38:01.310] 📥 Added to queue: sts_chunk_019_20250716_013800.wav
+[01:38:01.360] 📊 Found 1 new files
+[01:38:01.403] 📋 Queue length: 1, Currently playing: True
+[01:38:02.431] 📋 Queue length: 1, Currently playing: True
+[01:38:02.635] 📥 Added to queue: sts_chunk_020_20250716_013802.wav
+[01:38:02.636] 📊 Found 1 new files
+[01:38:02.879] ✅ Finished playing: sts_chunk_018_20250716_013754.wav (took 3.1s)
+[01:38:02.880] 🎵 Finished playing: sts_chunk_018_20250716_013754.wav
+[01:38:02.883] 🎵 Starting to play: sts_chunk_019_20250716_013800.wav
+[01:38:02.887] ▶️  Direct WAV playback: sts_chunk_019_20250716_013800.wav
+[01:38:03.443] 📋 Queue length: 1, Currently playing: True
+[01:38:04.522] 📥 Added to queue: sts_chunk_021_20250716_013803.wav
+[01:38:04.523] 📊 Found 1 new files
+[01:38:04.527] 📋 Queue length: 2, Currently playing: True
+[01:38:05.539] 📋 Queue length: 2, Currently playing: True
+[01:38:06.563] 📋 Queue length: 2, Currently playing: True
+[01:38:07.642] 📋 Queue length: 2, Currently playing: True
+[01:38:07.855] 📥 Added to queue: sts_chunk_022_20250716_013807.wav
+[01:38:07.863] 📊 Found 1 new files
+[01:38:08.693] 📋 Queue length: 3, Currently playing: True
+[01:38:08.725] ✅ Finished playing: sts_chunk_019_20250716_013800.wav (took 5.8s)
+[01:38:08.726] 🎵 Finished playing: sts_chunk_019_20250716_013800.wav
+[01:38:08.728] 🎵 Starting to play: sts_chunk_020_20250716_013802.wav
+[01:38:08.730] ▶️  Direct WAV playback: sts_chunk_020_20250716_013802.wav
+[01:38:09.714] 📋 Queue length: 2, Currently playing: True
+[01:38:10.608] ✅ Finished playing: sts_chunk_020_20250716_013802.wav (took 1.9s)
+[01:38:10.609] 🎵 Finished playing: sts_chunk_020_20250716_013802.wav
+[01:38:10.611] 🎵 Starting to play: sts_chunk_021_20250716_013803.wav
+[01:38:10.613] ▶️  Direct WAV playback: sts_chunk_021_20250716_013803.wav
+[01:38:10.873] 📋 Queue length: 1, Currently playing: True
+[01:38:11.963] 📋 Queue length: 1, Currently playing: True
+[01:38:12.167] 📥 Added to queue: sts_chunk_023_20250716_013811.wav
+[01:38:12.170] 📊 Found 1 new files
+[01:38:12.548] ✅ Finished playing: sts_chunk_021_20250716_013803.wav (took 1.9s)
+[01:38:12.550] 🎵 Finished playing: sts_chunk_021_20250716_013803.wav
+[01:38:12.552] 🎵 Starting to play: sts_chunk_022_20250716_013807.wav
+[01:38:12.554] ▶️  Direct WAV playback: sts_chunk_022_20250716_013807.wav
+[01:38:12.976] 📋 Queue length: 1, Currently playing: True
+[01:38:13.982] 📋 Queue length: 1, Currently playing: True
+[01:38:14.990] 📋 Queue length: 1, Currently playing: True
+[01:38:15.679] ✅ Finished playing: sts_chunk_022_20250716_013807.wav (took 3.1s)
+[01:38:15.686] 🎵 Finished playing: sts_chunk_022_20250716_013807.wav
+[01:38:15.689] 🎵 Starting to play: sts_chunk_023_20250716_013811.wav
+[01:38:15.693] ▶️  Direct WAV playback: sts_chunk_023_20250716_013811.wav
+[01:38:19.195] ✅ Finished playing: sts_chunk_023_20250716_013811.wav (took 3.5s)
+[01:38:19.203] 🎵 Finished playing: sts_chunk_023_20250716_013811.wav
+[01:38:21.308] 📥 Added to queue: sts_chunk_024_20250716_013820.wav
+[01:38:21.310] 📊 Found 1 new files
+[01:38:21.312] 📋 Queue length: 1, Currently playing: False
+[01:38:21.315] 🎵 Starting to play: sts_chunk_024_20250716_013820.wav
+[01:38:21.317] ▶️  Direct WAV playback: sts_chunk_024_20250716_013820.wav
+[01:38:23.935] 📥 Added to queue: sts_chunk_026_20250716_013823.wav
+[01:38:23.936] 📊 Found 1 new files
+[01:38:23.937] 📋 Queue length: 1, Currently playing: True
+[01:38:24.944] 📋 Queue length: 1, Currently playing: True
+[01:38:25.953] 📋 Queue length: 1, Currently playing: True
+[01:38:27.018] 📥 Added to queue: sts_chunk_027_20250716_013826.wav
+[01:38:27.021] 📊 Found 1 new files
+[01:38:27.025] 📋 Queue length: 2, Currently playing: True
+[01:38:28.036] 📋 Queue length: 2, Currently playing: True
+[01:38:29.064] 📋 Queue length: 2, Currently playing: True
+[01:38:29.407] ✅ Finished playing: sts_chunk_024_20250716_013820.wav (took 8.1s)
+[01:38:29.407] 🎵 Finished playing: sts_chunk_024_20250716_013820.wav
+[01:38:29.409] 🎵 Starting to play: sts_chunk_026_20250716_013823.wav
+[01:38:29.411] ▶️  Direct WAV playback: sts_chunk_026_20250716_013823.wav
+[01:38:30.092] 📋 Queue length: 1, Currently playing: True
+[01:38:30.926] 📥 Added to queue: sts_chunk_028_20250716_013830.wav
+[01:38:30.928] 📊 Found 1 new files
+[01:38:31.156] 📋 Queue length: 2, Currently playing: True
+[01:38:32.227] 📋 Queue length: 2, Currently playing: True
+[01:38:33.238] 📋 Queue length: 2, Currently playing: True
+[01:38:33.375] ✅ Finished playing: sts_chunk_026_20250716_013823.wav (took 4.0s)
+[01:38:33.376] 🎵 Finished playing: sts_chunk_026_20250716_013823.wav
+[01:38:33.379] 🎵 Starting to play: sts_chunk_027_20250716_013826.wav
+[01:38:33.380] ▶️  Direct WAV playback: sts_chunk_027_20250716_013826.wav
+[01:38:34.259] 📋 Queue length: 1, Currently playing: True
+[01:38:34.672] 📥 Added to queue: sts_chunk_029_20250716_013834.wav
+[01:38:34.674] 📊 Found 1 new files
+[01:38:35.333] 📋 Queue length: 2, Currently playing: True
+[01:38:36.345] 📋 Queue length: 2, Currently playing: True
+[01:38:36.403] ✅ Finished playing: sts_chunk_027_20250716_013826.wav (took 3.0s)
+[01:38:36.404] 🎵 Finished playing: sts_chunk_027_20250716_013826.wav
+[01:38:36.406] 🎵 Starting to play: sts_chunk_028_20250716_013830.wav
+[01:38:36.408] ▶️  Direct WAV playback: sts_chunk_028_20250716_013830.wav
+[01:38:36.953] 📥 Added to queue: sts_chunk_030_20250716_013836.wav
+[01:38:36.955] 📊 Found 1 new files
+[01:38:37.375] 📋 Queue length: 2, Currently playing: True
+[01:38:38.393] 📋 Queue length: 2, Currently playing: True
+[01:38:38.998] 📥 Added to queue: sts_chunk_031_20250716_013838.wav
+[01:38:39.000] 📊 Found 1 new files
+[01:38:39.405] 📋 Queue length: 3, Currently playing: True
+[01:38:40.415] 📋 Queue length: 3, Currently playing: True
+[01:38:40.419] ✅ Finished playing: sts_chunk_028_20250716_013830.wav (took 4.0s)
+[01:38:40.420] 🎵 Finished playing: sts_chunk_028_20250716_013830.wav
+[01:38:40.422] 🎵 Starting to play: sts_chunk_029_20250716_013834.wav
+[01:38:40.423] ▶️  Direct WAV playback: sts_chunk_029_20250716_013834.wav
+[01:38:41.458] 📋 Queue length: 2, Currently playing: True
+[01:38:42.488] 📋 Queue length: 2, Currently playing: True
+[01:38:42.909] 📥 Added to queue: sts_chunk_032_20250716_013842.wav
+[01:38:42.910] 📊 Found 1 new files
+[01:38:43.309] ✅ Finished playing: sts_chunk_029_20250716_013834.wav (took 2.9s)
+[01:38:43.310] 🎵 Finished playing: sts_chunk_029_20250716_013834.wav
+[01:38:43.312] 🎵 Starting to play: sts_chunk_030_20250716_013836.wav
+[01:38:43.317] ▶️  Direct WAV playback: sts_chunk_030_20250716_013836.wav
+[01:38:43.532] 📋 Queue length: 2, Currently playing: True
+[01:38:44.142] 📥 Added to queue: sts_chunk_033_20250716_013843.wav
+[01:38:44.144] 📊 Found 1 new files
+[01:38:44.630] 📋 Queue length: 3, Currently playing: True
+[01:38:45.670] 📋 Queue length: 3, Currently playing: True
+[01:38:46.523] ✅ Finished playing: sts_chunk_030_20250716_013836.wav (took 3.2s)
+[01:38:46.530] 🎵 Finished playing: sts_chunk_030_20250716_013836.wav
+[01:38:46.531] 🎵 Starting to play: sts_chunk_031_20250716_013838.wav
+[01:38:46.532] ▶️  Direct WAV playback: sts_chunk_031_20250716_013838.wav
+[01:38:46.705] 📋 Queue length: 2, Currently playing: True
+[01:38:47.726] 📋 Queue length: 2, Currently playing: True
+[01:38:48.761] 📋 Queue length: 2, Currently playing: True
+[01:38:49.291] ✅ Finished playing: sts_chunk_031_20250716_013838.wav (took 2.8s)
+[01:38:49.292] 🎵 Finished playing: sts_chunk_031_20250716_013838.wav
+[01:38:49.295] 🎵 Starting to play: sts_chunk_032_20250716_013842.wav
+[01:38:49.297] ▶️  Direct WAV playback: sts_chunk_032_20250716_013842.wav
+[01:38:49.779] 📋 Queue length: 1, Currently playing: True
+[01:38:50.793] 📋 Queue length: 1, Currently playing: True
+[01:38:51.821] 📋 Queue length: 1, Currently playing: True
+[01:38:52.849] 📋 Queue length: 1, Currently playing: True
+[01:38:52.919] ✅ Finished playing: sts_chunk_032_20250716_013842.wav (took 3.6s)
+[01:38:52.923] 🎵 Finished playing: sts_chunk_032_20250716_013842.wav
+[01:38:52.928] 🎵 Starting to play: sts_chunk_033_20250716_013843.wav
+[01:38:52.933] ▶️  Direct WAV playback: sts_chunk_033_20250716_013843.wav
+[01:38:53.256] 📥 Added to queue: sts_chunk_034_20250716_013852.wav
+[01:38:53.258] 📊 Found 1 new files
+[01:38:53.871] 📋 Queue length: 1, Currently playing: True
+[01:38:54.584] ✅ Finished playing: sts_chunk_033_20250716_013843.wav (took 1.7s)
+[01:38:54.585] 🎵 Finished playing: sts_chunk_033_20250716_013843.wav
+[01:38:54.587] 🎵 Starting to play: sts_chunk_034_20250716_013852.wav
+[01:38:54.590] ▶️  Direct WAV playback: sts_chunk_034_20250716_013852.wav
+[01:38:57.715] 📥 Added to queue: sts_chunk_035_20250716_013857.wav
+[01:38:57.716] 📊 Found 1 new files
+[01:38:57.718] 📋 Queue length: 1, Currently playing: True
+[01:38:58.537] 📥 Added to queue: sts_chunk_036_20250716_013857.wav
+[01:38:58.539] 📊 Found 1 new files
+[01:38:58.741] 📋 Queue length: 2, Currently playing: True
+[01:38:59.754] 📋 Queue length: 2, Currently playing: True
+[01:39:00.167] 📥 Added to queue: sts_chunk_037_20250716_013859.wav
+[01:39:00.169] 📊 Found 1 new files
+[01:39:00.793] 📋 Queue length: 3, Currently playing: True
+[01:39:01.809] 📋 Queue length: 3, Currently playing: True
+[01:39:02.265] ✅ Finished playing: sts_chunk_034_20250716_013852.wav (took 7.7s)
+[01:39:02.273] 🎵 Finished playing: sts_chunk_034_20250716_013852.wav
+[01:39:02.274] 🎵 Starting to play: sts_chunk_035_20250716_013857.wav
+[01:39:02.276] ▶️  Direct WAV playback: sts_chunk_035_20250716_013857.wav
+[01:39:02.820] 📋 Queue length: 2, Currently playing: True
+[01:39:03.830] 📋 Queue length: 2, Currently playing: True
+[01:39:04.845] 📋 Queue length: 2, Currently playing: True
+[01:39:05.883] 📋 Queue length: 2, Currently playing: True
+[01:39:06.091] 📥 Added to queue: sts_chunk_038_20250716_013905.wav
+[01:39:06.093] 📊 Found 1 new files
+[01:39:06.905] 📋 Queue length: 3, Currently playing: True
+[01:39:07.752] ✅ Finished playing: sts_chunk_035_20250716_013857.wav (took 5.5s)
+[01:39:07.753] 🎵 Finished playing: sts_chunk_035_20250716_013857.wav
+[01:39:07.755] 🎵 Starting to play: sts_chunk_036_20250716_013857.wav
+[01:39:07.757] ▶️  Direct WAV playback: sts_chunk_036_20250716_013857.wav
+[01:39:07.914] 📋 Queue length: 2, Currently playing: True
+[01:39:08.930] 📋 Queue length: 2, Currently playing: True
+[01:39:09.025] ✅ Finished playing: sts_chunk_036_20250716_013857.wav (took 1.3s)
+[01:39:09.026] 🎵 Finished playing: sts_chunk_036_20250716_013857.wav
+[01:39:09.029] 🎵 Starting to play: sts_chunk_037_20250716_013859.wav
+[01:39:09.031] ▶️  Direct WAV playback: sts_chunk_037_20250716_013859.wav
+[01:39:10.004] 📋 Queue length: 1, Currently playing: True
+[01:39:10.987] ✅ Finished playing: sts_chunk_037_20250716_013859.wav (took 2.0s)
+[01:39:10.988] 🎵 Finished playing: sts_chunk_037_20250716_013859.wav
+[01:39:10.991] 🎵 Starting to play: sts_chunk_038_20250716_013905.wav
+[01:39:10.993] ▶️  Direct WAV playback: sts_chunk_038_20250716_013905.wav
+[01:39:14.336] 📥 Added to queue: sts_chunk_039_20250716_013913.wav
+[01:39:14.375] 📊 Found 1 new files
+[01:39:14.388] 📋 Queue length: 1, Currently playing: True
+[01:39:15.325] ✅ Finished playing: sts_chunk_038_20250716_013905.wav (took 4.3s)
+[01:39:15.326] 🎵 Finished playing: sts_chunk_038_20250716_013905.wav
+[01:39:15.327] 🎵 Starting to play: sts_chunk_039_20250716_013913.wav
+[01:39:15.329] ▶️  Direct WAV playback: sts_chunk_039_20250716_013913.wav
+[01:39:16.255] 📥 Added to queue: sts_chunk_040_20250716_013915.wav
+[01:39:16.256] 📊 Found 1 new files
+[01:39:16.259] 📋 Queue length: 1, Currently playing: True
+[01:39:17.271] 📋 Queue length: 1, Currently playing: True
+[01:39:18.292] 📋 Queue length: 1, Currently playing: True
+[01:39:19.310] 📋 Queue length: 1, Currently playing: True
+[01:39:20.417] 📋 Queue length: 1, Currently playing: True
+[01:39:21.426] 📋 Queue length: 1, Currently playing: True
+[01:39:22.469] 📋 Queue length: 1, Currently playing: True
+[01:39:23.415] ✅ Finished playing: sts_chunk_039_20250716_013913.wav (took 8.1s)
+[01:39:23.423] 🎵 Finished playing: sts_chunk_039_20250716_013913.wav
+[01:39:23.424] 🎵 Starting to play: sts_chunk_040_20250716_013915.wav
+[01:39:23.427] ▶️  Direct WAV playback: sts_chunk_040_20250716_013915.wav
+[01:39:25.709] 📥 Added to queue: sts_chunk_042_20250716_013925.wav
+[01:39:25.710] 📊 Found 1 new files
+[01:39:25.712] 📋 Queue length: 1, Currently playing: True
+[01:39:26.735] 📋 Queue length: 1, Currently playing: True
+[01:39:26.942] 📥 Added to queue: sts_chunk_043_20250716_013926.wav
+[01:39:26.946] 📊 Found 1 new files
+[01:39:27.162] ✅ Finished playing: sts_chunk_040_20250716_013915.wav (took 3.7s)
+[01:39:27.164] 🎵 Finished playing: sts_chunk_040_20250716_013915.wav
+[01:39:27.166] 🎵 Starting to play: sts_chunk_042_20250716_013925.wav
+[01:39:27.172] ▶️  Direct WAV playback: sts_chunk_042_20250716_013925.wav
+[01:39:27.781] 📋 Queue length: 1, Currently playing: True
+[01:39:28.793] 📋 Queue length: 1, Currently playing: True
+[01:39:29.840] 📋 Queue length: 1, Currently playing: True
+[01:39:30.046] 📥 Added to queue: sts_chunk_044_20250716_013929.wav
+[01:39:30.048] 📊 Found 1 new files
+[01:39:30.870] 📋 Queue length: 2, Currently playing: True
+[01:39:31.881] 📋 Queue length: 2, Currently playing: True
+[01:39:32.916] 📋 Queue length: 2, Currently playing: True
+[01:39:33.527] 📥 Added to queue: sts_chunk_045_20250716_013932.wav
+[01:39:33.529] 📊 Found 1 new files
+[01:39:33.938] 📋 Queue length: 3, Currently playing: True
+[01:39:34.478] ✅ Finished playing: sts_chunk_042_20250716_013925.wav (took 7.3s)
+[01:39:34.485] 🎵 Finished playing: sts_chunk_042_20250716_013925.wav
+[01:39:34.492] 🎵 Starting to play: sts_chunk_043_20250716_013926.wav
+[01:39:34.498] ▶️  Direct WAV playback: sts_chunk_043_20250716_013926.wav
+[01:39:34.967] 📋 Queue length: 2, Currently playing: True
+[01:39:35.984] 📋 Queue length: 2, Currently playing: True
+[01:39:36.995] 📋 Queue length: 2, Currently playing: True
+[01:39:37.159] ✅ Finished playing: sts_chunk_043_20250716_013926.wav (took 2.7s)
+[01:39:37.160] 🎵 Finished playing: sts_chunk_043_20250716_013926.wav
+[01:39:37.164] 🎵 Starting to play: sts_chunk_044_20250716_013929.wav
+[01:39:37.166] ▶️  Direct WAV playback: sts_chunk_044_20250716_013929.wav
+[01:39:38.009] 📋 Queue length: 1, Currently playing: True
+[01:39:39.055] 📋 Queue length: 1, Currently playing: True
+[01:39:39.263] 📥 Added to queue: sts_chunk_046_20250716_013938.wav
+[01:39:39.264] 📊 Found 1 new files
+[01:39:40.076] 📋 Queue length: 2, Currently playing: True
+[01:39:40.284] ✅ Finished playing: sts_chunk_044_20250716_013929.wav (took 3.1s)
+[01:39:40.285] 🎵 Finished playing: sts_chunk_044_20250716_013929.wav
+[01:39:40.287] 🎵 Starting to play: sts_chunk_045_20250716_013932.wav
+[01:39:40.290] ▶️  Direct WAV playback: sts_chunk_045_20250716_013932.wav
+[01:39:41.090] 📋 Queue length: 1, Currently playing: True
+[01:39:42.135] 📋 Queue length: 1, Currently playing: True
+[01:39:42.342] 📥 Added to queue: sts_chunk_047_20250716_013941.wav
+[01:39:42.343] 📊 Found 1 new files
+[01:39:43.157] 📋 Queue length: 2, Currently playing: True
+[01:39:43.189] ✅ Finished playing: sts_chunk_045_20250716_013932.wav (took 2.9s)
+[01:39:43.190] 🎵 Finished playing: sts_chunk_045_20250716_013932.wav
+[01:39:43.190] 🎵 Starting to play: sts_chunk_046_20250716_013938.wav
+[01:39:43.193] ▶️  Direct WAV playback: sts_chunk_046_20250716_013938.wav
+[01:39:44.174] 📋 Queue length: 1, Currently playing: True
+[01:39:45.201] 📋 Queue length: 1, Currently playing: True
+[01:39:46.280] 📋 Queue length: 1, Currently playing: True
+[01:39:46.961] 📥 Added to queue: sts_chunk_048_20250716_013946.wav
+[01:39:46.973] 📊 Found 1 new files
+[01:39:47.386] 📋 Queue length: 2, Currently playing: True
+[01:39:48.401] 📋 Queue length: 2, Currently playing: True
+[01:39:48.401] ✅ Finished playing: sts_chunk_046_20250716_013938.wav (took 5.2s)
+[01:39:48.406] 🎵 Finished playing: sts_chunk_046_20250716_013938.wav
+[01:39:48.407] 🎵 Starting to play: sts_chunk_047_20250716_013941.wav
+[01:39:48.409] ▶️  Direct WAV playback: sts_chunk_047_20250716_013941.wav
+[01:39:49.426] 📋 Queue length: 1, Currently playing: True
+[01:39:50.456] 📋 Queue length: 1, Currently playing: True
+[01:39:50.660] 📥 Added to queue: sts_chunk_049_20250716_013950.wav
+[01:39:50.661] 📊 Found 1 new files
+[01:39:51.471] 📋 Queue length: 2, Currently playing: True
+[01:39:52.034] ✅ Finished playing: sts_chunk_047_20250716_013941.wav (took 3.6s)
+[01:39:52.035] 🎵 Finished playing: sts_chunk_047_20250716_013941.wav
+[01:39:52.037] 🎵 Starting to play: sts_chunk_048_20250716_013946.wav
+[01:39:52.039] ▶️  Direct WAV playback: sts_chunk_048_20250716_013946.wav
+[01:39:52.540] 📋 Queue length: 1, Currently playing: True
+[01:39:52.742] 📥 Added to queue: sts_chunk_051_20250716_013952.wav
+[01:39:52.744] 📊 Found 1 new files
+[01:39:53.562] 📋 Queue length: 2, Currently playing: True
+[01:39:54.677] 📋 Queue length: 2, Currently playing: True
+[01:39:55.699] 📋 Queue length: 2, Currently playing: True
+[01:39:56.775] 📋 Queue length: 2, Currently playing: True
+[01:39:56.970] ✅ Finished playing: sts_chunk_048_20250716_013946.wav (took 4.9s)
+[01:39:56.970] 🎵 Finished playing: sts_chunk_048_20250716_013946.wav
+[01:39:56.972] 🎵 Starting to play: sts_chunk_049_20250716_013950.wav
+[01:39:56.975] ▶️  Direct WAV playback: sts_chunk_049_20250716_013950.wav
+[01:39:57.395] 📥 Added to queue: sts_chunk_052_20250716_013956.wav
+[01:39:57.396] 📊 Found 1 new files
+[01:39:57.802] 📋 Queue length: 2, Currently playing: True
+[01:39:58.818] 📋 Queue length: 2, Currently playing: True
+[01:39:59.640] 📥 Added to queue: sts_chunk_053_20250716_013959.wav
+[01:39:59.642] 📊 Found 1 new files
+[01:39:59.848] 📋 Queue length: 3, Currently playing: True
+[01:40:00.151] ✅ Finished playing: sts_chunk_049_20250716_013950.wav (took 3.2s)
+[01:40:00.152] 🎵 Finished playing: sts_chunk_049_20250716_013950.wav
+[01:40:00.155] 🎵 Starting to play: sts_chunk_051_20250716_013952.wav
+[01:40:00.157] ▶️  Direct WAV playback: sts_chunk_051_20250716_013952.wav
+[01:40:00.859] 📋 Queue length: 2, Currently playing: True
+[01:40:01.879] 📋 Queue length: 2, Currently playing: True
+[01:40:02.279] ✅ Finished playing: sts_chunk_051_20250716_013952.wav (took 2.1s)
+[01:40:02.280] 🎵 Finished playing: sts_chunk_051_20250716_013952.wav
+[01:40:02.282] 🎵 Starting to play: sts_chunk_052_20250716_013956.wav
+[01:40:02.284] ▶️  Direct WAV playback: sts_chunk_052_20250716_013956.wav
+[01:40:02.897] 📋 Queue length: 1, Currently playing: True
+[01:40:03.911] 📋 Queue length: 1, Currently playing: True
+[01:40:04.952] 📋 Queue length: 1, Currently playing: True
+[01:40:05.984] 📋 Queue length: 1, Currently playing: True
+[01:40:06.323] ✅ Finished playing: sts_chunk_052_20250716_013956.wav (took 4.0s)
+[01:40:06.324] 🎵 Finished playing: sts_chunk_052_20250716_013956.wav
+[01:40:06.326] 🎵 Starting to play: sts_chunk_053_20250716_013959.wav
+[01:40:06.328] ▶️  Direct WAV playback: sts_chunk_053_20250716_013959.wav
+[01:40:06.593] 📥 Added to queue: sts_chunk_054_20250716_014006.wav
+[01:40:06.595] 📊 Found 1 new files
+[01:40:07.029] 📋 Queue length: 1, Currently playing: True
+[01:40:08.085] 📋 Queue length: 1, Currently playing: True
+[01:40:09.120] ✅ Finished playing: sts_chunk_053_20250716_013959.wav (took 2.8s)
+[01:40:09.123] 📋 Queue length: 1, Currently playing: True
+[01:40:09.135] 🎵 Finished playing: sts_chunk_053_20250716_013959.wav
+[01:40:09.140] 🎵 Starting to play: sts_chunk_054_20250716_014006.wav
+[01:40:09.141] ▶️  Direct WAV playback: sts_chunk_054_20250716_014006.wav
+[01:40:11.806] 📥 Added to queue: sts_chunk_056_20250716_014011.wav
+[01:40:11.808] 📊 Found 1 new files
+[01:40:11.810] 📋 Queue length: 1, Currently playing: True
+[01:40:12.637] 📥 Added to queue: sts_chunk_055_20250716_014012.wav
+[01:40:12.639] 📊 Found 1 new files
+[01:40:12.844] 📋 Queue length: 2, Currently playing: True
+[01:40:13.902] 📋 Queue length: 2, Currently playing: True
+[01:40:14.939] 📋 Queue length: 2, Currently playing: True
+[01:40:15.552] ✅ Finished playing: sts_chunk_054_20250716_014006.wav (took 6.4s)
+[01:40:15.559] 🎵 Finished playing: sts_chunk_054_20250716_014006.wav
+[01:40:15.584] 🎵 Starting to play: sts_chunk_056_20250716_014011.wav
+[01:40:15.594] ▶️  Direct WAV playback: sts_chunk_056_20250716_014011.wav
+[01:40:15.984] 📋 Queue length: 1, Currently playing: True
+[01:40:16.824] ✅ Finished playing: sts_chunk_056_20250716_014011.wav (took 1.2s)
+[01:40:16.825] 🎵 Finished playing: sts_chunk_056_20250716_014011.wav
+[01:40:16.827] 🎵 Starting to play: sts_chunk_055_20250716_014012.wav
+[01:40:16.829] ▶️  Direct WAV playback: sts_chunk_055_20250716_014012.wav
+[01:40:19.649] 📥 Added to queue: sts_chunk_057_20250716_014019.wav
+[01:40:19.651] 📊 Found 1 new files
+[01:40:19.653] 📋 Queue length: 1, Currently playing: True
+[01:40:20.736] 📋 Queue length: 1, Currently playing: True
+[01:40:21.761] 📋 Queue length: 1, Currently playing: True
+[01:40:22.187] 📥 Added to queue: sts_chunk_058_20250716_014021.wav
+[01:40:22.190] 📊 Found 1 new files
+[01:40:22.230] ✅ Finished playing: sts_chunk_055_20250716_014012.wav (took 5.4s)
+[01:40:22.230] 🎵 Finished playing: sts_chunk_055_20250716_014012.wav
+[01:40:22.232] 🎵 Starting to play: sts_chunk_057_20250716_014019.wav
+[01:40:22.234] ▶️  Direct WAV playback: sts_chunk_057_20250716_014019.wav
+[01:40:22.809] 📋 Queue length: 1, Currently playing: True
+[01:40:23.825] 📋 Queue length: 1, Currently playing: True
+[01:40:24.860] 📋 Queue length: 1, Currently playing: True
+[01:40:25.894] 📋 Queue length: 1, Currently playing: True
+[01:40:26.720] 📥 Added to queue: sts_chunk_060_20250716_014026.wav
+[01:40:26.721] 📊 Found 1 new files
+[01:40:26.949] 📋 Queue length: 2, Currently playing: True
+[01:40:27.967] 📋 Queue length: 2, Currently playing: True
+[01:40:28.231] ✅ Finished playing: sts_chunk_057_20250716_014019.wav (took 6.0s)
+[01:40:28.239] 🎵 Finished playing: sts_chunk_057_20250716_014019.wav
+[01:40:28.240] 🎵 Starting to play: sts_chunk_058_20250716_014021.wav
+[01:40:28.242] ▶️  Direct WAV playback: sts_chunk_058_20250716_014021.wav
+[01:40:29.012] 📋 Queue length: 1, Currently playing: True
+[01:40:30.046] 📋 Queue length: 1, Currently playing: True
+[01:40:31.077] 📋 Queue length: 1, Currently playing: True
+[01:40:31.974] ✅ Finished playing: sts_chunk_058_20250716_014021.wav (took 3.7s)
+[01:40:31.975] 🎵 Finished playing: sts_chunk_058_20250716_014021.wav
+[01:40:31.977] 🎵 Starting to play: sts_chunk_060_20250716_014026.wav
+[01:40:31.980] ▶️  Direct WAV playback: sts_chunk_060_20250716_014026.wav
+[01:40:33.120] 📥 Added to queue: sts_chunk_061_20250716_014032.wav
+[01:40:33.122] 📊 Found 1 new files
+[01:40:33.123] 📋 Queue length: 1, Currently playing: True
+[01:40:34.147] 📋 Queue length: 1, Currently playing: True
+[01:40:35.179] 📋 Queue length: 1, Currently playing: True
+[01:40:35.848] ✅ Finished playing: sts_chunk_060_20250716_014026.wav (took 3.9s)
+[01:40:35.849] 🎵 Finished playing: sts_chunk_060_20250716_014026.wav
+[01:40:35.852] 🎵 Starting to play: sts_chunk_061_20250716_014032.wav
+[01:40:35.856] ▶️  Direct WAV playback: sts_chunk_061_20250716_014032.wav
+[01:40:38.842] 📥 Added to queue: sts_chunk_062_20250716_014038.wav
+[01:40:38.844] 📊 Found 1 new files
+[01:40:38.845] 📋 Queue length: 1, Currently playing: True
+[01:40:39.859] 📋 Queue length: 1, Currently playing: True
+[01:40:40.898] 📋 Queue length: 1, Currently playing: True
+[01:40:41.572] ✅ Finished playing: sts_chunk_061_20250716_014032.wav (took 5.7s)
+[01:40:41.575] 🎵 Finished playing: sts_chunk_061_20250716_014032.wav
+[01:40:41.577] 🎵 Starting to play: sts_chunk_062_20250716_014038.wav
+[01:40:41.579] ▶️  Direct WAV playback: sts_chunk_062_20250716_014038.wav
+[01:40:46.006] 📥 Added to queue: sts_chunk_063_20250716_014045.wav
+[01:40:46.008] 📥 Added to queue: sts_chunk_064_20250716_014045.wav
+[01:40:46.010] 📊 Found 2 new files
+[01:40:46.012] 📋 Queue length: 2, Currently playing: True
+[01:40:46.947] ✅ Finished playing: sts_chunk_062_20250716_014038.wav (took 5.4s)
+[01:40:46.948] 🎵 Finished playing: sts_chunk_062_20250716_014038.wav
+[01:40:46.949] 🎵 Starting to play: sts_chunk_063_20250716_014045.wav
+[01:40:46.951] ▶️  Direct WAV playback: sts_chunk_063_20250716_014045.wav
+[01:40:47.027] 📋 Queue length: 1, Currently playing: True
+[01:40:48.042] 📋 Queue length: 1, Currently playing: True
+[01:40:49.169] 📥 Added to queue: sts_chunk_065_20250716_014048.wav
+[01:40:49.170] 📊 Found 1 new files
+[01:40:49.172] 📋 Queue length: 2, Currently playing: True
+[01:40:50.227] 📋 Queue length: 2, Currently playing: True
+[01:40:51.249] 📋 Queue length: 2, Currently playing: True
+[01:40:51.457] 📥 Added to queue: sts_chunk_066_20250716_014050.wav
+[01:40:51.460] 📊 Found 1 new files
+[01:40:52.286] 📋 Queue length: 3, Currently playing: True
+[01:40:53.316] 📋 Queue length: 3, Currently playing: True
+[01:40:53.480] ✅ Finished playing: sts_chunk_063_20250716_014045.wav (took 6.5s)
+[01:40:53.481] 🎵 Finished playing: sts_chunk_063_20250716_014045.wav
+[01:40:53.484] 🎵 Starting to play: sts_chunk_064_20250716_014045.wav
+[01:40:53.487] ▶️  Direct WAV playback: sts_chunk_064_20250716_014045.wav
+[01:40:54.344] 📋 Queue length: 2, Currently playing: True
+[01:40:55.386] 📋 Queue length: 2, Currently playing: True
+[01:40:55.862] ✅ Finished playing: sts_chunk_064_20250716_014045.wav (took 2.4s)
+[01:40:55.865] 🎵 Finished playing: sts_chunk_064_20250716_014045.wav
+[01:40:55.877] 🎵 Starting to play: sts_chunk_065_20250716_014048.wav
+[01:40:55.880] ▶️  Direct WAV playback: sts_chunk_065_20250716_014048.wav
+[01:40:56.005] 📥 Added to queue: sts_chunk_067_20250716_014055.wav
+[01:40:56.007] 📊 Found 1 new files
+[01:40:56.415] 📋 Queue length: 2, Currently playing: True
+[01:40:57.431] 📋 Queue length: 2, Currently playing: True
+[01:40:58.482] 📋 Queue length: 2, Currently playing: True
+[01:40:58.597] ✅ Finished playing: sts_chunk_065_20250716_014048.wav (took 2.7s)
+[01:40:58.598] 🎵 Finished playing: sts_chunk_065_20250716_014048.wav
+[01:40:58.600] 🎵 Starting to play: sts_chunk_066_20250716_014050.wav
+[01:40:58.602] ▶️  Direct WAV playback: sts_chunk_066_20250716_014050.wav
+[01:40:59.318] 📥 Added to queue: sts_chunk_068_20250716_014058.wav
+[01:40:59.320] 📊 Found 1 new files
+[01:40:59.528] 📋 Queue length: 2, Currently playing: True
+[01:41:00.542] 📋 Queue length: 2, Currently playing: True
+[01:41:01.073] ✅ Finished playing: sts_chunk_066_20250716_014050.wav (took 2.5s)
+[01:41:01.074] 🎵 Finished playing: sts_chunk_066_20250716_014050.wav
+[01:41:01.075] 🎵 Starting to play: sts_chunk_067_20250716_014055.wav
+[01:41:01.078] ▶️  Direct WAV playback: sts_chunk_067_20250716_014055.wav
+[01:41:01.157] 📥 Added to queue: sts_chunk_069_20250716_014100.wav
+[01:41:01.159] 📊 Found 1 new files
+[01:41:01.570] 📋 Queue length: 2, Currently playing: True
+[01:41:02.583] 📋 Queue length: 2, Currently playing: True
+[01:41:03.611] 📋 Queue length: 2, Currently playing: True
+[01:41:04.217] ✅ Finished playing: sts_chunk_067_20250716_014055.wav (took 3.1s)
+[01:41:04.221] 🎵 Finished playing: sts_chunk_067_20250716_014055.wav
+[01:41:04.224] 🎵 Starting to play: sts_chunk_068_20250716_014058.wav
+[01:41:04.226] ▶️  Direct WAV playback: sts_chunk_068_20250716_014058.wav
+[01:41:04.670] 📋 Queue length: 1, Currently playing: True
+[01:41:05.102] 📥 Added to queue: sts_chunk_070_20250716_014104.wav
+[01:41:05.104] 📊 Found 1 new files
+[01:41:05.727] 📋 Queue length: 2, Currently playing: True
+[01:41:06.746] 📋 Queue length: 2, Currently playing: True
+[01:41:07.857] 📋 Queue length: 2, Currently playing: True
+[01:41:08.322] ✅ Finished playing: sts_chunk_068_20250716_014058.wav (took 4.1s)
+[01:41:08.323] 🎵 Finished playing: sts_chunk_068_20250716_014058.wav
+[01:41:08.325] 🎵 Starting to play: sts_chunk_069_20250716_014100.wav
+[01:41:08.327] ▶️  Direct WAV playback: sts_chunk_069_20250716_014100.wav
+[01:41:08.897] 📋 Queue length: 1, Currently playing: True
+[01:41:09.919] 📋 Queue length: 1, Currently playing: True
+[01:41:10.982] 📥 Added to queue: sts_chunk_071_20250716_014110.wav
+[01:41:10.988] 📊 Found 1 new files
+[01:41:10.990] 📋 Queue length: 2, Currently playing: True
+[01:41:11.114] ✅ Finished playing: sts_chunk_069_20250716_014100.wav (took 2.8s)
+[01:41:11.118] 🎵 Finished playing: sts_chunk_069_20250716_014100.wav
+[01:41:11.120] 🎵 Starting to play: sts_chunk_070_20250716_014104.wav
+[01:41:11.123] ▶️  Direct WAV playback: sts_chunk_070_20250716_014104.wav
+[01:41:12.008] 📋 Queue length: 1, Currently playing: True
+[01:41:13.032] 📋 Queue length: 1, Currently playing: True
+[01:41:14.059] 📋 Queue length: 1, Currently playing: True
+[01:41:14.104] ✅ Finished playing: sts_chunk_070_20250716_014104.wav (took 3.0s)
+[01:41:14.106] 🎵 Finished playing: sts_chunk_070_20250716_014104.wav
+[01:41:14.108] 🎵 Starting to play: sts_chunk_071_20250716_014110.wav
+[01:41:14.110] ▶️  Direct WAV playback: sts_chunk_071_20250716_014110.wav
+[01:41:15.314] 📥 Added to queue: sts_chunk_072_20250716_014114.wav
+[01:41:15.315] 📊 Found 1 new files
+[01:41:15.318] 📋 Queue length: 1, Currently playing: True
+[01:41:16.389] 📋 Queue length: 1, Currently playing: True
+[01:41:17.532] 📋 Queue length: 1, Currently playing: True
+[01:41:18.564] 📋 Queue length: 1, Currently playing: True
+[01:41:19.582] 📋 Queue length: 1, Currently playing: True
+[01:41:19.870] ✅ Finished playing: sts_chunk_071_20250716_014110.wav (took 5.8s)
+[01:41:19.871] 🎵 Finished playing: sts_chunk_071_20250716_014110.wav
+[01:41:19.873] 🎵 Starting to play: sts_chunk_072_20250716_014114.wav
+[01:41:19.877] ▶️  Direct WAV playback: sts_chunk_072_20250716_014114.wav
+[01:41:20.395] 📥 Added to queue: sts_chunk_073_20250716_014119.wav
+[01:41:20.405] 📊 Found 1 new files
+[01:41:20.610] 📋 Queue length: 1, Currently playing: True
+[01:41:21.691] 📋 Queue length: 1, Currently playing: True
+[01:41:22.703] 📋 Queue length: 1, Currently playing: True
+[01:41:23.745] 📋 Queue length: 1, Currently playing: True
+[01:41:23.978] ✅ Finished playing: sts_chunk_072_20250716_014114.wav (took 4.1s)
+[01:41:23.979] 🎵 Finished playing: sts_chunk_072_20250716_014114.wav
+[01:41:23.981] 🎵 Starting to play: sts_chunk_073_20250716_014119.wav
+[01:41:23.984] ▶️  Direct WAV playback: sts_chunk_073_20250716_014119.wav
+[01:41:24.992] 📥 Added to queue: sts_chunk_074_20250716_014124.wav
+[01:41:24.995] 📊 Found 1 new files
+[01:41:24.998] 📋 Queue length: 1, Currently playing: True
+[01:41:26.037] 📋 Queue length: 1, Currently playing: True
+[01:41:27.072] 📋 Queue length: 1, Currently playing: True
+[01:41:28.113] 📋 Queue length: 1, Currently playing: True
+[01:41:29.145] 📋 Queue length: 1, Currently playing: True
+[01:41:29.507] ✅ Finished playing: sts_chunk_073_20250716_014119.wav (took 5.5s)
+[01:41:29.508] 🎵 Finished playing: sts_chunk_073_20250716_014119.wav
+[01:41:29.509] 🎵 Starting to play: sts_chunk_074_20250716_014124.wav
+[01:41:29.511] ▶️  Direct WAV playback: sts_chunk_074_20250716_014124.wav
+[01:41:30.600] 📥 Added to queue: sts_chunk_075_20250716_014130.wav
+[01:41:30.610] 📊 Found 1 new files
+[01:41:30.613] 📋 Queue length: 1, Currently playing: True
+[01:41:31.662] 📋 Queue length: 1, Currently playing: True
+[01:41:32.680] 📋 Queue length: 1, Currently playing: True
+[01:41:33.697] 📋 Queue length: 1, Currently playing: True
+[01:41:34.359] ✅ Finished playing: sts_chunk_074_20250716_014124.wav (took 4.8s)
+[01:41:34.366] 🎵 Finished playing: sts_chunk_074_20250716_014124.wav
+[01:41:34.368] 🎵 Starting to play: sts_chunk_075_20250716_014130.wav
+[01:41:34.371] ▶️  Direct WAV playback: sts_chunk_075_20250716_014130.wav
+[01:41:34.970] 📥 Added to queue: sts_chunk_076_20250716_014134.wav
+[01:41:34.972] 📊 Found 1 new files
+[01:41:34.973] 📋 Queue length: 1, Currently playing: True
+[01:41:36.011] 📋 Queue length: 1, Currently playing: True
+[01:41:37.050] 📋 Queue length: 1, Currently playing: True
+[01:41:37.676] 📥 Added to queue: sts_chunk_077_20250716_014137.wav
+[01:41:37.700] 📊 Found 1 new files
+[01:41:38.113] 📋 Queue length: 2, Currently playing: True
+[01:41:39.200] 📋 Queue length: 2, Currently playing: True
+[01:41:40.093] ✅ Finished playing: sts_chunk_075_20250716_014130.wav (took 5.7s)
+[01:41:40.094] 🎵 Finished playing: sts_chunk_075_20250716_014130.wav
+[01:41:40.096] 🎵 Starting to play: sts_chunk_076_20250716_014134.wav
+[01:41:40.099] ▶️  Direct WAV playback: sts_chunk_076_20250716_014134.wav
+[01:41:40.222] 📋 Queue length: 1, Currently playing: True
+[01:41:41.240] 📋 Queue length: 1, Currently playing: True
+[01:41:41.447] 📥 Added to queue: sts_chunk_078_20250716_014140.wav
+[01:41:41.448] 📊 Found 1 new files
+[01:41:42.273] 📋 Queue length: 2, Currently playing: True
+[01:41:42.884] 📥 Added to queue: sts_chunk_079_20250716_014142.wav
+[01:41:42.886] 📊 Found 1 new files
+[01:41:43.313] 📋 Queue length: 3, Currently playing: True
+[01:41:44.321] ✅ Finished playing: sts_chunk_076_20250716_014134.wav (took 4.2s)
+[01:41:44.322] 🎵 Finished playing: sts_chunk_076_20250716_014134.wav
+[01:41:44.324] 🎵 Starting to play: sts_chunk_077_20250716_014137.wav
+[01:41:44.327] ▶️  Direct WAV playback: sts_chunk_077_20250716_014137.wav
+[01:41:44.349] 📋 Queue length: 2, Currently playing: True
+[01:41:45.365] 📋 Queue length: 2, Currently playing: True
+[01:41:46.422] 📋 Queue length: 2, Currently playing: True
+[01:41:47.463] 📋 Queue length: 2, Currently playing: True
+[01:41:47.639] ✅ Finished playing: sts_chunk_077_20250716_014137.wav (took 3.3s)
+[01:41:47.639] 🎵 Finished playing: sts_chunk_077_20250716_014137.wav
+[01:41:47.641] 🎵 Starting to play: sts_chunk_078_20250716_014140.wav
+[01:41:47.644] ▶️  Direct WAV playback: sts_chunk_078_20250716_014140.wav
+[01:41:48.503] 📋 Queue length: 1, Currently playing: True
+[01:41:49.533] 📋 Queue length: 1, Currently playing: True
+[01:41:50.146] 📥 Added to queue: sts_chunk_080_20250716_014149.wav
+[01:41:50.148] 📊 Found 1 new files
+[01:41:50.580] 📋 Queue length: 2, Currently playing: True
+[01:41:51.274] ✅ Finished playing: sts_chunk_078_20250716_014140.wav (took 3.6s)
+[01:41:51.277] 🎵 Finished playing: sts_chunk_078_20250716_014140.wav
+[01:41:51.279] 🎵 Starting to play: sts_chunk_079_20250716_014142.wav
+[01:41:51.280] ▶️  Direct WAV playback: sts_chunk_079_20250716_014142.wav
+[01:41:51.627] 📋 Queue length: 1, Currently playing: True
+[01:41:52.680] 📥 Added to queue: sts_chunk_081_20250716_014151.wav
+[01:41:52.684] 📊 Found 1 new files
+[01:41:52.693] 📋 Queue length: 2, Currently playing: True
+[01:41:52.730] ✅ Finished playing: sts_chunk_079_20250716_014142.wav (took 1.5s)
+[01:41:52.740] 🎵 Finished playing: sts_chunk_079_20250716_014142.wav
+[01:41:52.745] 🎵 Starting to play: sts_chunk_080_20250716_014149.wav
+[01:41:52.747] ▶️  Direct WAV playback: sts_chunk_080_20250716_014149.wav
+[01:41:53.722] 📋 Queue length: 1, Currently playing: True
+[01:41:54.754] 📋 Queue length: 1, Currently playing: True
+[01:41:55.797] 📋 Queue length: 1, Currently playing: True
+[01:41:56.842] 📋 Queue length: 1, Currently playing: True
+[01:41:57.866] 📋 Queue length: 1, Currently playing: True
+[01:41:58.947] 📋 Queue length: 1, Currently playing: True
+[01:41:59.115] ✅ Finished playing: sts_chunk_080_20250716_014149.wav (took 6.4s)
+[01:41:59.116] 🎵 Finished playing: sts_chunk_080_20250716_014149.wav
+[01:41:59.119] 🎵 Starting to play: sts_chunk_081_20250716_014151.wav
+[01:41:59.122] ▶️  Direct WAV playback: sts_chunk_081_20250716_014151.wav
+[01:42:00.781] 📥 Added to queue: sts_chunk_083_20250716_014200.wav
+[01:42:00.782] 📊 Found 1 new files
+[01:42:00.784] 📋 Queue length: 1, Currently playing: True
+[01:42:01.809] 📋 Queue length: 1, Currently playing: True
+[01:42:02.146] ✅ Finished playing: sts_chunk_081_20250716_014151.wav (took 3.0s)
+[01:42:02.147] 🎵 Finished playing: sts_chunk_081_20250716_014151.wav
+[01:42:02.149] 🎵 Starting to play: sts_chunk_083_20250716_014200.wav
+[01:42:02.152] ▶️  Direct WAV playback: sts_chunk_083_20250716_014200.wav
+[01:42:07.532] 📥 Added to queue: sts_chunk_085_20250716_014206.wav
+[01:42:07.535] 📊 Found 1 new files
+[01:42:07.538] 📋 Queue length: 1, Currently playing: True
+[01:42:08.565] 📋 Queue length: 1, Currently playing: True
+[01:42:08.804] ✅ Finished playing: sts_chunk_083_20250716_014200.wav (took 6.7s)
+[01:42:08.805] 🎵 Finished playing: sts_chunk_083_20250716_014200.wav
+[01:42:08.807] 🎵 Starting to play: sts_chunk_085_20250716_014206.wav
+[01:42:08.809] ▶️  Direct WAV playback: sts_chunk_085_20250716_014206.wav
+[01:42:15.331] ✅ Finished playing: sts_chunk_085_20250716_014206.wav (took 6.5s)
+[01:42:15.332] 🎵 Finished playing: sts_chunk_085_20250716_014206.wav
+[01:42:15.478] 📥 Added to queue: sts_chunk_086_20250716_014215.wav
+[01:42:15.480] 📊 Found 1 new files
+[01:42:15.481] 📋 Queue length: 1, Currently playing: False
+[01:42:15.482] 🎵 Starting to play: sts_chunk_086_20250716_014215.wav
+[01:42:15.486] ▶️  Direct WAV playback: sts_chunk_086_20250716_014215.wav
+[01:42:23.569] ✅ Finished playing: sts_chunk_086_20250716_014215.wav (took 8.1s)
+[01:42:23.570] 🎵 Finished playing: sts_chunk_086_20250716_014215.wav
+[01:42:23.850] 📥 Added to queue: sts_chunk_087_20250716_014223.wav
+[01:42:23.851] 📊 Found 1 new files
+[01:42:23.853] 🎵 Starting to play: sts_chunk_087_20250716_014223.wav
+[01:42:23.855] ▶️  Direct WAV playback: sts_chunk_087_20250716_014223.wav
+[01:42:31.938] ✅ Finished playing: sts_chunk_087_20250716_014223.wav (took 8.1s)
+[01:42:31.939] 🎵 Finished playing: sts_chunk_087_20250716_014223.wav
+[01:42:32.206] 📥 Added to queue: sts_chunk_088_20250716_014231.wav
+[01:42:32.209] 📊 Found 1 new files
+[01:42:32.214] 🎵 Starting to play: sts_chunk_088_20250716_014231.wav
+[01:42:32.217] ▶️  Direct WAV playback: sts_chunk_088_20250716_014231.wav
+[01:42:33.676] 📥 Added to queue: sts_chunk_090_20250716_014233.wav
+[01:42:33.679] 📊 Found 1 new files
+[01:42:33.681] 📋 Queue length: 1, Currently playing: True
+[01:42:34.725] 📋 Queue length: 1, Currently playing: True
+[01:42:35.783] 📋 Queue length: 1, Currently playing: True
+[01:42:35.988] 📥 Added to queue: sts_chunk_091_20250716_014235.wav
+[01:42:35.990] 📊 Found 1 new files
+[01:42:36.820] 📋 Queue length: 2, Currently playing: True
+[01:42:37.861] 📋 Queue length: 2, Currently playing: True
+[01:42:38.072] 📥 Added to queue: sts_chunk_092_20250716_014237.wav
+[01:42:38.073] 📊 Found 1 new files
+[01:42:38.902] 📋 Queue length: 3, Currently playing: True
+[01:42:39.982] 📋 Queue length: 3, Currently playing: True
+[01:42:40.317] ✅ Finished playing: sts_chunk_088_20250716_014231.wav (took 8.1s)
+[01:42:40.318] 🎵 Finished playing: sts_chunk_088_20250716_014231.wav
+[01:42:40.322] 🎵 Starting to play: sts_chunk_090_20250716_014233.wav
+[01:42:40.324] ▶️  Direct WAV playback: sts_chunk_090_20250716_014233.wav
+[01:42:40.605] 📥 Added to queue: sts_chunk_094_20250716_014240.wav
+[01:42:40.609] 📊 Found 1 new files
+[01:42:41.022] 📋 Queue length: 3, Currently playing: True
+[01:42:42.078] 📋 Queue length: 3, Currently playing: True
+[01:42:42.923] ✅ Finished playing: sts_chunk_090_20250716_014233.wav (took 2.6s)
+[01:42:42.924] 🎵 Finished playing: sts_chunk_090_20250716_014233.wav
+[01:42:42.926] 🎵 Starting to play: sts_chunk_091_20250716_014235.wav
+[01:42:42.928] 📥 Added to queue: sts_chunk_095_20250716_014242.wav
+[01:42:42.928] ▶️  Direct WAV playback: sts_chunk_091_20250716_014235.wav
+[01:42:42.930] 📊 Found 1 new files
+[01:42:43.148] 📋 Queue length: 3, Currently playing: True
+[01:42:44.194] 📋 Queue length: 3, Currently playing: True
+[01:42:44.626] ✅ Finished playing: sts_chunk_091_20250716_014235.wav (took 1.7s)
+[01:42:44.627] 🎵 Finished playing: sts_chunk_091_20250716_014235.wav
+[01:42:44.629] 🎵 Starting to play: sts_chunk_092_20250716_014237.wav
+[01:42:44.631] ▶️  Direct WAV playback: sts_chunk_092_20250716_014237.wav
+[01:42:45.254] 📋 Queue length: 2, Currently playing: True
+[01:42:45.459] 📥 Added to queue: sts_chunk_096_20250716_014244.wav
+[01:42:45.460] 📊 Found 1 new files
+[01:42:46.277] 📋 Queue length: 3, Currently playing: True
+[01:42:46.689] 📥 Added to queue: sts_chunk_097_20250716_014246.wav
+[01:42:46.690] 📊 Found 1 new files
+[01:42:47.311] 📋 Queue length: 4, Currently playing: True
+[01:42:47.339] ✅ Finished playing: sts_chunk_092_20250716_014237.wav (took 2.7s)
+[01:42:47.340] 🎵 Finished playing: sts_chunk_092_20250716_014237.wav
+[01:42:47.341] 🎵 Starting to play: sts_chunk_094_20250716_014240.wav
+[01:42:47.343] ▶️  Direct WAV playback: sts_chunk_094_20250716_014240.wav
+[01:42:48.349] 📋 Queue length: 3, Currently playing: True
+[01:42:49.049] ✅ Finished playing: sts_chunk_094_20250716_014240.wav (took 1.7s)
+[01:42:49.050] 🎵 Finished playing: sts_chunk_094_20250716_014240.wav
+[01:42:49.052] 🎵 Starting to play: sts_chunk_095_20250716_014242.wav
+[01:42:49.054] ▶️  Direct WAV playback: sts_chunk_095_20250716_014242.wav
+[01:42:49.395] 📋 Queue length: 2, Currently playing: True
+[01:42:50.423] 📋 Queue length: 2, Currently playing: True
+[01:42:51.159] ✅ Finished playing: sts_chunk_095_20250716_014242.wav (took 2.1s)
+[01:42:51.169] 🎵 Finished playing: sts_chunk_095_20250716_014242.wav
+[01:42:51.241] 🎵 Starting to play: sts_chunk_096_20250716_014244.wav
+[01:42:51.278] ▶️  Direct WAV playback: sts_chunk_096_20250716_014244.wav
+[01:42:51.497] 📋 Queue length: 1, Currently playing: True
+[01:42:52.122] 📥 Added to queue: sts_chunk_098_20250716_014251.wav
+[01:42:52.128] 📊 Found 1 new files
+[01:42:52.563] 📋 Queue length: 2, Currently playing: True
+[01:42:53.591] 📋 Queue length: 2, Currently playing: True
+[01:42:53.792] ✅ Finished playing: sts_chunk_096_20250716_014244.wav (took 2.5s)
+[01:42:53.793] 🎵 Finished playing: sts_chunk_096_20250716_014244.wav
+[01:42:53.795] 🎵 Starting to play: sts_chunk_097_20250716_014246.wav
+[01:42:53.798] ▶️  Direct WAV playback: sts_chunk_097_20250716_014246.wav
+[01:42:54.629] 📋 Queue length: 1, Currently playing: True
+[01:42:55.514] ✅ Finished playing: sts_chunk_097_20250716_014246.wav (took 1.7s)
+[01:42:55.517] 🎵 Finished playing: sts_chunk_097_20250716_014246.wav
+[01:42:55.520] 🎵 Starting to play: sts_chunk_098_20250716_014251.wav
+[01:42:55.522] ▶️  Direct WAV playback: sts_chunk_098_20250716_014251.wav
+[01:42:59.909] ✅ Finished playing: sts_chunk_098_20250716_014251.wav (took 4.4s)
+[01:42:59.910] 🎵 Finished playing: sts_chunk_098_20250716_014251.wav
+[01:43:00.380] 📥 Added to queue: sts_chunk_099_20250716_014259.wav
+[01:43:00.382] 📥 Added to queue: sts_chunk_100_20250716_014259.wav
+[01:43:00.383] 🎵 Starting to play: sts_chunk_099_20250716_014259.wav
+[01:43:00.385] 📊 Found 2 new files
+[01:43:00.386] ▶️  Direct WAV playback: sts_chunk_099_20250716_014259.wav
+[01:43:00.397] 📋 Queue length: 1, Currently playing: True
+[01:43:01.425] 📋 Queue length: 1, Currently playing: True
+[01:43:02.467] 📋 Queue length: 1, Currently playing: True
+[01:43:03.506] 📋 Queue length: 1, Currently playing: True
+[01:43:03.918] 📥 Added to queue: sts_chunk_101_20250716_014303.wav
+[01:43:03.919] 📊 Found 1 new files
+[01:43:04.535] 📋 Queue length: 2, Currently playing: True
+[01:43:05.606] 📥 Added to queue: sts_chunk_102_20250716_014305.wav
+[01:43:05.633] 📊 Found 1 new files
+[01:43:05.647] 📋 Queue length: 3, Currently playing: True
+[01:43:06.680] 📋 Queue length: 3, Currently playing: True
+[01:43:07.705] 📋 Queue length: 3, Currently playing: True
+[01:43:08.152] ✅ Finished playing: sts_chunk_099_20250716_014259.wav (took 7.8s)
+[01:43:08.160] 🎵 Finished playing: sts_chunk_099_20250716_014259.wav
+[01:43:08.161] 🎵 Starting to play: sts_chunk_100_20250716_014259.wav
+[01:43:08.163] ▶️  Direct WAV playback: sts_chunk_100_20250716_014259.wav
+[01:43:08.732] 📋 Queue length: 2, Currently playing: True
+[01:43:09.799] 📥 Added to queue: sts_chunk_103_20250716_014309.wav
+[01:43:09.801] 📊 Found 1 new files
+[01:43:09.803] 📋 Queue length: 3, Currently playing: True
+[01:43:10.119] ✅ Finished playing: sts_chunk_100_20250716_014259.wav (took 2.0s)
+[01:43:10.196] 🎵 Finished playing: sts_chunk_100_20250716_014259.wav
+[01:43:10.213] 🎵 Starting to play: sts_chunk_101_20250716_014303.wav
+[01:43:10.275] ▶️  Direct WAV playback: sts_chunk_101_20250716_014303.wav
+[01:43:10.977] 📋 Queue length: 2, Currently playing: True
+[01:43:12.089] 📋 Queue length: 2, Currently playing: True
+[01:43:13.164] 📥 Added to queue: sts_chunk_105_20250716_014312.wav
+[01:43:13.183] 📊 Found 1 new files
+[01:43:13.203] 📋 Queue length: 3, Currently playing: True
+[01:43:13.526] ✅ Finished playing: sts_chunk_101_20250716_014303.wav (took 3.3s)
+[01:43:13.527] 🎵 Finished playing: sts_chunk_101_20250716_014303.wav
+[01:43:13.529] 🎵 Starting to play: sts_chunk_102_20250716_014305.wav
+[01:43:13.531] ▶️  Direct WAV playback: sts_chunk_102_20250716_014305.wav
+[01:43:14.241] 📋 Queue length: 2, Currently playing: True
+[01:43:15.292] 📋 Queue length: 2, Currently playing: True
+[01:43:15.641] ✅ Finished playing: sts_chunk_102_20250716_014305.wav (took 2.1s)
+[01:43:15.642] 🎵 Finished playing: sts_chunk_102_20250716_014305.wav
+[01:43:15.644] 🎵 Starting to play: sts_chunk_103_20250716_014309.wav
+[01:43:15.646] ▶️  Direct WAV playback: sts_chunk_103_20250716_014309.wav
+[01:43:16.350] 📋 Queue length: 1, Currently playing: True
+[01:43:17.379] 📋 Queue length: 1, Currently playing: True
+[01:43:18.440] 📋 Queue length: 1, Currently playing: True
+[01:43:19.009] ✅ Finished playing: sts_chunk_103_20250716_014309.wav (took 3.4s)
+[01:43:19.016] 🎵 Finished playing: sts_chunk_103_20250716_014309.wav
+[01:43:19.017] 🎵 Starting to play: sts_chunk_105_20250716_014312.wav
+[01:43:19.019] ▶️  Direct WAV playback: sts_chunk_105_20250716_014312.wav
+[01:43:20.187] 📥 Added to queue: sts_chunk_106_20250716_014319.wav
+[01:43:20.189] 📊 Found 1 new files
+[01:43:20.190] 📋 Queue length: 1, Currently playing: True
+[01:43:21.219] 📋 Queue length: 1, Currently playing: True
+[01:43:21.674] ✅ Finished playing: sts_chunk_105_20250716_014312.wav (took 2.7s)
+[01:43:21.675] 🎵 Finished playing: sts_chunk_105_20250716_014312.wav
+[01:43:21.677] 🎵 Starting to play: sts_chunk_106_20250716_014319.wav
+[01:43:21.679] ▶️  Direct WAV playback: sts_chunk_106_20250716_014319.wav
+[01:43:22.873] 📥 Added to queue: sts_chunk_108_20250716_014322.wav
+[01:43:22.875] 📊 Found 1 new files
+[01:43:22.878] 📋 Queue length: 1, Currently playing: True
+[01:43:23.907] 📋 Queue length: 1, Currently playing: True
+[01:43:24.960] 📋 Queue length: 1, Currently playing: True
+[01:43:26.000] 📋 Queue length: 1, Currently playing: True
+[01:43:26.837] 📥 Added to queue: sts_chunk_109_20250716_014326.wav
+[01:43:26.839] 📊 Found 1 new files
+[01:43:27.059] 📋 Queue length: 2, Currently playing: True
+[01:43:27.271] 📥 Added to queue: sts_chunk_110_20250716_014326.wav
+[01:43:27.272] 📊 Found 1 new files
+[01:43:27.730] ✅ Finished playing: sts_chunk_106_20250716_014319.wav (took 6.1s)
+[01:43:27.730] 🎵 Finished playing: sts_chunk_106_20250716_014319.wav
+[01:43:27.733] 🎵 Starting to play: sts_chunk_108_20250716_014322.wav
+[01:43:27.735] ▶️  Direct WAV playback: sts_chunk_108_20250716_014322.wav
+[01:43:28.093] 📋 Queue length: 2, Currently playing: True
+[01:43:28.565] 📥 Added to queue: sts_chunk_111_20250716_014327.wav
+[01:43:28.761] 📊 Found 1 new files
+[01:43:29.279] 📋 Queue length: 3, Currently playing: True
+[01:43:29.757] 📥 Added to queue: sts_chunk_112_20250716_014329.wav
+[01:43:29.760] 📊 Found 1 new files
+[01:43:30.375] 📋 Queue length: 4, Currently playing: True
+[01:43:30.924] ✅ Finished playing: sts_chunk_108_20250716_014322.wav (took 3.2s)
+[01:43:30.925] 🎵 Finished playing: sts_chunk_108_20250716_014322.wav
+[01:43:30.927] 🎵 Starting to play: sts_chunk_109_20250716_014326.wav
+[01:43:30.929] ▶️  Direct WAV playback: sts_chunk_109_20250716_014326.wav
+[01:43:31.397] 📋 Queue length: 3, Currently playing: True
+[01:43:32.437] 📥 Added to queue: sts_chunk_113_20250716_014331.wav
+[01:43:32.443] 📊 Found 1 new files
+[01:43:32.448] 📋 Queue length: 4, Currently playing: True
+[01:43:33.494] 📋 Queue length: 4, Currently playing: True
+[01:43:34.377] ✅ Finished playing: sts_chunk_109_20250716_014326.wav (took 3.4s)
+[01:43:34.383] 🎵 Finished playing: sts_chunk_109_20250716_014326.wav
+[01:43:34.386] 🎵 Starting to play: sts_chunk_110_20250716_014326.wav
+[01:43:34.389] ▶️  Direct WAV playback: sts_chunk_110_20250716_014326.wav
+[01:43:34.518] 📋 Queue length: 3, Currently playing: True
+[01:43:35.572] 📋 Queue length: 3, Currently playing: True
+[01:43:36.089] ✅ Finished playing: sts_chunk_110_20250716_014326.wav (took 1.7s)
+[01:43:36.096] 🎵 Finished playing: sts_chunk_110_20250716_014326.wav
+[01:43:36.098] 🎵 Starting to play: sts_chunk_111_20250716_014327.wav
+[01:43:36.100] ▶️  Direct WAV playback: sts_chunk_111_20250716_014327.wav
+[01:43:36.662] 📋 Queue length: 2, Currently playing: True
+[01:43:37.373] ✅ Finished playing: sts_chunk_111_20250716_014327.wav (took 1.3s)
+[01:43:37.375] 🎵 Finished playing: sts_chunk_111_20250716_014327.wav
+[01:43:37.377] 🎵 Starting to play: sts_chunk_112_20250716_014329.wav
+[01:43:37.379] ▶️  Direct WAV playback: sts_chunk_112_20250716_014329.wav
+[01:43:37.753] 📋 Queue length: 1, Currently playing: True
+[01:43:38.785] 📋 Queue length: 1, Currently playing: True
+[01:43:38.897] ✅ Finished playing: sts_chunk_112_20250716_014329.wav (took 1.5s)
+[01:43:38.913] 🎵 Finished playing: sts_chunk_112_20250716_014329.wav
+[01:43:38.916] 🎵 Starting to play: sts_chunk_113_20250716_014331.wav
+[01:43:38.918] ▶️  Direct WAV playback: sts_chunk_113_20250716_014331.wav
+[01:43:40.637] ✅ Finished playing: sts_chunk_113_20250716_014331.wav (took 1.7s)
+[01:43:40.638] 🎵 Finished playing: sts_chunk_113_20250716_014331.wav
+[01:43:44.461] 📥 Added to queue: sts_chunk_128_20250716_014344.wav
+[01:43:44.468] 🎵 Starting to play: sts_chunk_128_20250716_014344.wav
+[01:43:44.469] 📊 Found 1 new files
+[01:43:44.473] ▶️  Direct WAV playback: sts_chunk_128_20250716_014344.wav
+[01:43:45.780] ✅ Finished playing: sts_chunk_128_20250716_014344.wav (took 1.3s)
+[01:43:45.789] 🎵 Finished playing: sts_chunk_128_20250716_014344.wav
+[01:43:51.232] ⏹️  Received interrupt signal, stopping...
+[01:43:51.234] 🛑 Chunk Monitor Player stopped.
+[01:43:51.241] 🎵 Audio player thread stopped
+PS C:\Projects\Andy> ^C
+PS C:\Projects\Andy> python chunk_monitor_player_opt.py  --no-boost
