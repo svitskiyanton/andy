@@ -19,8 +19,8 @@ from dotenv import load_dotenv
 from typing import AsyncGenerator
 
 # Import Speechmatics models
-from speechmatics.models import (
-    AudioSettings,
+from speechmatics.rt import (
+    AudioFormat,
     TranscriptionConfig,
 )
 
@@ -68,8 +68,8 @@ FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 16000
 
-# Speechmatics audio chunking
-CHUNK_DURATION_MS = 100
+# Speechmatics audio chunking - Optimized for faster response
+CHUNK_DURATION_MS = 50  # Reduced from 100ms to 50ms for faster processing
 BYTES_PER_SAMPLE = 2
 SAMPLES_PER_CHUNK = int(RATE * CHUNK_DURATION_MS / 1000)
 CHUNK_BYTES = SAMPLES_PER_CHUNK * BYTES_PER_SAMPLE
@@ -223,7 +223,7 @@ class ElevenLabsTTS:
             
             self.websocket = await websockets.connect(
                 full_url,
-                extra_headers={"xi-api-key": self.api_key}
+                additional_headers={"xi-api-key": self.api_key}
             )
             debug_timer.mark("tts_connected", "TTS connected to ElevenLabs")
             
@@ -343,12 +343,13 @@ class ElevenLabsTTS:
             await self.websocket.close()
 
 def print_transcript():
-    """Print current transcript"""
+    """Print current transcript with real-time updates"""
     global final_transcript, current_partial, last_display_text
     display_text = final_transcript + current_partial
     
     if display_text != last_display_text:
-        print(f"🎤 STT: {display_text}")
+        # Use real-time display like the fast version
+        print(f"\r🎤 STT: {display_text}", end="", flush=True)
         last_display_text = display_text
 
 async def send_to_tts_if_new(tts, full_text):
@@ -392,16 +393,16 @@ async def process_text_buffer(tts):
         # Check if we should break the chunk
         should_break = False
         
-        # Break if we reached the word limit
-        if len(current_chunk_words) >= WORDS_PER_CHUNK:
-            should_break = True
-        
-        # Break if punctuation is found and we have at least 2 words
+        # Break if punctuation is found and we have at least 2 words (HIGHER PRIORITY)
         if ENABLE_PUNCTUATION_BREAKS and len(current_chunk_words) >= 2:
             for punct in PUNCTUATION_CHARS:
                 if word.endswith(punct):
                     should_break = True
                     break
+        
+        # Break if we reached the word limit (LOWER PRIORITY)
+        if not should_break and len(current_chunk_words) >= WORDS_PER_CHUNK:
+            should_break = True
         
         # Create chunk if we should break
         if should_break:
@@ -477,7 +478,7 @@ async def mic_stream_generator() -> AsyncGenerator[bytes, None]:
                     audio_data += b'\x00' * padding_needed
                 
                 yield audio_data
-                await asyncio.sleep(CHUNK_DURATION_MS / 1000)
+                await asyncio.sleep(CHUNK_DURATION_MS / 1000.0)  # More precise timing
                 
             except Exception as e:
                 print(f"❌ STT: Microphone error: {e}")
@@ -507,6 +508,7 @@ async def speechmatics_handler(websocket, tts=None):
                     transcript_segment = data.get("metadata", {}).get("transcript", "")
                     final_transcript += transcript_segment
                     current_partial = ""
+                    debug_timer.mark("stt_final_transcript", f"Final transcript: {transcript_segment[:50]}...")
                     print_transcript()
                     
                     # Send to TTS if we have accumulated substantial text
@@ -523,10 +525,12 @@ async def speechmatics_handler(websocket, tts=None):
                         new_partial = full_partial[len(final_transcript):]
                         if new_partial != current_partial:
                             current_partial = new_partial
+                            debug_timer.mark("stt_partial_transcript", f"Partial transcript: {new_partial[:50]}...")
                             print_transcript()
                     else:
                         if full_partial != current_partial:
                             current_partial = full_partial
+                            debug_timer.mark("stt_partial_transcript", f"Partial transcript: {full_partial[:50]}...")
                             print_transcript()
                     
                 elif message_type == "EndOfTranscript":
@@ -556,17 +560,18 @@ async def speechmatics_sender(websocket):
     global audio_chunks_sent
     
     # Configure audio settings
-    audio_settings = AudioSettings(
+    audio_settings = AudioFormat(
         encoding="pcm_s16le",
         sample_rate=RATE
     )
     
-    # Configure transcription settings
+    # Configure transcription settings - Optimized for speed
     transcription_config = TranscriptionConfig(
         language="ru",
-        max_delay=1,
+        max_delay=0.7,  # Minimum allowed by Speechmatics API
         max_delay_mode="flexible",
-        accuracy="enhanced"
+        operating_point="enhanced",
+        enable_partials=True  # Critical for low latency!
     )
     
     # Start recognition
@@ -577,7 +582,7 @@ async def speechmatics_sender(websocket):
             "encoding": audio_settings.encoding,
             "sample_rate": audio_settings.sample_rate
         },
-        "transcription_config": transcription_config.asdict()
+        "transcription_config": transcription_config.to_dict()
     }
     
     try:
@@ -668,7 +673,7 @@ async def main():
         
         async with websockets.connect(
             SPEECHMATICS_URL,
-            extra_headers={"Authorization": f"Bearer {SPEECHMATICS_API_KEY}"},
+            additional_headers={"Authorization": f"Bearer {SPEECHMATICS_API_KEY}"},
             ping_interval=30,
             ping_timeout=60
         ) as websocket:

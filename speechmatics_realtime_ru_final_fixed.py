@@ -55,6 +55,42 @@ current_partial = ""
 audio_chunks_sent = 0  # Track sequence numbers for EndOfStream
 last_display_text = ""  # Track the last displayed text to avoid repetition
 
+class DebugTimer:
+    """Debug timer for tracking operation timings"""
+    
+    def __init__(self):
+        self.start_time = time.time()
+        self.events = []
+    
+    def mark(self, event_name, description=""):
+        """Mark an event with timestamp"""
+        timestamp = time.time() - self.start_time
+        self.events.append({
+            'time': timestamp,
+            'event': event_name,
+            'description': description
+        })
+        print(f"⏱️  [{timestamp:.3f}s] {event_name}: {description}")
+    
+    def summary(self):
+        """Print timing summary"""
+        print("\n" + "="*60)
+        print("📈 DEBUG TIMING SUMMARY")
+        print("="*60)
+        
+        for i, event in enumerate(self.events):
+            if i > 0:
+                prev_time = self.events[i-1]['time']
+                interval = (event['time'] - prev_time) * 1000
+                print(f"⏱️  [{event['time']:.3f}s] {event['event']} (+{interval:.1f}ms)")
+            else:
+                print(f"⏱️  [{event['time']:.3f}s] {event['event']}")
+        
+        print("="*60)
+
+# Global debug timer
+debug_timer = DebugTimer()
+
 def print_current_transcript():
     """Print the current transcript only if it has changed"""
     global final_transcript, current_partial, last_display_text
@@ -127,6 +163,7 @@ async def receive_handler(websocket):
                 
                 if message_type == "RecognitionStarted":
                     session_id = data.get("id", "unknown")
+                    debug_timer.mark("stt_recognition_started", f"STT recognition started (ID: {session_id})")
                     print(f"\nINFO: Recognition started with session ID: {session_id}")
                     
                 elif message_type == "AddTranscript":
@@ -134,6 +171,7 @@ async def receive_handler(websocket):
                     transcript_segment = data.get("metadata", {}).get("transcript", "")
                     final_transcript += transcript_segment
                     current_partial = ""  # Clear partial as it's now finalized
+                    debug_timer.mark("stt_final_transcript", f"Final transcript: {transcript_segment[:50]}...")
                     print_current_transcript()
                     
                 elif message_type == "AddPartialTranscript":
@@ -147,11 +185,13 @@ async def receive_handler(websocket):
                         # Only update if the partial has actually changed
                         if new_partial != current_partial:
                             current_partial = new_partial
+                            debug_timer.mark("stt_partial_transcript", f"Partial transcript: {new_partial[:50]}...")
                             print_current_transcript()
                     else:
                         # Fallback: use the full partial if we can't determine the new part
                         if full_partial != current_partial:
                             current_partial = full_partial
+                            debug_timer.mark("stt_partial_transcript", f"Partial transcript: {full_partial[:50]}...")
                             print_current_transcript()
                     
                 elif message_type == "AudioAdded":
@@ -249,6 +289,7 @@ async def send_handler(websocket):
     try:
         # Send the configuration to start the session
         await websocket.send(json.dumps(start_recognition_message))
+        debug_timer.mark("stt_config_sent", "STT configuration sent to Speechmatics")
         print("INFO: StartRecognition message sent. Waiting for confirmation...")
         
         # Stream audio from the microphone generator
@@ -281,15 +322,17 @@ async def main():
     Establishes WebSocket connection and runs sender/receiver concurrently
     """
     print("INFO: Connecting to Speechmatics Real-Time API...")
+    debug_timer.mark("stt_connecting", "Connecting to Speechmatics")
     
     try:
         # Establish WebSocket connection with authentication
         async with websockets.connect(
             CONNECTION_URL,
-            extra_headers={"Authorization": f"Bearer {SPEECHMATICS_API_KEY}"},
+            additional_headers={"Authorization": f"Bearer {SPEECHMATICS_API_KEY}"},
             ping_interval=30,  # Send ping every 30 seconds (within 20-60s range)
             ping_timeout=60    # Wait 60 seconds for pong response
         ) as websocket:
+            debug_timer.mark("stt_connected", "STT connected to Speechmatics")
             print("INFO: WebSocket connection established successfully.")
             
             # Run the sender and receiver coroutines concurrently
@@ -322,6 +365,9 @@ async def main():
         print(f"ERROR: Connection closed unexpectedly: {e}")
     except Exception as e:
         print(f"ERROR: An unexpected error occurred: {e}")
+    finally:
+        debug_timer.mark("system_shutdown", "System shutdown complete")
+        debug_timer.summary()
 
 if __name__ == "__main__":
     try:
