@@ -1,1 +1,22 @@
- 
+# Core dependencies for combined_stt_tts_word_chunks.py
+# Speechmatics real-time SDK
+speechmatics-rt>=1.0.0
+
+# ElevenLabs API client
+elevenlabs>=0.2.26
+
+# WebSocket support
+websockets>=15.0.0
+
+# Audio processing
+pyaudio>=0.2.11
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Async support (built-in with Python 3.7+)
+# asyncio is included in Python standard library
+
+# Additional useful packages for development/debugging
+# requests>=2.31.0  # For API testing (optional)
+# numpy>=1.24.0     # For audio processing (optional) 
